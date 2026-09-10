@@ -4,9 +4,9 @@ Statik HTML + Tailwind CSS ile yapılmış, iki dilli (TR/EN) dernek sitesi.
 Sunucuda hiçbir kurulum, veritabanı veya build adımı gerektirmez —
 dosyaları FileZilla ile yükleyip bırakırsınız.
 
-İçerik ve mevzuat referansları **KKTC**'ye göre yazılmıştır: Sivil Savunma
-Teşkilatı, Dernekler Yasası (23/2016), Kişisel Verilerin Korunması Yasası
-(89/2007). Türkiye'ye özgü hiçbir kurum veya kanun atıfı bırakılmamıştır.
+İçerik ve mevzuat referansları **KKTC**'ye göre yazılmıştır: Dernekler Yasası
+(23/2016), Kişisel Verilerin Korunması Yasası (89/2007). Türkiye'ye özgü hiçbir
+kurum veya kanun atıfı bırakılmamıştır.
 
 ---
 
@@ -131,6 +131,19 @@ bütçeleri ve rapor arşivi bilinçli olarak yazılmadı. Bunun yerine:
 - **Çalışma alanları** ve **anasayfa** rakam yerine yöntem anlatıyor.
 
 Faaliyet geçmişiniz oluştuğunda bu bölümleri doldurursunuz; yapı hazır.
+
+Aynı gerekçeyle sitede **kurumsal ilişki ve denetim iddiası da yok**:
+
+- Sivil Savunma Teşkilatı veya kaymakamlık ile eşgüdüm/koordinasyon altında
+  çalışıldığı söylenmiyor. Saha metinleri yalnızca çalışma yöntemini anlatıyor
+  ("paralel yapı kurmayız"). Resmî bir protokol imzalarsanız bu iddiayı
+  `index.html`, `hakkimizda.html` ve `calisma-alanlarimiz.html` içindeki
+  koordinasyon bölümlerine ekleyebilirsiniz.
+- Bağımsız denetimden geçmiş mali tablo veya denetim görüşü yayımlama
+  taahhüdü verilmiyor. Şeffaflık taahhüdü faaliyet raporu, gider dökümü,
+  genel kurul tutanağı ve kurumsal belgelerle sınırlı. İleride bağımsız
+  denetim yaptırırsanız `seffaflik.html` içindeki taahhüt listesine bir satır,
+  arşiv tablosuna bir sütun eklemeniz yeterli.
 
 ### 2.5 Doldurulması gereken bilgiler
 
