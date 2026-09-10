@@ -1,0 +1,169 @@
+<section class="pt-12 md:pt-16">
+  <div class="kabuk">
+    <nav aria-label="Breadcrumb" class="text-mikro uppercase text-sis">
+      <a href="index.html" class="hover:text-orman transition-colors">Home</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <span class="text-derin">Donate</span>
+    </nav>
+    <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
+      <h1 class="md:col-span-7 text-[2.25rem] md:text-5xl">Regular giving is what lets us work before a disaster</h1>
+      <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">
+        A donation during a disaster saves lives. A donation before one builds
+        the team that will save them. The second is much harder to find.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mt-16 md:mt-20">
+  <div class="kabuk grid gap-10 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-7">
+      <form class="kart" method="post" action="#" novalidate>
+        <fieldset class="border-0 p-0 m-0">
+          <legend class="text-mikro uppercase font-semibold text-sis">1 — Type of gift</legend>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <label class="flex items-start gap-3 rounded-[4px] border border-cizgi p-4 cursor-pointer hover:border-orman-acik transition-colors has-[:checked]:border-orman has-[:checked]:bg-kum-acik">
+              <input type="radio" name="tur" value="monthly" class="mt-1 accent-orman" checked>
+              <span>
+                <span class="block font-medium">Monthly</span>
+                <span class="block mt-1 text-[0.875rem] text-derin/70">Stop any time with a single email.</span>
+              </span>
+            </label>
+            <label class="flex items-start gap-3 rounded-[4px] border border-cizgi p-4 cursor-pointer hover:border-orman-acik transition-colors has-[:checked]:border-orman has-[:checked]:bg-kum-acik">
+              <input type="radio" name="tur" value="one-off" class="mt-1 accent-orman">
+              <span>
+                <span class="block font-medium">One-off</span>
+                <span class="block mt-1 text-[0.875rem] text-derin/70">Can be directed to a specific programme.</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="border-0 p-0 m-0 mt-8">
+          <legend class="text-mikro uppercase font-semibold text-sis">2 — Amount</legend>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <button type="button" data-tutar="150" aria-pressed="false" class="dugme dugme-ikincil !py-2.5 !px-5 aria-pressed:bg-orman aria-pressed:text-kagit">₺150</button>
+            <button type="button" data-tutar="300" aria-pressed="true" class="dugme dugme-ikincil !py-2.5 !px-5 aria-pressed:bg-orman aria-pressed:text-kagit">₺300</button>
+            <button type="button" data-tutar="750" aria-pressed="false" class="dugme dugme-ikincil !py-2.5 !px-5 aria-pressed:bg-orman aria-pressed:text-kagit">₺750</button>
+            <button type="button" data-tutar="1500" aria-pressed="false" class="dugme dugme-ikincil !py-2.5 !px-5 aria-pressed:bg-orman aria-pressed:text-kagit">₺1,500</button>
+          </div>
+          <div class="mt-4">
+            <label for="tutar" class="block text-[0.875rem] font-medium">Another amount</label>
+            <div class="mt-1.5 flex items-center gap-2 max-w-[14rem]">
+              <input id="tutar" name="tutar" type="number" min="50" step="10" value="300" inputmode="numeric"
+                class="w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none">
+              <span class="text-lg text-sis">₺</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="border-0 p-0 m-0 mt-8">
+          <legend class="text-mikro uppercase font-semibold text-sis">3 — Your details</legend>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="ad" class="block text-[0.875rem] font-medium">Full name</label>
+              <input id="ad" name="ad" type="text" autocomplete="name" required
+                class="mt-1.5 w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none">
+            </div>
+            <div>
+              <label for="eposta" class="block text-[0.875rem] font-medium">Email</label>
+              <input id="eposta" name="eposta" type="email" autocomplete="email" required
+                class="mt-1.5 w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none">
+            </div>
+          </div>
+          <label class="mt-4 flex items-start gap-3 text-[0.875rem] leading-relaxed">
+            <input type="checkbox" name="kvkk" required class="mt-1 accent-orman">
+            <span>I have read the <a href="privacy.html" class="bag">privacy notice</a> and agree to my personal data being processed to record this donation.</span>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="dugme dugme-fener w-full mt-8">Continue to payment</button>
+        <p class="mt-4 text-[0.8125rem] leading-relaxed text-sis">
+          Payment is completed on our secure payment provider's page. KTTAK
+          never sees or stores your card details. Your receipt arrives by email.
+        </p>
+      </form>
+    </div>
+
+    <div class="lg:col-span-5">
+      <div class="kart">
+        <h2 class="text-lg">Bank transfer</h2>
+        <p class="mt-3 text-[0.9375rem] text-derin/70">
+          Add your name to the transfer reference so we can send your receipt.
+        </p>
+        <dl class="kunye mt-5">
+          <div><dt>Account name</dt><dd>Turkish Cypriot Trauma, Disaster and Crisis Association</dd></div>
+          <div><dt>Bank</dt><dd>Örnek Bank — Nicosia branch</dd></div>
+        </dl>
+        <p class="mt-5 text-mikro uppercase font-semibold text-sis">IBAN (₺)</p>
+        <p class="mt-2 font-display text-lg font-semibold tracking-wide tabular-nums break-all">TR00 0000 0000 0000 0000 0000 00</p>
+        <button type="button" class="dugme dugme-ikincil !py-2 !px-4 mt-3 text-sm"
+          data-kopyala="TR000000000000000000000000" data-basarili="IBAN copied" data-hata="Couldn't copy — select it manually">Copy IBAN</button>
+
+        <p class="mt-6 pt-6 border-t border-cizgi text-mikro uppercase font-semibold text-sis">IBAN (EUR)</p>
+        <p class="mt-2 font-display text-lg font-semibold tracking-wide tabular-nums break-all">TR00 0000 0000 0000 0000 0000 11</p>
+        <button type="button" class="dugme dugme-ikincil !py-2 !px-4 mt-3 text-sm"
+          data-kopyala="TR000000000000000000000011" data-basarili="IBAN copied" data-hata="Couldn't copy — select it manually">Copy IBAN</button>
+      </div>
+
+      <div class="kart mt-6 bg-kum-acik border-kum">
+        <h2 class="text-lg">Tax relief</h2>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">
+          Donations may be deducted from your tax base under North Cyprus
+          tax legislation. Your receipt is emailed automatically — you don't need
+          to request it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-24 md:mt-32">
+  <div class="kabuk">
+    <p class="etiket">What it buys</p>
+    <h2 class="mt-4 text-3xl md:text-4xl olcek">What your donation does in the field</h2>
+    <p class="mt-4 text-[0.9375rem] text-sis olcek">
+      These are approximate figures based on programme costs, updated in our annual reports.
+    </p>
+
+    <div class="mt-10 grid gap-px bg-cizgi border border-cizgi rounded-[4px] overflow-hidden sm:grid-cols-2 lg:grid-cols-4">
+      <div class="bg-kagit p-7">
+        <p class="font-display text-2xl font-semibold text-orman tabular-nums">₺150</p>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">A disaster plan pack for one family: fillable plan, emergency bag checklist, local risk briefing.</p>
+      </div>
+      <div class="bg-kagit p-7">
+        <p class="font-display text-2xl font-semibold text-orman tabular-nums">₺300</p>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">One month of support group for one child, including materials, specialist and venue.</p>
+      </div>
+      <div class="bg-kagit p-7">
+        <p class="font-display text-2xl font-semibold text-orman tabular-nums">₺750</p>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">Basic 24-hour field training and the annual refresher for one volunteer.</p>
+      </div>
+      <div class="bg-kagit p-7">
+        <p class="font-display text-2xl font-semibold text-orman tabular-nums">₺1,500</p>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">A full-day preparedness programme in one school: training, drill and teacher briefing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-24">
+  <div class="kabuk">
+    <div class="rounded-[4px] border border-cizgi bg-kagit p-7 md:p-10 grid gap-8 md:grid-cols-12">
+      <div class="md:col-span-7">
+        <h2 class="text-2xl">Our authority to raise funds</h2>
+        <p class="mt-4 text-[0.9375rem] leading-relaxed text-derin/75">
+          We collect donations under permit no. 000 dated 00.00.0000, issued by
+          the Ministry of Interior. The full permit is on the governance page. We never collect donations on the street, by
+          phone or door to door — if someone claims otherwise, please tell us.
+        </p>
+      </div>
+      <div class="md:col-span-5 md:text-right md:self-end">
+        <p class="flex flex-wrap gap-3 md:justify-end">
+          <a href="governance.html#statute" class="dugme dugme-ikincil">Permit document</a>
+          <a href="transparency.html" class="dugme dugme-birincil">Financial statements</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

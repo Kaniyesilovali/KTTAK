@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kttak.org/sitemap.xml

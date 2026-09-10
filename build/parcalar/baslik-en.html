@@ -1,0 +1,68 @@
+<!-- Help strip: in trauma-informed design the exit must always be visible -->
+<div class="bg-derin text-kagit">
+  <div class="kabuk flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-2">
+    <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] leading-snug">
+      <span class="text-mikro uppercase font-semibold text-fener-acik">Emergency</span>
+      <a href="tel:112" class="hover:text-fener-acik transition-colors">112 <span class="text-kagit/60">Emergency</span></a>
+      <a href="tel:101" class="hover:text-fener-acik transition-colors">101 <span class="text-kagit/60">Civil Defence</span></a>
+      <a href="tel:177" class="hover:text-fener-acik transition-colors">177 <span class="text-kagit/60">Forest Fire</span></a>
+      <a href="tel:155" class="hover:text-fener-acik transition-colors">155 <span class="text-kagit/60">Police</span></a>
+    </p>
+    <p class="text-[0.8125rem]">
+      <span class="text-kagit/50">Language:</span>
+      <a href="{{ALTDIL}}" hreflang="tr" lang="tr" class="hover:text-fener-acik transition-colors underline decoration-kagit/30 underline-offset-4">TR</a>
+      <span class="text-kagit/30" aria-hidden="true">/</span>
+      <span class="font-semibold" aria-current="true">EN</span>
+    </p>
+  </div>
+</div>
+
+<header class="bg-zemin/95 backdrop-blur-sm border-b border-cizgi sticky top-0 z-40">
+  <div class="kabuk flex items-center justify-between gap-6 py-4">
+    <a href="{{KOK}}index.html" class="flex items-center gap-3 text-orman min-w-0" aria-label="KTTAK — Home">
+      <svg viewBox="0 0 40 40" class="h-9 w-9 flex-none" aria-hidden="true" fill="none">
+        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="3" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M5 20h4.2l1.6-7.4 2.4 15.2 2.3-11.6 2 6.1 1.7-3.3H35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="leading-none min-w-0">
+        <span class="block font-display text-[1.35rem] font-semibold tracking-tight">KTTAK</span>
+        <span class="hidden sm:block lg:hidden xl:block text-[0.6875rem] tracking-[0.1em] uppercase text-sis mt-1 whitespace-nowrap">Turkish Cypriot Trauma, Disaster &amp; Crisis Association</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-7" aria-label="Main menu">
+      <a href="{{KOK}}about.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">About</a>
+      <a href="{{KOK}}what-we-do.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">What We Do</a>
+      <a href="{{KOK}}resources.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Resources</a>
+      <a href="{{KOK}}transparency.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Transparency</a>
+      <a href="{{KOK}}news.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">News</a>
+      <a href="{{KOK}}contact.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Contact</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3 shrink-0">
+      <a href="{{KOK}}volunteer.html" data-nav class="dugme dugme-fener !py-2.5 !px-4 text-sm">Volunteer</a>
+    </div>
+
+    <button type="button" data-menu-ac class="lg:hidden -mr-2 p-2 text-orman" aria-expanded="false" aria-controls="mobil-menu">
+      <span class="sr-only">Open menu</span>
+      <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobil-menu" hidden class="lg:hidden border-t border-cizgi bg-zemin">
+    <nav class="kabuk py-5 flex flex-col" aria-label="Mobile menu">
+      <a href="{{KOK}}about.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">About</a>
+      <a href="{{KOK}}what-we-do.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">What We Do</a>
+      <a href="{{KOK}}resources.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Resources</a>
+      <a href="{{KOK}}transparency.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Transparency</a>
+      <a href="{{KOK}}news.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">News</a>
+      <a href="{{KOK}}governance.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Governance &amp; Documents</a>
+      <a href="{{KOK}}contact.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Contact</a>
+      <div class="flex gap-3 pt-5">
+        <a href="{{KOK}}volunteer.html" class="dugme dugme-fener flex-1">Volunteer</a>
+      </div>
+    </nav>
+  </div>
+</header>

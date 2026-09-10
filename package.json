@@ -1,0 +1,22 @@
+{
+  "name": "kttak-site",
+  "version": "1.0.0",
+  "description": "KTTAK Travma Afet ve Kriz Derneği — statik web sitesi",
+  "scripts": {
+    "css": "tailwindcss -i ./build/input.css -o ./assets/css/site.css --minify",
+    "izle": "tailwindcss -i ./build/input.css -o ./assets/css/site.css --watch",
+    "senkron": "node build/senkron.js",
+    "iskele": "node build/iskele.js",
+    "yayina-hazirla": "npm run senkron && npm run css && node build/sitemap.js",
+    "sunucu": "node build/sunucu.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "puppeteer-core": "^25.10.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "private": true
+}

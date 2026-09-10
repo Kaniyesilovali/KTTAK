@@ -1,0 +1,9 @@
+{
+  "_not": "Alan adını aldığınızda YALNIZCA burayı değiştirin, sonra: npm run yayina-hazirla",
+  "alanAdi": "https://kttak.org",
+  "kisaAd": "KTTAK",
+  "resmiAdTR": "Kıbrıs Türk Travma Afet ve Kriz Derneği",
+  "resmiAdEN": "Turkish Cypriot Trauma, Disaster and Crisis Association",
+  "eposta": "info@kttak.org",
+  "telefon": "+90-392-000-00-00"
+}

@@ -1,0 +1,32 @@
+Bu klasöre derneğin resmî belgeleri ve yayınları PDF olarak konulacak.
+Sayfalarda bağlantısı verilmiş, henüz yüklenmemiş dosyalar:
+
+KURUMSAL (Dernekler Yasası 23/2016 kapsamında)
+  kttak-tuzuk.pdf
+  kttak-kurulus-bildirimi.pdf      (Lefkoşa Kaymakamlığı kütük kaydı)
+  kttak-yardim-toplama-izni.pdf   (İçişleri Bakanlığı izni)
+  kttak-genel-kurul.pdf
+  kttak-etik-kod.pdf
+  kttak-uyelik-basvuru-formu.pdf
+
+ŞEFFAFLIK — ilk rapor yayımlandığında
+  kttak-faaliyet-YYYY.pdf          (YYYY yerine yılı yazın)
+  kttak-mali-YYYY.pdf
+  Not: seffaflik.html içinde hazır bir tablo HTML yorumu olarak duruyor;
+  boş durum bloğunu silip o tabloyu açmanız yeterli.
+
+KAYNAK MERKEZİ
+  kttak-cocukla-konusmak.pdf
+  kttak-aile-afet-plani.pdf
+  kttak-uyku-ve-irkilme.pdf
+  kttak-yas.pdf
+  kttak-acil-canta.pdf
+  kttak-evde-guvenlik.pdf
+  kttak-ikincil-travma.pdf
+  kttak-ilk-psikolojik-yardim.pdf
+  kttak-cocuk-dostu-alan.pdf
+  kttak-ihtiyac-tespit-formu.pdf
+  kttak-okul-egitim-mufredati.pdf
+
+Dosya adını değiştirirseniz ilgili sayfadaki href'i de güncellemeyi unutmayın.
+Bu .txt dosyasını sunucuya yüklemeyin.

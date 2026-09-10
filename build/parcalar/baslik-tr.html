@@ -1,0 +1,68 @@
+<!-- Yardım şeridi: travma-bilinçli tasarımda çıkış her zaman görünür olmalı -->
+<div class="bg-derin text-kagit">
+  <div class="kabuk flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-2">
+    <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] leading-snug">
+      <span class="text-mikro uppercase font-semibold text-fener-acik">Acil durum</span>
+      <a href="tel:112" class="hover:text-fener-acik transition-colors">112 <span class="text-kagit/60">Acil</span></a>
+      <a href="tel:101" class="hover:text-fener-acik transition-colors">101 <span class="text-kagit/60">Sivil Savunma</span></a>
+      <a href="tel:177" class="hover:text-fener-acik transition-colors">177 <span class="text-kagit/60">Orman Yangını</span></a>
+      <a href="tel:155" class="hover:text-fener-acik transition-colors">155 <span class="text-kagit/60">Polis</span></a>
+    </p>
+    <p class="text-[0.8125rem]">
+      <span class="text-kagit/50">Dil:</span>
+      <span class="font-semibold" aria-current="true">TR</span>
+      <span class="text-kagit/30" aria-hidden="true">/</span>
+      <a href="{{ALTDIL}}" hreflang="en" lang="en" class="hover:text-fener-acik transition-colors underline decoration-kagit/30 underline-offset-4">EN</a>
+    </p>
+  </div>
+</div>
+
+<header class="bg-zemin/95 backdrop-blur-sm border-b border-cizgi sticky top-0 z-40">
+  <div class="kabuk flex items-center justify-between gap-6 py-4">
+    <a href="{{KOK}}index.html" class="flex items-center gap-3 text-orman min-w-0" aria-label="KTTAK — Anasayfa">
+      <svg viewBox="0 0 40 40" class="h-9 w-9 flex-none" aria-hidden="true" fill="none">
+        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="3" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M5 20h4.2l1.6-7.4 2.4 15.2 2.3-11.6 2 6.1 1.7-3.3H35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="leading-none min-w-0">
+        <span class="block font-display text-[1.35rem] font-semibold tracking-tight">KTTAK</span>
+        <span class="hidden sm:block lg:hidden xl:block text-[0.6875rem] tracking-[0.1em] uppercase text-sis mt-1 whitespace-nowrap">Kıbrıs Türk Travma Afet ve Kriz Derneği</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-7" aria-label="Ana menü">
+      <a href="{{KOK}}hakkimizda.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Hakkımızda</a>
+      <a href="{{KOK}}calisma-alanlarimiz.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Çalışma Alanları</a>
+      <a href="{{KOK}}kaynaklar.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Kaynak Merkezi</a>
+      <a href="{{KOK}}seffaflik.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Şeffaflık</a>
+      <a href="{{KOK}}haberler.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Haberler</a>
+      <a href="{{KOK}}iletisim.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">İletişim</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3 shrink-0">
+      <a href="{{KOK}}gonullu.html" data-nav class="dugme dugme-fener !py-2.5 !px-4 text-sm">Gönüllü Ol</a>
+    </div>
+
+    <button type="button" data-menu-ac class="lg:hidden -mr-2 p-2 text-orman" aria-expanded="false" aria-controls="mobil-menu">
+      <span class="sr-only">Menüyü aç</span>
+      <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobil-menu" hidden class="lg:hidden border-t border-cizgi bg-zemin">
+    <nav class="kabuk py-5 flex flex-col" aria-label="Mobil menü">
+      <a href="{{KOK}}hakkimizda.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Hakkımızda</a>
+      <a href="{{KOK}}calisma-alanlarimiz.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Çalışma Alanları</a>
+      <a href="{{KOK}}kaynaklar.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Kaynak Merkezi</a>
+      <a href="{{KOK}}seffaflik.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Şeffaflık</a>
+      <a href="{{KOK}}haberler.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Haberler</a>
+      <a href="{{KOK}}kurumsal.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Kurumsal Belgeler</a>
+      <a href="{{KOK}}iletisim.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">İletişim</a>
+      <div class="flex gap-3 pt-5">
+        <a href="{{KOK}}gonullu.html" class="dugme dugme-fener flex-1">Gönüllü Ol</a>
+      </div>
+    </nav>
+  </div>
+</header>
