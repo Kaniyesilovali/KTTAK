@@ -25,7 +25,7 @@
   "dosya": "kaynaklar.html",
   "es": "resources.html",
   "baslik": "Kaynak Merkezi — KTTAK",
-  "aciklama": "Afet ve travma üzerine ücretsiz rehberler, psikososyal destek materyalleri ve indirilebilir dokümanlar."
+  "aciklama": "Afet ve travma üzerine ücretsiz rehberler ve psikososyal destek materyalleri. Hepsi sayfa olarak açılır, kayıt istemez, yazdırmaya hazırdır."
  },
  {
   "dil": "tr",
@@ -33,6 +33,83 @@
   "es": "misinformation.html",
   "baslik": "Bilgi Kirliliği ve Doğrulama — KTTAK",
   "aciklama": "Afette yanlış bilgi nasıl yayılır, üç tür bilgi bozukluğu, en sık yedi kalıp ve paylaşmadan önce uygulanacak dört adımlı doğrulama yöntemi."
+ },
+ {
+  "dil": "tr",
+  "dosya": "cocukla-konusmak.html",
+  "es": "talking-to-children.html",
+  "baslik": "Depremden Sonra Çocuğunuzla Nasıl Konuşulur — KTTAK",
+  "aciklama": "Yaş gruplarına göre örnek cümleler, kaçınılması gereken ifadeler, zor sorulara yanıtlar ve uzman desteğine ne zaman başvurulacağı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "aile-afet-plani.html",
+  "es": "family-disaster-plan.html",
+  "baslik": "Aile Afet Planı — Doldurulabilir Şablon — KTTAK",
+  "aciklama": "Buluşma noktası, ada dışı irtibat kişisi, ilaç ve belge listesi. Yazdırıp buzdolabına asmak için tasarlanmış doldurulabilir form."
+ },
+ {
+  "dil": "tr",
+  "dosya": "uyku-ve-irkilme.html",
+  "es": "sleep-and-startle.html",
+  "baslik": "Afet Sonrası Uyku, İrkilme ve Kaygı — KTTAK",
+  "aciklama": "Hangi tepkiler olağan, hangileri uzman desteği gerektirir. Uyku için işe yarayan sekiz adım ve anlık topraklanma teknikleri."
+ },
+ {
+  "dil": "tr",
+  "dosya": "yas.html",
+  "es": "grief.html",
+  "baslik": "Kayıptan Sonra: Yas Üzerine — KTTAK",
+  "aciklama": "Afet yasını ağırlaştıran beş şey, çocuğa kaybın anlatılması ve yas tutan birinin yanında nasıl durulacağı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "acil-canta.html",
+  "es": "emergency-kit.html",
+  "baslik": "Acil Durum Çantası Kontrol Listesi — KTTAK",
+  "aciklama": "72 saatlik sırt çantası ve bir haftalık ev stoğu. Bebekli, yaşlı, engelli bireyli ve evcil hayvanlı haneler için ayrı bölümler."
+ },
+ {
+  "dil": "tr",
+  "dosya": "evde-guvenlik.html",
+  "es": "home-safety.html",
+  "baslik": "Evde Yapısal Olmayan Risklerin Azaltılması — KTTAK",
+  "aciklama": "Dolap sabitleme, cam filmi, kaçış yolu düzenleme ve öncelik sırası. Kiracılar için kalıcı hasar bırakmayan çözümler."
+ },
+ {
+  "dil": "tr",
+  "dosya": "ikincil-travma.html",
+  "es": "secondary-trauma.html",
+  "baslik": "Saha Çalışanları için İkincil Travma — KTTAK",
+  "aciklama": "İkincil travmatik stres, şefkat yorgunluğu, tükenmişlik ve ahlaki yaralanma ayrımı; vardiya sonrası çözülme protokolü ve kurumun sorumluluğu."
+ },
+ {
+  "dil": "tr",
+  "dosya": "ilk-psikolojik-yardim.html",
+  "es": "psychological-first-aid.html",
+  "baslik": "İlk Psikolojik Yardım — Saha El Kitabı — KTTAK",
+  "aciklama": "Uzman olmayan gönüllüler için Bak–Dinle–Bağla çerçevesi, sahada söylenenler ve söylenmeyenler, yönlendirme ölçütleri ve cep kartı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "cocuk-dostu-alan.html",
+  "es": "child-friendly-space.html",
+  "baslik": "Çocuk Dostu Alan Kurulum Protokolü — KTTAK",
+  "aciklama": "Mekân seçimi, çocuk koruma standartları, personel oranları, günlük akış planı ve baştan yazılan çıkış planı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "ihtiyac-tespit-formu.html",
+  "es": "needs-assessment-form.html",
+  "baslik": "Haneye Dayalı İhtiyaç Tespit Formu — KTTAK",
+  "aciklama": "Sahada kullandığımız form, mükerrer kaydı önleyen hane kodlaması, hane ziyareti kuralları ve veri koruma yükümlülükleri."
+ },
+ {
+  "dil": "tr",
+  "dosya": "okul-egitim-mufredati.html",
+  "es": "school-curriculum.html",
+  "baslik": "Okul Temelli Hazırlık Eğitimi Müfredatı — KTTAK",
+  "aciklama": "İlkokul, ortaokul ve lise için üç ayrı 40 dakikalık ders planı ve travma-bilinçli tatbikat yönergesi."
  },
  {
   "dil": "tr",
@@ -102,7 +179,7 @@
   "dosya": "resources.html",
   "es": "kaynaklar.html",
   "baslik": "Resource centre — KTTAK",
-  "aciklama": "Free guides on disaster and trauma, psychosocial support materials and downloadable documents."
+  "aciklama": "Free guides on disaster and trauma and psychosocial support material. Everything opens as a page, asks for no registration and is print-ready."
  },
  {
   "dil": "en",
@@ -110,6 +187,83 @@
   "es": "bilgi-kirliligi.html",
   "baslik": "Misinformation and verification — KTTAK",
   "aciklama": "How false information spreads in a disaster, the three types of information disorder, the seven most common patterns, and a four-move method to verify before you share."
+ },
+ {
+  "dil": "en",
+  "dosya": "talking-to-children.html",
+  "es": "cocukla-konusmak.html",
+  "baslik": "Talking to your child after an earthquake — KTTAK",
+  "aciklama": "What to say at each age, the phrases that backfire, answers to the hardest questions, and when to seek specialist help."
+ },
+ {
+  "dil": "en",
+  "dosya": "family-disaster-plan.html",
+  "es": "aile-afet-plani.html",
+  "baslik": "Family disaster plan — fillable template — KTTAK",
+  "aciklama": "Meeting points, an off-island contact, medication and document lists. A fillable form designed to print and stick on the fridge."
+ },
+ {
+  "dil": "en",
+  "dosya": "sleep-and-startle.html",
+  "es": "uyku-ve-irkilme.html",
+  "baslik": "Sleep, startle and anxiety after a disaster — KTTAK",
+  "aciklama": "Which reactions are ordinary and which need support. Eight things that help with sleep, plus grounding techniques for the moment itself."
+ },
+ {
+  "dil": "en",
+  "dosya": "grief.html",
+  "es": "yas.html",
+  "baslik": "After a loss: on grief — KTTAK",
+  "aciklama": "The five things that make grief after a disaster heavier, how to tell a child about a death, and how to stand beside someone grieving."
+ },
+ {
+  "dil": "en",
+  "dosya": "emergency-kit.html",
+  "es": "acil-canta.html",
+  "baslik": "Emergency kit checklist — KTTAK",
+  "aciklama": "A 72-hour go-bag and a week of home supplies, with separate sections for babies, older people, disabled household members and pets."
+ },
+ {
+  "dil": "en",
+  "dosya": "home-safety.html",
+  "es": "evde-guvenlik.html",
+  "baslik": "Reducing non-structural risks at home — KTTAK",
+  "aciklama": "Securing furniture, safety film, clearing escape routes — in priority order, with solutions that leave no permanent damage for renters."
+ },
+ {
+  "dil": "en",
+  "dosya": "secondary-trauma.html",
+  "es": "ikincil-travma.html",
+  "baslik": "Secondary trauma for field workers — KTTAK",
+  "aciklama": "Telling secondary traumatic stress, compassion fatigue, burnout and moral injury apart; a post-shift decompression protocol and what the organisation owes its people."
+ },
+ {
+  "dil": "en",
+  "dosya": "psychological-first-aid.html",
+  "es": "ilk-psikolojik-yardim.html",
+  "baslik": "Psychological first aid — field handbook — KTTAK",
+  "aciklama": "The Look–Listen–Link framework for non-specialist volunteers, what to say and what never to say, referral thresholds and a pocket card."
+ },
+ {
+  "dil": "en",
+  "dosya": "child-friendly-space.html",
+  "es": "cocuk-dostu-alan.html",
+  "baslik": "Child-friendly space setup protocol — KTTAK",
+  "aciklama": "Site selection, child protection standards, staffing ratios, the daily session plan and an exit plan written before opening."
+ },
+ {
+  "dil": "en",
+  "dosya": "needs-assessment-form.html",
+  "es": "ihtiyac-tespit-formu.html",
+  "baslik": "Household needs assessment form — KTTAK",
+  "aciklama": "The form we use in the field, the household coding that prevents duplicate records, the rules of a household visit and our data protection duties."
+ },
+ {
+  "dil": "en",
+  "dosya": "school-curriculum.html",
+  "es": "okul-egitim-mufredati.html",
+  "baslik": "School-based preparedness curriculum — KTTAK",
+  "aciklama": "Three 40-minute lesson plans for primary, middle and high school, plus a trauma-informed drill protocol."
  },
  {
   "dil": "en",

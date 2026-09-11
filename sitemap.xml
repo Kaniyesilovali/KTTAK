@@ -41,6 +41,94 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/misinformation.html"/>
   </url>
   <url>
+    <loc>https://kttak.org/cocukla-konusmak.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/cocukla-konusmak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/talking-to-children.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/aile-afet-plani.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/aile-afet-plani.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/family-disaster-plan.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/uyku-ve-irkilme.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/uyku-ve-irkilme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/sleep-and-startle.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/yas.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/yas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/grief.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/acil-canta.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/acil-canta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/emergency-kit.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/evde-guvenlik.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/evde-guvenlik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/home-safety.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/ikincil-travma.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/ikincil-travma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/secondary-trauma.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/ilk-psikolojik-yardim.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/ilk-psikolojik-yardim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/psychological-first-aid.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/cocuk-dostu-alan.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/cocuk-dostu-alan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/child-friendly-space.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/ihtiyac-tespit-formu.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/ihtiyac-tespit-formu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/needs-assessment-form.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/okul-egitim-mufredati.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/okul-egitim-mufredati.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/school-curriculum.html"/>
+  </url>
+  <url>
     <loc>https://kttak.org/seffaflik.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -127,6 +215,94 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/bilgi-kirliligi.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/misinformation.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/talking-to-children.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/cocukla-konusmak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/talking-to-children.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/family-disaster-plan.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/aile-afet-plani.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/family-disaster-plan.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/sleep-and-startle.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/uyku-ve-irkilme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/sleep-and-startle.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/grief.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/yas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/grief.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/emergency-kit.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/acil-canta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/emergency-kit.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/home-safety.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/evde-guvenlik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/home-safety.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/secondary-trauma.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/ikincil-travma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/secondary-trauma.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/psychological-first-aid.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/ilk-psikolojik-yardim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/psychological-first-aid.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/child-friendly-space.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/cocuk-dostu-alan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/child-friendly-space.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/needs-assessment-form.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/ihtiyac-tespit-formu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/needs-assessment-form.html"/>
+  </url>
+  <url>
+    <loc>https://kttak.org/en/school-curriculum.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kttak.org/okul-egitim-mufredati.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kttak.org/en/school-curriculum.html"/>
   </url>
   <url>
     <loc>https://kttak.org/en/transparency.html</loc>

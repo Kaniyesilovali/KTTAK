@@ -1,0 +1,332 @@
+<section class="pt-12 md:pt-16">
+  <div class="kabuk">
+    <nav aria-label="Konum" class="text-mikro uppercase text-sis yazdir-yok">
+      <a href="index.html" class="hover:text-orman transition-colors">Anasayfa</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <a href="kaynaklar.html" class="hover:text-orman transition-colors">Kaynak Merkezi</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <span class="text-derin">İhtiyaç tespit formu</span>
+    </nav>
+    <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
+      <h1 class="md:col-span-7 text-[2.25rem] md:text-5xl">Haneye dayalı ihtiyaç tespit formu</h1>
+      <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">
+        Sahada kullandığımız form ve arkasındaki yöntem. Mükerrer kaydı
+        önleyen kodlama, hane ziyaretinin kuralları ve toplanan verinin nasıl
+        korunduğu dâhil. Kurumunuz için olduğu gibi kullanabilirsiniz.
+      </p>
+    </div>
+    <p class="rehber-kunye mt-10 pt-6 border-t border-cizgi">
+      <span>Saha aracı</span>
+      <span>Okuma süresi 10 dk</span>
+      <span>Yazdırmaya hazır</span>
+      <span>CC BY-NC 4.0</span>
+    </p>
+  </div>
+</section>
+
+<section class="mt-12 md:mt-14">
+  <div class="kabuk">
+    <div class="rounded-[4px] bg-kum-acik border border-kum p-6 md:p-7 flex flex-wrap items-start gap-4 yazdir-yok">
+      <svg viewBox="0 0 24 24" class="h-6 w-6 flex-none text-fener mt-0.5" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <circle cx="12" cy="12" r="9.25"/><path d="M12 7.5v5.5" stroke-linecap="round"/><circle cx="12" cy="16.5" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+      <p class="flex-1 min-w-[16rem] text-[0.9375rem] leading-relaxed text-derin/80">
+        <strong class="font-semibold">Kurumunuz için uyarlayın.</strong> Formu
+        bu sayfadan yazdırıp olduğu gibi kullanabilir ya da kendi başlığınızla
+        yeniden düzenleyebilirsiniz (CC BY-NC 4.0). Düzenlenebilir bir dosya
+        biçimine ihtiyacınız varsa
+        <a href="iletisim.html" class="bag">yazın, gönderelim</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mt-16 md:mt-20">
+  <div class="kabuk">
+    <div class="olcek">
+      <p class="etiket">Gerekçe</p>
+      <h2 class="mt-4 text-2xl md:text-3xl">Yardımın adaleti, kaydın kalitesine bağlıdır</h2>
+      <div class="metin mt-6 text-derin/80">
+        <p>
+          Afetin ilk günlerinde yardım, en yüksek sesle isteyene gider. Sesi
+          duyulmayan haneler — yatalak yaşlısı olan, dil bilmeyen, kayıtsız
+          çalışan, damgalanmaktan çekinen — genellikle en çok ihtiyacı
+          olanlardır. Sistemli hane ziyareti, bu eşitsizliği düzeltmenin
+          bilinen tek yoludur.
+        </p>
+        <p>
+          İkinci sorun mükerrer kayıttır: aynı haneye üç ekip gider, üçü de
+          form doldurur, biri kutu bırakır, iki hane hiç ziyaret edilmez.
+          Aşağıdaki kodlama tam olarak bunu önlemek için vardır.
+        </p>
+        <p>
+          Üçüncüsü ve en önemlisi: <strong class="font-semibold text-derin">veri
+          toplamak başlı başına bir müdahaledir.</strong> Kapıyı çalmak, soru
+          sormak ve ardından hiçbir şey yapmamak, o hanede yardıma olan güveni
+          kalıcı biçimde bozar. Karşılığını veremeyeceğiniz bilgiyi toplamayın.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-16 md:mt-20">
+  <div class="kabuk">
+    <p class="etiket">Kodlama</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Mükerrer kaydı önleyen hane kodu</h2>
+    <p class="mt-5 text-[0.9375rem] leading-relaxed text-derin/75 olcek">
+      Her hane bir kod alır ve o kod ziyaretten bağımsız olarak sabit kalır.
+      Kod kimlik numarası içermez; bu, hem gizlilik hem de eşleştirme için
+      gereklidir.
+    </p>
+    <div class="mt-8 grid gap-5 md:grid-cols-2">
+      <div class="kart">
+        <h3 class="text-lg">Kodun yapısı</h3>
+        <p class="mt-4 font-display text-2xl tracking-wide text-orman">LFK · 07 · 0142 · A</p>
+        <dl class="kunye mt-5">
+          <div><dt>LFK</dt><dd>İlçe kısaltması — Lefkoşa, Gazimağusa (MGS), Girne (GRN), Güzelyurt (GZY), İskele (ISK)</dd></div>
+          <div><dt>07</dt><dd>Mahalle / bölge numarası — ekip dağılımında kullanılan saha haritasından</dd></div>
+          <div><dt>0142</dt><dd>Hane sıra numarası — bölge içinde sırayla verilir, tekrar kullanılmaz</dd></div>
+          <div><dt>A</dt><dd>Aynı adreste yaşayan ayrı hane — birlikte oturan iki aile için A ve B</dd></div>
+        </dl>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Sahada üç kural</h3>
+        <ul class="metin mt-4 text-[0.9375rem] text-derin/80">
+          <li><strong class="font-semibold text-derin">Kod kapıya değil, forma yazılır.</strong> Kapıya işaret koymak haneyi damgalar ve hırsızlığa açık hâle getirir. İşaretleme yalnızca arama–kurtarma ekiplerinin kendi standart usulüdür.</li>
+          <li><strong class="font-semibold text-derin">Aynı hane yeniden ziyaret edilirse yeni kod verilmez.</strong> Aynı kodun altına yeni tarihli bir satır açılır; böylece ihtiyacın zaman içindeki değişimi görülür.</li>
+          <li><strong class="font-semibold text-derin">Kod defteri tek elde tutulur.</strong> Bölge sorumlusu günün sonunda kodları merkezî listeye işler; iki ekip aynı numarayı veremez.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-28">
+  <div class="kabuk">
+    <p class="etiket">Saha kuralları</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Kapıyı çalmadan önce</h2>
+    <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div class="kart">
+        <h3 class="text-lg">Tanıtın ve izin alın</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Ad, kurum, yaka kartı. “Neden soruyoruz, bilgi nereye gidiyor, ne kadar sürecek” üç cümleyle anlatılır. Görüşmeyi reddetmek hakkıdır ve reddetmesi yardımdan çıkarılmasına yol açmaz.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Söz vermeyin</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">“Yarın çadır gelecek” demeyin. Söyleyin: “Bu bilgiyi dağıtım ekibine ileteceğim; karar bana ait değil.” Tutulmayan söz, sahadaki bir sonraki ekibin işini bitirir.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">İkili ekip, karma cinsiyet</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Hane ziyareti tek kişiyle yapılmaz. Mümkünse ekipte bir kadın bulunur; bazı ihtiyaçlar ancak o zaman söylenir.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Hane reisiyle değil, haneyle</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Tek bir kişinin beyanı, hanedeki kadınların, yaşlıların ve çocukların ihtiyacını gizleyebilir. Mümkünse birden fazla kişiyle konuşun.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Fotoğraf yok</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Hane içinde, çocukların ve hasarın fotoğrafı çekilmez. Bağış iletişimi için görsel gerekiyorsa ayrı ve açık onayla, ayrı bir süreçte toplanır.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Koruma riskini bildirin</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Çocuk ihmali, şiddet, istismar ya da yalnız kalmış çocuk gördüğünüzde formu doldurmakla yetinmeyin; koruma sorumlusuna aynı gün bildirin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-28">
+  <div class="kabuk">
+    <div class="kart olcek">
+      <p class="text-mikro uppercase font-semibold text-fener">Veri koruma</p>
+      <h2 class="mt-3 text-2xl">Toplanan bilgi kişisel veridir</h2>
+      <p class="mt-4 text-[0.9375rem] leading-relaxed text-derin/70">
+        Formdaki sağlık durumu, engellilik ve hane bilgisi, KKTC 89/2007 sayılı
+        Kişisel Verilerin Korunması Yasası kapsamındadır. KTTAK sahada şu
+        kuralları uygular:
+      </p>
+      <ul class="metin mt-5 text-[0.9375rem] text-derin/80">
+        <li>Yalnızca yardımın planlanması için gereken asgari bilgi toplanır</li>
+        <li>Kâğıt formlar gün sonunda kilitli dolapta toplanır; sahada bırakılmaz</li>
+        <li>Dijital kayıtlar şifreli tutulur, erişim yalnızca görevli personeldedir</li>
+        <li>Üçüncü kurumlarla paylaşım, yalnızca kişinin bilgilendirilmiş onayıyla yapılır</li>
+        <li>Amaç ortadan kalktığında kayıtlar imha edilir</li>
+        <li>Herkes kendi verisine erişme, düzeltme ve silinmesini isteme hakkına sahiptir</li>
+      </ul>
+      <p class="mt-6 text-[0.9375rem] leading-relaxed text-derin/75 yazdir-yok">
+        Ayrıntı için <a href="kvkk.html" class="bag">kişisel verilerin korunması sayfamıza</a> bakın.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ YAZDIRILABİLİR FORM ============ -->
+<section class="mt-20 md:mt-28 yazdir-sayfa-basi">
+  <div class="kabuk">
+    <p class="etiket">Form</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Hane ihtiyaç tespit formu</h2>
+    <p class="mt-3 text-[0.9375rem] text-sis">
+      Hane kodu: <span class="doldur doldur-kisa inline-block w-48 align-bottom"></span>
+      &nbsp;&nbsp; Tarih / saat: <span class="doldur doldur-kisa inline-block w-40 align-bottom"></span>
+      &nbsp;&nbsp; Ekip: <span class="doldur doldur-kisa inline-block w-40 align-bottom"></span>
+      &nbsp;&nbsp; Ziyaret no: <span class="doldur doldur-kisa inline-block w-20 align-bottom"></span>
+    </p>
+
+    <div class="mt-10 grid gap-8 md:grid-cols-2">
+
+      <div class="kart">
+        <h3 class="text-lg">A · Hane bileşimi</h3>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Toplam kişi · yetişkin · çocuk (0–17)</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">0–2 yaş · 3–5 yaş · 6–11 yaş · 12–17 yaş sayısı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">65 yaş üstü sayısı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Gebe / emziren var mı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Hanede konuşulan dil</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">B · Barınma</h3>
+        <ul class="kutulu mt-5 text-[0.9375rem] text-derin/80">
+          <li>Evde kalıyor — hasar yok</li>
+          <li>Evde kalıyor — hafif hasarlı</li>
+          <li>Ev kullanılamaz — akrabada</li>
+          <li>Çadır / geçici barınma alanı</li>
+          <li>Araçta ya da açıkta</li>
+        </ul>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Bulunduğu adres / alan</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Isınma · aydınlatma durumu</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">C · Temel ihtiyaçlar</h3>
+        <p class="mt-2 text-[0.8125rem] text-sis">Var / kısmen / yok olarak işaretleyin; miktar yazın.</p>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">İçme suyu · kullanma suyu</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Gıda · bebek maması</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Battaniye · giysi · ayakkabı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Hijyen · bez · ped</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Tuvalet ve yıkanma erişimi</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">D · Sağlık</h3>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Yaralı / tedavi gereken var mı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Kronik hastalık · biten ilaç</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Engellilik · kullanılan cihaz</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Ruh sağlığı desteği talebi</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Elektriğe bağımlı tıbbi cihaz</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">E · Koruma ve eğitim</h3>
+        <ul class="kutulu mt-5 text-[0.9375rem] text-derin/80">
+          <li>Hanede yalnız kalmış çocuk var</li>
+          <li>Ailesinden ayrı düşmüş kişi var</li>
+          <li>Yalnız yaşayan yaşlı / yatalak var</li>
+          <li>Çocuklar okula devam edemiyor</li>
+          <li>Acil koruma bildirimi yapıldı</li>
+        </ul>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Bildirim yapıldıysa kime, ne zaman</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">F · Önceliklendirme</h3>
+        <p class="mt-2 text-[0.8125rem] text-sis">Ekip değerlendirmesi; dağıtım sırasını belirler.</p>
+        <ul class="kutulu mt-5 text-[0.9375rem] text-derin/80">
+          <li><strong class="font-semibold">Acil</strong> — tıbbi aciliyet, açıkta kalma, korumasız çocuk</li>
+          <li><strong class="font-semibold">Yüksek</strong> — temel ihtiyaçlardan biri tamamen yok</li>
+          <li><strong class="font-semibold">Orta</strong> — ihtiyaç kısmen karşılanıyor</li>
+          <li><strong class="font-semibold">İzlemede</strong> — şimdilik yeterli, tekrar bakılacak</li>
+        </ul>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Yönlendirme yapıldı mı — nereye</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Tekrar ziyaret tarihi</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart md:col-span-2">
+        <h3 class="text-lg">G · Ekip notu ve onay</h3>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Gözlem / not</span><span class="doldur mt-1"></span><span class="doldur mt-1"></span></p>
+          <div class="grid gap-5 md:grid-cols-3 pt-2">
+            <p><span class="text-mikro uppercase font-semibold text-sis">Görüşmeyi yapan — ad, imza</span><span class="doldur mt-1"></span></p>
+            <p><span class="text-mikro uppercase font-semibold text-sis">İkinci ekip üyesi</span><span class="doldur mt-1"></span></p>
+            <p><span class="text-mikro uppercase font-semibold text-sis">Bilgilendirme yapıldı ve onay alındı</span><span class="doldur mt-1"></span></p>
+          </div>
+        </div>
+        <p class="mt-6 text-[0.8125rem] leading-relaxed text-sis">
+          Bu form kişisel veri içerir. Gün sonunda bölge sorumlusuna teslim
+          edilir, sahada ve araçta bırakılmaz. KKTC 89/2007 sayılı yasa kapsamında
+          işlenir; hane, verisine erişme ve silinmesini isteme hakkına sahiptir.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-28 yazdir-yok">
+  <div class="kabuk">
+    <div class="olcek">
+      <p class="etiket">Sık yapılan hatalar</p>
+      <h2 class="mt-4 text-2xl md:text-3xl">Formun işe yaramadığı dört durum</h2>
+      <div class="metin mt-6 text-derin/80">
+        <ul>
+          <li><strong class="font-semibold text-derin">Çok soru sorulması.</strong> Otuz dakikalık görüşme, hem haneyi yorar hem ekibin günlük kapasitesini düşürür. On dakikada dolan form, doldurulan formdur.</li>
+          <li><strong class="font-semibold text-derin">Kodun atlanması.</strong> “Sonra yazarım” denen kod hiç yazılmaz; o form mükerrer kayıt hâline gelir.</li>
+          <li><strong class="font-semibold text-derin">Verinin dağıtıma bağlanmaması.</strong> Toplanan bilgi aynı gün dağıtım listesine dönüşmüyorsa süreç durur ve hanedeki güven biter.</li>
+          <li><strong class="font-semibold text-derin">Tek beyanla yetinilmesi.</strong> Kapıyı açan kişinin anlattığı, hanedeki herkesin ihtiyacı değildir.</li>
+        </ul>
+      </div>
+      <p class="mt-8 flex flex-wrap gap-3">
+        <a href="iletisim.html" class="dugme dugme-birincil">Düzenlenebilir dosya isteyin</a>
+        <a href="calisma-alanlarimiz.html" class="dugme dugme-ikincil">Saha çalışmalarımız</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="kaynakca" class="mt-24 md:mt-32 scroll-mt-28">
+  <div class="kabuk">
+    <p class="etiket">Kaynakça</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Bu sayfadaki bilgilerin kaynağı</h2>
+    <p class="mt-5 text-[0.9375rem] leading-relaxed text-derin/75 olcek">
+      Form başlıkları ve saha kuralları aşağıdaki standartlardan uyarlanmıştır.
+      Hane kodlama sistemi ve öncelik kademeleri KTTAK'ın kendi uygulamasıdır.
+    </p>
+    <dl class="kunye mt-8">
+      <div>
+        <dt>Asgari insani yardım standartları</dt>
+        <dd>Sphere Association (2018). <em>The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response</em>. <a href="https://spherestandards.org/handbook/" class="bag">spherestandards.org</a></dd>
+      </div>
+      <div>
+        <dt>Hesap verebilirlik ve topluluk katılımı</dt>
+        <dd>CHS Alliance (2014). <em>Core Humanitarian Standard on Quality and Accountability</em>. <a href="https://corehumanitarianstandard.org/" class="bag">corehumanitarianstandard.org</a></dd>
+      </div>
+      <div>
+        <dt>İhtiyaç değerlendirmesi yöntemi</dt>
+        <dd>IASC Needs Assessment Task Force (2012). <em>Multi-Sector Initial Rapid Assessment (MIRA) Guidance</em>. <a href="https://interagencystandingcommittee.org/needs-assessment-and-analysis" class="bag">interagencystandingcommittee.org</a></dd>
+      </div>
+      <div>
+        <dt>Çocuk koruma bildirimi</dt>
+        <dd>The Alliance for Child Protection in Humanitarian Action (2019). <em>Minimum Standards for Child Protection in Humanitarian Action</em>. <a href="https://alliancecpha.org/en/CPMS_home" class="bag">alliancecpha.org</a></dd>
+      </div>
+      <div>
+        <dt>Kişisel verilerin korunması</dt>
+        <dd>KKTC 89/2007 sayılı Kişisel Verilerin Korunması Yasası.</dd>
+      </div>
+    </dl>
+    <p class="mt-6 text-[0.8125rem] leading-relaxed text-sis olcek">
+      Bağlantılar kaynağın yayıncısına gider; son erişim 11 Eylül 2026.
+      Künyede hata görürseniz <a href="iletisim.html" class="bag">bize bildirin</a>, düzeltiriz.
+    </p>
+  </div>
+</section>

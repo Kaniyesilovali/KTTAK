@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haneye Dayalı İhtiyaç Tespit Formu — KTTAK</title>
+<meta name="description" content="Sahada kullandığımız form, mükerrer kaydı önleyen hane kodlaması, hane ziyareti kuralları ve veri koruma yükümlülükleri.">
+<link rel="canonical" href="https://kttak.org/ihtiyac-tespit-formu.html">
+<link rel="alternate" hreflang="tr" href="https://kttak.org/ihtiyac-tespit-formu.html">
+<link rel="alternate" hreflang="en" href="https://kttak.org/en/needs-assessment-form.html">
+<link rel="alternate" hreflang="x-default" href="https://kttak.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KTTAK">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Haneye Dayalı İhtiyaç Tespit Formu — KTTAK">
+<meta property="og:description" content="Sahada kullandığımız form, mükerrer kaydı önleyen hane kodlaması, hane ziyareti kuralları ve veri koruma yükümlülükleri.">
+<meta property="og:url" content="https://kttak.org/ihtiyac-tespit-formu.html">
+<meta name="theme-color" content="#122a27">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Kıbrıs Türk Travma Afet ve Kriz Derneği",
+  "alternateName": "KTTAK",
+  "url": "https://kttak.org/",
+  "logo": "https://kttak.org/assets/img/logo.svg",
+  "email": "info@kttak.org",
+  "telephone": "+90-392-000-00-00",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Örnek Sokak No: 00, Köşklüçiftlik",
+    "addressLocality": "Lefkoşa",
+    "addressRegion": "Kuzey Kıbrıs",
+    "addressCountry": "CY"
+  },
+  "areaServed": "CY",
+  "knowsLanguage": [
+    "tr",
+    "en"
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#icerik" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-orman focus:text-kagit focus:px-4 focus:py-2 focus:rounded">İçeriğe geç</a>
+
+<!--#BASLIK-->
+<!-- Yardım şeridi: travma-bilinçli tasarımda çıkış her zaman görünür olmalı -->
+<div class="bg-derin text-kagit yazdir-yok">
+  <div class="kabuk flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-2">
+    <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] leading-snug">
+      <span class="text-mikro uppercase font-semibold text-fener-acik">Acil durum</span>
+      <a href="tel:112" class="hover:text-fener-acik transition-colors">112 <span class="text-kagit/60">Acil</span></a>
+      <a href="tel:101" class="hover:text-fener-acik transition-colors">101 <span class="text-kagit/60">Sivil Savunma</span></a>
+      <a href="tel:177" class="hover:text-fener-acik transition-colors">177 <span class="text-kagit/60">Orman Yangını</span></a>
+      <a href="tel:155" class="hover:text-fener-acik transition-colors">155 <span class="text-kagit/60">Polis</span></a>
+    </p>
+    <p class="text-[0.8125rem]">
+      <span class="text-kagit/50">Dil:</span>
+      <span class="font-semibold" aria-current="true">TR</span>
+      <span class="text-kagit/30" aria-hidden="true">/</span>
+      <a href="en/needs-assessment-form.html" hreflang="en" lang="en" class="hover:text-fener-acik transition-colors underline decoration-kagit/30 underline-offset-4">EN</a>
+    </p>
+  </div>
+</div>
+
+<header class="yazdir-yok bg-zemin/95 backdrop-blur-sm border-b border-cizgi sticky top-0 z-40">
+  <div class="kabuk flex items-center justify-between gap-6 py-4">
+    <a href="index.html" class="flex items-center gap-3 text-orman min-w-0" aria-label="KTTAK — Anasayfa">
+      <svg viewBox="0 0 40 40" class="h-9 w-9 flex-none" aria-hidden="true" fill="none">
+        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="3" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M5 20h4.2l1.6-7.4 2.4 15.2 2.3-11.6 2 6.1 1.7-3.3H35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="leading-none min-w-0">
+        <span class="block font-display text-[1.35rem] font-semibold tracking-tight">KTTAK</span>
+        <span class="hidden sm:block lg:hidden xl:block text-[0.6875rem] tracking-[0.1em] uppercase text-sis mt-1 whitespace-nowrap">Kıbrıs Türk Travma Afet ve Kriz Derneği</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-7" aria-label="Ana menü">
+      <a href="hakkimizda.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Hakkımızda</a>
+      <a href="calisma-alanlarimiz.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Çalışma Alanları</a>
+      <a href="kaynaklar.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Kaynak Merkezi</a>
+      <a href="seffaflik.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Şeffaflık</a>
+      <a href="haberler.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Haberler</a>
+      <a href="iletisim.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">İletişim</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3 shrink-0">
+      <a href="gonullu.html" data-nav class="dugme dugme-fener !py-2.5 !px-4 text-sm">Gönüllü Ol</a>
+    </div>
+
+    <button type="button" data-menu-ac class="lg:hidden -mr-2 p-2 text-orman" aria-expanded="false" aria-controls="mobil-menu">
+      <span class="sr-only">Menüyü aç</span>
+      <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobil-menu" hidden class="lg:hidden border-t border-cizgi bg-zemin">
+    <nav class="kabuk py-5 flex flex-col" aria-label="Mobil menü">
+      <a href="hakkimizda.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Hakkımızda</a>
+      <a href="calisma-alanlarimiz.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Çalışma Alanları</a>
+      <a href="kaynaklar.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Kaynak Merkezi</a>
+      <a href="bilgi-kirliligi.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Bilgi Kirliliği</a>
+      <a href="seffaflik.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Şeffaflık</a>
+      <a href="haberler.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Haberler</a>
+      <a href="kurumsal.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Kurumsal Belgeler</a>
+      <a href="iletisim.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">İletişim</a>
+      <div class="flex gap-3 pt-5">
+        <a href="gonullu.html" class="dugme dugme-fener flex-1">Gönüllü Ol</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--/#BASLIK-->
+
+<main id="icerik">
+<section class="pt-12 md:pt-16">
+  <div class="kabuk">
+    <nav aria-label="Konum" class="text-mikro uppercase text-sis yazdir-yok">
+      <a href="index.html" class="hover:text-orman transition-colors">Anasayfa</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <a href="kaynaklar.html" class="hover:text-orman transition-colors">Kaynak Merkezi</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <span class="text-derin">İhtiyaç tespit formu</span>
+    </nav>
+    <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
+      <h1 class="md:col-span-7 text-[2.25rem] md:text-5xl">Haneye dayalı ihtiyaç tespit formu</h1>
+      <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">
+        Sahada kullandığımız form ve arkasındaki yöntem. Mükerrer kaydı
+        önleyen kodlama, hane ziyaretinin kuralları ve toplanan verinin nasıl
+        korunduğu dâhil. Kurumunuz için olduğu gibi kullanabilirsiniz.
+      </p>
+    </div>
+    <p class="rehber-kunye mt-10 pt-6 border-t border-cizgi">
+      <span>Saha aracı</span>
+      <span>Okuma süresi 10 dk</span>
+      <span>Yazdırmaya hazır</span>
+      <span>CC BY-NC 4.0</span>
+    </p>
+  </div>
+</section>
+
+<section class="mt-12 md:mt-14">
+  <div class="kabuk">
+    <div class="rounded-[4px] bg-kum-acik border border-kum p-6 md:p-7 flex flex-wrap items-start gap-4 yazdir-yok">
+      <svg viewBox="0 0 24 24" class="h-6 w-6 flex-none text-fener mt-0.5" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <circle cx="12" cy="12" r="9.25"/><path d="M12 7.5v5.5" stroke-linecap="round"/><circle cx="12" cy="16.5" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+      <p class="flex-1 min-w-[16rem] text-[0.9375rem] leading-relaxed text-derin/80">
+        <strong class="font-semibold">Kurumunuz için uyarlayın.</strong> Formu
+        bu sayfadan yazdırıp olduğu gibi kullanabilir ya da kendi başlığınızla
+        yeniden düzenleyebilirsiniz (CC BY-NC 4.0). Düzenlenebilir bir dosya
+        biçimine ihtiyacınız varsa
+        <a href="iletisim.html" class="bag">yazın, gönderelim</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mt-16 md:mt-20">
+  <div class="kabuk">
+    <div class="olcek">
+      <p class="etiket">Gerekçe</p>
+      <h2 class="mt-4 text-2xl md:text-3xl">Yardımın adaleti, kaydın kalitesine bağlıdır</h2>
+      <div class="metin mt-6 text-derin/80">
+        <p>
+          Afetin ilk günlerinde yardım, en yüksek sesle isteyene gider. Sesi
+          duyulmayan haneler — yatalak yaşlısı olan, dil bilmeyen, kayıtsız
+          çalışan, damgalanmaktan çekinen — genellikle en çok ihtiyacı
+          olanlardır. Sistemli hane ziyareti, bu eşitsizliği düzeltmenin
+          bilinen tek yoludur.
+        </p>
+        <p>
+          İkinci sorun mükerrer kayıttır: aynı haneye üç ekip gider, üçü de
+          form doldurur, biri kutu bırakır, iki hane hiç ziyaret edilmez.
+          Aşağıdaki kodlama tam olarak bunu önlemek için vardır.
+        </p>
+        <p>
+          Üçüncüsü ve en önemlisi: <strong class="font-semibold text-derin">veri
+          toplamak başlı başına bir müdahaledir.</strong> Kapıyı çalmak, soru
+          sormak ve ardından hiçbir şey yapmamak, o hanede yardıma olan güveni
+          kalıcı biçimde bozar. Karşılığını veremeyeceğiniz bilgiyi toplamayın.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-16 md:mt-20">
+  <div class="kabuk">
+    <p class="etiket">Kodlama</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Mükerrer kaydı önleyen hane kodu</h2>
+    <p class="mt-5 text-[0.9375rem] leading-relaxed text-derin/75 olcek">
+      Her hane bir kod alır ve o kod ziyaretten bağımsız olarak sabit kalır.
+      Kod kimlik numarası içermez; bu, hem gizlilik hem de eşleştirme için
+      gereklidir.
+    </p>
+    <div class="mt-8 grid gap-5 md:grid-cols-2">
+      <div class="kart">
+        <h3 class="text-lg">Kodun yapısı</h3>
+        <p class="mt-4 font-display text-2xl tracking-wide text-orman">LFK · 07 · 0142 · A</p>
+        <dl class="kunye mt-5">
+          <div><dt>LFK</dt><dd>İlçe kısaltması — Lefkoşa, Gazimağusa (MGS), Girne (GRN), Güzelyurt (GZY), İskele (ISK)</dd></div>
+          <div><dt>07</dt><dd>Mahalle / bölge numarası — ekip dağılımında kullanılan saha haritasından</dd></div>
+          <div><dt>0142</dt><dd>Hane sıra numarası — bölge içinde sırayla verilir, tekrar kullanılmaz</dd></div>
+          <div><dt>A</dt><dd>Aynı adreste yaşayan ayrı hane — birlikte oturan iki aile için A ve B</dd></div>
+        </dl>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Sahada üç kural</h3>
+        <ul class="metin mt-4 text-[0.9375rem] text-derin/80">
+          <li><strong class="font-semibold text-derin">Kod kapıya değil, forma yazılır.</strong> Kapıya işaret koymak haneyi damgalar ve hırsızlığa açık hâle getirir. İşaretleme yalnızca arama–kurtarma ekiplerinin kendi standart usulüdür.</li>
+          <li><strong class="font-semibold text-derin">Aynı hane yeniden ziyaret edilirse yeni kod verilmez.</strong> Aynı kodun altına yeni tarihli bir satır açılır; böylece ihtiyacın zaman içindeki değişimi görülür.</li>
+          <li><strong class="font-semibold text-derin">Kod defteri tek elde tutulur.</strong> Bölge sorumlusu günün sonunda kodları merkezî listeye işler; iki ekip aynı numarayı veremez.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-28">
+  <div class="kabuk">
+    <p class="etiket">Saha kuralları</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Kapıyı çalmadan önce</h2>
+    <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div class="kart">
+        <h3 class="text-lg">Tanıtın ve izin alın</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Ad, kurum, yaka kartı. “Neden soruyoruz, bilgi nereye gidiyor, ne kadar sürecek” üç cümleyle anlatılır. Görüşmeyi reddetmek hakkıdır ve reddetmesi yardımdan çıkarılmasına yol açmaz.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Söz vermeyin</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">“Yarın çadır gelecek” demeyin. Söyleyin: “Bu bilgiyi dağıtım ekibine ileteceğim; karar bana ait değil.” Tutulmayan söz, sahadaki bir sonraki ekibin işini bitirir.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">İkili ekip, karma cinsiyet</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Hane ziyareti tek kişiyle yapılmaz. Mümkünse ekipte bir kadın bulunur; bazı ihtiyaçlar ancak o zaman söylenir.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Hane reisiyle değil, haneyle</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Tek bir kişinin beyanı, hanedeki kadınların, yaşlıların ve çocukların ihtiyacını gizleyebilir. Mümkünse birden fazla kişiyle konuşun.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Fotoğraf yok</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Hane içinde, çocukların ve hasarın fotoğrafı çekilmez. Bağış iletişimi için görsel gerekiyorsa ayrı ve açık onayla, ayrı bir süreçte toplanır.</p>
+      </div>
+      <div class="kart">
+        <h3 class="text-lg">Koruma riskini bildirin</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/70">Çocuk ihmali, şiddet, istismar ya da yalnız kalmış çocuk gördüğünüzde formu doldurmakla yetinmeyin; koruma sorumlusuna aynı gün bildirin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-28">
+  <div class="kabuk">
+    <div class="kart olcek">
+      <p class="text-mikro uppercase font-semibold text-fener">Veri koruma</p>
+      <h2 class="mt-3 text-2xl">Toplanan bilgi kişisel veridir</h2>
+      <p class="mt-4 text-[0.9375rem] leading-relaxed text-derin/70">
+        Formdaki sağlık durumu, engellilik ve hane bilgisi, KKTC 89/2007 sayılı
+        Kişisel Verilerin Korunması Yasası kapsamındadır. KTTAK sahada şu
+        kuralları uygular:
+      </p>
+      <ul class="metin mt-5 text-[0.9375rem] text-derin/80">
+        <li>Yalnızca yardımın planlanması için gereken asgari bilgi toplanır</li>
+        <li>Kâğıt formlar gün sonunda kilitli dolapta toplanır; sahada bırakılmaz</li>
+        <li>Dijital kayıtlar şifreli tutulur, erişim yalnızca görevli personeldedir</li>
+        <li>Üçüncü kurumlarla paylaşım, yalnızca kişinin bilgilendirilmiş onayıyla yapılır</li>
+        <li>Amaç ortadan kalktığında kayıtlar imha edilir</li>
+        <li>Herkes kendi verisine erişme, düzeltme ve silinmesini isteme hakkına sahiptir</li>
+      </ul>
+      <p class="mt-6 text-[0.9375rem] leading-relaxed text-derin/75 yazdir-yok">
+        Ayrıntı için <a href="kvkk.html" class="bag">kişisel verilerin korunması sayfamıza</a> bakın.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ YAZDIRILABİLİR FORM ============ -->
+<section class="mt-20 md:mt-28 yazdir-sayfa-basi">
+  <div class="kabuk">
+    <p class="etiket">Form</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Hane ihtiyaç tespit formu</h2>
+    <p class="mt-3 text-[0.9375rem] text-sis">
+      Hane kodu: <span class="doldur doldur-kisa inline-block w-48 align-bottom"></span>
+      &nbsp;&nbsp; Tarih / saat: <span class="doldur doldur-kisa inline-block w-40 align-bottom"></span>
+      &nbsp;&nbsp; Ekip: <span class="doldur doldur-kisa inline-block w-40 align-bottom"></span>
+      &nbsp;&nbsp; Ziyaret no: <span class="doldur doldur-kisa inline-block w-20 align-bottom"></span>
+    </p>
+
+    <div class="mt-10 grid gap-8 md:grid-cols-2">
+
+      <div class="kart">
+        <h3 class="text-lg">A · Hane bileşimi</h3>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Toplam kişi · yetişkin · çocuk (0–17)</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">0–2 yaş · 3–5 yaş · 6–11 yaş · 12–17 yaş sayısı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">65 yaş üstü sayısı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Gebe / emziren var mı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Hanede konuşulan dil</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">B · Barınma</h3>
+        <ul class="kutulu mt-5 text-[0.9375rem] text-derin/80">
+          <li>Evde kalıyor — hasar yok</li>
+          <li>Evde kalıyor — hafif hasarlı</li>
+          <li>Ev kullanılamaz — akrabada</li>
+          <li>Çadır / geçici barınma alanı</li>
+          <li>Araçta ya da açıkta</li>
+        </ul>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Bulunduğu adres / alan</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Isınma · aydınlatma durumu</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">C · Temel ihtiyaçlar</h3>
+        <p class="mt-2 text-[0.8125rem] text-sis">Var / kısmen / yok olarak işaretleyin; miktar yazın.</p>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">İçme suyu · kullanma suyu</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Gıda · bebek maması</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Battaniye · giysi · ayakkabı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Hijyen · bez · ped</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Tuvalet ve yıkanma erişimi</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">D · Sağlık</h3>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Yaralı / tedavi gereken var mı</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Kronik hastalık · biten ilaç</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Engellilik · kullanılan cihaz</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Ruh sağlığı desteği talebi</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Elektriğe bağımlı tıbbi cihaz</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">E · Koruma ve eğitim</h3>
+        <ul class="kutulu mt-5 text-[0.9375rem] text-derin/80">
+          <li>Hanede yalnız kalmış çocuk var</li>
+          <li>Ailesinden ayrı düşmüş kişi var</li>
+          <li>Yalnız yaşayan yaşlı / yatalak var</li>
+          <li>Çocuklar okula devam edemiyor</li>
+          <li>Acil koruma bildirimi yapıldı</li>
+        </ul>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Bildirim yapıldıysa kime, ne zaman</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart">
+        <h3 class="text-lg">F · Önceliklendirme</h3>
+        <p class="mt-2 text-[0.8125rem] text-sis">Ekip değerlendirmesi; dağıtım sırasını belirler.</p>
+        <ul class="kutulu mt-5 text-[0.9375rem] text-derin/80">
+          <li><strong class="font-semibold">Acil</strong> — tıbbi aciliyet, açıkta kalma, korumasız çocuk</li>
+          <li><strong class="font-semibold">Yüksek</strong> — temel ihtiyaçlardan biri tamamen yok</li>
+          <li><strong class="font-semibold">Orta</strong> — ihtiyaç kısmen karşılanıyor</li>
+          <li><strong class="font-semibold">İzlemede</strong> — şimdilik yeterli, tekrar bakılacak</li>
+        </ul>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Yönlendirme yapıldı mı — nereye</span><span class="doldur mt-1"></span></p>
+          <p><span class="text-mikro uppercase font-semibold text-sis">Tekrar ziyaret tarihi</span><span class="doldur mt-1"></span></p>
+        </div>
+      </div>
+
+      <div class="kart md:col-span-2">
+        <h3 class="text-lg">G · Ekip notu ve onay</h3>
+        <div class="mt-5 space-y-4">
+          <p><span class="text-mikro uppercase font-semibold text-sis">Gözlem / not</span><span class="doldur mt-1"></span><span class="doldur mt-1"></span></p>
+          <div class="grid gap-5 md:grid-cols-3 pt-2">
+            <p><span class="text-mikro uppercase font-semibold text-sis">Görüşmeyi yapan — ad, imza</span><span class="doldur mt-1"></span></p>
+            <p><span class="text-mikro uppercase font-semibold text-sis">İkinci ekip üyesi</span><span class="doldur mt-1"></span></p>
+            <p><span class="text-mikro uppercase font-semibold text-sis">Bilgilendirme yapıldı ve onay alındı</span><span class="doldur mt-1"></span></p>
+          </div>
+        </div>
+        <p class="mt-6 text-[0.8125rem] leading-relaxed text-sis">
+          Bu form kişisel veri içerir. Gün sonunda bölge sorumlusuna teslim
+          edilir, sahada ve araçta bırakılmaz. KKTC 89/2007 sayılı yasa kapsamında
+          işlenir; hane, verisine erişme ve silinmesini isteme hakkına sahiptir.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mt-20 md:mt-28 yazdir-yok">
+  <div class="kabuk">
+    <div class="olcek">
+      <p class="etiket">Sık yapılan hatalar</p>
+      <h2 class="mt-4 text-2xl md:text-3xl">Formun işe yaramadığı dört durum</h2>
+      <div class="metin mt-6 text-derin/80">
+        <ul>
+          <li><strong class="font-semibold text-derin">Çok soru sorulması.</strong> Otuz dakikalık görüşme, hem haneyi yorar hem ekibin günlük kapasitesini düşürür. On dakikada dolan form, doldurulan formdur.</li>
+          <li><strong class="font-semibold text-derin">Kodun atlanması.</strong> “Sonra yazarım” denen kod hiç yazılmaz; o form mükerrer kayıt hâline gelir.</li>
+          <li><strong class="font-semibold text-derin">Verinin dağıtıma bağlanmaması.</strong> Toplanan bilgi aynı gün dağıtım listesine dönüşmüyorsa süreç durur ve hanedeki güven biter.</li>
+          <li><strong class="font-semibold text-derin">Tek beyanla yetinilmesi.</strong> Kapıyı açan kişinin anlattığı, hanedeki herkesin ihtiyacı değildir.</li>
+        </ul>
+      </div>
+      <p class="mt-8 flex flex-wrap gap-3">
+        <a href="iletisim.html" class="dugme dugme-birincil">Düzenlenebilir dosya isteyin</a>
+        <a href="calisma-alanlarimiz.html" class="dugme dugme-ikincil">Saha çalışmalarımız</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="kaynakca" class="mt-24 md:mt-32 scroll-mt-28">
+  <div class="kabuk">
+    <p class="etiket">Kaynakça</p>
+    <h2 class="mt-4 text-2xl md:text-3xl">Bu sayfadaki bilgilerin kaynağı</h2>
+    <p class="mt-5 text-[0.9375rem] leading-relaxed text-derin/75 olcek">
+      Form başlıkları ve saha kuralları aşağıdaki standartlardan uyarlanmıştır.
+      Hane kodlama sistemi ve öncelik kademeleri KTTAK'ın kendi uygulamasıdır.
+    </p>
+    <dl class="kunye mt-8">
+      <div>
+        <dt>Asgari insani yardım standartları</dt>
+        <dd>Sphere Association (2018). <em>The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response</em>. <a href="https://spherestandards.org/handbook/" class="bag">spherestandards.org</a></dd>
+      </div>
+      <div>
+        <dt>Hesap verebilirlik ve topluluk katılımı</dt>
+        <dd>CHS Alliance (2014). <em>Core Humanitarian Standard on Quality and Accountability</em>. <a href="https://corehumanitarianstandard.org/" class="bag">corehumanitarianstandard.org</a></dd>
+      </div>
+      <div>
+        <dt>İhtiyaç değerlendirmesi yöntemi</dt>
+        <dd>IASC Needs Assessment Task Force (2012). <em>Multi-Sector Initial Rapid Assessment (MIRA) Guidance</em>. <a href="https://interagencystandingcommittee.org/needs-assessment-and-analysis" class="bag">interagencystandingcommittee.org</a></dd>
+      </div>
+      <div>
+        <dt>Çocuk koruma bildirimi</dt>
+        <dd>The Alliance for Child Protection in Humanitarian Action (2019). <em>Minimum Standards for Child Protection in Humanitarian Action</em>. <a href="https://alliancecpha.org/en/CPMS_home" class="bag">alliancecpha.org</a></dd>
+      </div>
+      <div>
+        <dt>Kişisel verilerin korunması</dt>
+        <dd>KKTC 89/2007 sayılı Kişisel Verilerin Korunması Yasası.</dd>
+      </div>
+    </dl>
+    <p class="mt-6 text-[0.8125rem] leading-relaxed text-sis olcek">
+      Bağlantılar kaynağın yayıncısına gider; son erişim 11 Eylül 2026.
+      Künyede hata görürseniz <a href="iletisim.html" class="bag">bize bildirin</a>, düzeltiriz.
+    </p>
+  </div>
+</section>
+</main>
+
+<!--#ALTBILGI-->
+<footer class="yazdir-yok bg-derin text-kagit mt-24">
+  <!-- İmza hattı, altbilgiyi açan ayraç olarak geri döner -->
+  <div class="kabuk pt-10">
+    <img src="assets/img/sismik-acik.svg" alt="" class="sismik h-10 opacity-25">
+  </div>
+
+  <div class="kabuk pt-10 pb-14 grid gap-12 md:grid-cols-12">
+    <div class="md:col-span-4">
+      <p class="font-display text-2xl font-semibold tracking-tight">KTTAK</p>
+      <p class="mt-1 text-mikro uppercase text-kagit/55">Kıbrıs Türk Travma Afet ve Kriz Derneği</p>
+      <p class="mt-5 text-[0.9375rem] leading-relaxed text-kagit/70 max-w-xs">
+        Kıbrıs'ta afet öncesinde hazırlık, sırasında koordinasyon,
+        sonrasında psikososyal toparlanma.
+      </p>
+      <p class="mt-6 flex flex-wrap gap-3">
+        <a href="gonullu.html" class="dugme dugme-fener !py-2.5 !px-4 text-sm">Gönüllü Ol</a>
+      </p>
+    </div>
+
+    <nav class="md:col-span-2" aria-label="Dernek">
+      <h2 class="text-mikro uppercase text-kagit/55 font-semibold">Dernek</h2>
+      <ul class="mt-4 space-y-2.5 text-[0.9375rem]">
+        <li><a href="hakkimizda.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Hakkımızda</a></li>
+        <li><a href="kurumsal.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Kurumsal Belgeler</a></li>
+        <li><a href="kurumsal.html#kurullar" class="text-kagit/80 hover:text-fener-acik transition-colors">Yönetim Kurulu</a></li>
+        <li><a href="seffaflik.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Şeffaflık</a></li>
+        <li><a href="haberler.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Haberler</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-label="Çalışmalar">
+      <h2 class="text-mikro uppercase text-kagit/55 font-semibold">Çalışmalar</h2>
+      <ul class="mt-4 space-y-2.5 text-[0.9375rem]">
+        <li><a href="calisma-alanlarimiz.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Çalışma Alanları</a></li>
+        <li><a href="kaynaklar.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Kaynak Merkezi</a></li>
+        <li><a href="bilgi-kirliligi.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Bilgi Kirliliği</a></li>
+        <li><a href="gonullu.html" class="text-kagit/80 hover:text-fener-acik transition-colors">Gönüllülük</a></li>
+        <li><a href="gonullu.html#uyelik" class="text-kagit/80 hover:text-fener-acik transition-colors">Üyelik</a></li>
+        <li><a href="iletisim.html" class="text-kagit/80 hover:text-fener-acik transition-colors">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <div class="md:col-span-4">
+      <h2 class="text-mikro uppercase text-kagit/55 font-semibold">Merkez</h2>
+      <address class="mt-4 not-italic text-[0.9375rem] leading-relaxed text-kagit/80">
+        Örnek Sokak No: 00<br>
+        Köşklüçiftlik, Lefkoşa / KKTC
+      </address>
+      <p class="mt-3 text-[0.9375rem] space-y-1">
+        <a href="tel:+903920000000" class="block text-kagit/80 hover:text-fener-acik transition-colors">+90 392 000 00 00</a>
+        <a href="mailto:info@kttak.org" class="block text-kagit/80 hover:text-fener-acik transition-colors">info@kttak.org</a>
+      </p>
+      <p class="mt-5 flex gap-4">
+        <a href="#" class="text-kagit/60 hover:text-fener-acik transition-colors" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.6 8.75 23 11 23 14.3V21h-4v-5.9c0-1.4-.03-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V21h-4V9z"/></svg>
+        </a>
+        <a href="#" class="text-kagit/60 hover:text-fener-acik transition-colors" aria-label="X">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.3l-7.2 8.24 8.48 11.26h-6.64l-5.2-6.8-5.95 6.8H1.72l7.7-8.8L1.28 2.25h6.8l4.7 6.22 5.46-6.22zm-1.16 17.52h1.83L7.02 4.13H5.06l12.02 15.64z"/></svg>
+        </a>
+        <a href="#" class="text-kagit/60 hover:text-fener-acik transition-colors" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.89 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 5.1a4.74 4.74 0 1 0 0 9.48 4.74 4.74 0 0 0 0-9.48zm0 7.82a3.08 3.08 0 1 1 0-6.16 3.08 3.08 0 0 1 0 6.16zm6.03-7.98a1.11 1.11 0 1 1-2.22 0 1.11 1.11 0 0 1 2.22 0z"/></svg>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- KKTC Dernekler Yasası (23/2016) kapsamında kamuya açık künye -->
+  <div class="border-t border-kagit/12">
+    <div class="kabuk py-6 grid gap-x-8 gap-y-3 text-[0.8125rem] text-kagit/55 md:grid-cols-12">
+      <p class="md:col-span-7 leading-relaxed">
+        Kıbrıs Türk Travma Afet ve Kriz Derneği · Dernekler Yasası (23/2016) uyarınca
+        Lefkoşa Kaymakamlığı nezdinde kayıtlı · Kütük No: 000<br>
+        Gelir ve Vergi Dairesi No: 000000000 · Yardım toplama faaliyetleri
+        <span class="text-kagit/75">İçişleri Bakanlığı'nın 00.00.0000 tarihli izniyle</span> yürütülmektedir.
+      </p>
+      <p class="md:col-span-5 md:text-right">
+        <a href="kvkk.html" class="hover:text-fener-acik transition-colors underline decoration-kagit/25 underline-offset-4">KVKK Aydınlatma Metni</a>
+        <span class="mx-2 text-kagit/25" aria-hidden="true">·</span>
+        <a href="kvkk.html#cerez" class="hover:text-fener-acik transition-colors underline decoration-kagit/25 underline-offset-4">Çerez Politikası</a>
+        <span class="mx-2 text-kagit/25" aria-hidden="true">·</span>
+        <a href="kurumsal.html#tuzuk" class="hover:text-fener-acik transition-colors underline decoration-kagit/25 underline-offset-4">Tüzük</a>
+        <br class="hidden md:block">
+        <span class="md:inline-block md:mt-2">© <span data-yil>2026</span> Kıbrıs Türk Travma Afet ve Kriz Derneği. Tüm hakları saklıdır.</span>
+      </p>
+    </div>
+  </div>
+</footer>
+<!--/#ALTBILGI-->
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -298,3 +298,100 @@
     background-color: var(--color-fener);
   }
 }
+
+@layer components {
+  /* ---- Rehber üst künyesi: okuma süresi, güncelleme, yazdırma ---- */
+  .rehber-kunye {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.25rem;
+    font-size: var(--text-mikro);
+    line-height: var(--text-mikro--line-height);
+    letter-spacing: var(--text-mikro--letter-spacing);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-sis);
+  }
+
+  /* ---- Doldurulabilir form satırı: ekranda da kâğıtta da yazılabilir ----
+     PDF yerine sayfayı yazdıran kullanıcı için: üstüne elle yazılacak çizgi. */
+  .doldur {
+    display: block;
+    border-bottom: 1px solid var(--color-cizgi);
+    min-height: 2.1rem;
+  }
+  .doldur-kisa { min-height: 1.6rem; }
+
+  /* ---- Kutucuklu kontrol listesi ---- */
+  .kutulu { list-style: none; padding-left: 0; }
+  .kutulu > li {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 0.6rem;
+    line-height: 1.6;
+  }
+  .kutulu > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 1.05rem;
+    height: 1.05rem;
+    border: 1px solid var(--color-sis);
+    border-radius: 2px;
+  }
+}
+
+/* ============================================================
+   YAZDIRMA
+   Kaynak Merkezi'ndeki rehberler PDF yerine sayfa olarak sunulur;
+   bu yüzden kâğıda düzgün dökülmeleri bir ayrıntı değil, gerekliliktir.
+   ============================================================ */
+@media print {
+  .yazdir-yok { display: none !important; }
+
+  html { scroll-behavior: auto; }
+
+  body {
+    background: #fff !important;
+    color: #000;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  .kabuk { max-width: none; padding-inline: 0; }
+  .olcek { max-width: none; }
+
+  /* Kâğıtta gölgeli zeminler mürekkep yakar; çerçeve yeterli. */
+  .kart, .kart-bag {
+    background: #fff !important;
+    border: 1px solid #999;
+    padding: 0.8rem 1rem;
+    break-inside: avoid;
+  }
+
+  section { margin-top: 1.4rem !important; }
+  h1 { font-size: 20pt; }
+  h2 { font-size: 14pt; break-after: avoid; }
+  h3 { font-size: 11.5pt; break-after: avoid; }
+  h1, h2, h3, h4 { break-inside: avoid; }
+  p, li, dd { orphans: 3; widows: 3; }
+
+  /* Kâğıtta bağlantının nereye gittiği görünmezse bilgi kaybolur. */
+  .metin a[href^="http"]::after,
+  .kunye a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8.5pt;
+    color: #444;
+    word-break: break-all;
+  }
+  a { color: #000 !important; text-decoration: none; }
+
+  .doldur { border-bottom: 1px solid #000; }
+  .kutulu > li::before { border-color: #000; }
+
+  .yazdir-sayfa-basi { break-before: page; }
+
+  @page { margin: 16mm 14mm; }
+}
