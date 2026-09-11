@@ -29,6 +29,13 @@
  },
  {
   "dil": "tr",
+  "dosya": "bilgi-kirliligi.html",
+  "es": "misinformation.html",
+  "baslik": "Bilgi Kirliliği ve Doğrulama — KTTAK",
+  "aciklama": "Afette yanlış bilgi nasıl yayılır, üç tür bilgi bozukluğu, en sık yedi kalıp ve paylaşmadan önce uygulanacak dört adımlı doğrulama yöntemi."
+ },
+ {
+  "dil": "tr",
   "dosya": "seffaflik.html",
   "es": "transparency.html",
   "baslik": "Şeffaflık — KTTAK",
@@ -96,6 +103,13 @@
   "es": "kaynaklar.html",
   "baslik": "Resource centre — KTTAK",
   "aciklama": "Free guides on disaster and trauma, psychosocial support materials and downloadable documents."
+ },
+ {
+  "dil": "en",
+  "dosya": "misinformation.html",
+  "es": "bilgi-kirliligi.html",
+  "baslik": "Misinformation and verification — KTTAK",
+  "aciklama": "How false information spreads in a disaster, the three types of information disorder, the seven most common patterns, and a four-move method to verify before you share."
  },
  {
   "dil": "en",

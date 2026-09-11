@@ -258,7 +258,11 @@
   }
   @media (min-width: 640px) {
     .kunye > div { grid-template-columns: 13rem 1fr; align-items: baseline; }
+    /* Bir terime birden fazla değer düşebilir (kaynakçada iki kaynak gibi);
+       hepsi sağ sütunda kalsın, sola kaymasın. */
+    .kunye dd { grid-column: 2; }
   }
+  .kunye dd + dd { margin-top: 0.5rem; }
   .kunye dt {
     font-size: var(--text-mikro);
     letter-spacing: var(--text-mikro--letter-spacing);

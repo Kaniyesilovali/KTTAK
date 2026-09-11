@@ -189,6 +189,27 @@ tutarı seçimi kodu duruyor ama sayfa olmadığı için çalışmıyor.
 reddedilen fon kaynakları, bağışçı verisi) **bilinçli olarak korundu** — bunlar
 ilke beyanı; bağış yeniden açıldığında olduğu gibi geçerli.
 
+### 2.7 Kaynak künyelerini derneğin onaylaması gerekir
+
+Sayfaların sonundaki **Kaynakça** bölümleri, derneğin yöntemlerinin hangi
+belgelere dayandığını beyan eder — bu, kurumun kendisi hakkında verdiği bir
+bilgidir, teknik bir ayrıntı değil. Yayına almadan önce yönetim kurulu şunları
+teyit etmeli:
+
+- Sahada gerçekten bu standartlar mı uygulanıyor? Uygulanmayan bir belge
+  kaynak olarak gösterilmemeli — dayanaksız atıf, atıfsızlıktan daha kötüdür.
+- Kaynak merkezindeki PDF'ler henüz yazılmadı. Her materyalin altındaki
+  **“Dayanak:”** satırı, o materyali yazarken hangi belgeden uyarlanacağını
+  söyler; materyal yazıldığında satırın doğruluğu bir kez daha kontrol edilmeli.
+- Kıbrıs'ın deprem riski ve orman yangını bilgileri KKTC kurumlarına
+  bağlanmıştır; kurum adları veya adresleri değişirse künyeler güncellenmeli.
+
+Kaynakçada derneğin **kendi program kararları yer almaz** (24 saatlik eğitim,
+asgari 24 ay izlem, personel oranları, ücretsizlik). Bunlar tercihtir, kaynak
+gösterilecek bir dış belgeye dayanmaz — ve bilerek dışarıda bırakılmıştır.
+
+---
+
 ---
 
 ## 3. İçeriği değiştirme
@@ -231,6 +252,48 @@ işaretleri arasını değiştirir; sayfanın geri kalanına dokunmaz.
 
 `iskele.js` var olan bir sayfanın üzerine **yazmaz** (`--force` vermedikçe) —
 elle yaptığınız düzenlemeler güvendedir.
+
+### Kaynakçayı düzenlemek
+
+Her sayfanın sonunda `id="kaynakca"` taşıyan bir bölüm var: solda konu, sağda
+o konunun dayandığı belgenin künyesi ve yayıncısına giden bağlantı. Yapısı
+sitedeki diğer künye listeleriyle aynı (`<dl class="kunye">`), ek CSS gerekmez.
+
+Kaynak eklemek veya değiştirmek için ilgili gövdeyi düzenleyin — örneğin
+`build/govde/tr-calisma-alanlarimiz.html` ve İngilizce karşılığı
+`build/govde/en-what-we-do.html` — sonra:
+
+```bash
+npm run iskele -- --force && npm run yayina-hazirla
+```
+
+Yeni bir satır şu kalıpta:
+
+```html
+<div>
+  <dt>Konu</dt>
+  <dd>Kurum (Yıl). <em>Belgenin adı</em>, baskı. <a href="https://..." class="bag">yayinci.org</a></dd>
+</div>
+```
+
+Bir konunun birden fazla kaynağı varsa aynı `<div>` içine üst üste `<dd>`
+ekleyin; ikinci kaynak da sağ sütunda kalır.
+
+**İki kural:**
+
+1. **Kart ve liste satırlarının içine bağlantı koymayın.** Kaynak merkezindeki
+   materyaller ve haber kalıbı zaten birer `<a>`; içlerine ikinci bir `<a>`
+   koymak geçersiz HTML üretir. Oralarda kaynak düz metin yazılır
+   (`Dayanak: …`), tam künye sayfa sonundaki kaynakçaya girer.
+2. **TR ve EN birlikte güncellenir.** İki dilde farklı kaynak listesi kalırsa
+   hangisinin doğru olduğu belirsizleşir.
+
+Bağlantılar 10 Eylül 2026'da tek tek denendi. `spherestandards.org`,
+`alliancecpha.org` ve `undrr.org` komut satırı isteklerini engellediği için
+bu üçü tarayıcıdan doğrulanmalı; adresler yayıncıların resmî sayfalarıdır.
+
+Haber eklerken kaynağın nasıl yazılacağı `build/govde/tr-haberler.html`
+içindeki HTML yorumunda kalıp olarak duruyor.
 
 ---
 
