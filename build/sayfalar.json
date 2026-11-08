@@ -3,322 +3,350 @@
   "dil": "tr",
   "dosya": "index.html",
   "es": "index.html",
-  "baslik": "KTTAK — Kıbrıs Türk Travma Afet ve Kriz Derneği",
-  "aciklama": "Kıbrıs'ta afet öncesinde hazırlık, sırasında koordinasyon, sonrasında psikososyal toparlanma. Kıbrıs Türk Travma Afet ve Kriz Derneği'nin çalışmaları, kaynakları ve şeffaflık raporları."
+  "baslik": "Travma Afet Kriz Derneği (TAK-DER)",
+  "aciklama": "Travma, afet ve kriz durumlarında bilimsel ve etik temelli psikososyal destekle bireyleri ve toplumu güçlendirmek için çalışıyoruz. Travma Afet Kriz Derneği (TAK-DER), Lefkoşa."
  },
  {
   "dil": "tr",
   "dosya": "hakkimizda.html",
   "es": "about.html",
-  "baslik": "Hakkımızda — KTTAK",
-  "aciklama": "KTTAK'ın kuruluş amacı, ilkeleri, tarihçesi ve travma-bilinçli çalışma yaklaşımı."
+  "baslik": "Hakkımızda — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği (TAK-DER) kimdir: psikososyal destek alanında bilimsel ve etik temelli bir meslek derneği. Amacımız ve değerlerimiz."
  },
  {
   "dil": "tr",
   "dosya": "calisma-alanlarimiz.html",
   "es": "what-we-do.html",
-  "baslik": "Çalışma Alanları — KTTAK",
-  "aciklama": "Afete hazırlık eğitimleri, saha koordinasyonu, psikososyal destek, kapasite geliştirme ve savunuculuk çalışmalarımız."
+  "baslik": "Ne Yapıyoruz — TAK-DER",
+  "aciklama": "Hazırlık ve önleme, psikososyal destek, eğitim, çalışanların desteği, araştırma, savunuculuk, etik iletişim, iş birlikleri ve gönüllü ağı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "calisma-gruplari.html",
+  "es": "working-groups.html",
+  "baslik": "Çalışma Grupları — TAK-DER",
+  "aciklama": "Araştırma ve eğitim, etik ve bilimsel danışma, psikososyal destek ve saha, toplumsal çalışmalar, iletişim, proje, fon oluşturma ve dış ilişkiler grupları."
+ },
+ {
+  "dil": "tr",
+  "dosya": "egitimler.html",
+  "es": "training.html",
+  "baslik": "Eğitimler ve Atölyeler — TAK-DER",
+  "aciklama": "Afet ve kriz çalışanlarına yönelik sertifika eğitimleri ve atölyeler, topluma yönelik bilgilendirme eğitimleri."
  },
  {
   "dil": "tr",
   "dosya": "kaynaklar.html",
   "es": "resources.html",
-  "baslik": "Kaynak Merkezi — KTTAK",
+  "baslik": "Kaynaklar — TAK-DER",
   "aciklama": "Afet ve travma üzerine ücretsiz rehberler ve psikososyal destek materyalleri. Hepsi sayfa olarak açılır, kayıt istemez, yazdırmaya hazırdır."
  },
  {
   "dil": "tr",
   "dosya": "bilgi-kirliligi.html",
   "es": "misinformation.html",
-  "baslik": "Bilgi Kirliliği ve Doğrulama — KTTAK",
+  "baslik": "Bilgi Kirliliği ve Doğrulama — TAK-DER",
   "aciklama": "Afette yanlış bilgi nasıl yayılır, üç tür bilgi bozukluğu, en sık yedi kalıp ve paylaşmadan önce uygulanacak dört adımlı doğrulama yöntemi."
  },
  {
   "dil": "tr",
   "dosya": "cocukla-konusmak.html",
   "es": "talking-to-children.html",
-  "baslik": "Depremden Sonra Çocuğunuzla Nasıl Konuşulur — KTTAK",
+  "baslik": "Depremden Sonra Çocuğunuzla Nasıl Konuşulur — TAK-DER",
   "aciklama": "Yaş gruplarına göre örnek cümleler, kaçınılması gereken ifadeler, zor sorulara yanıtlar ve uzman desteğine ne zaman başvurulacağı."
  },
  {
   "dil": "tr",
   "dosya": "aile-afet-plani.html",
   "es": "family-disaster-plan.html",
-  "baslik": "Aile Afet Planı — Doldurulabilir Şablon — KTTAK",
+  "baslik": "Aile Afet Planı — Doldurulabilir Şablon — TAK-DER",
   "aciklama": "Buluşma noktası, ada dışı irtibat kişisi, ilaç ve belge listesi. Yazdırıp buzdolabına asmak için tasarlanmış doldurulabilir form."
  },
  {
   "dil": "tr",
   "dosya": "uyku-ve-irkilme.html",
   "es": "sleep-and-startle.html",
-  "baslik": "Afet Sonrası Uyku, İrkilme ve Kaygı — KTTAK",
+  "baslik": "Afet Sonrası Uyku, İrkilme ve Kaygı — TAK-DER",
   "aciklama": "Hangi tepkiler olağan, hangileri uzman desteği gerektirir. Uyku için işe yarayan sekiz adım ve anlık topraklanma teknikleri."
  },
  {
   "dil": "tr",
   "dosya": "yas.html",
   "es": "grief.html",
-  "baslik": "Kayıptan Sonra: Yas Üzerine — KTTAK",
+  "baslik": "Kayıptan Sonra: Yas Üzerine — TAK-DER",
   "aciklama": "Afet yasını ağırlaştıran beş şey, çocuğa kaybın anlatılması ve yas tutan birinin yanında nasıl durulacağı."
  },
  {
   "dil": "tr",
   "dosya": "acil-canta.html",
   "es": "emergency-kit.html",
-  "baslik": "Acil Durum Çantası Kontrol Listesi — KTTAK",
+  "baslik": "Acil Durum Çantası Kontrol Listesi — TAK-DER",
   "aciklama": "72 saatlik sırt çantası ve bir haftalık ev stoğu. Bebekli, yaşlı, engelli bireyli ve evcil hayvanlı haneler için ayrı bölümler."
  },
  {
   "dil": "tr",
   "dosya": "evde-guvenlik.html",
   "es": "home-safety.html",
-  "baslik": "Evde Yapısal Olmayan Risklerin Azaltılması — KTTAK",
+  "baslik": "Evde Yapısal Olmayan Risklerin Azaltılması — TAK-DER",
   "aciklama": "Dolap sabitleme, cam filmi, kaçış yolu düzenleme ve öncelik sırası. Kiracılar için kalıcı hasar bırakmayan çözümler."
  },
  {
   "dil": "tr",
   "dosya": "ikincil-travma.html",
   "es": "secondary-trauma.html",
-  "baslik": "Saha Çalışanları için İkincil Travma — KTTAK",
+  "baslik": "Saha Çalışanları için İkincil Travma — TAK-DER",
   "aciklama": "İkincil travmatik stres, şefkat yorgunluğu, tükenmişlik ve ahlaki yaralanma ayrımı; vardiya sonrası çözülme protokolü ve kurumun sorumluluğu."
  },
  {
   "dil": "tr",
   "dosya": "ilk-psikolojik-yardim.html",
   "es": "psychological-first-aid.html",
-  "baslik": "İlk Psikolojik Yardım — Saha El Kitabı — KTTAK",
+  "baslik": "İlk Psikolojik Yardım — Saha El Kitabı — TAK-DER",
   "aciklama": "Uzman olmayan gönüllüler için Bak–Dinle–Bağla çerçevesi, sahada söylenenler ve söylenmeyenler, yönlendirme ölçütleri ve cep kartı."
  },
  {
   "dil": "tr",
   "dosya": "cocuk-dostu-alan.html",
   "es": "child-friendly-space.html",
-  "baslik": "Çocuk Dostu Alan Kurulum Protokolü — KTTAK",
+  "baslik": "Çocuk Dostu Alan Kurulum Protokolü — TAK-DER",
   "aciklama": "Mekân seçimi, çocuk koruma standartları, personel oranları, günlük akış planı ve baştan yazılan çıkış planı."
  },
  {
   "dil": "tr",
   "dosya": "ihtiyac-tespit-formu.html",
   "es": "needs-assessment-form.html",
-  "baslik": "Haneye Dayalı İhtiyaç Tespit Formu — KTTAK",
+  "baslik": "Haneye Dayalı İhtiyaç Tespit Formu — TAK-DER",
   "aciklama": "Sahada kullandığımız form, mükerrer kaydı önleyen hane kodlaması, hane ziyareti kuralları ve veri koruma yükümlülükleri."
  },
  {
   "dil": "tr",
   "dosya": "okul-egitim-mufredati.html",
   "es": "school-curriculum.html",
-  "baslik": "Okul Temelli Hazırlık Eğitimi Müfredatı — KTTAK",
+  "baslik": "Okul Temelli Hazırlık Eğitimi Müfredatı — TAK-DER",
   "aciklama": "İlkokul, ortaokul ve lise için üç ayrı 40 dakikalık ders planı ve travma-bilinçli tatbikat yönergesi."
- },
- {
-  "dil": "tr",
-  "dosya": "seffaflik.html",
-  "es": "transparency.html",
-  "baslik": "Şeffaflık — KTTAK",
-  "aciklama": "Faaliyet raporları, mali tablolar, gider dağılımı ve bağış kabul ilkelerimiz."
  },
  {
   "dil": "tr",
   "dosya": "haberler.html",
   "es": "news.html",
-  "baslik": "Haberler ve Duyurular — KTTAK",
-  "aciklama": "KTTAK'tan saha notları, eğitim duyuruları ve basın açıklamaları."
+  "baslik": "Haberler ve Etkinlikler — TAK-DER",
+  "aciklama": "TAK-DER duyuruları, eğitim takvimi ve etkinlik haberleri."
  },
  {
   "dil": "tr",
   "dosya": "gonullu.html",
   "es": "volunteer.html",
-  "baslik": "Gönüllülük ve Üyelik — KTTAK",
-  "aciklama": "KTTAK gönüllü ekiplerine katılın veya derneğe üye olun. Başvuru koşulları ve süreç."
+  "baslik": "Gönüllü Ol — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği'nde gönüllülük: koşullar, zorunlu eğitim ve başvuru formu."
+ },
+ {
+  "dil": "tr",
+  "dosya": "uye-ol.html",
+  "es": "membership.html",
+  "baslik": "Üye Ol — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği'ne üyelik: koşullar, 30 günde karar verilen başvuru süreci ve aidat."
  },
  {
   "dil": "tr",
   "dosya": "kurumsal.html",
   "es": "governance.html",
-  "baslik": "Kurumsal Belgeler — KTTAK",
-  "aciklama": "Dernek tüzüğü, Dernekler Yasası (23/2016) kapsamındaki kütük bilgileri, yönetim ve denetim kurulu, organizasyon yapısı."
+  "baslik": "Yönetim ve Tüzük — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği'nin organları (Genel Kurul, Temsil Organı, Denetim Organı), künyesi ve tüzüğü."
  },
  {
   "dil": "tr",
   "dosya": "iletisim.html",
   "es": "contact.html",
-  "baslik": "İletişim — KTTAK",
-  "aciklama": "KTTAK merkez ofis adresi, telefon, e-posta ve iletişim formu."
+  "baslik": "İletişim — TAK-DER",
+  "aciklama": "TAK-DER'e e-posta, iletişim formu ve sosyal medya üzerinden ulaşın. Kriz anında nereye başvurulacağı."
  },
  {
   "dil": "tr",
   "dosya": "kvkk.html",
   "es": "privacy.html",
-  "baslik": "Kişisel Verilerin Korunması — KTTAK",
+  "baslik": "Gizlilik ve Kişisel Veriler — TAK-DER",
   "aciklama": "KKTC 89/2007 sayılı Kişisel Verilerin Korunması Yasası kapsamında aydınlatma metni, haklarınız ve çerez politikası."
  },
  {
   "dil": "en",
   "dosya": "index.html",
   "es": "index.html",
-  "baslik": "KTTAK — Turkish Cypriot Trauma, Disaster and Crisis Association",
-  "aciklama": "Preparedness before a disaster, coordination during it, psychosocial recovery after — across Cyprus. Our work, resources and accountability reports."
+  "baslik": "TAK-DER — Trauma, Disaster and Crisis Association",
+  "aciklama": "We work to strengthen individuals and communities through science-based, ethical psychosocial support in times of trauma, disaster and crisis. Travma Afet Kriz Derneği (TAK-DER), Nicosia."
  },
  {
   "dil": "en",
   "dosya": "about.html",
   "es": "hakkimizda.html",
-  "baslik": "About us — KTTAK",
-  "aciklama": "Why KTTAK was founded, the principles we work by, our history and our trauma-informed approach."
+  "baslik": "About us — TAK-DER",
+  "aciklama": "Who Travma Afet Kriz Derneği (TAK-DER) is: a science-based, ethical professional association for psychosocial support. Our aims and values."
  },
  {
   "dil": "en",
   "dosya": "what-we-do.html",
   "es": "calisma-alanlarimiz.html",
-  "baslik": "What we do — KTTAK",
-  "aciklama": "Preparedness training, field coordination, psychosocial support, capacity building and advocacy."
+  "baslik": "What we do — TAK-DER",
+  "aciklama": "Preparedness and prevention, psychosocial support, training, support for workers, research, advocacy, ethical communication, partnerships and the volunteer network."
+ },
+ {
+  "dil": "en",
+  "dosya": "working-groups.html",
+  "es": "calisma-gruplari.html",
+  "baslik": "Working groups — TAK-DER",
+  "aciklama": "Research and training, ethics and scientific advisory, psychosocial support and field, community work, communication, projects, fundraising and external relations groups."
+ },
+ {
+  "dil": "en",
+  "dosya": "training.html",
+  "es": "egitimler.html",
+  "baslik": "Training and workshops — TAK-DER",
+  "aciklama": "Certificate programmes and workshops for disaster and crisis workers, and awareness training for the public."
  },
  {
   "dil": "en",
   "dosya": "resources.html",
   "es": "kaynaklar.html",
-  "baslik": "Resource centre — KTTAK",
+  "baslik": "Resources — TAK-DER",
   "aciklama": "Free guides on disaster and trauma and psychosocial support material. Everything opens as a page, asks for no registration and is print-ready."
  },
  {
   "dil": "en",
   "dosya": "misinformation.html",
   "es": "bilgi-kirliligi.html",
-  "baslik": "Misinformation and verification — KTTAK",
+  "baslik": "Misinformation and verification — TAK-DER",
   "aciklama": "How false information spreads in a disaster, the three types of information disorder, the seven most common patterns, and a four-move method to verify before you share."
  },
  {
   "dil": "en",
   "dosya": "talking-to-children.html",
   "es": "cocukla-konusmak.html",
-  "baslik": "Talking to your child after an earthquake — KTTAK",
+  "baslik": "Talking to your child after an earthquake — TAK-DER",
   "aciklama": "What to say at each age, the phrases that backfire, answers to the hardest questions, and when to seek specialist help."
  },
  {
   "dil": "en",
   "dosya": "family-disaster-plan.html",
   "es": "aile-afet-plani.html",
-  "baslik": "Family disaster plan — fillable template — KTTAK",
+  "baslik": "Family disaster plan — fillable template — TAK-DER",
   "aciklama": "Meeting points, an off-island contact, medication and document lists. A fillable form designed to print and stick on the fridge."
  },
  {
   "dil": "en",
   "dosya": "sleep-and-startle.html",
   "es": "uyku-ve-irkilme.html",
-  "baslik": "Sleep, startle and anxiety after a disaster — KTTAK",
+  "baslik": "Sleep, startle and anxiety after a disaster — TAK-DER",
   "aciklama": "Which reactions are ordinary and which need support. Eight things that help with sleep, plus grounding techniques for the moment itself."
  },
  {
   "dil": "en",
   "dosya": "grief.html",
   "es": "yas.html",
-  "baslik": "After a loss: on grief — KTTAK",
+  "baslik": "After a loss: on grief — TAK-DER",
   "aciklama": "The five things that make grief after a disaster heavier, how to tell a child about a death, and how to stand beside someone grieving."
  },
  {
   "dil": "en",
   "dosya": "emergency-kit.html",
   "es": "acil-canta.html",
-  "baslik": "Emergency kit checklist — KTTAK",
+  "baslik": "Emergency kit checklist — TAK-DER",
   "aciklama": "A 72-hour go-bag and a week of home supplies, with separate sections for babies, older people, disabled household members and pets."
  },
  {
   "dil": "en",
   "dosya": "home-safety.html",
   "es": "evde-guvenlik.html",
-  "baslik": "Reducing non-structural risks at home — KTTAK",
+  "baslik": "Reducing non-structural risks at home — TAK-DER",
   "aciklama": "Securing furniture, safety film, clearing escape routes — in priority order, with solutions that leave no permanent damage for renters."
  },
  {
   "dil": "en",
   "dosya": "secondary-trauma.html",
   "es": "ikincil-travma.html",
-  "baslik": "Secondary trauma for field workers — KTTAK",
+  "baslik": "Secondary trauma for field workers — TAK-DER",
   "aciklama": "Telling secondary traumatic stress, compassion fatigue, burnout and moral injury apart; a post-shift decompression protocol and what the organisation owes its people."
  },
  {
   "dil": "en",
   "dosya": "psychological-first-aid.html",
   "es": "ilk-psikolojik-yardim.html",
-  "baslik": "Psychological first aid — field handbook — KTTAK",
+  "baslik": "Psychological first aid — field handbook — TAK-DER",
   "aciklama": "The Look–Listen–Link framework for non-specialist volunteers, what to say and what never to say, referral thresholds and a pocket card."
  },
  {
   "dil": "en",
   "dosya": "child-friendly-space.html",
   "es": "cocuk-dostu-alan.html",
-  "baslik": "Child-friendly space setup protocol — KTTAK",
+  "baslik": "Child-friendly space setup protocol — TAK-DER",
   "aciklama": "Site selection, child protection standards, staffing ratios, the daily session plan and an exit plan written before opening."
  },
  {
   "dil": "en",
   "dosya": "needs-assessment-form.html",
   "es": "ihtiyac-tespit-formu.html",
-  "baslik": "Household needs assessment form — KTTAK",
+  "baslik": "Household needs assessment form — TAK-DER",
   "aciklama": "The form we use in the field, the household coding that prevents duplicate records, the rules of a household visit and our data protection duties."
  },
  {
   "dil": "en",
   "dosya": "school-curriculum.html",
   "es": "okul-egitim-mufredati.html",
-  "baslik": "School-based preparedness curriculum — KTTAK",
+  "baslik": "School-based preparedness curriculum — TAK-DER",
   "aciklama": "Three 40-minute lesson plans for primary, middle and high school, plus a trauma-informed drill protocol."
- },
- {
-  "dil": "en",
-  "dosya": "transparency.html",
-  "es": "seffaflik.html",
-  "baslik": "Transparency — KTTAK",
-  "aciklama": "Annual reports, financial statements, how funds are spent, and which donations we accept."
  },
  {
   "dil": "en",
   "dosya": "news.html",
   "es": "haberler.html",
-  "baslik": "News and announcements — KTTAK",
-  "aciklama": "Field notes, training announcements and press statements from KTTAK."
+  "baslik": "News and events — TAK-DER",
+  "aciklama": "TAK-DER announcements, training calendar and event news."
  },
  {
   "dil": "en",
   "dosya": "volunteer.html",
   "es": "gonullu.html",
-  "baslik": "Volunteering and membership — KTTAK",
-  "aciklama": "Join a KTTAK volunteer team or become a member. Requirements and the application process."
+  "baslik": "Volunteer — TAK-DER",
+  "aciklama": "Volunteering with TAK-DER: requirements, mandatory training and the application form."
+ },
+ {
+  "dil": "en",
+  "dosya": "membership.html",
+  "es": "uye-ol.html",
+  "baslik": "Become a member — TAK-DER",
+  "aciklama": "Membership of Travma Afet Kriz Derneği: requirements, an application decided within 30 days, and dues."
  },
  {
   "dil": "en",
   "dosya": "governance.html",
   "es": "kurumsal.html",
-  "baslik": "Governance and documents — KTTAK",
-  "aciklama": "Association statute, registry details under the Associations Law (23/2016), board of directors, audit board and organisational structure."
+  "baslik": "Governance and statute — TAK-DER",
+  "aciklama": "TAK-DER's bodies (General Assembly, Representative Body, Audit Body), registration details and statute."
  },
  {
   "dil": "en",
   "dosya": "contact.html",
   "es": "iletisim.html",
-  "baslik": "Contact — KTTAK",
-  "aciklama": "KTTAK head office address, phone, email and contact form."
+  "baslik": "Contact — TAK-DER",
+  "aciklama": "Reach TAK-DER by email, contact form or social media, and where to turn in a crisis."
  },
  {
   "dil": "en",
   "dosya": "privacy.html",
   "es": "kvkk.html",
-  "baslik": "Privacy notice — KTTAK",
+  "baslik": "Privacy and personal data — TAK-DER",
   "aciklama": "How we process personal data under the North Cyprus Personal Data Protection Law (89/2007), your rights, and our cookie policy."
  },
  {
   "dil": "tr",
   "dosya": "404.html",
   "es": "404.html",
-  "baslik": "Sayfa bulunamadı — KTTAK",
-  "aciklama": "Aradığınız sayfa bulunamadı. KTTAK Travma Afet ve Kriz Derneği anasayfasına dönebilir veya kaynak merkezimize göz atabilirsiniz."
+  "baslik": "Sayfa bulunamadı — TAK-DER",
+  "aciklama": "Aradığınız sayfa bulunamadı. Travma Afet Kriz Derneği (TAK-DER) anasayfasına dönebilir veya kaynaklarımıza göz atabilirsiniz."
  },
  {
   "dil": "en",
   "dosya": "404.html",
   "es": "404.html",
-  "baslik": "Page not found — KTTAK",
-  "aciklama": "The page you were looking for could not be found. Return to the KTTAK home page or browse the resource centre."
+  "baslik": "Page not found — TAK-DER",
+  "aciklama": "The page you were looking for could not be found. Return to the TAK-DER home page or browse our resources."
  }
 ]

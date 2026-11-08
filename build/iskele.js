@@ -11,7 +11,7 @@ const SITE = ayarlar.alanAdi;
 
 const sayfalar = require('./sayfalar.json');
 
-const FONT = 'https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap';
+const FONT = 'https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,400..600,0..100&display=swap';
 
 function kurulus(dil) {
   return JSON.stringify({
@@ -20,16 +20,15 @@ function kurulus(dil) {
     name: dil === 'tr' ? ayarlar.resmiAdTR : ayarlar.resmiAdEN,
     alternateName: ayarlar.kisaAd,
     url: SITE + (dil === 'tr' ? '/' : '/en/'),
-    logo: SITE + '/assets/img/logo.svg',
+    logo: SITE + '/assets/img/logo-yazili-renkli-800.png',
     email: ayarlar.eposta,
-    telephone: ayarlar.telefon,
+    // Açık adres bilinçli olarak yayımlanmaz (merkez bir üyenin konutu); yalnızca ilçe.
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Örnek Sokak No: 00, Köşklüçiftlik',
       addressLocality: 'Lefkoşa',
-      addressRegion: 'Kuzey Kıbrıs',
       addressCountry: 'CY',
     },
+    sameAs: [ayarlar.instagram, ayarlar.facebook, ayarlar.linkedin].filter((u) => u && u !== '#'),
     areaServed: 'CY',
     knowsLanguage: ['tr', 'en'],
   }, null, 2);
@@ -44,7 +43,11 @@ for (const s of sayfalar) {
 
   const govdeYolu = path.join(__dirname, 'govde', `${dil}-${s.dosya}`);
   if (!fs.existsSync(govdeYolu)) continue;
-  const govde = fs.readFileSync(govdeYolu, 'utf8').trim();
+  const govde = fs.readFileSync(govdeYolu, 'utf8').trim()
+    .replaceAll('{{EPOSTA}}', ayarlar.eposta)
+    .replaceAll('{{INSTAGRAM}}', ayarlar.instagram)
+    .replaceAll('{{FACEBOOK}}', ayarlar.facebook)
+    .replaceAll('{{LINKEDIN}}', ayarlar.linkedin);
 
   const varlik = dil === 'tr' ? 'assets/' : '../assets/';
   const trYol = dil === 'tr' ? s.dosya : s.es;
@@ -69,8 +72,11 @@ for (const s of sayfalar) {
 <meta property="og:title" content="${s.baslik}">
 <meta property="og:description" content="${s.aciklama}">
 <meta property="og:url" content="${kanonik}">
-<meta name="theme-color" content="#122a27">
-<link rel="icon" href="${varlik}img/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#135e8b">
+<meta property="og:image" content="${SITE}/assets/img/og-gorsel.png">
+<link rel="icon" href="${varlik}img/favicon.ico" sizes="32x32">
+<link rel="icon" href="${varlik}img/logo-isaret-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="${varlik}img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${FONT}">

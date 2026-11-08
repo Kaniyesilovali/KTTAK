@@ -5,29 +5,38 @@
 @source "../assets/js/*.js";
 
 /* ============================================================
-   TASARIM BELLEĞİ
+   TASARIM BELLEĞİ — TAK-DER
    Tez: "Sarsıntının değil, sonrasının sitesi."
-   Travma-bilinçli tasarım ilkeleri: öngörülebilirlik, ani hareket yok,
-   her zaman görünür yardım/çıkış, kullanıcıda kontrol hissi.
-   Kırmızı ve alarm estetiği bilinçli olarak kullanılmamıştır.
+   Renkler logodan çıkarılmıştır (tasarımcıdan kesin kodlar teyit edilmeli).
+   Logonun maviden yeşile geçişi sitede tek anlamla kullanılır:
+   mavi = sarsıntı / kurum, yeşil = toparlanma / destek.
+   Travma-bilinçli ilkeler: öngörülebilirlik, ani hareket yok, her zaman
+   görünür yardım, bol beyaz alan. Kırmızı ve alarm estetiği yoktur.
+   Token adları eski paletten kalmadır (zemin, orman, fener…) — 46 sayfadaki
+   sınıflar değişmesin diye; değerler yeni kimliğe aittir.
    ============================================================ */
 
 @theme {
-  /* --- Renk --- */
-  --color-zemin:      #edeee9;  /* soğuk mineral zemin (krem değil) */
-  --color-kagit:      #f7f8f4;  /* yüzey / kart */
-  --color-derin:      #122a27;  /* en koyu mürekkep */
-  --color-orman:      #1e4a44;  /* birincil kurumsal */
-  --color-orman-acik: #2f6f66;  /* birincil - vurgu */
-  --color-sis:        #5f6a67;  /* ikincil metin — zemin üzerinde 4.81:1 */
-  --color-cizgi:      #d5d8cf;  /* ayraç / kenarlık */
-  --color-kum:        #dcd2be;  /* sıcak panel */
-  --color-kum-acik:   #ebe4d5;
-  --color-fener:      #8a5a08;  /* SİNYAL: yalnızca yardım/yönlendirme.
-                                   Tüm zeminlerde WCAG AA (en düşük 4.68:1). */
-  --color-fener-acik: #f0c46a;  /* koyu zemin üzerinde sinyal */
+  /* --- Renk: kimlik paleti --- */
+  --color-zemin:      #ffffff;  /* Beyaz — ana zemin */
+  --color-kagit:      #f2f7f8;  /* çok açık petrol — kart/panel; koyu zeminde yazı */
+  --color-derin:      #0c2e44;  /* koyu mavinin mürekkep tonu — gövde metni, yardım şeridi */
+  --color-orman:      #135e8b;  /* KOYU MAVİ — başlık, menü, birincil düğme (beyazda 7.0:1) */
+  --color-orman-acik: #10778c;  /* PETROL MAVİSİ — bağlantı, odak, vurgu (beyazda 5.2:1) */
+  --color-deniz:      #4c9785;  /* DENİZ YEŞİLİ — ikon ve süs; metin için kullanılmaz */
+  --color-filiz:      #80b674;  /* AÇIK YEŞİL — yalnızca "Gönüllü ol" düğmesi zemini.
+                                   Üzerindeki yazı her zaman derin (5.9:1); beyaz okunmaz. */
+  --color-sis:        #557080;  /* ikincil metin — beyazda 5.2:1, kâğıtta 4.9:1 */
+  --color-cizgi:      #d7e3e8;  /* ayraç / kenarlık */
+  --color-kum:        #cfe4c6;  /* yeşil panel kenarı */
+  --color-kum-acik:   #eff6eb;  /* yeşil panel — destek çağrıları */
+  --color-fener:      #427636;  /* açık yeşilin metin tonu: etiket ve liste işaretleri.
+                                   Beyaz, kâğıt ve yeşil panelde AA (en düşük 4.9:1). */
+  --color-fener-acik: #c3e3b7;  /* koyu mavi zeminde yeşil vurgu metni (5.0:1 / 10:1) */
 
   /* --- Tipografi --- */
+  /* Fraunces'in SOFT ekseni açık: yuvarlatılmış uçlar logodaki ellerin
+     yumuşak hatlarıyla konuşur. Gövde Archivo — sakin, geniş, okunaklı. */
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Archivo", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
 
@@ -36,7 +45,12 @@
   --text-mikro--letter-spacing: 0.14em;
 
   /* --- Geometri --- */
-  --radius-yumusak: 4px;
+  --radius-yumusak: 6px;
+}
+
+:root {
+  /* Logonun geçişi. Yalnızca kapak alanlarında ve imza hattında. */
+  --gradyan: linear-gradient(90deg, #135e8b 0%, #10778c 40%, #4c9785 70%, #80b674 100%);
 }
 
 @layer base {
@@ -58,7 +72,8 @@
   /* Başlıklar: Fraunces, düşük "wonk", sıkı harf aralığı */
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    font-variation-settings: "SOFT" 0, "WONK" 0, "opsz" 32;
+    font-variation-settings: "SOFT" 100, "WONK" 0, "opsz" 32;
+    color: var(--color-orman);
     font-weight: 500;
     letter-spacing: -0.018em;
     line-height: 1.14;
@@ -125,19 +140,21 @@
   }
   .etiket-sade::before { display: none; }
 
-  /* ---- İMZA: sarsıntıdan sakinliğe çözülen hat ----
-     Renkleri gömülü iki SVG dosyası <img> ile kullanılır; CSS mask-image
-     yerel önizlemede (file://) Chrome tarafından engellendiği için değil,
-     her ortamda aynı çalışsın diye. Kaynak: build/gen-sismik.js */
-  .sismik {
+  /* ---- İMZA: Örgü ----
+     Dağınık iplikler farklı yerlerden katılır, birbirine tutunarak tek bir
+     halat gibi örülür: dayanışma. Kaynak: build/gen-orgu.js
+     Görsel esnetilmez, kırpılır (cover): dar ekranda ortadaki buluşma anı
+     ve örgü kalır. */
+  .orgu {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
-  /* Hat yavaşça soldan sağa belirir: ani değil, çözülerek. */
+  /* İplikler soldan sağa yavaşça belirir: önce katılış, sonra örülme. */
   @media (prefers-reduced-motion: no-preference) {
-    .sismik-canli { animation: hat-coz 2600ms cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+    .orgu-canli { animation: hat-coz 3200ms cubic-bezier(0.22, 0.61, 0.36, 1) both; }
   }
   @keyframes hat-coz {
     from { clip-path: inset(0 100% 0 0); }
@@ -173,12 +190,12 @@
   }
   .dugme-ikincil:hover { background-color: var(--color-orman); color: var(--color-kagit); }
 
-  /* Sinyal rengi yalnızca yardım/bağış eylemlerinde */
+  /* Açık yeşil yalnızca "Gönüllü ol / Destek ol" eylemlerinde */
   .dugme-fener {
-    background-color: var(--color-fener);
-    color: #fff;
+    background-color: var(--color-filiz);
+    color: var(--color-derin);
   }
-  .dugme-fener:hover { background-color: #6d4706; }
+  .dugme-fener:hover { background-color: #94c489; }
 
   .dugme-hayalet {
     background-color: transparent;
@@ -202,11 +219,11 @@
 
   /* ---- Bağlantı: alt çizgi kalınlaşarak yanıt verir ---- */
   .bag {
-    color: var(--color-orman);
+    color: var(--color-orman-acik);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.22em;
-    text-decoration-color: color-mix(in srgb, var(--color-orman) 40%, transparent);
+    text-decoration-color: color-mix(in srgb, var(--color-orman-acik) 40%, transparent);
     transition: text-decoration-color 160ms ease;
   }
   .bag:hover { text-decoration-color: currentColor; }
@@ -230,16 +247,17 @@
   .metin ul > li::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0.72em;
-    width: 0.5rem;
-    height: 1px;
-    background-color: var(--color-fener);
+    left: 0.1rem;
+    top: 0.62em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 999px;
+    background-color: var(--color-deniz);
   }
   .metin ol { padding-left: 1.35rem; }
   .metin ol > li { margin-top: 0.55em; padding-left: 0.35rem; }
   .metin a:not(.dugme) {
-    color: var(--color-orman);
+    color: var(--color-orman-acik);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.22em;
@@ -276,6 +294,21 @@
   .menu-acik { overflow: hidden; }
 }
 
+@layer components {
+  /* ---- Kapak alanı: logonun geçişi ----
+     Yazı ortada ve koyu tarafta durur; açık yeşil yalnızca sağ uçta,
+     metnin altına girmez (beyaz yazı açık yeşilde okunmaz). */
+  .kapak {
+    background-color: var(--color-orman);
+    background-image:
+      radial-gradient(120% 140% at 100% 100%, rgba(128, 182, 116, 0.55) 0%, rgba(76, 151, 133, 0) 45%),
+      linear-gradient(120deg, #135e8b 0%, #10778c 60%, #2f8a86 100%);
+  }
+
+  /* ---- Gradyan kılcal çizgi: üst menünün alt kenarı ---- */
+  .gradyan-cizgi { height: 2px; background-image: var(--gradyan); }
+}
+
 @utility hat-sol {
   /* Bölüm başlıklarının soluna inen sabit ray */
   border-left: 1px solid var(--color-cizgi);
@@ -295,7 +328,8 @@
     right: 0;
     bottom: -0.45rem;
     height: 2px;
-    background-color: var(--color-fener);
+    border-radius: 2px;
+    background-image: var(--gradyan);
   }
 }
 
@@ -394,4 +428,14 @@
   .yazdir-sayfa-basi { break-before: page; }
 
   @page { margin: 16mm 14mm; }
+}
+
+@layer components {
+  /* Altbilgi sütun başlıkları etiket gibi davranır: serif değil, Archivo. */
+  footer h2 {
+    font-family: var(--font-sans);
+    font-variation-settings: normal;
+    letter-spacing: var(--text-mikro--letter-spacing);
+    color: var(--color-sis);
+  }
 }

@@ -11,6 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const KOK = path.join(__dirname, '..');
+const ayarlar = require('./ayarlar.json');
 const P = (f) => fs.readFileSync(path.join(__dirname, 'parcalar', f), 'utf8').trim();
 
 const parcalar = {
@@ -38,8 +39,10 @@ const esles = {
   'cocuk-dostu-alan.html': 'child-friendly-space.html',
   'ihtiyac-tespit-formu.html': 'needs-assessment-form.html',
   'okul-egitim-mufredati.html': 'school-curriculum.html',
+  'calisma-gruplari.html': 'working-groups.html',
+  'egitimler.html': 'training.html',
+  'uye-ol.html': 'membership.html',
   'gonullu.html': 'volunteer.html',
-  'seffaflik.html': 'transparency.html',
   'iletisim.html': 'contact.html',
   'kvkk.html': 'privacy.html',
 };
@@ -80,7 +83,11 @@ for (const dil of ['tr', 'en']) {
     const uygula = (parca) => parca
       .replaceAll('{{KOK}}', kokOnek)
       .replaceAll('{{ALTDIL}}', altDil)
-      .replaceAll('{{VARLIK}}', varlikOnek);
+      .replaceAll('{{VARLIK}}', varlikOnek)
+      .replaceAll('{{EPOSTA}}', ayarlar.eposta)
+      .replaceAll('{{INSTAGRAM}}', ayarlar.instagram)
+      .replaceAll('{{FACEBOOK}}', ayarlar.facebook)
+      .replaceAll('{{LINKEDIN}}', ayarlar.linkedin);
 
     let b = blokDegistir(html, 'BASLIK', aktifMenu(uygula(parcalar[dil].baslik), dosya));
     let a = blokDegistir(b.html, 'ALTBILGI', uygula(parcalar[dil].altbilgi));

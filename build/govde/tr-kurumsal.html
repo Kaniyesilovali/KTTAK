@@ -3,13 +3,15 @@
     <nav aria-label="Konum" class="text-mikro uppercase text-sis">
       <a href="index.html" class="hover:text-orman transition-colors">Anasayfa</a>
       <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
-      <span class="text-derin">Kurumsal Belgeler</span>
+      <a href="hakkimizda.html" class="hover:text-orman transition-colors">Hakkımızda</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <span class="text-derin">Yönetim ve Tüzük</span>
     </nav>
     <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
-      <h1 class="md:col-span-7 text-[2.25rem] md:text-5xl">Kurumsal belgeler ve kurullar</h1>
+      <h1 class="md:col-span-7 text-[2.25rem] md:text-5xl">Yönetim ve tüzük</h1>
       <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">
-        Derneğin tüzel kimliğine, karar organlarına ve resmî belgelerine dair
-        her şey bu sayfada. Belgeleri istemeden, kayıt bırakmadan indirebilirsiniz.
+        Derneğin tüzel kimliği, organları ve tüzüğü. Organlar ilk Genel
+        Kurul'da seçilecek; o zamana kadar bu sayfada kurucu üyeler yer alır.
       </p>
     </div>
   </div>
@@ -20,178 +22,99 @@
     <p class="etiket">Tüzel kimlik</p>
     <h2 class="mt-4 text-2xl md:text-3xl">Dernek künyesi</h2>
     <dl class="kunye mt-8 max-w-4xl">
-      <div><dt>Resmî unvan</dt><dd>Kıbrıs Türk Travma Afet ve Kriz Derneği</dd></div>
-      <div><dt>Kısa ad</dt><dd>KTTAK</dd></div>
-      <div><dt>Dernek kütük numarası</dt><dd>000</dd></div>
-      <div><dt>Kayıtlı olduğu makam</dt><dd>Lefkoşa Kaymakamlığı — İçişleri Bakanlığı dernekler kütüğü</dd></div>
-      <div><dt>Tabi olduğu yasa</dt><dd>Dernekler Yasası (23/2016)</dd></div>
-      <div><dt>Vergi numarası</dt><dd>Gelir ve Vergi Dairesi — 000000000</dd></div>
-      <div><dt>Merkez adresi</dt><dd>Örnek Sokak No: 00, Köşklüçiftlik, Lefkoşa / KKTC</dd></div>
-      <div><dt>Yardım toplama izni</dt><dd>İçişleri Bakanlığı — 00.00.0000 tarih ve 000 sayılı izin</dd></div>
+      <div><dt>Resmî ad</dt><dd>Travma Afet Kriz Derneği</dd></div>
+      <div><dt>Kısa ad</dt><dd>TAK-DER</dd></div>
+      <div><dt>Tabi olduğu yasa</dt><dd>Dernekler Yasası (23/2016), KKTC</dd></div>
+      <div><dt>Merkez</dt><dd>Lefkoşa</dd></div>
+      <!-- Tescil sonrası ekleyin:
+      <div><dt>Kütük / sicil no</dt><dd>000</dd></div>
+      <div><dt>Tescil tarihi</dt><dd>00.00.0000</dd></div>
+      -->
     </dl>
+  </div>
+</section>
+
+<section id="yonetim" class="mt-24 md:mt-32 scroll-mt-28">
+  <div class="kabuk">
+    <p class="etiket">Yönetim</p>
+    <h2 class="mt-4 text-3xl md:text-4xl olcek">Derneğin organları</h2>
+
+    <div class="mt-10 grid gap-px bg-cizgi border border-cizgi rounded-[4px] overflow-hidden md:grid-cols-3">
+      <div class="bg-kagit p-7">
+        <p class="text-mikro uppercase font-semibold text-fener">Tüzük md. 13</p>
+        <h3 class="mt-3 text-xl">Genel Kurul</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">Derneğin en yetkili karar organıdır; üyelerden oluşur ve diğer organları seçer.</p>
+      </div>
+      <div class="bg-kagit p-7">
+        <p class="text-mikro uppercase font-semibold text-fener">Tüzük md. 20–21</p>
+        <h3 class="mt-3 text-xl">Temsil Organı</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">10 asıl ve 5 yedek üyeden oluşur. Görev dağılımı: Koordinatör, Koordinatör Yardımcısı, Sekreter ve Sayman.</p>
+      </div>
+      <div class="bg-kagit p-7">
+        <p class="text-mikro uppercase font-semibold text-fener">Tüzük md. 20, 25</p>
+        <h3 class="mt-3 text-xl">Denetim Organı</h3>
+        <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">3 asıl ve 1 yedek üyeden oluşur; derneğin çalışmalarını ve hesaplarını denetler.</p>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <h3 class="text-mikro uppercase font-semibold text-sis">Kurucu üyeler</h3>
+      <!-- İlk Genel Kurul'dan sonra bu bölüm "Temsil Organı" ve "Denetim Organı" listeleriyle değiştirilir.
+           Her kişi için: ad, görev, fotoğraf, kısa özgeçmiş — ve kişinin yazılı yayın onayı.
+           Kart kalıbı:
+        <div class="bg-kagit p-6">
+          <p class="text-mikro uppercase font-semibold text-fener">Koordinatör</p>
+          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
+          <p class="mt-1 text-[0.9375rem] text-derin/70">Kısa özgeçmiş</p>
+        </div>
+      -->
+      <div class="mt-5 rounded-[4px] border border-dashed border-cizgi bg-kagit px-7 py-10 text-center">
+        <p class="text-[0.9375rem] leading-relaxed text-derin/75 max-w-lg mx-auto">
+          Kurucu üyelerin listesi, yayın onayları alındıktan sonra burada yer alacak.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="tuzuk" class="mt-24 md:mt-32 scroll-mt-28">
   <div class="kabuk grid gap-10 md:grid-cols-12 md:gap-16">
     <div class="md:col-span-5">
-      <p class="etiket">Belgeler</p>
-      <h2 class="mt-4 text-3xl md:text-4xl">Tüzük ve resmî evrak</h2>
+      <p class="etiket">Tüzük</p>
+      <h2 class="mt-4 text-3xl md:text-4xl">Dernek tüzüğü</h2>
       <p class="mt-5 leading-relaxed text-derin/75">
-        Tüzük, genel kurulda kabul edilen en güncel hâliyle yayımlanır.
-        Değişiklik yapıldığında önceki sürüm arşivde kalır.
+        Tüzük, derneğin amacını, faaliyet alanlarını, çalışma ilkelerini,
+        üyelik koşullarını ve organlarını düzenler.
       </p>
     </div>
     <ul class="md:col-span-7 border-t border-cizgi">
       <li>
         <div class="grid gap-2 py-5 border-b border-cizgi sm:grid-cols-12 sm:gap-6 sm:items-baseline">
           <div class="sm:col-span-8">
-            <h3 class="text-lg">Dernek Tüzüğü</h3>
-            <p class="mt-1 text-[0.9375rem] text-derin/70">Genel kurulda kabul edilen en güncel hâli</p>
+            <h3 class="text-lg">Travma Afet Kriz Derneği Tüzüğü</h3>
+            <p class="mt-1 text-[0.9375rem] text-derin/70">Tescilli metin, PDF</p>
           </div>
-          <p class="sm:col-span-4 sm:text-right text-mikro uppercase font-semibold text-sis">Talep üzerine</p>
-        </div>
-      </li>
-      <li>
-        <div class="grid gap-2 py-5 border-b border-cizgi sm:grid-cols-12 sm:gap-6 sm:items-baseline">
-          <div class="sm:col-span-8">
-            <h3 class="text-lg">Kuruluş bildirimi ve kütük kaydı</h3>
-            <p class="mt-1 text-[0.9375rem] text-derin/70">Lefkoşa Kaymakamlığı onaylı kütük kayıt belgesi</p>
-          </div>
-          <p class="sm:col-span-4 sm:text-right text-mikro uppercase font-semibold text-sis">Talep üzerine</p>
-        </div>
-      </li>
-      <li>
-        <div class="grid gap-2 py-5 border-b border-cizgi sm:grid-cols-12 sm:gap-6 sm:items-baseline">
-          <div class="sm:col-span-8">
-            <h3 class="text-lg">Yardım toplama izin belgesi</h3>
-            <p class="mt-1 text-[0.9375rem] text-derin/70">İçişleri Bakanlığı tarafından düzenlenmiştir</p>
-          </div>
-          <p class="sm:col-span-4 sm:text-right text-mikro uppercase font-semibold text-sis">Talep üzerine</p>
-        </div>
-      </li>
-      <li>
-        <div class="grid gap-2 py-5 border-b border-cizgi sm:grid-cols-12 sm:gap-6 sm:items-baseline">
-          <div class="sm:col-span-8">
-            <h3 class="text-lg">Olağan Genel Kurul tutanağı</h3>
-            <p class="mt-1 text-[0.9375rem] text-derin/70">Karar defteri örneği ve seçim sonuçları</p>
-          </div>
-          <p class="sm:col-span-4 sm:text-right text-mikro uppercase font-semibold text-sis">Talep üzerine</p>
-        </div>
-      </li>
-      <li>
-        <div class="grid gap-2 py-5 border-b border-cizgi sm:grid-cols-12 sm:gap-6 sm:items-baseline">
-          <div class="sm:col-span-8">
-            <h3 class="text-lg">Etik kod ve çocuk koruma politikası</h3>
-            <p class="mt-1 text-[0.9375rem] text-derin/70">Tüm gönüllü ve çalışanlar için bağlayıcı</p>
-          </div>
-          <p class="sm:col-span-4 sm:text-right text-mikro uppercase font-semibold text-sis">Talep üzerine</p>
+          <p class="sm:col-span-4 sm:text-right text-mikro uppercase font-semibold text-sis">Tescil sonrası yayımlanacak</p>
         </div>
       </li>
     </ul>
-    <p class="md:col-span-7 md:col-start-6 mt-6 text-[0.9375rem] leading-relaxed text-sis">
-      Bu belgeler resmî evraktır ve yalnızca aslına uygun hâliyle yayımlanır.
-      Web sitesinde henüz yayımlanmamış olanları
-      <a href="iletisim.html" class="bag">talep üzerine</a> paylaşıyoruz;
-      yayımlandıklarında bu listeden doğrudan açılacaklar.
-    </p>
   </div>
 </section>
 
-<section id="kurullar" class="mt-24 md:mt-32 scroll-mt-28">
-  <div class="kabuk">
-    <p class="etiket">Karar organları</p>
-    <h2 class="mt-4 text-3xl md:text-4xl olcek">Yönetim ve denetim kurulu</h2>
-    <p class="mt-4 text-[0.9375rem] text-sis olcek">
-      Kurullar iki yılda bir olağan genel kurulda seçilir ve üyeler
-      görevlerini fahri olarak, ücret almadan yürütür.
-    </p>
-
-    <div class="mt-10">
-      <h3 class="text-mikro uppercase font-semibold text-sis">Yönetim Kurulu</h3>
-      <div class="mt-5 grid gap-px bg-cizgi border border-cizgi rounded-[4px] overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-fener">Başkan</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-          <p class="mt-1 text-[0.9375rem] text-derin/70">Klinik psikolog, afet psikolojisi</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Başkan yardımcısı</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-          <p class="mt-1 text-[0.9375rem] text-derin/70">Sosyal hizmet uzmanı</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Genel sekreter</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-          <p class="mt-1 text-[0.9375rem] text-derin/70">Kamu yönetimi, afet yönetimi</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Sayman</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-          <p class="mt-1 text-[0.9375rem] text-derin/70">Mali müşavir</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Üye</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-          <p class="mt-1 text-[0.9375rem] text-derin/70">Psikiyatrist</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Üye</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-          <p class="mt-1 text-[0.9375rem] text-derin/70">İnşaat mühendisi, yapı güvenliği</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-12">
-      <h3 class="text-mikro uppercase font-semibold text-sis">Denetim Kurulu</h3>
-      <div class="mt-5 grid gap-px bg-cizgi border border-cizgi rounded-[4px] overflow-hidden sm:grid-cols-3">
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Asıl üye</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Asıl üye</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-        </div>
-        <div class="bg-kagit p-6">
-          <p class="text-mikro uppercase font-semibold text-sis">Asıl üye</p>
-          <p class="mt-2 font-display text-lg font-semibold">Ad Soyad</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="mt-8 text-[0.9375rem] text-sis olcek">
-      Kurul üyelerinin özgeçmişleri ve beyan ettikleri çıkar ilişkileri
-      <a href="seffaflik.html" class="bag">şeffaflık sayfasında</a> yayımlanır.
-    </p>
-  </div>
-</section>
-
-<!-- ============ KAYNAKÇA: sayfadaki bilgilerin dayandığı belgeler ============ -->
+<!-- ============ KAYNAKÇA ============ -->
 <section id="kaynakca" class="mt-24 md:mt-32 scroll-mt-28">
   <div class="kabuk">
     <p class="etiket">Kaynakça</p>
     <h2 class="mt-4 text-2xl md:text-3xl">Bu sayfadaki bilgilerin kaynağı</h2>
-    <p class="mt-5 text-[0.9375rem] leading-relaxed text-derin/75 olcek">
-      Aşağıdaki yöntem ve standartlar uluslararası insani yardım ve ruh sağlığı literatüründen uyarlanmıştır; KKTC'ye özgü bilgiler resmî kurum kaynaklarına dayanır. Derneğin kendi program kararları — eğitim süreleri, izlem süresi, ekip oranları, ücret politikası — bu listede yer almaz: onlar kaynak değil, tercihtir.
-    </p>
     <dl class="kunye mt-8">
+      <div>
+        <dt>Organlar ve görev dağılımı</dt>
+        <dd>Travma Afet Kriz Derneği Tüzüğü, md. 13, 20, 21 ve 25.</dd>
+      </div>
       <div>
         <dt>Derneğin tabi olduğu yasa</dt>
         <dd>Dernekler Yasası (23/2016), KKTC. Resmî metin: KKTC Mahkemeleri Mevzuat Bilgi Sistemi. <a href="https://mevzuat.mahkemeler.net" class="bag">mevzuat.mahkemeler.net</a></dd>
       </div>
-      <div>
-        <dt>Kütük kaydı ve yardım toplama izni</dt>
-        <dd>KKTC İçişleri Bakanlığı — dernekler kütüğü, kaymakamlık kaydı ve yardım toplama izni işlemleri. <a href="https://icisleri.gov.ct.tr" class="bag">icisleri.gov.ct.tr</a></dd>
-      </div>
-      <div>
-        <dt>Yönetişim ve hesap verebilirlik ilkeleri</dt>
-        <dd>CHS Alliance, Groupe URD ve Sphere (2024). <em>Core Humanitarian Standard on Quality and Accountability</em>, 2024 baskısı. <a href="https://corehumanitarianstandard.org/the-standard" class="bag">corehumanitarianstandard.org</a></dd>
-      </div>
     </dl>
-    <p class="mt-6 text-[0.8125rem] leading-relaxed text-sis olcek">
-      Bağlantılar kaynağın yayıncısına gider; son erişim 10 Eylül 2026. Künyede hata görürseniz <a href="iletisim.html" class="bag">bize bildirin</a>, düzeltiriz.
-    </p>
   </div>
 </section>

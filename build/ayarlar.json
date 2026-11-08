@@ -1,9 +1,12 @@
 {
-  "_not": "Alan adını aldığınızda YALNIZCA burayı değiştirin, sonra: npm run yayina-hazirla",
-  "alanAdi": "https://kttak.org",
-  "kisaAd": "KTTAK",
-  "resmiAdTR": "Kıbrıs Türk Travma Afet ve Kriz Derneği",
-  "resmiAdEN": "Turkish Cypriot Trauma, Disaster and Crisis Association",
-  "eposta": "info@kttak.org",
-  "telefon": "+90-392-000-00-00"
+  "_not": "Alan adı, e-posta ve sosyal medya bağlantıları YALNIZCA burada tutulur. Değiştirdikten sonra: npm run iskele -- --force && npm run yayina-hazirla",
+  "_gecici": "alanAdi ve eposta GEÇİCİDİR — derneğin resmî alan adı ve e-postası belirlenince değiştirin. Sosyal medya bağlantıları '#' iken ikonlar hiçbir yere gitmez.",
+  "alanAdi": "https://tak-der.org",
+  "kisaAd": "TAK-DER",
+  "resmiAdTR": "Travma Afet Kriz Derneği",
+  "resmiAdEN": "Trauma, Disaster and Crisis Association",
+  "eposta": "info@tak-der.org",
+  "instagram": "#",
+  "facebook": "#",
+  "linkedin": "#"
 }

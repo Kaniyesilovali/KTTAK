@@ -1,4 +1,4 @@
-# Kıbrıs Türk Travma Afet ve Kriz Derneği — Web Sitesi
+# Travma Afet Kriz Derneği (TAK-DER) — Web Sitesi
 
 Statik HTML + Tailwind CSS ile yapılmış, iki dilli (TR/EN) dernek sitesi.
 Sunucuda hiçbir kurulum, veritabanı veya build adımı gerektirmez —
@@ -71,15 +71,19 @@ gerçek sunucuda devreye girer.
 
 ## 2. ⚠ Yayına almadan önce mutlaka gözden geçirin
 
-### 2.1 Alan adı ve e-posta
+### 2.1 Alan adı, e-posta ve sosyal medya — tek dosya
 
-Şu an her yerde `kttak.org` geçici olarak duruyor. Alan adını aldığınızda
-**tek bir dosyayı** değiştirin — `build/ayarlar.json`:
+Brif gereği **resmî e-posta, iletişim bilgileri ve tescil olmadan site yayına
+alınmaz.** Şu an `tak-der.org` / `info@tak-der.org` GEÇİCİ değerlerdir ve
+sosyal medya bağlantıları `#`'dir. Hepsi tek dosyada: `build/ayarlar.json`
 
 ```json
 {
-  "alanAdi": "https://gercekalanadiniz.org",
-  "eposta": "info@gercekalanadiniz.org"
+  "alanAdi": "https://gercekalanadi.org",
+  "eposta": "info@gercekalanadi.org",
+  "instagram": "https://www.instagram.com/...",
+  "facebook": "https://www.facebook.com/...",
+  "linkedin": "https://www.linkedin.com/company/..."
 }
 ```
 
@@ -89,16 +93,15 @@ Sonra:
 npm run iskele -- --force && npm run yayina-hazirla
 ```
 
-Canonical adresler, hreflang etiketleri, schema.org verisi, `sitemap.xml` ve
-`robots.txt` birlikte güncellenir. Sayfa içindeki e-posta adreslerini ayrıca
-değiştirmeniz gerekir:
+Gövdelerde ve başlık/altbilgide `{{EPOSTA}}`, `{{INSTAGRAM}}`, `{{FACEBOOK}}`,
+`{{LINKEDIN}}` yer tutucuları kullanılır; e-posta tüm sitede tek adrestir.
+Canonical, hreflang, schema.org (`sameAs` dahil), `sitemap.xml` ve
+`robots.txt` birlikte güncellenir.
 
-```bash
-grep -rl '@kttak.org' --include='*.html' . | grep -v node_modules \
-  | xargs sed -i '' 's/@kttak.org/@gercekalanadiniz.org/g'
-```
-
-Kullanılan adresler: `info@`, `gonullu@`, `bagis@`, `basin@`, `etik@`, `kvkk@`
+Alan adı, hosting ve formlar **derneğin resmî e-postasıyla ve derneğin adına**
+açılmalı (tüzük md. 32/3, 38): iki adımlı doğrulama, en az iki yönetici (site
+yöneticisi + Koordinatör veya Sekreter), ortak şifre yöneticisi, yenileme
+tarihleri Sekreterlikte.
 
 ### 2.2 `kvkk.html` — hukuki metin, olduğu gibi yayımlamayın
 
@@ -111,83 +114,76 @@ yetkili bir hukukçu kontrol etmelidir. Aynı durum yardım toplama izninin
 dayandığı yasa için de geçerli: metinde yalnızca "İçişleri Bakanlığı izni"
 deniyor, yasa numarası eklenmedi.
 
-### 2.3 Acil durum numaraları
+### 2.3 Acil durum numaraları — dernek kriz hattı DEĞİLDİR
 
-Her sayfanın en üstünde **112 Acil · 101 Sivil Savunma · 177 Orman Yangını ·
-155 Polis** duruyor. Bunlar KKTC için doğrulandı, ancak yayına almadan önce
-bir kez daha teyit edin — yanlış acil numara ciddi bir sorumluluktur.
+Her sayfanın en üstünde **112 Acil/Ambulans · 101 Sivil Savunma · 177 Orman
+Yangını · 155 Polis** ve "TAK-DER bir kriz hattı değildir" bağlantısı durur.
+İletişim sayfasında (`iletisim.html#kriz`) "Kriz anında nereye başvurulur"
+kutusu var. **Sosyal Hizmetler Dairesi numarası** teyit edilmediği için
+eklenmedi; yerinde HTML yorumu bekliyor. Yayından önce numaraları yeniden
+teyit edin. Eski sürümdeki 0850 "danışma hattı" tüm sayfalardan kaldırıldı.
 
-### 2.4 Sitede geçmişe dair hiçbir iddia yok
+### 2.4 Brifin içerik kuralları (tüzük md. 5, 31, 32)
 
-Kuruluş yılı, tarihçe, gönüllü sayısı, ulaşılan kişi sayısı, geçmiş yıl
-bütçeleri ve rapor arşivi bilinçli olarak yazılmadı. Bunun yerine:
+Site şu kurallara göre yazıldı; yeni içerik eklerken de geçerlidir:
 
-- **Şeffaflık sayfası** geçmiş rakam yerine *taahhüt* sunuyor: neyi ne zaman
-  yayımlayacağınız, hangi bağış kaynaklarını kabul edip etmediğiniz. Rapor
-  arşivinde boş durum bloğu var; ilk rapor çıktığında o bloğu silip hemen
-  altındaki hazır tabloyu HTML yorumundan çıkarmanız yeterli.
-- **Haberler sayfası** da boş durum olarak duruyor; içinde kopyalayıp
-  kullanacağınız hazır bir haber `<li>` kalıbı yorum içinde bekliyor.
-- **Çalışma alanları** ve **anasayfa** rakam yerine yöntem anlatıyor.
+- Metinler Temsil Organı'nın belirlediği kişilerin onayından sonra yayımlanır.
+- **"Kurulduk" ifadesi yalnızca tescilden sonra.** Kuruluş duyurusu
+  `build/govde/tr-haberler.html` / `en-news.html` içinde HTML yorumu olarak
+  hazır bekliyor.
+- Doğrulanmamış olay bilgisi kesin bilgi gibi paylaşılmaz.
+- Destek alanların yüzü, sesi, adı, öyküsü onamsız kullanılmaz; çocuk
+  fotoğrafı ve afet bölgesinden yıkım/yaralı/acı görüntüsü kullanılmaz.
+- Siyasi parti, aday veya kampanya içeriği yok; dernek adı ticari/kişisel
+  tanıtımda kullanılmaz.
+- **Açık adres ve harita yok** (merkez bir üyenin konutu). Konum yalnızca
+  "Lefkoşa". schema.org verisinde de yalnızca ilçe var.
+- Telefon belirlenmediği için hiçbir yerde telefon yok.
 
-Faaliyet geçmişiniz oluştuğunda bu bölümleri doldurursunuz; yapı hazır.
+Sitede geçmişe dair iddia (kuruluş yılı, gönüllü sayısı, rapor arşivi, saha
+deneyimi, kütük no, yardım toplama izni, aidat tutarı) **yoktur**. Kaynak
+sayfalarındaki "sahada kullandığımız" gibi ifadeler "sahada kullanılmak üzere
+hazırlanan" biçimine çevrildi.
 
-Aynı gerekçeyle sitede **kurumsal ilişki ve denetim iddiası da yok**:
+### 2.5 Site haritası (brif Bölüm 6) ve eksik bilgiler
 
-- Sivil Savunma Teşkilatı veya kaymakamlık ile eşgüdüm/koordinasyon altında
-  çalışıldığı söylenmiyor. Saha metinleri yalnızca çalışma yöntemini anlatıyor
-  ("paralel yapı kurmayız"). Resmî bir protokol imzalarsanız bu iddiayı
-  `index.html`, `hakkimizda.html` ve `calisma-alanlarimiz.html` içindeki
-  koordinasyon bölümlerine ekleyebilirsiniz.
-- Bağımsız denetimden geçmiş mali tablo veya denetim görüşü yayımlama
-  taahhüdü verilmiyor. Şeffaflık taahhüdü faaliyet raporu, gider dökümü,
-  genel kurul tutanağı ve kurumsal belgelerle sınırlı. İleride bağımsız
-  denetim yaptırırsanız `seffaflik.html` içindeki taahhüt listesine bir satır,
-  arşiv tablosuna bir sütun eklemeniz yeterli.
+| Brifteki sayfa | Dosya (TR / EN) | Eksik olan |
+|---|---|---|
+| Ana Sayfa | `index.html` | — |
+| Hakkımızda → Biz Kimiz, Değerlerimiz | `hakkimizda.html` (`#biz-kimiz`, `#degerlerimiz`) / `about.html` | Onaylı "Biz Kimiz" metni ve kuruluş hikâyesi |
+| Hakkımızda → Yönetim, Tüzük | `kurumsal.html` (`#yonetim`, `#tuzuk`) / `governance.html` | Kurucu üye listesi (yayın onayıyla), tescilli tüzük PDF'i, sicil no |
+| Ne Yapıyoruz | `calisma-alanlarimiz.html` / `what-we-do.html` | Örnek çalışmalar |
+| Çalışma Grupları | `calisma-gruplari.html` / `working-groups.html` | Kurulan gruplar ve sorumluları |
+| Eğitimler ve Atölyeler | `egitimler.html` / `training.html` | Program |
+| Kaynaklar | `kaynaklar.html` / `resources.html` | Kaynakça dosyasından eklenecekler |
+| Haberler ve Etkinlikler | `haberler.html` / `news.html` | Çalıştay/sempozyum tarih, yer, program, kayıt formu |
+| Katılım → Üye Ol | `uye-ol.html` / `membership.html` | Tüzük md. 6 koşulları, başvuru formu, aidat |
+| Katılım → Gönüllü Ol | `gonullu.html` / `volunteer.html` | Form servisi, md. 12'deki diğer koşullar |
+| Katılım → Destek Ol / Bağış | kapalı (bkz. 2.6) | Tescil ve banka hesabı |
+| İletişim | `iletisim.html` / `contact.html` | Resmî e-posta, telefon, sosyal medya bağlantıları |
+| Gizlilik ve Kişisel Veriler | `kvkk.html` / `privacy.html` | Hukukçu kontrolü (bkz. 2.2) |
 
-### 2.5 Doldurulması gereken bilgiler
+Formlar (`gonullu`, `iletisim`) `action="#"` ile duruyor — derneğin resmî
+e-postasına iletecek bir form servisine bağlanmalı; form verileri kişisel
+veridir. Logo PNG'leri ve renk kodları tasarımcıdan gelecek vektörel dosyayla
+(AI/SVG) teyit edilmeli.
 
-Aşağıdaki alanlar örnek değerlerle (`00`, `Ad Soyad`, `Örnek`) bırakıldı:
-
-| Nerede | Ne |
-|---|---|
-| `kurumsal.html` | Kütük no (Lefkoşa Kaymakamlığı), Gelir ve Vergi Dairesi no, yönetim/denetim kurulu isimleri |
-| `iletisim.html` | Merkez adresi, telefon, danışma hattı, saha ofisleri (Gazimağusa / Girne) |
-| Altbilgi (tüm sayfalar) | Adres, telefon, kütük no, sosyal medya bağlantıları |
-| `kvkk.html` | Sayfa başındaki "Son güncelleme" tarihi — yayına aldığınız tarihi yazın |
-| `assets/dosyalar/` | Tüzük, etik kod, izin belgeleri, rehberler (liste klasördeki .txt dosyasında) |
-| `assets/img/logo.svg` ve `favicon.svg` | Derneğin kendi logosu (şu an geçici işaret) |
-
-Formlar (`gonullu`, `iletisim`) şu an `action="#"` ile duruyor —
-bir form servisine veya sunucu betiğine bağlanması gerekir.
-
----
+Şeffaflık sayfası brifte olmadığı için kaldırıldı; `.htaccess` eski adresleri
+kalıcı (301) olarak `kurumsal.html` / `en/governance.html`'e yönlendirir.
+Gövdesi `build/govde/tr-seffaflik.html` olarak duruyor.
 
 ### 2.6 Bağış sayfası şu an yayında değil
 
-Bağış toplama şimdilik kullanılmayacağı için `bagis.html` / `en/donate.html`
-yayından kaldırıldı; menü, altbilgi ve anasayfadaki bağış çağrıları yerine
-gönüllülük çağrısı kondu. Sayfanın gövdesi **silinmedi**:
-`build/govde/tr-bagis.html` ve `build/govde/en-donate.html` olduğu gibi duruyor.
+Brif: bağış sayfası **tescil ve banka hesabı açıldıktan sonra** açılır.
+Gövdesi silinmedi: `build/govde/tr-bagis.html` ve `build/govde/en-donate.html`.
 
 Geri açmak için:
 
-1. `build/sayfalar.json` içine iki bağış kaydını geri ekleyin
-   (`bagis.html` ↔ `donate.html`).
-2. `build/senkron.js` içindeki `esles` listesine `'bagis.html': 'donate.html',`
-   satırını geri koyun.
-3. `npm run iskele` → sayfalar gövdelerden yeniden üretilir.
-4. `build/parcalar/` içindeki başlık ve altbilgiye bağış düğmesini geri ekleyin,
-   `npm run senkron` çalıştırın.
-5. `.htaccess` içindeki geçici yönlendirme bloğunu silin.
-
-Eski bağlantılar 404 vermesin diye `.htaccess` şu an `/bagis.html` adresini
-anasayfaya **geçici (302)** yönlendiriyor. `assets/js/site.js` içindeki bağış
-tutarı seçimi kodu duruyor ama sayfa olmadığı için çalışmıyor.
-
-Şeffaflık ve KVKK sayfalarındaki bağış politikası metinleri (kabul edilen /
-reddedilen fon kaynakları, bağışçı verisi) **bilinçli olarak korundu** — bunlar
-ilke beyanı; bağış yeniden açıldığında olduğu gibi geçerli.
+1. `build/sayfalar.json` içine iki bağış kaydını ekleyin (`bagis.html` ↔ `donate.html`).
+2. `build/senkron.js` içindeki `esles` listesine `'bagis.html': 'donate.html',` ekleyin.
+3. Gövdedeki banka bilgilerini ve şeffaflık bağlantılarını güncelleyin.
+4. `npm run iskele` → başlık/altbilgiye bağlantı ekleyip `npm run senkron`.
+5. `.htaccess` içindeki geçici yönlendirme satırlarını silin.
 
 ### 2.7 Kaynak künyelerini derneğin onaylaması gerekir
 
@@ -218,19 +214,14 @@ HTML dosyaları **doğrudan düzenlenebilir**. Metni değiştirmek için ilgili
 `.html` dosyasını açıp yazıyı değiştirmeniz yeterli — sonra dosyayı tekrar
 FTP'ye yükleyin. Derleme gerekmez.
 
-### Dernek adını değiştirme
+### Dernek adı
 
-Kısa ad her yerde `KTTAK`, resmî unvan `Kıbrıs Türk Travma Afet ve Kriz Derneği`
-(EN: `Turkish Cypriot Trauma, Disaster and Crisis Association`). Kısaltmayı tek
-komutla değiştirebilirsiniz:
-
-```bash
-grep -rl 'KTTAK' --include='*.html' --include='*.js' --include='*.json' . \
-  | grep -v node_modules | xargs sed -i '' 's/KTTAK/YENİADI/g'
-```
-
-Resmî unvan `build/ayarlar.json` içinde (`resmiAdTR` / `resmiAdEN`) ve
-başlık/altbilgi parçalarında geçer.
+Sitede her zaman tam ad ve kısa ad birlikte geçer: **Travma Afet Kriz
+Derneği (TAK-DER)**. İngilizce sayfalarda resmî ad Türkçe bırakılır,
+yanına açıklama olarak "Trauma, Disaster and Crisis Association" yazılır.
+Ad `build/ayarlar.json` (`kisaAd`, `resmiAdTR`, `resmiAdEN`), `build/sayfalar.json`
+(sayfa başlıkları) ve başlık/altbilgi parçalarında geçer. Türkçe eklerde
+TAK-DER'in, TAK-DER'e, TAK-DER'den biçimi kullanılır.
 
 ### Menüyü veya altbilgiyi değiştirmek
 
@@ -309,16 +300,41 @@ npm run izle         # düzenlerken sürekli derler
 
 Tüm renkler ve yazı tipleri `build/input.css` içindeki `@theme` bloğunda tanımlı:
 
-| Simge | Renk | Nerede kullanılır |
-|---|---|---|
-| `zemin` | `#edeee9` | Sayfa arka planı |
-| `kagit` | `#f7f8f4` | Kart ve panel yüzeyleri |
-| `derin` | `#122a27` | En koyu mürekkep, altbilgi |
-| `orman` | `#1e4a44` | Birincil kurumsal renk |
-| `sis` | `#5f6a67` | İkincil metin, küçük etiketler |
-| `kum` | `#dcd2be` | Sıcak vurgu panelleri |
-| `fener` | `#8a5a08` | **Yalnızca** yardım ve bağış eylemleri |
-| `fener-acik` | `#f0c46a` | Koyu zemin üzerindeki sinyal metni |
+Renkler logodan çıkarılmıştır (tasarımcıdan kesin kodlar teyit edilmeli).
+Simge adları eski paletten kalmadır; 50 sayfadaki sınıflar değişmesin diye
+yalnızca değerleri değiştirildi.
+
+| Simge | Renk | Kimlikteki adı | Nerede kullanılır |
+|---|---|---|---|
+| `zemin` | `#ffffff` | Beyaz | Sayfa arka planı |
+| `kagit` | `#f2f7f8` | — | Kart, panel ve altbilgi zemini |
+| `derin` | `#0c2e44` | — | Gövde metni, yardım şeridi, kriz kutusu |
+| `orman` | `#135e8b` | Koyu mavi | Başlıklar, menü, birincil düğme |
+| `orman-acik` | `#10778c` | Petrol mavisi | Bağlantılar, odak çerçevesi |
+| `deniz` | `#4c9785` | Deniz yeşili | İkon ve liste işaretleri — metin için değil |
+| `filiz` | `#80b674` | Açık yeşil | **Yalnızca** "Gönüllü Ol / Destek ol" düğme zemini |
+| `fener` | `#427636` | — | Açık yeşilin metin tonu: küçük etiketler |
+| `fener-acik` | `#c3e3b7` | — | Koyu mavi zeminde yeşil vurgu metni |
+| `sis` | `#557080` | — | İkincil metin |
+| `kum` / `kum-acik` | `#cfe4c6` / `#eff6eb` | — | Açık yeşil destek panelleri, kart hover |
+
+**Açık yeşil zeminde beyaz yazı kullanmayın** (2.4:1, okunmaz); düğme yazısı
+her zaman `derin`. Logonun maviden yeşile geçişi yalnızca `.kapak`
+alanlarında (çağrı bantları), kılcal ayraçlarda ve örgü imzasında kullanılır.
+
+### Logo dosyaları
+
+Logo finaldir; tüzük md. 1/3 gereği renk, oran veya yazısı değiştirilmez.
+
+| Dosya | Kullanım |
+|---|---|
+| `assets/img/logo-yazili-renkli-{192,400,800}.png` | Üst menü, altbilgi, schema.org |
+| `assets/img/logo-isaret-{32,180,512}.png`, `favicon.ico`, `apple-touch-icon.png` | Favicon ve küçük simgeler (yazısız) |
+| `assets/img/og-gorsel.png` | Sosyal medya paylaşım görseli |
+
+Yazısız versiyon, yazılı PNG'den harfler ayıklanarak türetildi; amblemin
+pikselleri değişmedi. Tasarımcının resmî yazısız dosyası ve SVG'si
+geldiğinde bu dosyaların yerine aynı adlarla konmalıdır.
 
 `site.css` derlenmiş çıktıdır — **elle düzenlemeyin**, `npm run css`
 çalıştırdığınızda üzerine yazılır.
@@ -334,7 +350,7 @@ Tüm renkler ve yazı tipleri `build/input.css` içindeki `@theme` bloğunda tan
 ├── assets/
 │   ├── css/site.css        ← derlenmiş Tailwind (elle düzenlemeyin)
 │   ├── js/site.js          ← menü, IBAN kopyalama (bağış tutarı kodu atıl)
-│   ├── img/                ← logo, favicon, sismik hat
+│   ├── img/                ← logo, favicon, örgü imzası
 │   └── dosyalar/           ← PDF'ler buraya
 ├── build/                  ← sunucuya YÜKLENMEZ
 │   ├── ayarlar.json        ← alan adı, dernek adı, e-posta — TEK KAYNAK
@@ -344,7 +360,7 @@ Tüm renkler ve yazı tipleri `build/input.css` içindeki `@theme` bloğunda tan
 │   ├── senkron.js          ← başlık/altbilgiyi tüm sayfalara işler
 │   ├── iskele.js           ← YENİ sayfa oluşturur (var olanın üzerine yazmaz)
 │   ├── sitemap.js          ← sitemap.xml + robots.txt üretir
-│   └── gen-sismik.js       ← hero'daki sismogram hattını üretir
+│   └── gen-orgu.js         ← anasayfadaki örgü imzasını üretir
 ├── .htaccess               ← Apache ayarları (404, sıkıştırma, önbellek)
 ├── robots.txt
 └── sitemap.xml
@@ -369,8 +385,8 @@ Site travma-bilinçli tasarım ilkeleriyle kurgulandı; aşağıdakiler bilinçl
 tercihlerdir, hata değildir:
 
 - **Kırmızı ve alarm estetiği yok.** Afet sitelerinde yaygın olan aciliyet
-  dili, afetten etkilenmiş kişide tetikleyici olabiliyor. Amber (`fener`)
-  rengi yalnızca yardım ve bağış eylemlerinde kullanılır.
+  dili, afetten etkilenmiş kişide tetikleyici olabiliyor. Açık yeşil
+  (`filiz`) yalnızca gönüllülük ve destek eylemlerinde kullanılır.
 - **Yardım şeridi her sayfanın en üstünde.** 112 / 101 / 177 / 155 her zaman
   görünür; bir kullanıcının yardıma ulaşmak için gezinmesi gerekmez.
 - **Ani hareket yok.** `prefers-reduced-motion` açık olan kullanıcıda tüm
@@ -378,10 +394,12 @@ tercihlerdir, hata değildir:
 - **Moloz ve mağduriyet fotoğrafı yok.** Etik kodun görsel karşılığı.
 - **Kaynak merkezinde içerik uyarısı** ve ara verme daveti bulunur.
 - Tüm formlarda görünür etiket, klavye odağı ve KVKK onayı vardır.
-- Renk paletindeki 18 metin/zemin kombinasyonunun tamamı WCAG 2.1 AA
+- Metin olarak kullanılan tüm renk/zemin kombinasyonları WCAG 2.1 AA
   (4.5:1) eşiğini geçer. Renkleri değiştirirseniz kontrastı yeniden ölçün.
 
-**İmza öğesi:** Anasayfadaki sismogram hattı — solda sarsıntı, sağa doğru
-düz çizgiye çözülüyor; başlık o sakin tarafta oturuyor. Dosya
-`assets/img/sismik-koyu.svg` ve `sismik-acik.svg`; `build/gen-sismik.js`
-ile üretilir (deterministik, her çalıştırmada aynı çizgi çıkar).
+**İmza öğesi:** Anasayfadaki örgü — beş ince iplik farklı yerlerden,
+farklı zamanlarda başlar ve birbirine tutunarak tek bir halat gibi örülür:
+dayanışma. Renk logonun geçişidir; dağınıkken mavi, örülünce yeşil. Sağ uç
+düz çizgiye inmez (ilk sürümdeki sismogramın sönen düz hattı yaşam
+monitörünü çağrıştırdığı için bırakıldı). Dosya `assets/img/orgu.svg`;
+`build/gen-orgu.js` ile üretilir (deterministik, her çalıştırmada aynı çizgi çıkar).
