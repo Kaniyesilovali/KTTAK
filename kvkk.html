@@ -22,7 +22,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,400..600,0..100&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..800;1,400..600&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
 <script type="application/ld+json">
 {
@@ -54,12 +54,12 @@
 <!-- Yardım şeridi: travma-bilinçli tasarımda çıkış her zaman görünür olmalı -->
 <div class="bg-derin text-kagit yazdir-yok">
   <div class="kabuk flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-2">
-    <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] leading-snug">
-      <span class="text-mikro uppercase font-semibold text-fener-acik">Acil durum</span>
-      <a href="tel:112" class="hover:text-fener-acik transition-colors">112 <span class="text-kagit/60">Acil / Ambulans</span></a>
-      <a href="tel:101" class="hover:text-fener-acik transition-colors">101 <span class="text-kagit/60">Sivil Savunma</span></a>
-      <a href="tel:177" class="hover:text-fener-acik transition-colors">177 <span class="text-kagit/60">Orman Yangını</span></a>
-      <a href="tel:155" class="hover:text-fener-acik transition-colors">155 <span class="text-kagit/60">Polis</span></a>
+    <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.875rem] leading-snug">
+      <span class="font-bold text-fener-acik">Acil durum</span>
+      <a href="tel:112" class="font-bold hover:text-fener-acik transition-colors">112 <span class="font-normal text-kagit/70">Acil / Ambulans</span></a>
+      <a href="tel:101" class="font-bold hover:text-fener-acik transition-colors">101 <span class="font-normal text-kagit/70">Sivil Savunma</span></a>
+      <a href="tel:177" class="font-bold hover:text-fener-acik transition-colors">177 <span class="font-normal text-kagit/70">Orman Yangını</span></a>
+      <a href="tel:155" class="font-bold hover:text-fener-acik transition-colors">155 <span class="font-normal text-kagit/70">Polis</span></a>
       <a href="iletisim.html#kriz" class="text-kagit/70 hover:text-fener-acik transition-colors underline decoration-kagit/30 underline-offset-4">TAK-DER bir kriz hattı değildir</a>
     </p>
     <p class="text-[0.8125rem]">
@@ -71,34 +71,35 @@
   </div>
 </div>
 
-<header class="yazdir-yok bg-zemin/95 backdrop-blur-sm sticky top-0 z-40">
+<header class="yazdir-yok bg-zemin/95 backdrop-blur-md sticky top-0 z-40 border-b border-cizgi/80">
   <div class="kabuk flex items-center justify-between gap-6 py-3">
     <a href="index.html" class="flex items-center gap-3.5 text-orman min-w-0" aria-label="TAK-DER — Anasayfa">
       <!-- Yazılı renkli logo (kimlik yönergesi: üst menü). Logo değiştirilemez; yalnızca boyutlandırılır. -->
       <img src="assets/img/logo-yazili-renkli-192.png" srcset="assets/img/logo-yazili-renkli-192.png 1x, assets/img/logo-yazili-renkli-400.png 3x" width="64" height="62" alt="" class="h-14 w-auto md:h-16 flex-none">
       <span class="leading-none min-w-0">
-        <span class="block font-display text-[1.4rem] font-semibold tracking-tight text-orman">TAK-DER</span>
-        <span class="hidden sm:block lg:hidden xl:block text-[0.6875rem] tracking-[0.1em] uppercase text-sis mt-1.5 whitespace-nowrap">Travma Afet Kriz Derneği</span>
+        <span class="block font-display text-[1.55rem] font-bold tracking-tight text-orman">TAK-DER</span>
+        <span class="hidden sm:block lg:hidden 2xl:block text-[0.8125rem] font-semibold text-sis mt-1 whitespace-nowrap">Travma Afet Kriz Derneği</span>
       </span>
     </a>
 
-    <nav class="hidden lg:flex items-center gap-5 xl:gap-7" aria-label="Ana menü">
-      <a href="hakkimizda.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Hakkımızda</a>
-      <a href="calisma-alanlarimiz.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Ne Yapıyoruz</a>
-      <a href="egitimler.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Eğitimler</a>
-      <a href="kaynaklar.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Kaynaklar</a>
-      <a href="haberler.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">Haberler</a>
-      <a href="iletisim.html" data-nav class="text-[0.9375rem] font-medium text-derin/85 hover:text-orman transition-colors whitespace-nowrap">İletişim</a>
+    <nav class="hidden lg:flex items-center gap-0.5" aria-label="Ana menü">
+      <a href="hakkimizda.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Hakkımızda</a>
+      <a href="calisma-alanlarimiz.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Ne Yapıyoruz</a>
+      <a href="egitimler.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Eğitimler</a>
+      <a href="kaynaklar.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Kaynaklar</a>
+      <a href="kutuphane.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Kütüphane</a>
+      <a href="haberler.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Haberler</a>
+      <a href="iletisim.html" data-nav class="rounded-full px-3 xl:px-3.5 py-2 text-[0.9375rem] xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">İletişim</a>
     </nav>
 
     <div class="hidden lg:flex items-center gap-2.5 shrink-0">
-      <a href="uye-ol.html" data-nav class="dugme dugme-ikincil !py-2.5 !px-4 text-sm">Üye Ol</a>
-      <a href="gonullu.html" data-nav class="dugme dugme-fener !py-2.5 !px-4 text-sm">Gönüllü Ol</a>
+      <a href="uye-ol.html" data-nav class="dugme dugme-ikincil !min-h-0 !py-2.5 !px-5 text-[0.9375rem]">Üye Ol</a>
+      <a href="gonullu.html" data-nav class="dugme dugme-fener !min-h-0 !py-2.5 !px-5 text-[0.9375rem]">Gönüllü Ol</a>
     </div>
 
     <button type="button" data-menu-ac class="lg:hidden -mr-2 p-2 text-orman" aria-expanded="false" aria-controls="mobil-menu">
       <span class="sr-only">Menüyü aç</span>
-      <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+      <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/>
       </svg>
     </button>
@@ -106,22 +107,22 @@
 
   <div id="mobil-menu" hidden class="lg:hidden border-t border-cizgi bg-zemin">
     <nav class="kabuk py-5 flex flex-col" aria-label="Mobil menü">
-      <a href="hakkimizda.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Hakkımızda</a>
-      <a href="kurumsal.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Yönetim ve Tüzük</a>
-      <a href="calisma-alanlarimiz.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Ne Yapıyoruz</a>
-      <a href="calisma-gruplari.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Çalışma Grupları</a>
-      <a href="egitimler.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Eğitimler ve Atölyeler</a>
-      <a href="kaynaklar.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Kaynaklar</a>
-      <a href="bilgi-kirliligi.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Bilgi Kirliliği</a>
-      <a href="haberler.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">Haberler ve Etkinlikler</a>
-      <a href="iletisim.html" data-nav class="py-2.5 border-b border-cizgi/70 font-medium">İletişim</a>
+      <a href="hakkimizda.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Hakkımızda</a>
+      <a href="kurumsal.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Yönetim ve Tüzük</a>
+      <a href="calisma-alanlarimiz.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Ne Yapıyoruz</a>
+      <a href="calisma-gruplari.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Çalışma Grupları</a>
+      <a href="egitimler.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Eğitimler ve Atölyeler</a>
+      <a href="kaynaklar.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Kaynaklar</a>
+      <a href="kutuphane.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Kütüphane</a>
+      <a href="bilgi-kirliligi.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Bilgi Kirliliği</a>
+      <a href="haberler.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Haberler ve Etkinlikler</a>
+      <a href="iletisim.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">İletişim</a>
       <div class="flex gap-3 pt-5">
         <a href="uye-ol.html" class="dugme dugme-ikincil flex-1">Üye Ol</a>
         <a href="gonullu.html" class="dugme dugme-fener flex-1">Gönüllü Ol</a>
       </div>
     </nav>
   </div>
-  <div class="gradyan-cizgi opacity-70" aria-hidden="true"></div>
 </header>
 <!--/#BASLIK-->
 
@@ -133,7 +134,7 @@
      yazılmamıştır; hukukçunuz doğru madde atıflarını ekleyecektir. -->
 <section class="sayfa-basi">
   <div class="kabuk">
-    <nav aria-label="Konum" class="text-mikro uppercase text-sis">
+    <nav aria-label="Konum" class="text-sm font-semibold text-sis">
       <a href="index.html" class="hover:text-orman transition-colors">Anasayfa</a>
       <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
       <span class="text-derin">Gizlilik ve Kişisel Veriler</span>
@@ -332,14 +333,14 @@
 </main>
 
 <!--#ALTBILGI-->
-<footer class="yazdir-yok bg-kagit text-derin bolum">
-  <div class="gradyan-cizgi opacity-70" aria-hidden="true"></div>
+<footer class="yazdir-yok bg-kagit text-derin bolum rounded-t-[2rem] md:rounded-t-[3rem] overflow-hidden">
+  <div class="h-20 md:h-28 -mb-4" aria-hidden="true"><img src="assets/img/orgu.svg" alt="" class="orgu" loading="lazy"></div>
 
   <div class="kabuk pt-10 pb-14 grid gap-12 md:grid-cols-12">
     <div class="md:col-span-4">
-      <img src="assets/img/logo-yazili-renkli-400.png" width="400" height="388" alt="TAK-DER — Travma Afet Kriz Derneği" class="h-32 w-auto" loading="lazy">
-      <p class="mt-5 font-display text-lg font-semibold text-orman">Travma Afet Kriz Derneği (TAK-DER)</p>
-      <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75 max-w-xs">
+      <img src="assets/img/logo-yazili-renkli-400.png" width="400" height="388" alt="TAK-DER — Travma Afet Kriz Derneği" class="h-28 w-auto" loading="lazy">
+      <p class="mt-5 font-display text-xl font-bold text-orman">Travma Afet Kriz Derneği (TAK-DER)</p>
+      <p class="mt-3 text-base leading-relaxed text-derin/75 max-w-xs">
         Travma, afet ve kriz anlarında kimse yükünü tek başına taşımasın diye; bilimsel ve etik temelli psikososyal destekle birlikte güçleniyoruz.
       </p>
       <p class="mt-6 flex flex-wrap gap-3">
@@ -349,8 +350,8 @@
     </div>
 
     <nav class="md:col-span-2" aria-label="Dernek">
-      <h2 class="text-mikro uppercase text-sis font-semibold">Dernek</h2>
-      <ul class="mt-4 space-y-2.5 text-[0.9375rem]">
+      <h2>Dernek</h2>
+      <ul class="mt-4 space-y-2.5 text-base">
         <li><a href="hakkimizda.html" class="text-derin/80 hover:text-orman-acik transition-colors">Biz Kimiz</a></li>
         <li><a href="hakkimizda.html#degerlerimiz" class="text-derin/80 hover:text-orman-acik transition-colors">Değerlerimiz</a></li>
         <li><a href="kurumsal.html#yonetim" class="text-derin/80 hover:text-orman-acik transition-colors">Yönetim</a></li>
@@ -360,22 +361,23 @@
     </nav>
 
     <nav class="md:col-span-2" aria-label="Çalışmalar">
-      <h2 class="text-mikro uppercase text-sis font-semibold">Çalışmalar</h2>
-      <ul class="mt-4 space-y-2.5 text-[0.9375rem]">
+      <h2>Çalışmalar</h2>
+      <ul class="mt-4 space-y-2.5 text-base">
         <li><a href="calisma-alanlarimiz.html" class="text-derin/80 hover:text-orman-acik transition-colors">Ne Yapıyoruz</a></li>
         <li><a href="calisma-gruplari.html" class="text-derin/80 hover:text-orman-acik transition-colors">Çalışma Grupları</a></li>
         <li><a href="egitimler.html" class="text-derin/80 hover:text-orman-acik transition-colors">Eğitimler ve Atölyeler</a></li>
         <li><a href="kaynaklar.html" class="text-derin/80 hover:text-orman-acik transition-colors">Kaynaklar</a></li>
+        <li><a href="kutuphane.html" class="text-derin/80 hover:text-orman-acik transition-colors">Kütüphane</a></li>
         <li><a href="bilgi-kirliligi.html" class="text-derin/80 hover:text-orman-acik transition-colors">Bilgi Kirliliği</a></li>
         <li><a href="iletisim.html" class="text-derin/80 hover:text-orman-acik transition-colors">İletişim</a></li>
       </ul>
     </nav>
 
     <div class="md:col-span-4">
-      <h2 class="text-mikro uppercase text-sis font-semibold">İletişim</h2>
+      <h2>İletişim</h2>
       <!-- Merkez bir üyenin konutudur: açık adres ve harita bilinçli olarak YAYIMLANMAZ, yalnızca ilçe yazılır. -->
-      <p class="mt-4 text-[0.9375rem] leading-relaxed text-derin/80">Lefkoşa</p>
-      <p class="mt-2 text-[0.9375rem]">
+      <p class="mt-4 text-base leading-relaxed text-derin/80">Lefkoşa</p>
+      <p class="mt-2 text-base">
         <a href="mailto:info@tak-der.org" class="block text-derin/80 hover:text-orman-acik transition-colors">info@tak-der.org</a>
         <!-- Telefon: dernek numarası belirlenince buraya eklenecek. -->
       </p>

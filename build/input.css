@@ -5,52 +5,58 @@
 @source "../assets/js/*.js";
 
 /* ============================================================
-   TASARIM BELLEĞİ — TAK-DER
-   Tez: "Sarsıntının değil, sonrasının sitesi."
-   Renkler logodan çıkarılmıştır (tasarımcıdan kesin kodlar teyit edilmeli).
-   Logonun maviden yeşile geçişi sitede tek anlamla kullanılır:
-   mavi = sarsıntı / kurum, yeşil = toparlanma / destek.
-   Travma-bilinçli ilkeler: öngörülebilirlik, ani hareket yok, her zaman
-   görünür yardım, bol beyaz alan. Kırmızı ve alarm estetiği yoktur.
-   Token adları eski paletten kalmadır (zemin, orman, fener…) — 46 sayfadaki
-   sınıflar değişmesin diye; değerler yeni kimliğe aittir.
+   TASARIM BELLEĞİ — TAK-DER  (2026-11 yenilemesi)
+   Tez: "Kimse yükünü tek başına taşımasın."
+   İmza: ÖRGÜ — dağınık iplikler birbirine tutunarak tek halat olur.
+     · Kapak alanlarında kalın, açık tonlu iplikler (orgu-gece.svg)
+     · Her iç sayfanın başında ince iplikler (orgu.svg)
+     · Anahtar kelimelerin altından geçen ilmekli iplik (.ilmek)
+   Travma-bilinçli ilkeler (SAMHSA, Chayn): güvenlik, öngörülebilirlik,
+   seçim hakkı, umut. Ani hareket yok, kırmızı yok, insan fotoğrafı yok;
+   acil numaralar her sayfada görünür.
+   Yazı: Bricolage Grotesque (başlık) + Atkinson Hyperlegible Next (gövde —
+   Braille Institute'un okunurluk için tasarladığı yazı; stres altında
+   okuyan ziyaretçi için seçildi).
+   Token adları eski paletten kalmadır (orman, fener…) — 46 sayfadaki
+   sınıflar değişmesin diye; değerler TAK-DER kimliğine aittir.
    ============================================================ */
 
 @theme {
   /* --- Renk: kimlik paleti --- */
   --color-zemin:      #ffffff;  /* Beyaz — ana zemin */
-  --color-kagit:      #f2f7f8;  /* çok açık petrol — kart/panel; koyu zeminde yazı */
-  --color-derin:      #0c2e44;  /* koyu mavinin mürekkep tonu — gövde metni, yardım şeridi */
+  --color-kagit:      #eef5f7;  /* açık mavi ton — kart/panel; koyu zeminde yazı */
+  --color-su:         #dcecf1;  /* biraz daha koyu mavi ton — vurgulu panel, ikon zemini */
+  --color-derin:      #0c2e44;  /* lacivert mürekkep — gövde metni, kapak zemini */
+  --color-gece:       #082435;  /* kapağın en koyu ucu */
   --color-orman:      #135e8b;  /* KOYU MAVİ — başlık, menü, birincil düğme (beyazda 7.0:1) */
   --color-orman-acik: #10778c;  /* PETROL MAVİSİ — bağlantı, odak, vurgu (beyazda 5.2:1) */
   --color-deniz:      #4c9785;  /* DENİZ YEŞİLİ — ikon ve süs; metin için kullanılmaz */
   --color-filiz:      #80b674;  /* AÇIK YEŞİL — yalnızca "Gönüllü ol" düğmesi zemini.
                                    Üzerindeki yazı her zaman derin (5.9:1); beyaz okunmaz. */
-  --color-sis:        #557080;  /* ikincil metin — beyazda 5.2:1, kâğıtta 4.9:1 */
-  --color-cizgi:      #d7e3e8;  /* ayraç / kenarlık */
+  --color-sis:        #4f6a7a;  /* ikincil metin — beyazda 5.6:1, kâğıtta 5.2:1 */
+  --color-cizgi:      #d3e2e8;  /* ayraç / kenarlık */
   --color-kum:        #cfe4c6;  /* yeşil panel kenarı */
-  --color-kum-acik:   #eff6eb;  /* yeşil panel — destek çağrıları */
-  --color-fener:      #427636;  /* açık yeşilin metin tonu: etiket ve liste işaretleri.
-                                   Beyaz, kâğıt ve yeşil panelde AA (en düşük 4.9:1). */
-  --color-fener-acik: #c3e3b7;  /* koyu mavi zeminde yeşil vurgu metni (5.0:1 / 10:1) */
+  --color-kum-acik:   #edf6e8;  /* yeşil panel — destek çağrıları */
+  --color-fener:      #427636;  /* açık yeşilin metin tonu (AA, en düşük 4.9:1) */
+  --color-fener-acik: #c3e3b7;  /* koyu mavi zeminde yeşil vurgu metni */
 
   /* --- Tipografi --- */
-  /* Fraunces'in SOFT ekseni açık: yuvarlatılmış uçlar logodaki ellerin
-     yumuşak hatlarıyla konuşur. Gövde Archivo — sakin, geniş, okunaklı. */
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
-  --font-sans: "Archivo", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-sans: "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
 
-  --text-mikro: 0.6875rem;
+  --text-mikro: 0.75rem;
   --text-mikro--line-height: 1.45;
-  --text-mikro--letter-spacing: 0.14em;
+  --text-mikro--letter-spacing: 0.08em;
 
-  /* --- Geometri --- */
-  --radius-yumusak: 6px;
+  /* --- Geometri: yumuşak, keskin köşe yok --- */
+  --radius-yumusak: 1.25rem;
 }
 
 :root {
-  /* Logonun geçişi. Yalnızca kapak alanlarında ve imza hattında. */
+  /* Logonun geçişi. Yalnızca kapak alanlarında, kılcal çizgilerde ve örgüde. */
   --gradyan: linear-gradient(90deg, #135e8b 0%, #10778c 40%, #4c9785 70%, #80b674 100%);
+  /* İlmek: kelimenin altından geçip bir kez düğümlenen iplik */
+  --ilmek-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M3 17 C 40 15, 70 10, 96 13 C 116 15, 116 25, 104 24 C 92 23, 98 8, 122 9 C 150 10, 175 14, 197 11' fill='none' stroke='black' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 @layer base {
@@ -63,42 +69,42 @@
     background-color: var(--color-zemin);
     color: var(--color-derin);
     font-family: var(--font-sans);
-    font-size: 1rem;
+    font-size: 1.0625rem;
     line-height: 1.65;
     font-synthesis-weight: none;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Başlıklar: Fraunces, düşük "wonk", sıkı harf aralığı */
+  /* Başlıklar: Bricolage, sıkı ve dolgun — gazete serifi değil, sıcak bir grotesk */
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    font-variation-settings: "SOFT" 100, "WONK" 0, "opsz" 32;
+    font-optical-sizing: auto;
     color: var(--color-orman);
-    font-weight: 500;
-    letter-spacing: -0.018em;
-    line-height: 1.14;
+    font-weight: 650;
+    letter-spacing: -0.022em;
+    line-height: 1.08;
     text-wrap: balance;
   }
+  h1 { font-weight: 700; letter-spacing: -0.018em; line-height: 1.02; }
+  h3, h4 { letter-spacing: -0.012em; line-height: 1.2; }
 
   p { text-wrap: pretty; }
 
   /* Klavye erişilebilirliği — her yerde görünür odak */
   :focus-visible {
-    outline: 2px solid var(--color-orman-acik);
+    outline: 3px solid var(--color-orman-acik);
     outline-offset: 3px;
-    border-radius: 2px;
+    border-radius: 6px;
   }
 
   ::selection {
-    background-color: var(--color-kum);
+    background-color: var(--color-fener-acik);
     color: var(--color-derin);
   }
 
-  /* Türkçe tireleme */
   [lang="tr"] { hyphens: none; }
 
-  /* Hareket azaltma tercihi mutlak olarak saygı görür.
-     Travma-bilinçli tasarımda bu bir "nice to have" değil. */
+  /* Hareket azaltma tercihi mutlak olarak saygı görür. */
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after {
@@ -113,54 +119,69 @@
   /* ---- Kabuk / ızgara ---- */
   .kabuk {
     width: 100%;
-    max-width: 78rem;
+    max-width: 80rem;
     margin-inline: auto;
-    padding-inline: 1.25rem;
+    padding-inline: 1rem;
   }
-  @media (min-width: 768px) { .kabuk { padding-inline: 2rem; } }
+  @media (min-width: 640px) { .kabuk { padding-inline: 1.5rem; } }
+  @media (min-width: 1024px) { .kabuk { padding-inline: 2.5rem; } }
 
   /* ---- Dikey ritim ----
-     Sayfada yalnızca üç boşluk vardır; sayfaya veya bölümün sırasına göre
-     değişmez. Akışkandır (clamp), kırılma noktasında zıplamaz.
        baş   — menüden sayfa başlığına
-       ilk   — sayfa başlığından ona ait ilk bloğa (uyarı, giriş): yakın durur
-       bölüm — konu değiştiğinde; altbilgi dahil her yerde aynı
+       ilk   — sayfa başlığından ona ait ilk bloğa
+       bölüm — konu değiştiğinde
      Yeni bölüm eklerken mt-* yazmayın: <section class="bolum"> yeterli. */
   :root {
-    --bosluk-bas:   clamp(2.5rem, 1.9rem + 2.4vw, 4rem);
+    --bosluk-bas:   clamp(2.25rem, 1.7rem + 2.2vw, 3.75rem);
     --bosluk-ilk:   clamp(2.5rem, 2.1rem + 1.6vw, 3.5rem);
-    --bosluk-bolum: clamp(4.5rem, 3.4rem + 4.4vw, 7rem);
+    --bosluk-bolum: clamp(4.5rem, 3.4rem + 4.4vw, 7.5rem);
   }
-  .sayfa-basi { padding-top: var(--bosluk-bas); }
   .bolum { margin-top: var(--bosluk-bolum); }
   .sayfa-basi + .bolum { margin-top: var(--bosluk-ilk); }
 
-  /* ---- Üst etiket (eyebrow) — Archivo, seyrek, küçük ---- */
+  /* ---- İç sayfa başı: açık mavi zemin, altında ince örgü ----
+     Her sayfa aynı iplikle açılır; kapaktaki halatın devamı. */
+  .sayfa-basi {
+    position: relative;
+    padding-top: var(--bosluk-bas);
+    padding-bottom: clamp(6.5rem, 5rem + 6vw, 9.5rem);
+    background-color: var(--color-kagit);
+    background-image: url("../img/orgu.svg");
+    background-repeat: no-repeat;
+    background-position: 50% calc(100% + 1.25rem);
+    background-size: max(100%, 1100px) auto;
+    border-radius: 0 0 2rem 2rem;
+  }
+  @media (min-width: 768px) { .sayfa-basi { border-radius: 0 0 3rem 3rem; } }
+  .sayfa-basi h1 { font-size: clamp(2.25rem, 1.6rem + 2.8vw, 3.75rem); }
+
+  /* ---- Üst etiket: küçük bir düğüm + cümle düzeninde kısa ad ---- */
   .etiket {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    font-size: var(--text-mikro);
-    line-height: var(--text-mikro--line-height);
-    letter-spacing: var(--text-mikro--letter-spacing);
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--color-sis);
+    font-size: 0.9375rem;
+    line-height: 1.3;
+    letter-spacing: 0.005em;
+    font-weight: 700;
+    color: var(--color-orman-acik);
   }
   .etiket::before {
     content: "";
-    width: 1.5rem;
-    height: 1px;
-    background-color: currentColor;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 999px;
+    background-color: var(--color-filiz);
+    box-shadow: 0 0 0 3px var(--color-kum-acik), 0 0 0 4px var(--color-kum);
     flex: none;
   }
   .etiket-sade::before { display: none; }
+  .etiket-acik { color: var(--color-fener-acik); }
+  .etiket-acik::before {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-filiz) 25%, transparent);
+  }
 
-  /* ---- İMZA: Örgü ----
-     Dağınık iplikler farklı yerlerden katılır, birbirine tutunarak tek bir
-     halat gibi örülür: dayanışma. Kaynak: build/gen-orgu.js
-     Görsel esnetilmez, kırpılır (cover): dar ekranda ortadaki buluşma anı
-     ve örgü kalır. */
+  /* ---- İMZA: Örgü ---- */
   .orgu {
     display: block;
     width: 100%;
@@ -168,43 +189,70 @@
     object-fit: cover;
     object-position: 50% 50%;
   }
-  /* İplikler soldan sağa yavaşça belirir: önce katılış, sonra örülme. */
   @media (prefers-reduced-motion: no-preference) {
-    .orgu-canli { animation: hat-coz 3200ms cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+    .orgu-canli { animation: hat-coz 3600ms cubic-bezier(0.22, 0.61, 0.36, 1) 200ms both; }
   }
   @keyframes hat-coz {
     from { clip-path: inset(0 100% 0 0); }
     to   { clip-path: inset(0 0 0 0); }
   }
 
-  /* ---- Düğmeler ---- */
+  /* ---- İMZA: İlmek — kelimenin altından geçen, bir kez düğümlenen iplik ---- */
+  .ilmek {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 0;
+  }
+  .ilmek::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -0.04em;
+    right: -0.06em;
+    bottom: -0.2em;
+    height: 0.42em;
+    background-color: var(--ilmek-renk, var(--color-filiz));
+    -webkit-mask: var(--ilmek-svg) no-repeat center / 100% 100%;
+            mask: var(--ilmek-svg) no-repeat center / 100% 100%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .ilmek-canli::after { animation: ilmek-ciz 1400ms cubic-bezier(0.22, 0.61, 0.36, 1) 900ms both; }
+  }
+  @keyframes ilmek-ciz {
+    from { clip-path: inset(0 100% 0 0); }
+    to   { clip-path: inset(0 0 0 0); }
+  }
+
+  /* ---- Düğmeler: hap biçimi, yeterince büyük dokunma alanı ---- */
   .dugme {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.8rem 1.4rem;
-    border-radius: var(--radius-yumusak);
-    font-size: 0.9375rem;
-    font-weight: 600;
+    min-height: 3rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.005em;
     line-height: 1.2;
     text-align: center;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
   }
   .dugme-birincil {
     background-color: var(--color-orman);
-    color: var(--color-kagit);
+    color: #fff;
   }
   .dugme-birincil:hover { background-color: var(--color-derin); }
 
   .dugme-ikincil {
     background-color: transparent;
     color: var(--color-orman);
-    border-color: var(--color-orman);
+    border-color: color-mix(in srgb, var(--color-orman) 45%, transparent);
   }
-  .dugme-ikincil:hover { background-color: var(--color-orman); color: var(--color-kagit); }
+  .dugme-ikincil:hover { border-color: var(--color-orman); background-color: var(--color-kagit); }
 
   /* Açık yeşil yalnızca "Gönüllü ol / Destek ol" eylemlerinde */
   .dugme-fener {
@@ -215,15 +263,15 @@
 
   .dugme-hayalet {
     background-color: transparent;
-    color: var(--color-kagit);
-    border-color: color-mix(in srgb, var(--color-kagit) 35%, transparent);
+    color: #fff;
+    border-color: color-mix(in srgb, #fff 40%, transparent);
   }
-  .dugme-hayalet:hover { background-color: color-mix(in srgb, var(--color-kagit) 12%, transparent); }
+  .dugme-hayalet:hover { background-color: color-mix(in srgb, #fff 12%, transparent); border-color: #fff; }
 
   /* ---- Kart ---- */
   .kart {
     background-color: var(--color-kagit);
-    border: 1px solid var(--color-cizgi);
+    border: 2px solid transparent;
     border-radius: var(--radius-yumusak);
     padding: 1.75rem;
   }
@@ -233,51 +281,90 @@
   }
   .kart-bag:hover { border-color: var(--color-orman-acik); background-color: #fff; }
 
+  /* Hücreli ızgara: eskiden kılcal çizgiyle bölünürdü, artık ayrık yumuşak kutular */
+  .izgara > * { border-radius: var(--radius-yumusak); }
+
+  /* ---- İkon yuvası ---- */
+  .ikon-yuva {
+    display: inline-grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 999px;
+    background-color: #fff;
+    color: var(--color-orman-acik);
+    flex: none;
+  }
+  .ikon-yuva svg { width: 1.6rem; height: 1.6rem; }
+
   /* ---- Bağlantı: alt çizgi kalınlaşarak yanıt verir ---- */
   .bag {
     color: var(--color-orman-acik);
+    font-weight: 600;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.22em;
-    text-decoration-color: color-mix(in srgb, var(--color-orman-acik) 40%, transparent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+    text-decoration-color: color-mix(in srgb, var(--color-orman-acik) 30%, transparent);
     transition: text-decoration-color 160ms ease;
   }
   .bag:hover { text-decoration-color: currentColor; }
+
+  /* Ok işaretli bağlantı: "devam et" niyetini açık eder */
+  .bag-ok {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    color: var(--color-orman-acik);
+  }
+  .bag-ok::after {
+    content: "→";
+    transition: transform 180ms ease;
+  }
+  .bag-ok:hover::after, a:hover .bag-ok::after { transform: translateX(3px); }
 
   /* ---- Uzun metin (tüzük, KVKK, raporlar) ---- */
   .olcek { max-width: 68ch; }
   .metin > * + * { margin-top: 1.1em; }
   .metin h2 {
-    font-size: 1.5rem;
-    margin-top: 2.6rem;
-    padding-top: 1.6rem;
-    border-top: 1px solid var(--color-cizgi);
+    font-size: 1.75rem;
+    margin-top: 3rem;
   }
-  .metin h3 { font-size: 1.125rem; margin-top: 2rem; font-weight: 600; }
+  .metin h2::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 4px;
+    border-radius: 4px;
+    margin-bottom: 1.1rem;
+    background-image: var(--gradyan);
+  }
+  .metin h3 { font-size: 1.25rem; margin-top: 2rem; }
   .metin ul { list-style: none; padding-left: 0; }
   .metin ul > li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.6rem;
     margin-top: 0.55em;
   }
   .metin ul > li::before {
     content: "";
     position: absolute;
     left: 0.1rem;
-    top: 0.62em;
-    width: 0.4rem;
-    height: 0.4rem;
+    top: 0.58em;
+    width: 0.55rem;
+    height: 0.55rem;
     border-radius: 999px;
     background-color: var(--color-deniz);
   }
   .metin ol { padding-left: 1.35rem; }
   .metin ol > li { margin-top: 0.55em; padding-left: 0.35rem; }
+  .metin ol > li::marker { color: var(--color-orman-acik); font-weight: 700; }
   .metin a:not(.dugme) {
     color: var(--color-orman-acik);
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.22em;
-    text-decoration-color: color-mix(in srgb, var(--color-orman) 40%, transparent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+    text-decoration-color: color-mix(in srgb, var(--color-orman) 30%, transparent);
     transition: text-decoration-color 160ms ease;
   }
   .metin a:not(.dugme):hover { text-decoration-color: currentColor; }
@@ -287,66 +374,54 @@
   .kunye > div {
     display: grid;
     gap: 0.15rem 1.5rem;
-    padding-block: 0.9rem;
+    padding-block: 0.95rem;
     border-bottom: 1px solid var(--color-cizgi);
   }
   @media (min-width: 640px) {
     .kunye > div { grid-template-columns: 13rem 1fr; align-items: baseline; }
-    /* Bir terime birden fazla değer düşebilir (kaynakçada iki kaynak gibi);
-       hepsi sağ sütunda kalsın, sola kaymasın. */
     .kunye dd { grid-column: 2; }
   }
   .kunye dd + dd { margin-top: 0.5rem; }
   .kunye dt {
-    font-size: var(--text-mikro);
-    letter-spacing: var(--text-mikro--letter-spacing);
-    text-transform: uppercase;
-    font-weight: 600;
+    font-size: 0.875rem;
+    font-weight: 700;
     color: var(--color-sis);
   }
-  .kunye dd { font-size: 0.9375rem; }
+  .kunye dd { font-size: 1rem; }
 
   /* ---- Mobil menü: açıkken gövde kaymasın ---- */
   .menu-acik { overflow: hidden; }
 }
 
 @layer components {
-  /* ---- Kapak alanı: logonun geçişi ----
-     Yazı ortada ve koyu tarafta durur; açık yeşil yalnızca sağ uçta,
-     metnin altına girmez (beyaz yazı açık yeşilde okunmaz). */
+  /* ---- Kapak alanı: lacivertten petrole, köşede yeşil bir aydınlık ----
+     Yazı koyu tarafta durur; açık yeşil yalnızca sağ alt köşede. */
   .kapak {
-    background-color: var(--color-orman);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    color: var(--color-kagit);
+    background-color: var(--color-derin);
     background-image:
-      radial-gradient(120% 140% at 100% 100%, rgba(128, 182, 116, 0.55) 0%, rgba(76, 151, 133, 0) 45%),
-      linear-gradient(120deg, #135e8b 0%, #10778c 60%, #2f8a86 100%);
+      radial-gradient(70% 90% at 100% 100%, rgba(128, 182, 116, 0.38) 0%, rgba(76, 151, 133, 0) 60%),
+      radial-gradient(60% 80% at 0% 0%, rgba(19, 94, 139, 0.55) 0%, rgba(19, 94, 139, 0) 70%),
+      linear-gradient(135deg, #082435 0%, #0c2e44 35%, #135e8b 75%, #10778c 100%);
   }
+  .kapak h1, .kapak h2, .kapak h3 { color: #fff; }
 
-  /* ---- Gradyan kılcal çizgi: üst menünün alt kenarı ---- */
-  .gradyan-cizgi { height: 2px; background-image: var(--gradyan); }
+  /* ---- Gradyan kılcal çizgi ---- */
+  .gradyan-cizgi { height: 3px; background-image: var(--gradyan); }
 }
 
 @utility hat-sol {
-  /* Bölüm başlıklarının soluna inen sabit ray */
-  border-left: 1px solid var(--color-cizgi);
-  padding-left: 1.5rem;
+  border-left: 3px solid var(--color-su);
+  padding-left: 1.25rem;
 }
 
 @layer components {
   /* Bulunulan sayfanın menü bağlantısı */
-  /* Menü düğmelerinde (Bağış Yap gibi) yalnızca konum bilgisi kalır,
-     rengi değişmez — aksi hâlde amber zeminde okunurluk düşüyor. */
   .nav-aktif { position: relative; }
-  .nav-aktif:not(.dugme) { color: var(--color-orman); }
-  .nav-aktif:not(.dugme)::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -0.45rem;
-    height: 2px;
-    border-radius: 2px;
-    background-image: var(--gradyan);
-  }
+  .nav-aktif:not(.dugme) { color: var(--color-orman); background-color: var(--color-kagit); }
 }
 
 @layer components {
@@ -356,16 +431,13 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem 1.25rem;
-    font-size: var(--text-mikro);
-    line-height: var(--text-mikro--line-height);
-    letter-spacing: var(--text-mikro--letter-spacing);
-    text-transform: uppercase;
-    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    font-weight: 700;
     color: var(--color-sis);
   }
 
-  /* ---- Doldurulabilir form satırı: ekranda da kâğıtta da yazılabilir ----
-     PDF yerine sayfayı yazdıran kullanıcı için: üstüne elle yazılacak çizgi. */
+  /* ---- Doldurulabilir form satırı ---- */
   .doldur {
     display: block;
     border-bottom: 1px solid var(--color-cizgi);
@@ -377,7 +449,7 @@
   .kutulu { list-style: none; padding-left: 0; }
   .kutulu > li {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 2.1rem;
     margin-top: 0.6rem;
     line-height: 1.6;
   }
@@ -385,18 +457,18 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0.3em;
-    width: 1.05rem;
-    height: 1.05rem;
-    border: 1px solid var(--color-sis);
-    border-radius: 2px;
+    top: 0.25em;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 2px solid var(--color-deniz);
+    border-radius: 5px;
   }
 }
 
 /* ============================================================
    YAZDIRMA
    Kaynak Merkezi'ndeki rehberler PDF yerine sayfa olarak sunulur;
-   bu yüzden kâğıda düzgün dökülmeleri bir ayrıntı değil, gerekliliktir.
+   bu yüzden kâğıda düzgün dökülmeleri bir gerekliliktir.
    ============================================================ */
 @media print {
   .yazdir-yok { display: none !important; }
@@ -413,10 +485,15 @@
   .kabuk { max-width: none; padding-inline: 0; }
   .olcek { max-width: none; }
 
-  /* Kâğıtta gölgeli zeminler mürekkep yakar; çerçeve yeterli. */
-  .kart, .kart-bag {
+  .sayfa-basi {
+    background: none !important;
+    padding-bottom: 0.5rem;
+  }
+
+  .kart, .kart-bag, .izgara > * {
     background: #fff !important;
     border: 1px solid #999;
+    border-radius: 4px;
     padding: 0.8rem 1rem;
     break-inside: avoid;
   }
@@ -425,10 +502,10 @@
   h1 { font-size: 20pt; }
   h2 { font-size: 14pt; break-after: avoid; }
   h3 { font-size: 11.5pt; break-after: avoid; }
-  h1, h2, h3, h4 { break-inside: avoid; }
+  h1, h2, h3, h4 { break-inside: avoid; color: #000 !important; }
+  .metin h2::before { display: none; }
   p, li, dd { orphans: 3; widows: 3; }
 
-  /* Kâğıtta bağlantının nereye gittiği görünmezse bilgi kaybolur. */
   .metin a[href^="http"]::after,
   .kunye a[href^="http"]::after {
     content: " (" attr(href) ")";
@@ -447,11 +524,13 @@
 }
 
 @layer components {
-  /* Altbilgi sütun başlıkları etiket gibi davranır: serif değil, Archivo. */
+  /* Altbilgi sütun başlıkları etiket gibi davranır */
   footer h2 {
     font-family: var(--font-sans);
-    font-variation-settings: normal;
-    letter-spacing: var(--text-mikro--letter-spacing);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: none;
     color: var(--color-sis);
   }
 }

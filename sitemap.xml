@@ -49,6 +49,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/resources.html"/>
   </url>
   <url>
+    <loc>https://tak-der.org/kutuphane.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kutuphane.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/library.html"/>
+  </url>
+  <url>
     <loc>https://tak-der.org/bilgi-kirliligi.html</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -239,6 +247,14 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kaynaklar.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/resources.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/library.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kutuphane.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/library.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/misinformation.html</loc>

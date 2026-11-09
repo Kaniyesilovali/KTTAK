@@ -1,12 +1,12 @@
 <section class="sayfa-basi">
   <div class="kabuk">
-    <nav aria-label="Breadcrumb" class="text-mikro uppercase text-sis">
+    <nav aria-label="Breadcrumb" class="text-sm font-semibold text-sis">
       <a href="index.html" class="hover:text-orman transition-colors">Home</a>
       <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
       <span class="text-derin">Contact</span>
     </nav>
     <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
-      <h1 class="md:col-span-7 text-[2.25rem] md:text-5xl">Get in touch, let's think it through together</h1>
+      <h1 class="md:col-span-7 text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem]">Get in touch, let's think it through together</h1>
       <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">
         Write to us about membership, volunteering, partnerships, training and
         events. If you are in an emergency, don't use the form — call one of
@@ -18,7 +18,7 @@
 
 <section id="crisis" class="bolum scroll-mt-28">
   <div class="kabuk">
-    <div class="rounded-[4px] bg-derin text-kagit p-7 md:p-9 grid gap-8 md:grid-cols-12">
+    <div class="rounded-3xl bg-derin text-kagit p-7 md:p-9 grid gap-8 md:grid-cols-12">
       <div class="md:col-span-5">
         <p class="text-mikro uppercase font-semibold text-fener-acik">Where to turn in a crisis</p>
         <h2 class="mt-3 text-2xl text-kagit">TAK-DER is not a crisis line</h2>
@@ -29,7 +29,7 @@
           call one of the lines below now.
         </p>
       </div>
-      <dl class="md:col-span-7 grid gap-px bg-kagit/15 rounded-[4px] overflow-hidden sm:grid-cols-2">
+      <dl class="md:col-span-7 grid gap-px bg-kagit/15 rounded-3xl overflow-hidden sm:grid-cols-2">
         <div class="bg-derin p-5"><dt class="text-[0.8125rem] text-kagit/65">Emergency / Ambulance</dt><dd class="mt-1"><a href="tel:112" class="font-display text-2xl font-semibold text-kagit hover:text-fener-acik transition-colors">112</a></dd></div>
         <div class="bg-derin p-5"><dt class="text-[0.8125rem] text-kagit/65">Police</dt><dd class="mt-1"><a href="tel:155" class="font-display text-2xl font-semibold text-kagit hover:text-fener-acik transition-colors">155</a></dd></div>
         <div class="bg-derin p-5"><dt class="text-[0.8125rem] text-kagit/65">Civil Defence</dt><dd class="mt-1"><a href="tel:101" class="font-display text-2xl font-semibold text-kagit hover:text-fener-acik transition-colors">101</a></dd></div>
@@ -66,12 +66,12 @@
       <!-- action="#": connect to a form service that forwards to the official email (see README). -->
       <form class="kart mt-6" method="post" action="#" novalidate>
         <div class="grid gap-4 sm:grid-cols-2">
-          <div><label for="i-ad" class="block text-[0.875rem] font-medium">Full name</label><input id="i-ad" name="name" type="text" autocomplete="name" required class="mt-1.5 w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none"></div>
-          <div><label for="i-eposta" class="block text-[0.875rem] font-medium">Email</label><input id="i-eposta" name="email" type="email" autocomplete="email" required class="mt-1.5 w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none"></div>
+          <div><label for="i-ad" class="block text-[0.875rem] font-medium">Full name</label><input id="i-ad" name="name" type="text" autocomplete="name" required class="mt-1.5 w-full rounded-xl border-2 border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none"></div>
+          <div><label for="i-eposta" class="block text-[0.875rem] font-medium">Email</label><input id="i-eposta" name="email" type="email" autocomplete="email" required class="mt-1.5 w-full rounded-xl border-2 border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none"></div>
         </div>
         <div class="mt-4">
           <label for="i-konu" class="block text-[0.875rem] font-medium">Subject</label>
-          <select id="i-konu" name="subject" class="mt-1.5 w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none">
+          <select id="i-konu" name="subject" class="mt-1.5 w-full rounded-xl border-2 border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none">
             <option>General enquiry</option>
             <option>Membership</option>
             <option>Volunteering</option>
@@ -82,7 +82,7 @@
         </div>
         <div class="mt-4">
           <label for="i-mesaj" class="block text-[0.875rem] font-medium">Your message</label>
-          <textarea id="i-mesaj" name="message" rows="6" required class="mt-1.5 w-full rounded-[4px] border border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none"></textarea>
+          <textarea id="i-mesaj" name="message" rows="6" required class="mt-1.5 w-full rounded-xl border-2 border-cizgi bg-kagit px-3 py-2.5 focus:border-orman focus:outline-none"></textarea>
         </div>
         <label class="mt-5 flex items-start gap-3 text-[0.875rem] leading-relaxed">
           <input type="checkbox" name="privacy" required class="mt-1 accent-orman">

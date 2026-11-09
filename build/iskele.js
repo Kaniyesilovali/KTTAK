@@ -11,7 +11,7 @@ const SITE = ayarlar.alanAdi;
 
 const sayfalar = require('./sayfalar.json');
 
-const FONT = 'https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,400..600,0..100&display=swap';
+const FONT = 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..800;1,400..600&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap';
 
 function kurulus(dil) {
   return JSON.stringify({

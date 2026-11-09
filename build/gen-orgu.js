@@ -51,23 +51,28 @@ function yol(ip) {
   return d;
 }
 
-const durak = [[0, '#135E8B'], [0.3, '#10778C'], [0.55, '#4C9785'], [0.85, '#80B674']]
-  .map(([o, c]) => `<stop offset="${o}" stop-color="${c}"/>`).join('');
+// İki varyant: açık zemin (iç sayfa başlıkları) ve koyu zemin (kapak alanları).
+// Koyu zeminde iplikler açık tonlardadır ve kalındır: dokunulabilir bir halat gibi.
+const VARYANT = [
+  { dosya: 'orgu.svg', kalin: 1, saydam: 1,
+    renk: [[0, '#135E8B'], [0.3, '#10778C'], [0.55, '#4C9785'], [0.85, '#80B674']] },
+  { dosya: 'orgu-gece.svg', kalin: 1.9, saydam: 1,
+    renk: [[0, '#7FB4C9'], [0.35, '#8CC7C4'], [0.6, '#A9D6B4'], [0.9, '#C3E3B7']] },
+];
 
-const yollar = iplikler.map((ip) =>
-  `<path d="${yol(ip)}" vector-effect="non-scaling-stroke" stroke-width="${ip.kalinlik.toFixed(2)}" stroke-opacity="${ip.saydam.toFixed(2)}"/>`
-).join('');
-
-// Her ipliğin başına küçük bir nokta: "buradan katıldı"
-const noktalar = iplikler.map((ip) => {
-  const c = yumusak(W * 0.12, W * 0.62, ip.bas);
-  const y = ORTA + (1 - c) * (ip.ofset + Math.sin(ip.bas * ip.f1 + ip.p1) * 9 + Math.sin(ip.bas * ip.f2 + ip.p2) * 4)
-    + c * R * Math.sin((2 * Math.PI * ip.bas) / P + ip.faz);
-  return `<circle cx="${ip.bas}" cy="${y.toFixed(2)}" r="2.6"/>`;
-}).join('');
-
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid slice" role="presentation"><defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${W}" y2="0">${durak}</linearGradient></defs><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">${yollar}</g><g fill="url(#g)">${noktalar}</g></svg>`;
-
-const cikti = path.join(__dirname, '..', 'assets/img/orgu.svg');
-fs.writeFileSync(cikti, svg);
-console.log('orgu.svg —', (svg.length / 1024).toFixed(1), 'KB');
+for (const v of VARYANT) {
+  const durak = v.renk.map(([o, c]) => `<stop offset="${o}" stop-color="${c}"/>`).join('');
+  const yollar = iplikler.map((ip) =>
+    `<path d="${yol(ip)}" vector-effect="non-scaling-stroke" stroke-width="${(ip.kalinlik * v.kalin).toFixed(2)}" stroke-opacity="${(ip.saydam * v.saydam).toFixed(2)}"/>`
+  ).join('');
+  // Her ipliğin başına küçük bir nokta: "buradan katıldı"
+  const noktalar = iplikler.map((ip) => {
+    const c = yumusak(W * 0.12, W * 0.62, ip.bas);
+    const y = ORTA + (1 - c) * (ip.ofset + Math.sin(ip.bas * ip.f1 + ip.p1) * 9 + Math.sin(ip.bas * ip.f2 + ip.p2) * 4)
+      + c * R * Math.sin((2 * Math.PI * ip.bas) / P + ip.faz);
+    return `<circle cx="${ip.bas}" cy="${y.toFixed(2)}" r="${(2.6 * Math.sqrt(v.kalin)).toFixed(1)}"/>`;
+  }).join('');
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid slice" role="presentation"><defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${W}" y2="0">${durak}</linearGradient></defs><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">${yollar}</g><g fill="url(#g)">${noktalar}</g></svg>`;
+  fs.writeFileSync(path.join(__dirname, '..', 'assets/img', v.dosya), svg);
+  console.log(v.dosya, '—', (svg.length / 1024).toFixed(1), 'KB');
+}
