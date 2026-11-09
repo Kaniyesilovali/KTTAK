@@ -272,18 +272,77 @@
   }
   .dugme-hayalet:hover { background-color: color-mix(in srgb, #fff 12%, transparent); border-color: #fff; }
 
-  /* ---- Kart ---- */
+  /* ============================================================
+     ETKİLEŞİM DÜZENİ — sitedeki her kutu bu üç aileden birine girer.
+     Yeni kutu eklerken satır içi hover:* yazmayın; sınıfı seçin.
+
+     1. TIKLANABİLİR KART  .kart-bag
+        Beyaz zemin + kenarlık + gölge + ok (→).
+        Üzerine gelince HER YERDE aynı: açık yeşil zemin, koyu yeşil
+        kenarlık, ok yeşile döner ve sağa kayar.
+     2. BİLGİ KUTUSU  .kart, .not-kutu, paneller
+        Mavi tonlu düz zemin; kenarlık, gölge, ok yok.
+        Üzerine gelince hiçbir şey değişmez.
+     3. KOYU ALAN  .kapak
+        Yalnızca zemin, kendisi tıklanmaz. İçindeki eylem hap düğmedir.
+     Hap biçimi yalnızca düğmeler içindir; etiket/liste hap olmaz.
+     Yeşil zemin = "buna tıklayabilirsin" (hover) ve Gönüllü düğmesi.
+     ============================================================ */
+
+  /* ---- 2. Bilgi kutusu ---- */
   .kart {
     background-color: var(--color-kagit);
     border: 2px solid transparent;
     border-radius: var(--radius-yumusak);
     padding: 1.75rem;
   }
+  /* Vurgulu bilgi kutusu (uyarı, önemli not): bir ton koyu mavi */
+  .not-kutu { background-color: var(--color-su); }
+
+  /* ---- 1. Tıklanabilir kart ---- */
   .kart-bag {
+    position: relative;
     display: block;
-    transition: border-color 180ms ease, background-color 180ms ease;
+    background-color: #fff;
+    border: 2px solid var(--color-cizgi);
+    border-radius: var(--radius-yumusak);
+    box-shadow: 0 1px 2px rgba(12, 46, 68, 0.05), 0 14px 30px -22px rgba(12, 46, 68, 0.5);
+    transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
   }
-  .kart-bag:hover { border-color: var(--color-orman-acik); background-color: #fff; }
+  .kart-bag:hover {
+    background-color: var(--color-kum-acik);
+    border-color: var(--color-fener);
+    box-shadow: 0 1px 2px rgba(12, 46, 68, 0.05), 0 18px 36px -22px rgba(66, 118, 54, 0.55);
+  }
+  .kart-bag .ikon-yuva { background-color: var(--color-kagit); transition: background-color 180ms ease, color 180ms ease; }
+  .kart-bag:hover .ikon-yuva { background-color: #fff; color: var(--color-fener); }
+  .kart-bag .bag-ok { text-decoration: none; transition: color 180ms ease; }
+  .kart-bag:hover .bag-ok { color: var(--color-fener); }
+
+  /* Kartta "devam" yazısı yoksa sağ üstte yuvarlak ok durur */
+  .kart-bag:not(:has(.bag-ok))::after {
+    content: "→";
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    background-color: var(--color-kagit);
+    color: var(--color-orman-acik);
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+  }
+  .kart-bag:not(:has(.bag-ok)):hover::after {
+    background-color: var(--color-fener);
+    color: #fff;
+    transform: translateX(3px);
+  }
+  /* Satır biçimli kartta ok dikeyde ortalanır */
+  .kart-bag.grid::after { top: 50%; margin-top: -1.125rem; }
 
   /* Hücreli ızgara: eskiden kılcal çizgiyle bölünürdü, artık ayrık yumuşak kutular */
   .izgara > * { border-radius: var(--radius-yumusak); }
@@ -321,6 +380,31 @@
     gap: 0.4rem;
     font-weight: 700;
     color: var(--color-orman-acik);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3em;
+    text-decoration-color: color-mix(in srgb, var(--color-orman-acik) 30%, transparent);
+    transition: text-decoration-color 160ms ease;
+  }
+  .bag-ok:hover { text-decoration-color: currentColor; }
+
+  /* ---- Noktalı liste: tıklanmayan madde grupları (ilkeler vb.) ---- */
+  .nokta-liste { list-style: none; padding: 0; }
+  .nokta-liste > li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .nokta-liste > li::before {
+    content: "";
+    position: absolute;
+    left: 0.1rem;
+    top: 0.45em;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 999px;
+    background-color: var(--color-deniz);
   }
   .bag-ok::after {
     content: "→";
@@ -562,3 +646,29 @@
    içerikle yarışmasın diye bilinçli olarak sakin boyutta tutulur. */
 .kaynakca-panel > p:not(.etiket) { font-size: 1rem; line-height: 1.65; }
 .kaynakca-panel h2 { font-size: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem); }
+
+/* ---- Bölüm başı: geniş ekranda başlık solda, giriş paragrafı sağda ----
+   Satır boyu okunaklı kalır (≈70 karakter), sayfa genişliği boş kalmaz.
+   Katmansız yazıldı: paragraftaki mt-* ve olcek yardımcılarını ezer. */
+.bolum-basi { display: grid; }
+.bolum-basi > p { max-width: 72ch; }
+@media (min-width: 1024px) {
+  .bolum-basi {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: clamp(2.5rem, 1rem + 3vw, 5rem);
+    align-items: start;
+  }
+  .bolum-basi > p { margin-top: 0; padding-top: 2.35rem; max-width: none; }
+}
+
+/* Kaynakça paneli ve not kutuları kendi genişliklerini doldurur. */
+.kaynakca-panel .olcek { max-width: none; }
+.kaynakca-panel > p.text-\[0\.8125rem\] { font-size: 0.875rem; }
+
+/* Tıklanabilir kartta sağ üstteki ok metnin üstüne binmesin.
+   Katmansız yazıldı: p-* yardımcılarını ezer. İkonu üstte duran
+   kartta ok ikonun yanına düştüğü için ek boşluk gerekmez. */
+.kart-bag:not(:has(.bag-ok)):not(:has(> .ikon-yuva:first-child)) { padding-right: 4.25rem; }
+@media (min-width: 768px) {
+  .kart-bag.md\:flex:not(:has(.bag-ok)) { padding-right: 4.25rem; }
+}
