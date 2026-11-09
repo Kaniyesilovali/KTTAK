@@ -144,7 +144,7 @@
   .sayfa-basi {
     position: relative;
     padding-top: var(--bosluk-bas);
-    padding-bottom: clamp(9.5rem, 6rem + 8vw, 12.5rem);
+    padding-bottom: clamp(11rem, 7.5rem + 8vw, 14rem);
     background-color: var(--color-kagit);
     background-image: url("../img/orgu.svg");
     background-repeat: no-repeat;
