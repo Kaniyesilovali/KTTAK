@@ -470,6 +470,24 @@
   }
 }
 
+
+@layer components {
+  /* ---- Kaynakça paneli: sayfanın sonunda sakin, kendi kutusunda ----
+     Güvenilirlik için görünür kalır ama ana içerikle yarışmaz. */
+  .kaynakca-panel {
+    border-radius: 1.5rem;
+    background-color: var(--color-kagit);
+    padding: 1.75rem;
+  }
+  @media (min-width: 768px) { .kaynakca-panel { padding: 2.75rem 3rem; } }
+  .kaynakca-panel h2 { font-size: 1.5rem; }
+  .kaynakca-panel > p:not(.etiket) { font-size: 1rem; }
+  .kaynakca-panel .kunye { border-top-color: #fff; border-top-width: 2px; }
+  .kaynakca-panel .kunye > div { border-bottom-color: #fff; border-bottom-width: 2px; }
+  .kaynakca-panel .kunye dd { font-size: 0.9375rem; line-height: 1.6; color: color-mix(in srgb, var(--color-derin) 85%, transparent); }
+  .kaynakca-panel .etiket::before { box-shadow: 0 0 0 3px #fff, 0 0 0 4px var(--color-kum); }
+}
+
 /* ============================================================
    YAZDIRMA
    Kaynak Merkezi'ndeki rehberler PDF yerine sayfa olarak sunulur;
@@ -495,7 +513,7 @@
     padding-bottom: 0.5rem;
   }
 
-  .kart, .kart-bag, .izgara > * {
+  .kart, .kart-bag, .izgara > *, .kaynakca-panel {
     background: #fff !important;
     border: 1px solid #999;
     border-radius: 4px;
@@ -539,3 +557,8 @@
     color: var(--color-sis);
   }
 }
+
+/* Katmansız: yardımcı sınıfları ezer. Kaynakça girişi panel içinde ana
+   içerikle yarışmasın diye bilinçli olarak sakin boyutta tutulur. */
+.kaynakca-panel > p:not(.etiket) { font-size: 1rem; line-height: 1.65; }
+.kaynakca-panel h2 { font-size: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem); }
