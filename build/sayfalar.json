@@ -43,6 +43,13 @@
  },
  {
   "dil": "tr",
+  "dosya": "kutuphane.html",
+  "es": "library.html",
+  "baslik": "Kütüphane — TAK-DER",
+  "aciklama": "TAK-DER yayınları ve uluslararası yayınlar bir arada: psikososyal destek, çocuk koruma, insani standartlar, afet hazırlığı ve doğrulama alanında doğru kaynağa doğrudan bağlantı."
+ },
+ {
+  "dil": "tr",
   "dosya": "bilgi-kirliligi.html",
   "es": "misinformation.html",
   "baslik": "Bilgi Kirliliği ve Doğrulama — TAK-DER",
@@ -208,6 +215,13 @@
   "es": "kaynaklar.html",
   "baslik": "Resources — TAK-DER",
   "aciklama": "Free guides on disaster and trauma and psychosocial support material. Everything opens as a page, asks for no registration and is print-ready."
+ },
+ {
+  "dil": "en",
+  "dosya": "library.html",
+  "es": "kutuphane.html",
+  "baslik": "Library — TAK-DER",
+  "aciklama": "TAK-DER publications and international publications in one place: direct links to the right sources on psychosocial support, child protection, humanitarian standards, preparedness and verification."
  },
  {
   "dil": "en",

@@ -156,6 +156,7 @@ hazırlanan" biçimine çevrildi.
 | Çalışma Grupları | `calisma-gruplari.html` / `working-groups.html` | Kurulan gruplar ve sorumluları |
 | Eğitimler ve Atölyeler | `egitimler.html` / `training.html` | Program |
 | Kaynaklar | `kaynaklar.html` / `resources.html` | Kaynakça dosyasından eklenecekler |
+| Kütüphane → TAK-DER yayınları, Uluslararası yayınlar | `kutuphane.html` (`#takder-yayinlari`, `#uluslararasi-yayinlar`) / `library.html` | Yönetimin raf listesini onaylaması; Sendai, mhGAP-HIG ve SPR sitede başka yerde atıf almıyor |
 | Haberler ve Etkinlikler | `haberler.html` / `news.html` | Çalıştay/sempozyum tarih, yer, program, kayıt formu |
 | Katılım → Üye Ol | `uye-ol.html` / `membership.html` | Tüzük md. 6 koşulları, başvuru formu, aidat |
 | Katılım → Gönüllü Ol | `gonullu.html` / `volunteer.html` | Form servisi, md. 12'deki diğer koşullar |

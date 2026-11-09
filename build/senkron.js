@@ -27,6 +27,7 @@ const esles = {
   'calisma-alanlarimiz.html': 'what-we-do.html',
   'haberler.html': 'news.html',
   'kaynaklar.html': 'resources.html',
+  'kutuphane.html': 'library.html',
   'bilgi-kirliligi.html': 'misinformation.html',
   'cocukla-konusmak.html': 'talking-to-children.html',
   'aile-afet-plani.html': 'family-disaster-plan.html',
