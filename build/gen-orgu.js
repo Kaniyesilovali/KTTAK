@@ -9,7 +9,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const W = 1440, H = 200, ORTA = H / 2;
+// H'de üstte ve altta 40px pay bırakılır: kutu basık kalıp görsel kırpıldığında
+// (object-fit: cover) iplikler kenardan kesilmesin.
+const W = 1440, H = 280, ORTA = H / 2;
 const N = 5;               // iplik sayısı
 const R = 13;              // örgünün yarıçapı
 const P = 270;             // örgünün bir tam dönüş boyu (px)
@@ -21,7 +23,7 @@ const yumusak = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - 
 
 // Her iplik: başlangıç noktası, soldaki yüksekliği ve kendi dalgalanması
 const iplikler = Array.from({ length: N }, (_, i) => ({
-  bas: Math.round(rnd() * 260),                         // farklı zamanlarda katılır
+  bas: 48 + Math.round(rnd() * 240),                    // farklı zamanlarda katılır; nokta kenara değmez
   ofset: ((i + 0.5) / N - 0.5) * 150 + (rnd() - 0.5) * 8, // solda dağınık
   f1: 0.004 + rnd() * 0.004, f2: 0.011 + rnd() * 0.006,
   p1: rnd() * Math.PI * 2, p2: rnd() * Math.PI * 2,
@@ -72,7 +74,7 @@ for (const v of VARYANT) {
       + c * R * Math.sin((2 * Math.PI * ip.bas) / P + ip.faz);
     return `<circle cx="${ip.bas}" cy="${y.toFixed(2)}" r="${(2.6 * Math.sqrt(v.kalin)).toFixed(1)}"/>`;
   }).join('');
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid slice" role="presentation"><defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${W}" y2="0">${durak}</linearGradient></defs><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">${yollar}</g><g fill="url(#g)">${noktalar}</g></svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid slice" role="presentation"><defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${W}" y2="0">${durak}</linearGradient><linearGradient id="s" gradientUnits="userSpaceOnUse" x1="${W * 0.82}" y1="0" x2="${W}" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="url(#s)"/></mask></defs><g mask="url(#m)"><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">${yollar}</g><g fill="url(#g)">${noktalar}</g></g></svg>`;
   fs.writeFileSync(path.join(__dirname, '..', 'assets/img', v.dosya), svg);
   console.log(v.dosya, '—', (svg.length / 1024).toFixed(1), 'KB');
 }
