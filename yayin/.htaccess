@@ -1,4 +1,4 @@
-# TAK-DER — Apache (cPanel/Plesk) sunucular için temel ayarlar.
+# TAKDER — Apache (cPanel/Plesk) sunucular için temel ayarlar.
 # Sunucunuz Nginx ise bu dosyanın etkisi olmaz, zararı da olmaz.
 
 # --- Karakter kodlaması: Türkçe karakterlerin bozulmaması için ---
@@ -14,7 +14,7 @@ ErrorDocument 404 /404.html
   RewriteEngine On
   RewriteRule ^bagis\.html$ / [R=302,L]
   RewriteRule ^en/donate\.html$ /en/ [R=302,L]
-  # Şeffaflık sayfası kaldırıldı (TAK-DER brifinde yok) — kalıcı yönlendirme
+  # Şeffaflık sayfası kaldırıldı (TAKDER brifinde yok) — kalıcı yönlendirme
   RewriteRule ^seffaflik\.html$ /kurumsal.html [R=301,L]
   RewriteRule ^en/transparency\.html$ /en/governance.html [R=301,L]
 </IfModule>

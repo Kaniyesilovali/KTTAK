@@ -4,7 +4,7 @@
  *
  * Sonuç:
  *   yayin/            → İÇİNDEKİLERİ FileZilla ile public_html/ içine sürükleyin
- *   tak-der-yayin.zip → (isteğe bağlı) cPanel "Dosya Yöneticisi"nden yükleyip
+ *   takder-yayin.zip → (isteğe bağlı) cPanel "Dosya Yöneticisi"nden yükleyip
  *                       "Extract" ile açmak için; FileZilla'dan çok daha hızlı
  */
 const fs = require('fs');
@@ -13,7 +13,7 @@ const { execSync } = require('child_process');
 
 const KOK = path.join(__dirname, '..');
 const YAYIN = path.join(KOK, 'yayin');
-const ZIP = path.join(KOK, 'tak-der-yayin.zip');
+const ZIP = path.join(KOK, 'takder-yayin.zip');
 
 function tumDosyalar(klasor) {
   return fs.readdirSync(klasor).flatMap((ad) => {
@@ -53,7 +53,7 @@ if (formlu.length) uyarilar.push(`${formlu.length} sayfadaki form hiçbir yere g
 
 const bayt = dosyalar.reduce((t, d) => t + fs.statSync(d).size, 0);
 console.log(`
-✔ Hazır: yayin/  (${dosyalar.length} dosya, ${(bayt / 1024 / 1024).toFixed(1)} MB)${zipOldu ? '\n✔ Hazır: tak-der-yayin.zip' : ''}
+✔ Hazır: yayin/  (${dosyalar.length} dosya, ${(bayt / 1024 / 1024).toFixed(1)} MB)${zipOldu ? '\n✔ Hazır: takder-yayin.zip' : ''}
 
 FileZilla ile yükleme:
   1. Sunucuya bağlanın, sağ tarafta public_html/ (veya httpdocs/) klasörüne girin.

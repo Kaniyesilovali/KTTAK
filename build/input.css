@@ -5,7 +5,7 @@
 @source "../yayin/assets/js/*.js";
 
 /* ============================================================
-   TASARIM BELLEĞİ — TAK-DER  (2026-11 yenilemesi)
+   TASARIM BELLEĞİ — TAKDER  (2026-11 yenilemesi)
    Tez: "Kimse yükünü tek başına taşımasın."
    İmza: ÖRGÜ — dağınık iplikler birbirine tutunarak tek halat olur.
      · Kapak alanlarında kalın, açık tonlu iplikler (orgu-gece.svg)
@@ -18,7 +18,7 @@
    Braille Institute'un okunurluk için tasarladığı yazı; stres altında
    okuyan ziyaretçi için seçildi).
    Token adları eski paletten kalmadır (orman, fener…) — 46 sayfadaki
-   sınıflar değişmesin diye; değerler TAK-DER kimliğine aittir.
+   sınıflar değişmesin diye; değerler TAKDER kimliğine aittir.
    ============================================================ */
 
 @theme {

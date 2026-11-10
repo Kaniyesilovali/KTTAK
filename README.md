@@ -1,4 +1,4 @@
-# Travma Afet Kriz Derneği (TAK-DER) — Web Sitesi
+# Travma Afet Kriz Derneği (TAKDER) — Web Sitesi
 
 Statik HTML + Tailwind CSS ile yapılmış, iki dilli (TR/EN) dernek sitesi.
 Sunucuda hiçbir kurulum, veritabanı veya build adımı gerektirmez —
@@ -20,7 +20,7 @@ npm run paketle
 ```
 
 Bu komut sayfaları, CSS'i ve sitemap'i günceller. Sunucuya gidecek **her şey
-ve yalnızca onlar** `yayin/` klasöründedir; aynı içerik `tak-der-yayin.zip`
+ve yalnızca onlar** `yayin/` klasöründedir; aynı içerik `takder-yayin.zip`
 olarak da hazırlanır. Sonda geçici değerler ve
 çalışmayan formlar için uyarı listesi çıkar; yayından önce bu listeyi boşaltın
 (bkz. bölüm 2).
@@ -39,7 +39,7 @@ olarak da hazırlanır. Sonda geçici değerler ve
 Aktarım modunu **Auto** bırakın; SVG ve PDF dosyaları bozulmasın diye önemlidir.
 Güncelleme yaparken de aynı iki adım: `npm run paketle`, sonra yeniden sürükle.
 
-**Daha hızlı yol (cPanel):** `tak-der-yayin.zip` dosyasını FileZilla ile
+**Daha hızlı yol (cPanel):** `takder-yayin.zip` dosyasını FileZilla ile
 `public_html/` içine atın, cPanel **Dosya Yöneticisi**'nde zip'e sağ tıklayıp
 **Extract** deyin, sonra zip'i silin.
 
@@ -128,7 +128,7 @@ deniyor, yasa numarası eklenmedi.
 ### 2.3 Acil durum numaraları — dernek kriz hattı DEĞİLDİR
 
 Her sayfanın en üstünde **112 Acil/Ambulans · 101 Sivil Savunma · 177 Orman
-Yangını · 155 Polis** ve "TAK-DER bir kriz hattı değildir" bağlantısı durur.
+Yangını · 155 Polis** ve "TAKDER bir kriz hattı değildir" bağlantısı durur.
 İletişim sayfasında (`iletisim.html#kriz`) "Kriz anında nereye başvurulur"
 kutusu var. **Sosyal Hizmetler Dairesi numarası** teyit edilmediği için
 eklenmedi; yerinde HTML yorumu bekliyor. Yayından önce numaraları yeniden
@@ -167,7 +167,7 @@ hazırlanan" biçimine çevrildi.
 | Çalışma Grupları | `calisma-gruplari.html` / `working-groups.html` | Kurulan gruplar ve sorumluları |
 | Eğitimler ve Atölyeler | `egitimler.html` / `training.html` | Program |
 | Kaynaklar | `kaynaklar.html` / `resources.html` | Kaynakça dosyasından eklenecekler |
-| Kütüphane → TAK-DER yayınları, Uluslararası yayınlar | `kutuphane.html` (`#takder-yayinlari`, `#uluslararasi-yayinlar`) / `library.html` | Yönetimin raf listesini onaylaması; Sendai, mhGAP-HIG ve SPR sitede başka yerde atıf almıyor |
+| Kütüphane → TAKDER yayınları, Uluslararası yayınlar | `kutuphane.html` (`#takder-yayinlari`, `#uluslararasi-yayinlar`) / `library.html` | Yönetimin raf listesini onaylaması; Sendai, mhGAP-HIG ve SPR sitede başka yerde atıf almıyor |
 | Haberler ve Etkinlikler | `haberler.html` / `news.html` | Çalıştay/sempozyum tarih, yer, program, kayıt formu |
 | Katılım → Üye Ol | `uye-ol.html` / `membership.html` | Tüzük md. 6 koşulları, başvuru formu, aidat |
 | Katılım → Gönüllü Ol | `gonullu.html` / `volunteer.html` | Form servisi, md. 12'deki diğer koşullar |
@@ -229,11 +229,11 @@ FTP'ye yükleyin. Derleme gerekmez.
 ### Dernek adı
 
 Sitede her zaman tam ad ve kısa ad birlikte geçer: **Travma Afet Kriz
-Derneği (TAK-DER)**. İngilizce sayfalarda resmî ad Türkçe bırakılır,
+Derneği (TAKDER)**. İngilizce sayfalarda resmî ad Türkçe bırakılır,
 yanına açıklama olarak "Trauma, Disaster and Crisis Association" yazılır.
 Ad `build/ayarlar.json` (`kisaAd`, `resmiAdTR`, `resmiAdEN`), `build/sayfalar.json`
 (sayfa başlıkları) ve başlık/altbilgi parçalarında geçer. Türkçe eklerde
-TAK-DER'in, TAK-DER'e, TAK-DER'den biçimi kullanılır.
+TAKDER'in, TAKDER'e, TAKDER'den biçimi kullanılır.
 
 ### Menüyü veya altbilgiyi değiştirmek
 
