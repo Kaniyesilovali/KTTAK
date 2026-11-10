@@ -12,29 +12,40 @@ kurum veya kanun atıfı bırakılmamıştır.
 
 ## 1. FileZilla ile yayına alma
 
-Sunucunun kök klasörüne (genelde `public_html/` veya `httpdocs/`) **şunları** yükleyin:
+### Adım 1 — Paketi hazırlayın (tek komut)
 
-```
-✅ Tüm .html dosyaları (index.html, hakkimizda.html, 404.html, ...)
-✅ en/                 (İngilizce sayfalar)
-✅ assets/             (css, js, img, dosyalar)
-✅ robots.txt
-✅ sitemap.xml
-✅ .htaccess           (gizli dosya — FileZilla'da "gizli dosyaları göster" açık olmalı)
+```bash
+npm install        # yalnızca ilk seferde
+npm run paketle
 ```
 
-**Yüklemeyin:**
+Bu komut sayfaları, CSS'i ve sitemap'i günceller, sonra sunucuya gidecek
+**her şeyi ve yalnızca onları** `yayin/` klasörüne toplar. Aynı içerik
+`tak-der-yayin.zip` olarak da hazırlanır. Sonda geçici değerler ve
+çalışmayan formlar için uyarı listesi çıkar; yayından önce bu listeyi boşaltın
+(bkz. bölüm 2).
 
-```
-❌ node_modules/       (çok büyük, sunucuda işe yaramaz)
-❌ build/              (kaynak dosyalar, tarayıcı bunları okumaz)
-❌ package.json, package-lock.json
-❌ assets/dosyalar/BURAYA-BELGELERI-KOYUN.txt
-❌ README.md, .gitignore
-```
+### Adım 2 — FileZilla ile yükleyin
 
-FileZilla'da aktarım modunu **Auto** bırakın; SVG ve PDF dosyaları bozulmasın
-diye önemlidir.
+1. FileZilla → **Dosya › Site Yöneticisi**'ne hostingin verdiği bilgileri girin
+   (sunucu, kullanıcı adı, şifre). Mümkünse protokolü **SFTP** veya
+   **FTP – açık TLS** seçin.
+2. **Sunucu › Gizli dosyaları göstermeye zorla** açık olsun (`.htaccess` için).
+3. Sağ tarafta (sunucu) `public_html/` (Plesk'te `httpdocs/`) klasörüne girin.
+4. Sol tarafta (bilgisayar) bu projedeki **`yayin/` klasörünün içine** girin.
+5. Soldaki her şeyi seçin (Cmd+A / Ctrl+A) ve sağa sürükleyin. "Dosya zaten
+   var" sorulursa **Üzerine yaz** + "Her zaman bu eylemi kullan".
+
+Aktarım modunu **Auto** bırakın; SVG ve PDF dosyaları bozulmasın diye önemlidir.
+Güncelleme yaparken de aynı iki adım: `npm run paketle`, sonra yeniden sürükle.
+
+**Daha hızlı yol (cPanel):** `tak-der-yayin.zip` dosyasını FileZilla ile
+`public_html/` içine atın, cPanel **Dosya Yöneticisi**'nde zip'e sağ tıklayıp
+**Extract** deyin, sonra zip'i silin.
+
+`yayin/` ve zip git'e girmez; her `npm run paketle` onları baştan oluşturur.
+`node_modules/`, `build/`, `package.json`, `README.md` gibi dosyalar pakette
+yoktur; sunucuya da yüklenmemelidir.
 
 ### Yükledikten sonra kontrol listesi
 
