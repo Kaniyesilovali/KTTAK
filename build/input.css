@@ -672,3 +672,44 @@
 @media (min-width: 768px) {
   .kart-bag.md\:flex:not(:has(.bag-ok)) { padding-right: 4.25rem; }
 }
+
+@layer components {
+  /* ---- Üst menü açılır panelleri (site haritası bölüm 2–10) ----
+     Fareyle üzerine gelince ya da klavyeyle odaklanınca açılır; JS gerekmez.
+     Başlık bağlantısı her zaman bölümün genel bakış sayfasına gider. */
+  .menu-grup { position: relative; }
+  .menu-panel {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 50;
+    min-width: 16rem;
+    padding-top: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 150ms ease, transform 150ms ease, visibility 0s linear 150ms;
+  }
+  .menu-panel > ul {
+    background-color: var(--color-zemin);
+    border: 1px solid var(--color-cizgi);
+    border-radius: 1.25rem;
+    padding: 0.5rem;
+    box-shadow: 0 24px 48px -24px rgba(12, 46, 68, 0.35);
+  }
+  .menu-sag .menu-panel { left: auto; right: 0; }
+  .menu-grup:hover > .menu-panel,
+  .menu-grup:focus-within > .menu-panel {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    transition-delay: 0s;
+  }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] > summary > span[aria-hidden] { transform: rotate(45deg); }
+
+  /* ---- Kütüphane süzgeci ---- */
+  .suzgec[aria-pressed="true"] { background-color: var(--color-orman) !important; border-color: var(--color-orman) !important; color: var(--color-zemin) !important; }
+  .suzgec[aria-pressed="true"] .suzgec-sayi { color: color-mix(in srgb, var(--color-zemin) 75%, transparent); }
+  .suzgec-sayi { margin-left: 0.35rem; font-weight: 500; color: var(--color-sis); }
+}

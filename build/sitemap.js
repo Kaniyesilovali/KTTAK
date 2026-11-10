@@ -1,7 +1,7 @@
 /** sitemap.xml ve robots.txt üretir. Alan adı: build/ayarlar.json */
 const fs = require('fs'), path = require('path');
 const SITE = require('./ayarlar.json').alanAdi;
-const sayfalar = require('./sayfalar.json').filter(s => s.dosya !== '404.html');
+const sayfalar = require('./sayfalar.json').filter(s => s.dosya !== '404.html' && !s.noindex);
 const bugun = new Date().toISOString().slice(0, 10);
 
 const url = (s) => {

@@ -61,7 +61,7 @@ for (const s of sayfalar) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${s.baslik}</title>
-<meta name="description" content="${s.aciklama}">
+<meta name="description" content="${s.aciklama}">${s.noindex ? '\n<meta name="robots" content="noindex">' : ''}
 <link rel="canonical" href="${kanonik}">
 <link rel="alternate" hreflang="tr" href="${SITE}/${trYol === 'index.html' ? '' : trYol}">
 <link rel="alternate" hreflang="en" href="${SITE}/en/${enYol === 'index.html' ? '' : enYol}">

@@ -17,12 +17,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/about.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/calisma-alanlarimiz.html</loc>
+    <loc>https://tak-der.org/calisma-modelimiz.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/calisma-alanlarimiz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/what-we-do.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/calisma-modelimiz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/working-model.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/calisma-gruplari.html</loc>
@@ -33,44 +33,100 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/working-groups.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/egitimler.html</loc>
+    <loc>https://tak-der.org/kurumsal.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/egitimler.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/training.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kurumsal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/governance.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/kaynaklar.html</loc>
+    <loc>https://tak-der.org/gonullu.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kaynaklar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/resources.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/gonullu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/volunteer.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/kutuphane.html</loc>
+    <loc>https://tak-der.org/seffaflik.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kutuphane.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/library.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/seffaflik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/transparency.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/bilgi-kirliligi.html</loc>
+    <loc>https://tak-der.org/etik.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/bilgi-kirliligi.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/misinformation.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/etik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/ethics.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/cocukla-konusmak.html</loc>
+    <loc>https://tak-der.org/calisma-alanlarimiz.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/cocukla-konusmak.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/talking-to-children.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/calisma-alanlarimiz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/what-we-do.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/afetler.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/afetler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/disasters.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/travma-ve-siddet.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/travma-ve-siddet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/trauma-and-violence.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/toplumsal-krizler.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/toplumsal-krizler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/social-and-economic-crises.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/ozel-gruplar.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/ozel-gruplar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/specific-groups.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/kibris-risk-profili.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kibris-risk-profili.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/cyprus-risk-profile.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/risk-dongusu.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/risk-dongusu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/risk-cycle.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/toplum-icin.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/toplum-icin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/for-the-public.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/aile-afet-plani.html</loc>
@@ -79,22 +135,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/aile-afet-plani.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/family-disaster-plan.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/uyku-ve-irkilme.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/uyku-ve-irkilme.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/sleep-and-startle.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/yas.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/yas.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/grief.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/acil-canta.html</loc>
@@ -113,12 +153,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/home-safety.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/ikincil-travma.html</loc>
+    <loc>https://tak-der.org/cocukla-konusmak.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/ikincil-travma.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/secondary-trauma.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/cocukla-konusmak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/talking-to-children.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/uyku-ve-irkilme.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/uyku-ve-irkilme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/sleep-and-startle.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/yas.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/yas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/grief.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/bilgi-kirliligi.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/bilgi-kirliligi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/misinformation.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/meslek-elemanlari.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/meslek-elemanlari.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/for-professionals.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/egitimler.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/egitimler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/training.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/ilk-psikolojik-yardim.html</loc>
@@ -153,6 +233,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/school-curriculum.html"/>
   </url>
   <url>
+    <loc>https://tak-der.org/ikincil-travma.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/ikincil-travma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/secondary-trauma.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/kutuphane.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kutuphane.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/library.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/sozluk.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/sozluk.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/glossary.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/medya.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/medya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/media.html"/>
+  </url>
+  <url>
     <loc>https://tak-der.org/haberler.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -161,12 +273,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/news.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/gonullu.html</loc>
+    <loc>https://tak-der.org/katil.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/gonullu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/volunteer.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/katil.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/get-involved.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/uye-ol.html</loc>
@@ -175,14 +287,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/uye-ol.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/membership.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/kurumsal.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kurumsal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/governance.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/iletisim.html</loc>
@@ -201,6 +305,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/privacy.html"/>
   </url>
   <url>
+    <loc>https://tak-der.org/erisilebilirlik.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/erisilebilirlik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/accessibility.html"/>
+  </url>
+  <url>
     <loc>https://tak-der.org/en/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -217,12 +329,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/about.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/what-we-do.html</loc>
+    <loc>https://tak-der.org/en/working-model.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/calisma-alanlarimiz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/what-we-do.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/calisma-modelimiz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/working-model.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/working-groups.html</loc>
@@ -233,44 +345,100 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/working-groups.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/training.html</loc>
+    <loc>https://tak-der.org/en/governance.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/egitimler.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/training.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kurumsal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/governance.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/resources.html</loc>
+    <loc>https://tak-der.org/en/volunteer.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kaynaklar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/resources.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/gonullu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/volunteer.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/library.html</loc>
+    <loc>https://tak-der.org/en/transparency.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kutuphane.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/library.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/seffaflik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/transparency.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/misinformation.html</loc>
+    <loc>https://tak-der.org/en/ethics.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/bilgi-kirliligi.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/misinformation.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/etik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/ethics.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/talking-to-children.html</loc>
+    <loc>https://tak-der.org/en/what-we-do.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/cocukla-konusmak.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/talking-to-children.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/calisma-alanlarimiz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/what-we-do.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/disasters.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/afetler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/disasters.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/trauma-and-violence.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/travma-ve-siddet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/trauma-and-violence.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/social-and-economic-crises.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/toplumsal-krizler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/social-and-economic-crises.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/specific-groups.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/ozel-gruplar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/specific-groups.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/cyprus-risk-profile.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kibris-risk-profili.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/cyprus-risk-profile.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/risk-cycle.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/risk-dongusu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/risk-cycle.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/for-the-public.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/toplum-icin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/for-the-public.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/family-disaster-plan.html</loc>
@@ -279,22 +447,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/aile-afet-plani.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/family-disaster-plan.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/en/sleep-and-startle.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/uyku-ve-irkilme.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/sleep-and-startle.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/en/grief.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/yas.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/grief.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/emergency-kit.html</loc>
@@ -313,12 +465,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/home-safety.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/secondary-trauma.html</loc>
+    <loc>https://tak-der.org/en/talking-to-children.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/ikincil-travma.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/secondary-trauma.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/cocukla-konusmak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/talking-to-children.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/sleep-and-startle.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/uyku-ve-irkilme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/sleep-and-startle.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/grief.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/yas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/grief.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/misinformation.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/bilgi-kirliligi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/misinformation.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/for-professionals.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/meslek-elemanlari.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/for-professionals.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/training.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/egitimler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/training.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/psychological-first-aid.html</loc>
@@ -353,6 +545,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/school-curriculum.html"/>
   </url>
   <url>
+    <loc>https://tak-der.org/en/secondary-trauma.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/ikincil-travma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/secondary-trauma.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/library.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kutuphane.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/library.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/glossary.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/sozluk.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/glossary.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/media.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/medya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/media.html"/>
+  </url>
+  <url>
     <loc>https://tak-der.org/en/news.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -361,12 +585,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/news.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/en/volunteer.html</loc>
+    <loc>https://tak-der.org/en/get-involved.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/gonullu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/volunteer.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/katil.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/get-involved.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/membership.html</loc>
@@ -375,14 +599,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/uye-ol.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/membership.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/en/governance.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kurumsal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/governance.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/contact.html</loc>
@@ -399,5 +615,13 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/kvkk.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/accessibility.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/erisilebilirlik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/accessibility.html"/>
   </url>
 </urlset>

@@ -1,0 +1,138 @@
+<!-- ============ OLAY SAYFASI ŞABLONU ============
+     Kriz anında bir saat içinde yayına girmek için, içi boş olarak önceden hazırlanmıştır.
+     KULLANIM: yayin/olay.html dosyasını kopyalayın (ör. olay-2027-deprem.html), [köşeli parantezli] alanları doldurun,
+     <meta name="robots" content="noindex"> satırını silin, anasayfadaki GÜNCEL DURUM ŞERİDİ yorumunu açıp bağlantısını verin.
+     Yalnızca doğrulanmış bilgi yazılır; her güncellemeye saat ve kaynak eklenir (tüzük md. 5; README 2.4). -->
+<section class="bolum yazdir-yok"><div class="kabuk"><div class="rounded-3xl border-2 border-dashed border-cizgi p-6 text-[0.9375rem] text-derin/80"><strong>Şablon.</strong> Bu sayfa bir olay yaşandığında doldurulmak üzere boş bekler; arama motorlarına kapalıdır.</div></div></section>
+<section class="sayfa-basi">
+  <div class="kabuk">
+    <nav aria-label="Konum" class="text-sm font-semibold text-sis">
+      <a href="index.html" class="hover:text-orman transition-colors">Anasayfa</a>
+      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
+      <span class="text-derin">[Olay adı]</span>
+    </nav>
+    <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
+      <h1 class="md:col-span-7 text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem]">[Olay adı — yer, tarih]</h1>
+      <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">Son güncelleme: [gg.aa.yyyy, ss:dd]. Bu sayfa yalnızca doğrulanmış bilgiyi içerir ve düzenli olarak güncellenir.</p>
+    </div>
+  </div>
+</section>
+<section class="bolum">
+  <div class="kabuk">
+    <div class="rounded-3xl bg-derin text-kagit p-7 md:p-9 grid gap-4 md:grid-cols-12 md:items-center">
+      <p class="md:col-span-8 text-lg leading-relaxed">Hayati tehlike varsa beklemeyin. TAKDER bir kriz hattı değildir.</p>
+      <p class="md:col-span-4 md:text-right font-display text-3xl font-bold"><a href="tel:112" class="hover:text-fener-acik">112</a> · <a href="tel:155" class="hover:text-fener-acik">155</a></p>
+    </div>
+  </div>
+</section>
+<section id="dogrulanmis" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <div class="bolum-basi">
+      <div>
+      <p class="etiket">1</p>
+      <h2 class="mt-4 text-2xl md:text-3xl olcek">Doğrulanmış bilgi</h2>
+      </div>
+    </div>
+    <ul class="nokta-liste mt-8 grid gap-3 olcek text-[1.0625rem] leading-relaxed text-derin/85">
+      <li>[Ne oldu — kaynak: kurum adı, saat]</li>
+      <li>[Etkilenen bölgeler — kaynak]</li>
+      <li>[Resmî kurumların çağrıları — kaynak]</li>
+    </ul>    <div class="mt-8 rounded-3xl not-kutu p-6 md:p-7 olcek">
+      <p class="text-[0.9375rem] leading-relaxed text-derin/80">Doğrulanmamış bilgi bu bölüme yazılmaz. <a href="bilgi-kirliligi.html" class="bag">Bilgi kirliliği ve doğrulama</a></p>
+    </div>
+  </div>
+</section>
+<section id="destek" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <div class="bolum-basi">
+      <div>
+      <p class="etiket">2</p>
+      <h2 class="mt-4 text-2xl md:text-3xl olcek">Nereden destek alınır</h2>
+      </div>
+    </div>
+    <ul class="mt-8 grid gap-3">
+      <li>
+        <a href="tel:112" class="group grid gap-2 py-5 px-5 md:px-7 kart-bag rounded-2xl md:grid-cols-12 md:gap-6 md:items-baseline">
+          <span class="md:col-span-9">
+            <span class="block text-lg font-semibold text-orman">112 Acil / Ambulans</span>
+            <span class="mt-1 block text-[0.9375rem] text-derin/70">Hayati tehlike, yaralanma</span>
+          </span>
+          <span class="md:col-span-3 md:text-right text-sm font-bold text-fener">Ara</span>
+        </a>
+      </li>
+      <li>
+        <a href="tel:101" class="group grid gap-2 py-5 px-5 md:px-7 kart-bag rounded-2xl md:grid-cols-12 md:gap-6 md:items-baseline">
+          <span class="md:col-span-9">
+            <span class="block text-lg font-semibold text-orman">101 Sivil Savunma</span>
+            <span class="mt-1 block text-[0.9375rem] text-derin/70">Tahliye, barınma</span>
+          </span>
+          <span class="md:col-span-3 md:text-right text-sm font-bold text-fener">Ara</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="group grid gap-2 py-5 px-5 md:px-7 kart-bag rounded-2xl md:grid-cols-12 md:gap-6 md:items-baseline">
+          <span class="md:col-span-9">
+            <span class="block text-lg font-semibold text-orman">[Psikososyal destek noktası — yer, saat]</span>
+            <span class="mt-1 block text-[0.9375rem] text-derin/70">[Kurum, iletişim]</span>
+          </span>
+          <span class="md:col-span-3 md:text-right text-sm font-bold text-fener">[—]</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="ne-yapmali" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <div class="bolum-basi">
+      <div>
+      <p class="etiket">3</p>
+      <h2 class="mt-4 text-2xl md:text-3xl olcek">Ne yapmalı</h2>
+      </div>
+    </div>
+    <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <a href="uyku-ve-irkilme.html" class="kart kart-bag flex h-full flex-col">
+        <span class="block text-sm font-bold text-sis">Broşür</span>
+        <span class="mt-3 block font-display text-lg text-orman">Uyku, irkilme ve kaygı</span>
+        <span class="mt-3 block text-[0.9375rem] leading-relaxed text-derin/70">Hangi tepkiler olağan, hangileri destek gerektirir.</span>
+      </a>
+      <a href="cocukla-konusmak.html" class="kart kart-bag flex h-full flex-col">
+        <span class="block text-sm font-bold text-sis">Rehber</span>
+        <span class="mt-3 block font-display text-lg text-orman">Çocuğunuzla nasıl konuşulur</span>
+        <span class="mt-3 block text-[0.9375rem] leading-relaxed text-derin/70">Yaş gruplarına göre örnek cümleler ve zor sorulara yanıtlar.</span>
+      </a>
+      <a href="yas.html" class="kart kart-bag flex h-full flex-col">
+        <span class="block text-sm font-bold text-sis">Broşür</span>
+        <span class="mt-3 block font-display text-lg text-orman">Kayıptan sonra: yas üzerine</span>
+        <span class="mt-3 block text-[0.9375rem] leading-relaxed text-derin/70">Yas süreci, çocuğa kaybın anlatılması.</span>
+      </a>
+      <a href="bilgi-kirliligi.html" class="kart kart-bag flex h-full flex-col">
+        <span class="block text-sm font-bold text-sis">Rehber</span>
+        <span class="mt-3 block font-display text-lg text-orman">Bilgi kirliliği ve doğrulama</span>
+        <span class="mt-3 block text-[0.9375rem] leading-relaxed text-derin/70">Paylaşmadan önce dört adımlı doğrulama.</span>
+      </a>
+      <a href="ilk-psikolojik-yardim.html" class="kart kart-bag flex h-full flex-col">
+        <span class="block text-sm font-bold text-sis">El kitabı</span>
+        <span class="mt-3 block font-display text-lg text-orman">İlk psikolojik yardım</span>
+        <span class="mt-3 block text-[0.9375rem] leading-relaxed text-derin/70">Uzman olmayan gönüllüler için adım adım çerçeve.</span>
+      </a>
+      <a href="ikincil-travma.html" class="kart kart-bag flex h-full flex-col">
+        <span class="block text-sm font-bold text-sis">Protokol</span>
+        <span class="mt-3 block font-display text-lg text-orman">Saha çalışanları için ikincil travma</span>
+        <span class="mt-3 block text-[0.9375rem] leading-relaxed text-derin/70">Belirtiler, vardiya sonrası çözülme, ekip desteği.</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="guncellemeler" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <div class="bolum-basi">
+      <div>
+      <p class="etiket">4</p>
+      <h2 class="mt-4 text-2xl md:text-3xl olcek">Güncellemeler</h2>
+      </div>
+    </div>
+    <ol class="mt-8 grid gap-3 olcek">
+      <li class="rounded-2xl bg-kagit px-6 py-5"><p class="text-sm font-bold text-sis">[gg.aa.yyyy ss:dd]</p><p class="mt-1 text-[0.9375rem] text-derin/85">[Güncelleme — kaynak]</p></li>
+    </ol>
+  </div>
+</section>

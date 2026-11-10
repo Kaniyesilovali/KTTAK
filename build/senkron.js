@@ -20,33 +20,10 @@ const parcalar = {
 };
 
 // TR sayfası -> EN karşılığı. Dil değiştirici bu eşlemeyi kullanır.
-const esles = {
-  'index.html': 'index.html',
-  'hakkimizda.html': 'about.html',
-  'kurumsal.html': 'governance.html',
-  'calisma-alanlarimiz.html': 'what-we-do.html',
-  'haberler.html': 'news.html',
-  'kaynaklar.html': 'resources.html',
-  'kutuphane.html': 'library.html',
-  'bilgi-kirliligi.html': 'misinformation.html',
-  'cocukla-konusmak.html': 'talking-to-children.html',
-  'aile-afet-plani.html': 'family-disaster-plan.html',
-  'uyku-ve-irkilme.html': 'sleep-and-startle.html',
-  'yas.html': 'grief.html',
-  'acil-canta.html': 'emergency-kit.html',
-  'evde-guvenlik.html': 'home-safety.html',
-  'ikincil-travma.html': 'secondary-trauma.html',
-  'ilk-psikolojik-yardim.html': 'psychological-first-aid.html',
-  'cocuk-dostu-alan.html': 'child-friendly-space.html',
-  'ihtiyac-tespit-formu.html': 'needs-assessment-form.html',
-  'okul-egitim-mufredati.html': 'school-curriculum.html',
-  'calisma-gruplari.html': 'working-groups.html',
-  'egitimler.html': 'training.html',
-  'uye-ol.html': 'membership.html',
-  'gonullu.html': 'volunteer.html',
-  'iletisim.html': 'contact.html',
-  'kvkk.html': 'privacy.html',
-};
+// Tek kaynak: sayfalar.json (her TR kaydının "es" alanı).
+const esles = Object.fromEntries(
+  require('./sayfalar.json').filter((s) => s.dil === 'tr').map((s) => [s.dosya, s.es])
+);
 const tersEsles = Object.fromEntries(Object.entries(esles).map(([tr, en]) => [en, tr]));
 
 function blokDegistir(html, ad, icerik) {
@@ -55,12 +32,18 @@ function blokDegistir(html, ad, icerik) {
   return { html: html.replace(re, `$1\n${icerik}\n$2`), bulundu: true };
 }
 
-/** Bulunulan sayfanın menü bağlantısını işaretler. */
+/**
+ * Bulunulan sayfanın menü bağlantısını işaretler.
+ * Üst menüdeki bir bölüm bağlantısı data-grup="a.html b.html" taşıyabilir;
+ * o zaman bölümün alt sayfalarında da bölüm başlığı etkin görünür.
+ */
 function aktifMenu(html, dosya) {
-  return html.replace(/<a href="([^"]+)" data-nav class="([^"]*)"/g, (tam, href, sinif) => {
+  return html.replace(/<a href="([^"]+)" data-nav( data-grup="([^"]*)")? class="([^"]*)"/g, (tam, href, _g, grup, sinif) => {
     const hedef = href.split('#')[0].replace(/^\.\//, '');
-    if (hedef !== dosya) return tam;
-    return `<a href="${href}" data-nav aria-current="page" class="${sinif} nav-aktif"`;
+    const altlar = grup ? grup.split(/\s+/) : [];
+    if (hedef !== dosya && !altlar.includes(dosya)) return tam;
+    const ozellik = hedef === dosya ? ' aria-current="page"' : '';
+    return `<a href="${href}" data-nav${_g || ''}${ozellik} class="${sinif} nav-aktif"`;
   });
 }
 

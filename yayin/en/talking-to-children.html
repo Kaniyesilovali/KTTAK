@@ -38,7 +38,10 @@
     "addressLocality": "Lefkoşa",
     "addressCountry": "CY"
   },
-  "sameAs": [],
+  "sameAs": [
+    "https://www.instagram.com/TravmaAfetKrizDernegi",
+    "https://www.facebook.com/TravmaAfetKrizDernegi/"
+  ],
   "areaServed": "CY",
   "knowsLanguage": [
     "tr",
@@ -51,11 +54,11 @@
 <a href="#icerik" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-orman focus:text-kagit focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
 
 <!--#BASLIK-->
-<!-- Help strip: in trauma-informed design the exit must always be visible -->
+<!-- 0 · FIXED TOP STRIP: “If you are in an emergency” → crisis lines. On every page, one tap away. -->
 <div class="bg-derin text-kagit yazdir-yok">
   <div class="kabuk flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-2">
     <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.875rem] leading-snug">
-      <span class="font-bold text-fener-acik">Emergency</span>
+      <a href="contact.html#crisis" class="font-bold text-fener-acik hover:text-kagit transition-colors">If you are in an emergency</a>
       <a href="tel:112" class="font-bold hover:text-fener-acik transition-colors">112 <span class="font-normal text-kagit/70">Emergency / Ambulance</span></a>
       <a href="tel:101" class="font-bold hover:text-fener-acik transition-colors">101 <span class="font-normal text-kagit/70">Civil Defence</span></a>
       <a href="tel:177" class="font-bold hover:text-fener-acik transition-colors">177 <span class="font-normal text-kagit/70">Forest Fire</span></a>
@@ -78,24 +81,106 @@
       <img src="../assets/img/logo-yazili-renkli-192.png" srcset="../assets/img/logo-yazili-renkli-192.png 1x, ../assets/img/logo-yazili-renkli-400.png 3x" width="64" height="62" alt="" class="h-14 w-auto md:h-16 flex-none">
       <span class="leading-none min-w-0">
         <span class="block font-display text-[1.55rem] font-bold tracking-tight text-orman">TAKDER</span>
-        <span class="hidden sm:block xl:hidden 2xl:block text-[0.8125rem] font-semibold text-sis mt-1 whitespace-nowrap">Trauma, Disaster and Crisis Association</span>
+        <span class="hidden sm:block xl:hidden text-[0.8125rem] font-semibold text-sis mt-1 whitespace-nowrap">Travma Afet Kriz Derneği</span>
       </span>
     </a>
 
     <nav class="hidden xl:flex items-center gap-0.5" aria-label="Main menu">
-      <a href="index.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Home</a>
-      <a href="about.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">About</a>
-      <a href="what-we-do.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">What We Do</a>
-      <a href="training.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Training</a>
-      <a href="resources.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Resources</a>
-      <a href="library.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Library</a>
-      <a href="news.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">News</a>
-      <a href="contact.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Contact</a>
+      <div class="menu-grup">
+        <a href="about.html" data-nav data-grup="working-model.html working-groups.html governance.html volunteer.html transparency.html ethics.html" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">About</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="about.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Who we are</a></li>
+            <li><a href="about.html#values" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Vision and principles</a></li>
+            <li><a href="working-model.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Our working model</a></li>
+            <li><a href="working-groups.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Groups and structure</a></li>
+            <li><a href="governance.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Governance and statute</a></li>
+            <li><a href="volunteer.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Volunteers</a></li>
+            <li><a href="transparency.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Transparency</a></li>
+            <li><a href="ethics.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Ethics and confidentiality</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-grup">
+        <a href="what-we-do.html" data-nav data-grup="disasters.html trauma-and-violence.html social-and-economic-crises.html specific-groups.html cyprus-risk-profile.html" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Areas of Work</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="disasters.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Disasters and environmental crises</a></li>
+            <li><a href="trauma-and-violence.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Trauma and violence</a></li>
+            <li><a href="social-and-economic-crises.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Social and economic crises</a></li>
+            <li><a href="specific-groups.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Specific groups</a></li>
+            <li><a href="cyprus-risk-profile.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Cyprus risk profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-grup">
+        <a href="risk-cycle.html" data-nav data-grup="" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Risk Cycle</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="risk-cycle.html#understanding-risk" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Understanding risk</a></li>
+            <li><a href="risk-cycle.html#prevention" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Prevention and risk reduction</a></li>
+            <li><a href="risk-cycle.html#preparedness" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Preparedness</a></li>
+            <li><a href="risk-cycle.html#response" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Response</a></li>
+            <li><a href="risk-cycle.html#recovery" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Recovery and reconstruction</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-grup">
+        <a href="for-the-public.html" data-nav data-grup="family-disaster-plan.html emergency-kit.html home-safety.html talking-to-children.html sleep-and-startle.html grief.html misinformation.html" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap nav-aktif">For the Public</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="for-the-public.html#before" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Before an event</a></li>
+            <li><a href="for-the-public.html#during" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">During and after</a></li>
+            <li><a href="for-the-public.html#who-for" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Parents, teachers, workplaces, youth</a></li>
+            <li><a href="for-the-public.html#faq" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-grup">
+        <a href="for-professionals.html" data-nav data-grup="training.html ethics.html secondary-trauma.html psychological-first-aid.html child-friendly-space.html needs-assessment-form.html school-curriculum.html" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">For Professionals</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="training.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Training and calendar</a></li>
+            <li><a href="ethics.html#principles" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Ethical principles</a></li>
+            <li><a href="secondary-trauma.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Caring for responders</a></li>
+            <li><a href="for-professionals.html#protocols" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Protocols</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-grup">
+        <a href="library.html" data-nav data-grup="glossary.html" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Publications</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="library.html#takder-publications" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">TAKDER publications</a></li>
+            <li><a href="library.html#international-publications" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Online library</a></li>
+            <li><a href="glossary.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Glossary</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-grup">
+        <a href="media.html" data-nav data-grup="news.html" class="menu-baslik rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Media</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="media.html#guide" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Responsible reporting guide</a></li>
+            <li><a href="media.html#press-room" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Press room</a></li>
+            <li><a href="news.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">News and announcements</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <div class="hidden xl:flex items-center gap-2.5 shrink-0">
-      <a href="membership.html" data-nav class="dugme dugme-ikincil !min-h-0 !py-2.5 !px-5 text-[0.9375rem]">Join</a>
-      <a href="volunteer.html" data-nav class="dugme dugme-fener !min-h-0 !py-2.5 !px-5 text-[0.9375rem]">Volunteer</a>
+    <div class="hidden xl:flex items-center gap-1.5 shrink-0">
+      <a href="contact.html" data-nav class="rounded-full px-2.5 2xl:px-3.5 py-2 text-[0.9375rem] 2xl:text-base font-semibold text-derin/85 hover:text-orman hover:bg-kagit transition-colors whitespace-nowrap">Contact</a>
+      <div class="menu-grup menu-sag">
+        <a href="get-involved.html" data-nav data-grup="volunteer.html membership.html" class="dugme dugme-fener !min-h-0 !py-2.5 !px-5 text-[0.9375rem]">Get Involved</a>
+        <div class="menu-panel">
+          <ul class="grid gap-0.5">
+            <li><a href="volunteer.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Volunteer</a></li>
+            <li><a href="get-involved.html#partnership" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Institutional partnership</a></li>
+            <li><a href="membership.html" class="block rounded-xl px-3.5 py-2.5 text-[0.9375rem] font-medium text-derin/85 hover:bg-kagit hover:text-orman transition-colors">Become a member</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <button type="button" data-menu-ac class="xl:hidden -mr-2 p-2 text-orman" aria-expanded="false" aria-controls="mobil-menu">
@@ -106,22 +191,85 @@
     </button>
   </div>
 
-  <div id="mobil-menu" hidden class="xl:hidden border-t border-cizgi bg-zemin">
+  <div id="mobil-menu" hidden class="xl:hidden border-t border-cizgi bg-zemin max-h-[calc(100dvh-5rem)] overflow-y-auto">
     <nav class="kabuk py-5 flex flex-col" aria-label="Mobile menu">
       <a href="index.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Home</a>
-      <a href="about.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">About</a>
-      <a href="governance.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Governance &amp; Statute</a>
-      <a href="what-we-do.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">What We Do</a>
-      <a href="working-groups.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Working Groups</a>
-      <a href="training.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Training &amp; Workshops</a>
-      <a href="resources.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Resources</a>
-      <a href="library.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Library</a>
-      <a href="misinformation.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Misinformation</a>
-      <a href="news.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">News &amp; Events</a>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">About<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="about.html" data-nav class="block py-2 text-base font-semibold text-orman">About — overview</a></li>
+          <li><a href="about.html#values" class="block py-2 text-base text-derin/80">Vision and principles</a></li>
+          <li><a href="working-model.html" class="block py-2 text-base text-derin/80">Our working model</a></li>
+          <li><a href="working-groups.html" class="block py-2 text-base text-derin/80">Groups and structure</a></li>
+          <li><a href="governance.html" class="block py-2 text-base text-derin/80">Governance and statute</a></li>
+          <li><a href="volunteer.html" class="block py-2 text-base text-derin/80">Volunteers</a></li>
+          <li><a href="transparency.html" class="block py-2 text-base text-derin/80">Transparency</a></li>
+          <li><a href="ethics.html" class="block py-2 text-base text-derin/80">Ethics and confidentiality</a></li>
+        </ul>
+      </details>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">Areas of Work<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="what-we-do.html" data-nav class="block py-2 text-base font-semibold text-orman">Areas of Work — overview</a></li>
+          <li><a href="disasters.html" class="block py-2 text-base text-derin/80">Disasters and environmental crises</a></li>
+          <li><a href="trauma-and-violence.html" class="block py-2 text-base text-derin/80">Trauma and violence</a></li>
+          <li><a href="social-and-economic-crises.html" class="block py-2 text-base text-derin/80">Social and economic crises</a></li>
+          <li><a href="specific-groups.html" class="block py-2 text-base text-derin/80">Specific groups</a></li>
+          <li><a href="cyprus-risk-profile.html" class="block py-2 text-base text-derin/80">Cyprus risk profile</a></li>
+        </ul>
+      </details>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">Risk Cycle<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="risk-cycle.html" data-nav class="block py-2 text-base font-semibold text-orman">Risk Cycle — overview</a></li>
+          <li><a href="risk-cycle.html#understanding-risk" class="block py-2 text-base text-derin/80">Understanding risk</a></li>
+          <li><a href="risk-cycle.html#prevention" class="block py-2 text-base text-derin/80">Prevention and risk reduction</a></li>
+          <li><a href="risk-cycle.html#preparedness" class="block py-2 text-base text-derin/80">Preparedness</a></li>
+          <li><a href="risk-cycle.html#response" class="block py-2 text-base text-derin/80">Response</a></li>
+          <li><a href="risk-cycle.html#recovery" class="block py-2 text-base text-derin/80">Recovery and reconstruction</a></li>
+        </ul>
+      </details>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">For the Public<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="for-the-public.html" data-nav class="block py-2 text-base font-semibold text-orman">For the Public — overview</a></li>
+          <li><a href="for-the-public.html#before" class="block py-2 text-base text-derin/80">Before an event</a></li>
+          <li><a href="for-the-public.html#during" class="block py-2 text-base text-derin/80">During and after</a></li>
+          <li><a href="for-the-public.html#who-for" class="block py-2 text-base text-derin/80">Parents, teachers, workplaces, youth</a></li>
+          <li><a href="for-the-public.html#faq" class="block py-2 text-base text-derin/80">FAQ</a></li>
+        </ul>
+      </details>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">For Professionals<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="for-professionals.html" data-nav class="block py-2 text-base font-semibold text-orman">For Professionals — overview</a></li>
+          <li><a href="training.html" class="block py-2 text-base text-derin/80">Training and calendar</a></li>
+          <li><a href="ethics.html#principles" class="block py-2 text-base text-derin/80">Ethical principles</a></li>
+          <li><a href="secondary-trauma.html" class="block py-2 text-base text-derin/80">Caring for responders</a></li>
+          <li><a href="for-professionals.html#protocols" class="block py-2 text-base text-derin/80">Protocols</a></li>
+        </ul>
+      </details>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">Publications<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="library.html" data-nav class="block py-2 text-base font-semibold text-orman">Publications — overview</a></li>
+          <li><a href="library.html#takder-publications" class="block py-2 text-base text-derin/80">TAKDER publications</a></li>
+          <li><a href="library.html#international-publications" class="block py-2 text-base text-derin/80">Online library</a></li>
+          <li><a href="glossary.html" class="block py-2 text-base text-derin/80">Glossary</a></li>
+        </ul>
+      </details>
+      <details class="border-b border-cizgi/70">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-3 font-semibold text-lg">Media<span class="text-sis" aria-hidden="true">+</span></summary>
+        <ul class="pb-3 pl-4">
+          <li><a href="media.html" data-nav class="block py-2 text-base font-semibold text-orman">Media — overview</a></li>
+          <li><a href="media.html#guide" class="block py-2 text-base text-derin/80">Responsible reporting guide</a></li>
+          <li><a href="media.html#press-room" class="block py-2 text-base text-derin/80">Press room</a></li>
+          <li><a href="news.html" class="block py-2 text-base text-derin/80">News and announcements</a></li>
+        </ul>
+      </details>
       <a href="contact.html" data-nav class="py-3 border-b border-cizgi/70 font-semibold text-lg">Contact</a>
       <div class="flex gap-3 pt-5">
-        <a href="membership.html" class="dugme dugme-ikincil flex-1">Join</a>
-        <a href="volunteer.html" class="dugme dugme-fener flex-1">Volunteer</a>
+        <a href="get-involved.html" class="dugme dugme-fener flex-1">Get Involved</a>
       </div>
     </nav>
   </div>
@@ -134,7 +282,7 @@
     <nav aria-label="Breadcrumb" class="text-sm font-semibold text-sis yazdir-yok">
       <a href="index.html" class="hover:text-orman transition-colors">Home</a>
       <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
-      <a href="resources.html" class="hover:text-orman transition-colors">Resources</a>
+      <a href="for-the-public.html" class="hover:text-orman transition-colors">For the Public</a>
       <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
       <span class="text-derin">Talking to your child</span>
     </nav>
@@ -557,7 +705,7 @@
       </p>
       <p class="mt-6 flex flex-wrap gap-3">
         <a href="contact.html" class="dugme dugme-ikincil">Request an adaptation</a>
-        <a href="resources.html" class="dugme dugme-ikincil">Resources</a>
+        <a href="library.html" class="dugme dugme-ikincil">Publications and Resources</a>
       </p>
     </div>
   </div>
@@ -617,32 +765,32 @@
         We work so that no one has to carry trauma, disaster or crisis alone, growing stronger together through science-based, ethical psychosocial support.
       </p>
       <p class="mt-6 flex flex-wrap gap-3">
-        <a href="membership.html" class="dugme dugme-ikincil !py-2.5 !px-4 text-sm">Join</a>
-        <a href="volunteer.html" class="dugme dugme-fener !py-2.5 !px-4 text-sm">Volunteer</a>
+        <a href="get-involved.html" class="dugme dugme-fener !py-2.5 !px-4 text-sm">Get Involved</a>
       </p>
     </div>
 
     <nav class="md:col-span-2" aria-label="Association">
       <h2>Association</h2>
       <ul class="mt-4 space-y-2.5 text-base">
-        <li><a href="about.html" class="text-derin/80 hover:text-orman-acik transition-colors">Who We Are</a></li>
-        <li><a href="about.html#values" class="text-derin/80 hover:text-orman-acik transition-colors">Our Values</a></li>
-        <li><a href="governance.html#governance" class="text-derin/80 hover:text-orman-acik transition-colors">Governance</a></li>
-        <li><a href="governance.html#statute" class="text-derin/80 hover:text-orman-acik transition-colors">Statute</a></li>
-        <li><a href="news.html" class="text-derin/80 hover:text-orman-acik transition-colors">News &amp; Events</a></li>
+        <li><a href="about.html" class="text-derin/80 hover:text-orman-acik transition-colors">About</a></li>
+        <li><a href="working-model.html" class="text-derin/80 hover:text-orman-acik transition-colors">Our working model</a></li>
+        <li><a href="governance.html" class="text-derin/80 hover:text-orman-acik transition-colors">Governance and statute</a></li>
+        <li><a href="transparency.html" class="text-derin/80 hover:text-orman-acik transition-colors">Transparency</a></li>
+        <li><a href="ethics.html" class="text-derin/80 hover:text-orman-acik transition-colors">Ethics and confidentiality</a></li>
+        <li><a href="get-involved.html" class="text-derin/80 hover:text-orman-acik transition-colors">Get involved</a></li>
       </ul>
     </nav>
 
-    <nav class="md:col-span-2" aria-label="Our work">
-      <h2>Our work</h2>
+    <nav class="md:col-span-2" aria-label="Information">
+      <h2>Information</h2>
       <ul class="mt-4 space-y-2.5 text-base">
-        <li><a href="what-we-do.html" class="text-derin/80 hover:text-orman-acik transition-colors">What We Do</a></li>
-        <li><a href="working-groups.html" class="text-derin/80 hover:text-orman-acik transition-colors">Working Groups</a></li>
-        <li><a href="training.html" class="text-derin/80 hover:text-orman-acik transition-colors">Training &amp; Workshops</a></li>
-        <li><a href="resources.html" class="text-derin/80 hover:text-orman-acik transition-colors">Resources</a></li>
-        <li><a href="library.html" class="text-derin/80 hover:text-orman-acik transition-colors">Library</a></li>
-        <li><a href="misinformation.html" class="text-derin/80 hover:text-orman-acik transition-colors">Misinformation</a></li>
-        <li><a href="contact.html" class="text-derin/80 hover:text-orman-acik transition-colors">Contact</a></li>
+        <li><a href="what-we-do.html" class="text-derin/80 hover:text-orman-acik transition-colors">Areas of work</a></li>
+        <li><a href="risk-cycle.html" class="text-derin/80 hover:text-orman-acik transition-colors">Risk cycle</a></li>
+        <li><a href="for-the-public.html" class="text-derin/80 hover:text-orman-acik transition-colors">For the public</a></li>
+        <li><a href="for-professionals.html" class="text-derin/80 hover:text-orman-acik transition-colors">For professionals</a></li>
+        <li><a href="library.html" class="text-derin/80 hover:text-orman-acik transition-colors">Publications and resources</a></li>
+        <li><a href="glossary.html" class="text-derin/80 hover:text-orman-acik transition-colors">Glossary</a></li>
+        <li><a href="media.html" class="text-derin/80 hover:text-orman-acik transition-colors">Media</a></li>
       </ul>
     </nav>
 
@@ -655,10 +803,10 @@
         <!-- Telefon: dernek numarası belirlenince buraya eklenecek. -->
       </p>
       <p class="mt-5 flex gap-4">
-        <a href="#" class="text-sis hover:text-orman-acik transition-colors" aria-label="Instagram" rel="noopener">
+        <a href="https://www.instagram.com/TravmaAfetKrizDernegi" class="text-sis hover:text-orman-acik transition-colors" aria-label="Instagram" rel="noopener">
           <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.89 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 5.1a4.74 4.74 0 1 0 0 9.48 4.74 4.74 0 0 0 0-9.48zm0 7.82a3.08 3.08 0 1 1 0-6.16 3.08 3.08 0 0 1 0 6.16zm6.03-7.98a1.11 1.11 0 1 1-2.22 0 1.11 1.11 0 0 1 2.22 0z"/></svg>
         </a>
-        <a href="#" class="text-sis hover:text-orman-acik transition-colors" aria-label="Facebook" rel="noopener">
+        <a href="https://www.facebook.com/TravmaAfetKrizDernegi/" class="text-sis hover:text-orman-acik transition-colors" aria-label="Facebook" rel="noopener">
           <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.79 8.43-4.94 8.43-9.94z"/></svg>
         </a>
         <a href="#" class="text-sis hover:text-orman-acik transition-colors" aria-label="LinkedIn" rel="noopener">
@@ -671,19 +819,22 @@
 
   <div class="border-t border-cizgi">
     <div class="kabuk py-6 grid gap-x-8 gap-y-3 text-[0.8125rem] text-sis md:grid-cols-12">
-      <p class="md:col-span-7 leading-relaxed">
-        Travma Afet Kriz Derneği (TAKDER) — Trauma, Disaster and Crisis Association · under the Associations Law (23/2016) · Seat: Nicosia (Lefkoşa)
-        <!-- Tescil sonrası ekleyin: Kütük / sicil no ve tescil tarihi. -->
-      </p>
-      <p class="md:col-span-5 md:text-right">
-        <a href="privacy.html" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Privacy &amp; Personal Data</a>
-        <span class="mx-2 text-cizgi" aria-hidden="true">·</span>
-        <a href="privacy.html#cookies" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Cookie Policy</a>
-        <span class="mx-2 text-cizgi" aria-hidden="true">·</span>
-        <a href="governance.html#statute" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Statute</a>
-        <br class="hidden md:block">
-        <span class="md:inline-block md:mt-2">© <span data-yil>2026</span> Travma Afet Kriz Derneği (TAKDER)</span>
-      </p>
+      <div class="md:col-span-7 leading-relaxed">
+        <p><strong class="font-semibold text-derin/80">Disclaimer:</strong> This site is not an emergency service. In an emergency call <a href="tel:112" class="underline decoration-sis/40 underline-offset-4 hover:text-orman-acik">112</a>. The information on this site is for general guidance and does not replace individual diagnosis or treatment.</p>
+        <p class="mt-2">Travma Afet Kriz Derneği (TAKDER) — Trauma, Disaster and Crisis Association · under the Associations Law 23/2016 · Based in Lefkoşa (Nicosia)
+        <!-- After registration add: registry no. and date. --></p>
+      </div>
+      <div class="md:col-span-5 md:text-right">
+        <p>
+          <a href="privacy.html" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Privacy and data policy</a>
+          <span class="mx-2 text-cizgi" aria-hidden="true">·</span>
+          <a href="privacy.html#cookies" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Cookies</a>
+          <span class="mx-2 text-cizgi" aria-hidden="true">·</span>
+          <a href="accessibility.html" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Accessibility statement</a>
+        </p>
+        <p class="mt-2">Language: <a href="../cocukla-konusmak.html" hreflang="tr" lang="tr" class="hover:text-orman-acik transition-colors underline decoration-sis/40 underline-offset-4">Türkçe</a> <span class="mx-1 text-cizgi" aria-hidden="true">·</span> <span class="font-semibold text-derin/80" aria-current="true">English</span></p>
+        <p class="mt-2">© <span data-yil>2026</span> Travma Afet Kriz Derneği (TAKDER)</p>
+      </div>
     </div>
   </div>
 </footer>

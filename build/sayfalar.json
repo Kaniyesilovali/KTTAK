@@ -15,10 +15,10 @@
  },
  {
   "dil": "tr",
-  "dosya": "calisma-alanlarimiz.html",
-  "es": "what-we-do.html",
-  "baslik": "Ne Yapıyoruz — TAKDER",
-  "aciklama": "Hazırlık ve önleme, psikososyal destek, eğitim, çalışanların desteği, araştırma, savunuculuk, etik iletişim, iş birlikleri ve gönüllü ağı."
+  "dosya": "calisma-modelimiz.html",
+  "es": "working-model.html",
+  "baslik": "Çalışma Modelimiz — TAKDER",
+  "aciklama": "Hazırlık ve önleme, psikososyal destek, eğitim, çalışanların desteği, araştırma, savunuculuk, etik iletişim, iş birlikleri ve gönüllü ağı: tüzükte tanımlı faaliyet alanlarımız."
  },
  {
   "dil": "tr",
@@ -29,38 +29,87 @@
  },
  {
   "dil": "tr",
-  "dosya": "egitimler.html",
-  "es": "training.html",
-  "baslik": "Eğitimler ve Atölyeler — TAKDER",
-  "aciklama": "Afet ve kriz çalışanlarına yönelik sertifika eğitimleri ve atölyeler, topluma yönelik bilgilendirme eğitimleri."
+  "dosya": "kurumsal.html",
+  "es": "governance.html",
+  "baslik": "Yönetim ve Tüzük — TAKDER",
+  "aciklama": "Travma Afet Kriz Derneği'nin organları (Genel Kurul, Temsil Organı, Denetim Organı), künyesi ve tüzüğü."
  },
  {
   "dil": "tr",
-  "dosya": "kaynaklar.html",
-  "es": "resources.html",
-  "baslik": "Kaynaklar — TAKDER",
-  "aciklama": "Afet ve travma üzerine ücretsiz rehberler ve psikososyal destek materyalleri. Hepsi sayfa olarak açılır, kayıt istemez, yazdırmaya hazırdır."
+  "dosya": "gonullu.html",
+  "es": "volunteer.html",
+  "baslik": "Gönüllü Ol — TAKDER",
+  "aciklama": "Travma Afet Kriz Derneği'nde gönüllülük: koşullar, zorunlu eğitim ve başvuru formu."
  },
  {
   "dil": "tr",
-  "dosya": "kutuphane.html",
-  "es": "library.html",
-  "baslik": "Kütüphane — TAKDER",
-  "aciklama": "TAKDER yayınları ve uluslararası yayınlar bir arada: psikososyal destek, çocuk koruma, insani standartlar, afet hazırlığı ve doğrulama alanında doğru kaynağa doğrudan bağlantı."
+  "dosya": "seffaflik.html",
+  "es": "transparency.html",
+  "baslik": "Şeffaflık — TAKDER",
+  "aciklama": "Faaliyet raporları, finansman ve özerklik beyanı."
  },
  {
   "dil": "tr",
-  "dosya": "bilgi-kirliligi.html",
-  "es": "misinformation.html",
-  "baslik": "Bilgi Kirliliği ve Doğrulama — TAKDER",
-  "aciklama": "Afette yanlış bilgi nasıl yayılır, üç tür bilgi bozukluğu, en sık yedi kalıp ve paylaşmadan önce uygulanacak dört adımlı doğrulama yöntemi."
+  "dosya": "etik.html",
+  "es": "ethics.html",
+  "baslik": "Etik ve Gizlilik — TAKDER",
+  "aciklama": "Zarar vermemek, onam, mahremiyet, gizlilik ve sınırları, yetkinlik, tarafsızlık: TAKDER’in etik ilkeleri ve bildirim yolu."
  },
  {
   "dil": "tr",
-  "dosya": "cocukla-konusmak.html",
-  "es": "talking-to-children.html",
-  "baslik": "Depremden Sonra Çocuğunuzla Nasıl Konuşulur — TAKDER",
-  "aciklama": "Yaş gruplarına göre örnek cümleler, kaçınılması gereken ifadeler, zor sorulara yanıtlar ve uzman desteğine ne zaman başvurulacağı."
+  "dosya": "calisma-alanlarimiz.html",
+  "es": "what-we-do.html",
+  "baslik": "Çalışma Alanlarımız — TAKDER",
+  "aciklama": "Afetler ve çevresel krizler, travma ve şiddet, toplumsal ve ekonomik krizler, özel gruplar ve Kıbrıs risk profili."
+ },
+ {
+  "dil": "tr",
+  "dosya": "afetler.html",
+  "es": "disasters.html",
+  "baslik": "Afetler ve Çevresel Krizler — TAKDER",
+  "aciklama": "Afet nedir, afetten sonra beklenen ruhsal tepkiler, ne yapabilirsiniz ve ne zaman destek almalısınız."
+ },
+ {
+  "dil": "tr",
+  "dosya": "travma-ve-siddet.html",
+  "es": "trauma-and-violence.html",
+  "baslik": "Travma ve Şiddet — TAKDER",
+  "aciklama": "Travmatik olaylar ve şiddet sonrasında beklenen tepkiler, şiddete maruz kalan birine nasıl destek olunur, ne zaman yardım alınmalı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "toplumsal-krizler.html",
+  "es": "social-and-economic-crises.html",
+  "baslik": "Toplumsal ve Ekonomik Krizler — TAKDER",
+  "aciklama": "Ekonomik sıkıntı, işsizlik, salgın ve toplumsal gerilim dönemlerinin ruhsal etkileri ve baş etme yolları."
+ },
+ {
+  "dil": "tr",
+  "dosya": "ozel-gruplar.html",
+  "es": "specific-groups.html",
+  "baslik": "Özel Gruplar — TAKDER",
+  "aciklama": "Çocuklar, yaşlılar, engelli bireyler, gebeler, göçmenler ve müdahale edenler için krizlerde farklı ihtiyaçlar."
+ },
+ {
+  "dil": "tr",
+  "dosya": "kibris-risk-profili.html",
+  "es": "cyprus-risk-profile.html",
+  "baslik": "Kıbrıs Risk Profili — TAKDER",
+  "aciklama": "Kıbrıs’ta deprem, orman yangını, sel ve şiddet: kimi, nasıl etkiliyor ve neler yapılabilir."
+ },
+ {
+  "dil": "tr",
+  "dosya": "risk-dongusu.html",
+  "es": "risk-cycle.html",
+  "baslik": "Risk ve Müdahale Döngüsü — TAKDER",
+  "aciklama": "Riski anlamak, önleme, hazırlık, olay anında müdahale ve iyileşme: Sendai Çerçevesi ile eşleşen beş aşama."
+ },
+ {
+  "dil": "tr",
+  "dosya": "toplum-icin.html",
+  "es": "for-the-public.html",
+  "baslik": "Toplum İçin — TAKDER",
+  "aciklama": "Olaydan önce, olay sırasında ve sonrasında aileler, öğretmenler, iş yerleri ve gençler için rehberler ve sık sorulan sorular."
  },
  {
   "dil": "tr",
@@ -68,20 +117,6 @@
   "es": "family-disaster-plan.html",
   "baslik": "Aile Afet Planı — Doldurulabilir Şablon — TAKDER",
   "aciklama": "Buluşma noktası, ada dışı irtibat kişisi, ilaç ve belge listesi. Yazdırıp buzdolabına asmak için tasarlanmış doldurulabilir form."
- },
- {
-  "dil": "tr",
-  "dosya": "uyku-ve-irkilme.html",
-  "es": "sleep-and-startle.html",
-  "baslik": "Afet Sonrası Uyku, İrkilme ve Kaygı — TAKDER",
-  "aciklama": "Hangi tepkiler olağan, hangileri uzman desteği gerektirir. Uyku için işe yarayan sekiz adım ve anlık topraklanma teknikleri."
- },
- {
-  "dil": "tr",
-  "dosya": "yas.html",
-  "es": "grief.html",
-  "baslik": "Kayıptan Sonra: Yas Üzerine — TAKDER",
-  "aciklama": "Afet yasını ağırlaştıran altı şey, çocuğa kaybın anlatılması ve yas tutan birinin yanında nasıl durulacağı."
  },
  {
   "dil": "tr",
@@ -99,10 +134,45 @@
  },
  {
   "dil": "tr",
-  "dosya": "ikincil-travma.html",
-  "es": "secondary-trauma.html",
-  "baslik": "Saha Çalışanları için İkincil Travma — TAKDER",
-  "aciklama": "İkincil travmatik stres, şefkat yorgunluğu, tükenmişlik ve ahlaki yaralanma ayrımı; vardiya sonrası çözülme protokolü ve kurumun sorumluluğu."
+  "dosya": "cocukla-konusmak.html",
+  "es": "talking-to-children.html",
+  "baslik": "Depremden Sonra Çocuğunuzla Nasıl Konuşulur — TAKDER",
+  "aciklama": "Yaş gruplarına göre örnek cümleler, kaçınılması gereken ifadeler, zor sorulara yanıtlar ve uzman desteğine ne zaman başvurulacağı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "uyku-ve-irkilme.html",
+  "es": "sleep-and-startle.html",
+  "baslik": "Afet Sonrası Uyku, İrkilme ve Kaygı — TAKDER",
+  "aciklama": "Hangi tepkiler olağan, hangileri uzman desteği gerektirir. Uyku için işe yarayan sekiz adım ve anlık topraklanma teknikleri."
+ },
+ {
+  "dil": "tr",
+  "dosya": "yas.html",
+  "es": "grief.html",
+  "baslik": "Kayıptan Sonra: Yas Üzerine — TAKDER",
+  "aciklama": "Afet yasını ağırlaştıran altı şey, çocuğa kaybın anlatılması ve yas tutan birinin yanında nasıl durulacağı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "bilgi-kirliligi.html",
+  "es": "misinformation.html",
+  "baslik": "Bilgi Kirliliği ve Doğrulama — TAKDER",
+  "aciklama": "Afette yanlış bilgi nasıl yayılır, üç tür bilgi bozukluğu, en sık yedi kalıp ve paylaşmadan önce uygulanacak dört adımlı doğrulama yöntemi."
+ },
+ {
+  "dil": "tr",
+  "dosya": "meslek-elemanlari.html",
+  "es": "for-professionals.html",
+  "baslik": "Meslek Elemanları İçin — TAKDER",
+  "aciklama": "Eğitimler ve takvim, etik ilkeler, müdahale edenin bakımı ve ikincil travmatizasyon, saha protokolleri."
+ },
+ {
+  "dil": "tr",
+  "dosya": "egitimler.html",
+  "es": "training.html",
+  "baslik": "Eğitimler ve Atölyeler — TAKDER",
+  "aciklama": "Afet ve kriz çalışanlarına yönelik sertifika eğitimleri ve atölyeler, topluma yönelik bilgilendirme eğitimleri."
  },
  {
   "dil": "tr",
@@ -134,6 +204,34 @@
  },
  {
   "dil": "tr",
+  "dosya": "ikincil-travma.html",
+  "es": "secondary-trauma.html",
+  "baslik": "Saha Çalışanları için İkincil Travma — TAKDER",
+  "aciklama": "İkincil travmatik stres, şefkat yorgunluğu, tükenmişlik ve ahlaki yaralanma ayrımı; vardiya sonrası çözülme protokolü ve kurumun sorumluluğu."
+ },
+ {
+  "dil": "tr",
+  "dosya": "kutuphane.html",
+  "es": "library.html",
+  "baslik": "Yayınlar ve Kaynaklar — TAKDER",
+  "aciklama": "TAKDER yayınları ve uluslararası yayınlar bir arada: psikososyal destek, çocuk koruma, insani standartlar, afet hazırlığı ve doğrulama alanında doğru kaynağa doğrudan bağlantı."
+ },
+ {
+  "dil": "tr",
+  "dosya": "sozluk.html",
+  "es": "glossary.html",
+  "baslik": "Sözlük — TAKDER",
+  "aciklama": "Travma, afet ve kriz terimlerinin Türkçe ve İngilizce tanımları: UNDRR terminolojisi ve IASC belgeleri temel alınarak."
+ },
+ {
+  "dil": "tr",
+  "dosya": "medya.html",
+  "es": "media.html",
+  "baslik": "Medya — TAKDER",
+  "aciklama": "Afet ve kriz haberciliği için sorumlu habercilik rehberi; basın bültenleri, basın iletişimi ve logo."
+ },
+ {
+  "dil": "tr",
   "dosya": "haberler.html",
   "es": "news.html",
   "baslik": "Haberler ve Etkinlikler — TAKDER",
@@ -141,10 +239,10 @@
  },
  {
   "dil": "tr",
-  "dosya": "gonullu.html",
-  "es": "volunteer.html",
-  "baslik": "Gönüllü Ol — TAKDER",
-  "aciklama": "Travma Afet Kriz Derneği'nde gönüllülük: koşullar, zorunlu eğitim ve başvuru formu."
+  "dosya": "katil.html",
+  "es": "get-involved.html",
+  "baslik": "Katıl — TAKDER",
+  "aciklama": "Gönüllü olun, kurumsal işbirliği yapın ya da üye olun."
  },
  {
   "dil": "tr",
@@ -152,13 +250,6 @@
   "es": "membership.html",
   "baslik": "Üye Ol — TAKDER",
   "aciklama": "Travma Afet Kriz Derneği'ne üyelik: koşullar, 30 günde karar verilen başvuru süreci ve aidat."
- },
- {
-  "dil": "tr",
-  "dosya": "kurumsal.html",
-  "es": "governance.html",
-  "baslik": "Yönetim ve Tüzük — TAKDER",
-  "aciklama": "Travma Afet Kriz Derneği'nin organları (Genel Kurul, Temsil Organı, Denetim Organı), künyesi ve tüzüğü."
  },
  {
   "dil": "tr",
@@ -173,6 +264,28 @@
   "es": "privacy.html",
   "baslik": "Gizlilik ve Kişisel Veriler — TAKDER",
   "aciklama": "KKTC 89/2007 sayılı Kişisel Verilerin Korunması Yasası kapsamında aydınlatma metni, haklarınız ve çerez politikası."
+ },
+ {
+  "dil": "tr",
+  "dosya": "erisilebilirlik.html",
+  "es": "accessibility.html",
+  "baslik": "Erişilebilirlik Beyanı — TAKDER",
+  "aciklama": "TAKDER web sitesinin erişilebilirlik hedefi, bilinen sınırları ve geri bildirim yolu."
+ },
+ {
+  "dil": "tr",
+  "dosya": "olay.html",
+  "es": "incident.html",
+  "baslik": "Olay Sayfası Şablonu — TAKDER",
+  "aciklama": "Kriz anında doldurulmak üzere hazır bekleyen olay sayfası: doğrulanmış bilgi, nereden destek alınır, ne yapmalı, güncellemeler.",
+  "noindex": true
+ },
+ {
+  "dil": "tr",
+  "dosya": "404.html",
+  "es": "404.html",
+  "baslik": "Sayfa bulunamadı — TAKDER",
+  "aciklama": "Aradığınız sayfa bulunamadı. Travma Afet Kriz Derneği (TAKDER) anasayfasına dönebilir veya kaynaklarımıza göz atabilirsiniz."
  },
  {
   "dil": "en",
@@ -190,10 +303,10 @@
  },
  {
   "dil": "en",
-  "dosya": "what-we-do.html",
-  "es": "calisma-alanlarimiz.html",
-  "baslik": "What we do — TAKDER",
-  "aciklama": "Preparedness and prevention, psychosocial support, training, support for workers, research, advocacy, ethical communication, partnerships and the volunteer network."
+  "dosya": "working-model.html",
+  "es": "calisma-modelimiz.html",
+  "baslik": "Our Working Model — TAKDER",
+  "aciklama": "Preparedness and prevention, psychosocial support, training, support for workers, research, advocacy, ethical communication, partnerships and the volunteer network: our statutory areas of activity."
  },
  {
   "dil": "en",
@@ -204,38 +317,87 @@
  },
  {
   "dil": "en",
-  "dosya": "training.html",
-  "es": "egitimler.html",
-  "baslik": "Training and workshops — TAKDER",
-  "aciklama": "Certificate programmes and workshops for disaster and crisis workers, and awareness training for the public."
+  "dosya": "governance.html",
+  "es": "kurumsal.html",
+  "baslik": "Governance and statute — TAKDER",
+  "aciklama": "TAKDER's bodies (General Assembly, Representative Body, Audit Body), registration details and statute."
  },
  {
   "dil": "en",
-  "dosya": "resources.html",
-  "es": "kaynaklar.html",
-  "baslik": "Resources — TAKDER",
-  "aciklama": "Free guides on disaster and trauma and psychosocial support material. Everything opens as a page, asks for no registration and is print-ready."
+  "dosya": "volunteer.html",
+  "es": "gonullu.html",
+  "baslik": "Volunteer — TAKDER",
+  "aciklama": "Volunteering with TAKDER: requirements, mandatory training and the application form."
  },
  {
   "dil": "en",
-  "dosya": "library.html",
-  "es": "kutuphane.html",
-  "baslik": "Library — TAKDER",
-  "aciklama": "TAKDER publications and international publications in one place: direct links to the right sources on psychosocial support, child protection, humanitarian standards, preparedness and verification."
+  "dosya": "transparency.html",
+  "es": "seffaflik.html",
+  "baslik": "Transparency — TAKDER",
+  "aciklama": "Activity reports, funding and statement of autonomy."
  },
  {
   "dil": "en",
-  "dosya": "misinformation.html",
-  "es": "bilgi-kirliligi.html",
-  "baslik": "Misinformation and verification — TAKDER",
-  "aciklama": "How false information spreads in a disaster, the three types of information disorder, the seven most common patterns, and a four-move method to verify before you share."
+  "dosya": "ethics.html",
+  "es": "etik.html",
+  "baslik": "Ethics and Confidentiality — TAKDER",
+  "aciklama": "Do no harm, consent, privacy, confidentiality and its limits, competence, neutrality: TAKDER’s ethical principles and how to report a concern."
  },
  {
   "dil": "en",
-  "dosya": "talking-to-children.html",
-  "es": "cocukla-konusmak.html",
-  "baslik": "Talking to your child after an earthquake — TAKDER",
-  "aciklama": "What to say at each age, the phrases that backfire, answers to the hardest questions, and when to seek specialist help."
+  "dosya": "what-we-do.html",
+  "es": "calisma-alanlarimiz.html",
+  "baslik": "Our Areas of Work — TAKDER",
+  "aciklama": "Disasters and environmental crises, trauma and violence, social and economic crises, specific groups and the Cyprus risk profile."
+ },
+ {
+  "dil": "en",
+  "dosya": "disasters.html",
+  "es": "afetler.html",
+  "baslik": "Disasters and Environmental Crises — TAKDER",
+  "aciklama": "What a disaster is, expected psychological reactions afterwards, what you can do and when to seek support."
+ },
+ {
+  "dil": "en",
+  "dosya": "trauma-and-violence.html",
+  "es": "travma-ve-siddet.html",
+  "baslik": "Trauma and Violence — TAKDER",
+  "aciklama": "Expected reactions after traumatic events and violence, how to support someone who has experienced violence, and when to seek help."
+ },
+ {
+  "dil": "en",
+  "dosya": "social-and-economic-crises.html",
+  "es": "toplumsal-krizler.html",
+  "baslik": "Social and Economic Crises — TAKDER",
+  "aciklama": "The psychological effects of financial hardship, unemployment, epidemics and social tension, and ways of coping."
+ },
+ {
+  "dil": "en",
+  "dosya": "specific-groups.html",
+  "es": "ozel-gruplar.html",
+  "baslik": "Specific Groups — TAKDER",
+  "aciklama": "Different needs in crises for children, older people, people with disabilities, pregnant women, migrants and responders."
+ },
+ {
+  "dil": "en",
+  "dosya": "cyprus-risk-profile.html",
+  "es": "kibris-risk-profili.html",
+  "baslik": "Cyprus Risk Profile — TAKDER",
+  "aciklama": "Earthquake, wildfire, flood and violence in Cyprus: whom they affect, how, and what can be done."
+ },
+ {
+  "dil": "en",
+  "dosya": "risk-cycle.html",
+  "es": "risk-dongusu.html",
+  "baslik": "Risk and Response Cycle — TAKDER",
+  "aciklama": "Understanding risk, prevention, preparedness, response and recovery: five stages mapped to the Sendai Framework."
+ },
+ {
+  "dil": "en",
+  "dosya": "for-the-public.html",
+  "es": "toplum-icin.html",
+  "baslik": "For the Public — TAKDER",
+  "aciklama": "Guides and FAQs for families, teachers, workplaces and young people — before, during and after an event."
  },
  {
   "dil": "en",
@@ -243,20 +405,6 @@
   "es": "aile-afet-plani.html",
   "baslik": "Family disaster plan — fillable template — TAKDER",
   "aciklama": "Meeting points, an off-island contact, medication and document lists. A fillable form designed to print and stick on the fridge."
- },
- {
-  "dil": "en",
-  "dosya": "sleep-and-startle.html",
-  "es": "uyku-ve-irkilme.html",
-  "baslik": "Sleep, startle and anxiety after a disaster — TAKDER",
-  "aciklama": "Which reactions are ordinary and which need support. Eight things that help with sleep, plus grounding techniques for the moment itself."
- },
- {
-  "dil": "en",
-  "dosya": "grief.html",
-  "es": "yas.html",
-  "baslik": "After a loss: on grief — TAKDER",
-  "aciklama": "The six things that make grief after a disaster heavier, how to tell a child about a death, and how to stand beside someone grieving."
  },
  {
   "dil": "en",
@@ -274,10 +422,45 @@
  },
  {
   "dil": "en",
-  "dosya": "secondary-trauma.html",
-  "es": "ikincil-travma.html",
-  "baslik": "Secondary trauma for field workers — TAKDER",
-  "aciklama": "Telling secondary traumatic stress, compassion fatigue, burnout and moral injury apart; a post-shift decompression protocol and what the organisation owes its people."
+  "dosya": "talking-to-children.html",
+  "es": "cocukla-konusmak.html",
+  "baslik": "Talking to your child after an earthquake — TAKDER",
+  "aciklama": "What to say at each age, the phrases that backfire, answers to the hardest questions, and when to seek specialist help."
+ },
+ {
+  "dil": "en",
+  "dosya": "sleep-and-startle.html",
+  "es": "uyku-ve-irkilme.html",
+  "baslik": "Sleep, startle and anxiety after a disaster — TAKDER",
+  "aciklama": "Which reactions are ordinary and which need support. Eight things that help with sleep, plus grounding techniques for the moment itself."
+ },
+ {
+  "dil": "en",
+  "dosya": "grief.html",
+  "es": "yas.html",
+  "baslik": "After a loss: on grief — TAKDER",
+  "aciklama": "The six things that make grief after a disaster heavier, how to tell a child about a death, and how to stand beside someone grieving."
+ },
+ {
+  "dil": "en",
+  "dosya": "misinformation.html",
+  "es": "bilgi-kirliligi.html",
+  "baslik": "Misinformation and verification — TAKDER",
+  "aciklama": "How false information spreads in a disaster, the three types of information disorder, the seven most common patterns, and a four-move method to verify before you share."
+ },
+ {
+  "dil": "en",
+  "dosya": "for-professionals.html",
+  "es": "meslek-elemanlari.html",
+  "baslik": "For Professionals — TAKDER",
+  "aciklama": "Training and calendar, ethical principles, caring for responders and secondary traumatisation, field protocols."
+ },
+ {
+  "dil": "en",
+  "dosya": "training.html",
+  "es": "egitimler.html",
+  "baslik": "Training and workshops — TAKDER",
+  "aciklama": "Certificate programmes and workshops for disaster and crisis workers, and awareness training for the public."
  },
  {
   "dil": "en",
@@ -309,6 +492,34 @@
  },
  {
   "dil": "en",
+  "dosya": "secondary-trauma.html",
+  "es": "ikincil-travma.html",
+  "baslik": "Secondary trauma for field workers — TAKDER",
+  "aciklama": "Telling secondary traumatic stress, compassion fatigue, burnout and moral injury apart; a post-shift decompression protocol and what the organisation owes its people."
+ },
+ {
+  "dil": "en",
+  "dosya": "library.html",
+  "es": "kutuphane.html",
+  "baslik": "Publications and Resources — TAKDER",
+  "aciklama": "TAKDER publications and international publications in one place: direct links to the right sources on psychosocial support, child protection, humanitarian standards, preparedness and verification."
+ },
+ {
+  "dil": "en",
+  "dosya": "glossary.html",
+  "es": "sozluk.html",
+  "baslik": "Glossary — TAKDER",
+  "aciklama": "Turkish and English definitions of trauma, disaster and crisis terms, based on UNDRR terminology and IASC documents."
+ },
+ {
+  "dil": "en",
+  "dosya": "media.html",
+  "es": "medya.html",
+  "baslik": "Media — TAKDER",
+  "aciklama": "A responsible reporting guide for disaster and crisis journalism; press releases, press contact and logo."
+ },
+ {
+  "dil": "en",
   "dosya": "news.html",
   "es": "haberler.html",
   "baslik": "News and events — TAKDER",
@@ -316,10 +527,10 @@
  },
  {
   "dil": "en",
-  "dosya": "volunteer.html",
-  "es": "gonullu.html",
-  "baslik": "Volunteer — TAKDER",
-  "aciklama": "Volunteering with TAKDER: requirements, mandatory training and the application form."
+  "dosya": "get-involved.html",
+  "es": "katil.html",
+  "baslik": "Get Involved — TAKDER",
+  "aciklama": "Volunteer, partner with us as an organisation, or become a member."
  },
  {
   "dil": "en",
@@ -327,13 +538,6 @@
   "es": "uye-ol.html",
   "baslik": "Become a member — TAKDER",
   "aciklama": "Membership of Travma Afet Kriz Derneği: requirements, an application decided within 30 days, and dues."
- },
- {
-  "dil": "en",
-  "dosya": "governance.html",
-  "es": "kurumsal.html",
-  "baslik": "Governance and statute — TAKDER",
-  "aciklama": "TAKDER's bodies (General Assembly, Representative Body, Audit Body), registration details and statute."
  },
  {
   "dil": "en",
@@ -350,11 +554,19 @@
   "aciklama": "How we process personal data under the North Cyprus Personal Data Protection Law (89/2007), your rights, and our cookie policy."
  },
  {
-  "dil": "tr",
-  "dosya": "404.html",
-  "es": "404.html",
-  "baslik": "Sayfa bulunamadı — TAKDER",
-  "aciklama": "Aradığınız sayfa bulunamadı. Travma Afet Kriz Derneği (TAKDER) anasayfasına dönebilir veya kaynaklarımıza göz atabilirsiniz."
+  "dil": "en",
+  "dosya": "accessibility.html",
+  "es": "erisilebilirlik.html",
+  "baslik": "Accessibility Statement — TAKDER",
+  "aciklama": "The accessibility target, known limitations and feedback route for the TAKDER website."
+ },
+ {
+  "dil": "en",
+  "dosya": "incident.html",
+  "es": "olay.html",
+  "baslik": "Incident Page Template — TAKDER",
+  "aciklama": "An incident page ready to be filled in a crisis: verified information, where to get support, what to do, updates.",
+  "noindex": true
  },
  {
   "dil": "en",

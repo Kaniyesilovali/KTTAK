@@ -14,9 +14,9 @@ ErrorDocument 404 /404.html
   RewriteEngine On
   RewriteRule ^bagis\.html$ / [R=302,L]
   RewriteRule ^en/donate\.html$ /en/ [R=302,L]
-  # Şeffaflık sayfası kaldırıldı (TAKDER brifinde yok) — kalıcı yönlendirme
-  RewriteRule ^seffaflik\.html$ /kurumsal.html [R=301,L]
-  RewriteRule ^en/transparency\.html$ /en/governance.html [R=301,L]
+  # Site haritası (Kasım 2026): taşınan sayfalar — kalıcı yönlendirme
+  RewriteRule ^kaynaklar\.html$ /toplum-icin.html [R=301,L]
+  RewriteRule ^en/resources\.html$ /en/for-the-public.html [R=301,L]
 </IfModule>
 
 # --- Sıkıştırma: sayfa daha hızlı açılır ---
