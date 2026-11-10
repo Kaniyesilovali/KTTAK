@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const KOK = path.join(__dirname, '..');
+const KOK = path.join(__dirname, '..', 'yayin');
 const ayarlar = require('./ayarlar.json');
 const P = (f) => fs.readFileSync(path.join(__dirname, 'parcalar', f), 'utf8').trim();
 

@@ -24,9 +24,9 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 ${sayfalar.map(url).join('\n')}
 </urlset>
 `;
-fs.writeFileSync(path.join(__dirname, '..', 'sitemap.xml'), xml);
+fs.writeFileSync(path.join(__dirname, '..', 'yayin', 'sitemap.xml'), xml);
 
-fs.writeFileSync(path.join(__dirname, '..', 'robots.txt'),
+fs.writeFileSync(path.join(__dirname, '..', 'yayin', 'robots.txt'),
 `User-agent: *
 Allow: /
 

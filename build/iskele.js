@@ -4,7 +4,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const KOK = path.join(__dirname, '..');
+const KOK = path.join(__dirname, '..', 'yayin');
 const force = process.argv.includes('--force');
 const ayarlar = require('./ayarlar.json');
 const SITE = ayarlar.alanAdi;

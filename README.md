@@ -19,9 +19,9 @@ npm install        # yalnızca ilk seferde
 npm run paketle
 ```
 
-Bu komut sayfaları, CSS'i ve sitemap'i günceller, sonra sunucuya gidecek
-**her şeyi ve yalnızca onları** `yayin/` klasörüne toplar. Aynı içerik
-`tak-der-yayin.zip` olarak da hazırlanır. Sonda geçici değerler ve
+Bu komut sayfaları, CSS'i ve sitemap'i günceller. Sunucuya gidecek **her şey
+ve yalnızca onlar** `yayin/` klasöründedir; aynı içerik `tak-der-yayin.zip`
+olarak da hazırlanır. Sonda geçici değerler ve
 çalışmayan formlar için uyarı listesi çıkar; yayından önce bu listeyi boşaltın
 (bkz. bölüm 2).
 
@@ -43,9 +43,9 @@ Güncelleme yaparken de aynı iki adım: `npm run paketle`, sonra yeniden sürü
 `public_html/` içine atın, cPanel **Dosya Yöneticisi**'nde zip'e sağ tıklayıp
 **Extract** deyin, sonra zip'i silin.
 
-`yayin/` ve zip git'e girmez; her `npm run paketle` onları baştan oluşturur.
-`node_modules/`, `build/`, `package.json`, `README.md` gibi dosyalar pakette
-yoktur; sunucuya da yüklenmemelidir.
+Proje kökündeki diğer her şey (`build/`, `node_modules/`, `package.json`,
+`README.md`) yalnızca bilgisayarınızda kalır, sunucuya yüklenmez. Zip git'e
+girmez; her `npm run paketle` onu baştan oluşturur.
 
 ### Yükledikten sonra kontrol listesi
 
@@ -180,7 +180,7 @@ e-postasına iletecek bir form servisine bağlanmalı; form verileri kişisel
 veridir. Logo PNG'leri ve renk kodları tasarımcıdan gelecek vektörel dosyayla
 (AI/SVG) teyit edilmeli.
 
-Şeffaflık sayfası brifte olmadığı için kaldırıldı; `.htaccess` eski adresleri
+Şeffaflık sayfası brifte olmadığı için kaldırıldı; `yayin/.htaccess` eski adresleri
 kalıcı (301) olarak `kurumsal.html` / `en/governance.html`'e yönlendirir.
 Gövdesi `build/govde/tr-seffaflik.html` olarak duruyor.
 
@@ -195,7 +195,7 @@ Geri açmak için:
 2. `build/senkron.js` içindeki `esles` listesine `'bagis.html': 'donate.html',` ekleyin.
 3. Gövdedeki banka bilgilerini ve şeffaflık bağlantılarını güncelleyin.
 4. `npm run iskele` → başlık/altbilgiye bağlantı ekleyip `npm run senkron`.
-5. `.htaccess` içindeki geçici yönlendirme satırlarını silin.
+5. `yayin/.htaccess` içindeki geçici yönlendirme satırlarını silin.
 
 ### 2.7 Kaynak künyelerini derneğin onaylaması gerekir
 
@@ -222,8 +222,8 @@ gösterilecek bir dış belgeye dayanmaz — ve bilerek dışarıda bırakılmı
 
 ## 3. İçeriği değiştirme
 
-HTML dosyaları **doğrudan düzenlenebilir**. Metni değiştirmek için ilgili
-`.html` dosyasını açıp yazıyı değiştirmeniz yeterli — sonra dosyayı tekrar
+HTML dosyaları **doğrudan düzenlenebilir**. Metni değiştirmek için `yayin/`
+içindeki ilgili `.html` dosyasını açıp yazıyı değiştirmeniz yeterli — sonra dosyayı tekrar
 FTP'ye yükleyin. Derleme gerekmez.
 
 ### Dernek adı
@@ -306,7 +306,7 @@ Yalnızca renk, boşluk veya bileşen stili değiştirecekseniz gereklidir.
 
 ```bash
 npm install          # bir kez
-npm run css          # assets/css/site.css dosyasını üretir
+npm run css          # yayin/assets/css/site.css dosyasını üretir
 npm run izle         # düzenlerken sürekli derler
 ```
 
@@ -340,9 +340,9 @@ Logo finaldir; tüzük md. 1/3 gereği renk, oran veya yazısı değiştirilmez.
 
 | Dosya | Kullanım |
 |---|---|
-| `assets/img/logo-yazili-renkli-{192,400,800}.png` | Üst menü, altbilgi, schema.org |
-| `assets/img/logo-isaret-{32,180,512}.png`, `favicon.ico`, `apple-touch-icon.png` | Favicon ve küçük simgeler (yazısız) |
-| `assets/img/og-gorsel.png` | Sosyal medya paylaşım görseli |
+| `yayin/assets/img/logo-yazili-renkli-{192,400,800}.png` | Üst menü, altbilgi, schema.org |
+| `yayin/assets/img/logo-isaret-{32,180,512}.png`, `favicon.ico`, `apple-touch-icon.png` | Favicon ve küçük simgeler (yazısız) |
+| `yayin/assets/img/og-gorsel.png` | Sosyal medya paylaşım görseli |
 
 Yazısız versiyon, yazılı PNG'den harfler ayıklanarak türetildi; amblemin
 pikselleri değişmedi. Tasarımcının resmî yazısız dosyası ve SVG'si
@@ -357,14 +357,18 @@ geldiğinde bu dosyaların yerine aynı adlarla konmalıdır.
 
 ```
 .
-├── *.html                  ← Türkçe sayfalar (kaynak: bunlar)
-├── en/*.html               ← İngilizce sayfalar
-├── assets/
-│   ├── css/site.css        ← derlenmiş Tailwind (elle düzenlemeyin)
-│   ├── js/site.js          ← menü, IBAN kopyalama (bağış tutarı kodu atıl)
-│   ├── img/                ← logo, favicon, örgü imzası
-│   └── dosyalar/           ← PDF'ler buraya
-├── build/                  ← sunucuya YÜKLENMEZ
+├── yayin/                  ← SİTENİN KENDİSİ — içi olduğu gibi sunucuya yüklenir
+│   ├── *.html              ← Türkçe sayfalar
+│   ├── en/*.html           ← İngilizce sayfalar
+│   ├── assets/
+│   │   ├── css/site.css    ← derlenmiş Tailwind (elle düzenlemeyin)
+│   │   ├── js/site.js      ← menü, IBAN kopyalama (bağış tutarı kodu atıl)
+│   │   ├── img/            ← logo, favicon, örgü imzası
+│   │   └── dosyalar/       ← PDF'ler buraya (klasörü ilk PDF'te oluşturun)
+│   ├── .htaccess           ← Apache ayarları (404, sıkıştırma, önbellek)
+│   ├── robots.txt
+│   └── sitemap.xml
+├── build/                  ← kaynaklar ve betikler — sunucuya YÜKLENMEZ
 │   ├── ayarlar.json        ← alan adı, dernek adı, e-posta — TEK KAYNAK
 │   ├── input.css           ← Tailwind kaynağı, renkler burada
 │   ├── parcalar/           ← ortak başlık ve altbilgi
@@ -372,10 +376,11 @@ geldiğinde bu dosyaların yerine aynı adlarla konmalıdır.
 │   ├── senkron.js          ← başlık/altbilgiyi tüm sayfalara işler
 │   ├── iskele.js           ← YENİ sayfa oluşturur (var olanın üzerine yazmaz)
 │   ├── sitemap.js          ← sitemap.xml + robots.txt üretir
-│   └── gen-orgu.js         ← anasayfadaki örgü imzasını üretir
-├── .htaccess               ← Apache ayarları (404, sıkıştırma, önbellek)
-├── robots.txt
-└── sitemap.xml
+│   ├── paketle.js          ← yayına hazırlar, zip'ler, eksikleri listeler
+│   ├── gen-orgu.js         ← anasayfadaki örgü imzasını üretir
+│   └── BEKLENEN-BELGELER.txt ← yüklenecek resmî PDF'lerin listesi
+├── package.json            ← npm komutları
+└── README.md
 ```
 
 ---
@@ -383,11 +388,10 @@ geldiğinde bu dosyaların yerine aynı adlarla konmalıdır.
 ## 6. Tek komutla yayına hazırlama
 
 ```bash
-npm run yayina-hazirla    # senkron + css + sitemap.xml + robots.txt
+npm run paketle    # senkron + css + sitemap + zip + eksik listesi
 ```
 
-Sonra `.html`, `en/`, `assets/`, `robots.txt`, `sitemap.xml` ve `.htaccess`
-dosyalarını FTP'ye yükleyin.
+Sonra `yayin/` klasörünün içini FileZilla ile yükleyin (bölüm 1).
 
 ---
 
@@ -413,5 +417,5 @@ tercihlerdir, hata değildir:
 farklı zamanlarda başlar ve birbirine tutunarak tek bir halat gibi örülür:
 dayanışma. Renk logonun geçişidir; dağınıkken mavi, örülünce yeşil. Sağ uç
 düz çizgiye inmez (ilk sürümdeki sismogramın sönen düz hattı yaşam
-monitörünü çağrıştırdığı için bırakıldı). Dosya `assets/img/orgu.svg`;
+monitörünü çağrıştırdığı için bırakıldı). Dosya `yayin/assets/img/orgu.svg`;
 `build/gen-orgu.js` ile üretilir (deterministik, her çalıştırmada aynı çizgi çıkar).

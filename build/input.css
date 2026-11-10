@@ -1,8 +1,8 @@
 @import "tailwindcss" source(none);
 
-@source "../*.html";
-@source "../en/*.html";
-@source "../assets/js/*.js";
+@source "../yayin/*.html";
+@source "../yayin/en/*.html";
+@source "../yayin/assets/js/*.js";
 
 /* ============================================================
    TASARIM BELLEĞİ — TAK-DER  (2026-11 yenilemesi)

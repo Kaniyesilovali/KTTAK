@@ -11,7 +11,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const KOK = path.join(__dirname, '..');
+const KOK = path.join(__dirname, '..', 'yayin');
 const PORT = Number(process.env.PORT) || 8080;
 
 const TIPLER = {

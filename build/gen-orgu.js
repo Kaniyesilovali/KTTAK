@@ -75,6 +75,6 @@ for (const v of VARYANT) {
     return `<circle cx="${ip.bas}" cy="${y.toFixed(2)}" r="${(2.6 * Math.sqrt(v.kalin)).toFixed(1)}"/>`;
   }).join('');
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid slice" role="presentation"><defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${W}" y2="0">${durak}</linearGradient><linearGradient id="s" gradientUnits="userSpaceOnUse" x1="${W * 0.82}" y1="0" x2="${W}" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="url(#s)"/></mask></defs><g mask="url(#m)"><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">${yollar}</g><g fill="url(#g)">${noktalar}</g></g></svg>`;
-  fs.writeFileSync(path.join(__dirname, '..', 'assets/img', v.dosya), svg);
+  fs.writeFileSync(path.join(__dirname, '..', 'yayin', 'assets/img', v.dosya), svg);
   console.log(v.dosya, '—', (svg.length / 1024).toFixed(1), 'KB');
 }

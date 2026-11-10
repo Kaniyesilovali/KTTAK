@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "KTTAK Travma Afet ve Kriz Derneği — statik web sitesi",
   "scripts": {
-    "css": "tailwindcss -i ./build/input.css -o ./assets/css/site.css --minify",
-    "izle": "tailwindcss -i ./build/input.css -o ./assets/css/site.css --watch",
+    "css": "tailwindcss -i ./build/input.css -o ./yayin/assets/css/site.css --minify",
+    "izle": "tailwindcss -i ./build/input.css -o ./yayin/assets/css/site.css --watch",
     "senkron": "node build/senkron.js",
     "iskele": "node build/iskele.js",
     "yayina-hazirla": "npm run senkron && npm run css && node build/sitemap.js",

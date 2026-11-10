@@ -1,8 +1,9 @@
-Bu klasör derneğin resmî belgeleri ve yayımlanmış raporları içindir.
+Derneğin resmî belgeleri ve raporları yayin/assets/dosyalar/ klasörüne konur
+(klasör yoksa oluşturun).
 
 DURUM — 11 Eylül 2026
 Kaynak Merkezi'ndeki 11 materyal artık PDF değil, site içi sayfa olarak
-yayımlanıyor (yazdırmaya hazır, indirme gerektirmez). Bu klasöre konulacak
+yayımlanıyor (yazdırmaya hazır, indirme gerektirmez). Oraya konulacak
 bir şey kalmadı.
 
 HÂLÂ BEKLENEN DOSYALAR
@@ -16,7 +17,7 @@ KURUMSAL (Dernekler Yasası 23/2016 kapsamında)
   kttak-uyelik-basvuru-formu.pdf
 
   kurumsal.html içindeki liste şu an bağlantısız, "Talep üzerine" durumunda.
-  Dosyayı buraya koyduktan sonra ilgili satırı yeniden bağlantıya çevirin:
+  Dosyayı yayin/assets/dosyalar/ içine koyduktan sonra ilgili satırı yeniden bağlantıya çevirin:
   build/govde/tr-kurumsal.html ve build/govde/en-governance.html içindeki
   <div class="grid ..."> satırını <a href="assets/dosyalar/DOSYA.pdf" ...>
   hâline getirip `npm run yayina-hazirla` çalıştırın.
@@ -28,4 +29,4 @@ KURUMSAL (Dernekler Yasası 23/2016 kapsamında)
   boş durum bloğunu silip o tabloyu açmanız yeterli.
 
 Dosya adını değiştirirseniz ilgili sayfadaki href'i de güncellemeyi unutmayın.
-Bu .txt dosyasını sunucuya yüklemeyin.
+Bu not build/ içinde durur; sunucuya gitmez.
