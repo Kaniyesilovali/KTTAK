@@ -1,5 +1,5 @@
 #!/bin/sh
-# build/ altında bir dosya değişince yayin/ ve takder-yayin.zip'i yeniden üretir.
+# build/ altında bir dosya değişince yayin/ ve tak-der-yayin.zip'i yeniden üretir.
 f=$(jq -r '.tool_input.file_path // .tool_response.filePath // empty')
 case "$f" in
   */kttak/build/*) ;;
@@ -7,4 +7,4 @@ case "$f" in
 esac
 cd "$CLAUDE_PROJECT_DIR" || exit 0
 npm run -s yayina-hazirla >/dev/null 2>&1 && npm run -s paketle >/dev/null 2>&1 \
-  && echo '{"systemMessage":"yayin/ ve takder-yayin.zip güncellendi"}'
+  && echo '{"systemMessage":"yayin/ ve tak-der-yayin.zip güncellendi"}'

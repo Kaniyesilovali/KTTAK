@@ -1,4 +1,4 @@
-# TAKDER — Apache (cPanel/Plesk) sunucular için temel ayarlar.
+# TAK-DER — Apache (cPanel/Plesk) sunucular için temel ayarlar.
 # Sunucunuz Nginx ise bu dosyanın etkisi olmaz, zararı da olmaz.
 
 # --- Karakter kodlaması: Türkçe karakterlerin bozulmaması için ---

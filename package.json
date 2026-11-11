@@ -1,7 +1,7 @@
 {
   "name": "kttak-site",
   "version": "1.0.0",
-  "description": "KTTAK Travma Afet ve Kriz Derneği — statik web sitesi",
+  "description": "KTTAK Travma Afet Kriz Derneği — statik web sitesi",
   "scripts": {
     "css": "tailwindcss -i ./build/input.css -o ./yayin/assets/css/site.css --minify",
     "izle": "tailwindcss -i ./build/input.css -o ./yayin/assets/css/site.css --watch",

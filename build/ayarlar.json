@@ -2,7 +2,7 @@
   "_not": "Alan adı, e-posta ve sosyal medya bağlantıları YALNIZCA burada tutulur. Değiştirdikten sonra: npm run yayina-hazirla (başlık/altbilgi güncellenir). DİKKAT: iskele --force yayin/ içindeki sonraki düzenlemeleri ezer; sayfa gövdesindeki bağlantıları ve sameAs alanını elle güncelleyin",
   "_gecici": "alanAdi ve eposta GEÇİCİDİR — derneğin resmî alan adı ve e-postası belirlenince değiştirin. LinkedIn bağlantısı hâlâ '#' — ikon hiçbir yere gitmez.",
   "alanAdi": "https://tak-der.org",
-  "kisaAd": "TAKDER",
+  "kisaAd": "TAK-DER",
   "resmiAdTR": "Travma Afet Kriz Derneği",
   "resmiAdEN": "Trauma, Disaster and Crisis Association",
   "eposta": "info@tak-der.org",

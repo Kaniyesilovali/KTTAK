@@ -54,7 +54,7 @@ http.createServer((istek, yanit) => {
     yanit.end(veri);
   });
 }).listen(PORT, () => {
-  console.log(`\n  Kıbrıs Türk Travma Afet ve Kriz Derneği — yerel önizleme\n`);
+  console.log(`\n  Travma Afet Kriz Derneği — yerel önizleme\n`);
   console.log(`  Türkçe    http://localhost:${PORT}/`);
   console.log(`  English   http://localhost:${PORT}/en/`);
   console.log(`\n  Durdurmak için Ctrl+C\n`);
