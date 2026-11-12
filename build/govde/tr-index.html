@@ -14,7 +14,7 @@
 <!-- ============ KAPAK: imza örgüsü ============ -->
 <section class="px-2 pt-2 sm:px-3 sm:pt-3">
   <div class="kapak rounded-[1.75rem] md:rounded-[2.5rem]">
-    <div class="kabuk relative z-10 pt-14 pb-[19rem] md:pt-24 md:pb-[25rem] lg:pb-[27rem]">
+    <div class="kabuk relative z-10 pt-14 pb-56 md:pt-24 md:pb-72 lg:pb-80">
       <p class="etiket etiket-acik">Travma Afet Kriz Derneği · Lefkoşa</p>
       <h1 class="mt-6 text-[2.9rem] sm:text-6xl lg:text-[5.5rem]">
         Sarsıntı biter.<br>
@@ -31,206 +31,57 @@
       </p>
     </div>
     <!-- Dağınık iplikler soldan katılır, sağa doğru tek halat olur -->
-    <div class="absolute inset-x-0 bottom-24 md:bottom-28 h-44 md:h-64 lg:h-72" aria-hidden="true">
+    <div class="absolute inset-x-0 bottom-4 md:bottom-6 h-44 md:h-64 lg:h-72" aria-hidden="true">
       <img src="assets/img/orgu-gece.svg" alt="" class="orgu orgu-canli">
     </div>
   </div>
 </section>
 
-<!-- ============ YOLLAR: ziyaretçi ne aradığını kendisi seçer ============ -->
-<section aria-labelledby="yollar-baslik" class="relative z-10 -mt-20 md:-mt-24">
-  <div class="kabuk">
-    <h2 id="yollar-baslik" class="sr-only">Ne arıyorsunuz?</h2>
-    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      <li>
-        <a href="toplum-icin.html" class="kart-bag flex h-full flex-col rounded-3xl p-6 md:p-7">
-          <span class="ikon-yuva">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5C6.5 4.3 9.3 4.3 12 6c2.7-1.7 5.5-1.7 8-.5v13c-2.5-1.2-5.3-1.2-8 .5-2.7-1.7-5.5-1.7-8-.5z"/><path d="M12 6v13"/></svg>
-          </span>
-          <span class="mt-5 block font-display text-[1.375rem] font-bold leading-tight text-orman">Bilgi ve rehber arıyorum</span>
-          <span class="mt-2 block text-[0.9375rem] leading-relaxed text-derin/75">Olaydan önce ve sonra: çocukla konuşmak, aile afet planı, yas ve uyku. Ücretsiz, kayıt istemez.</span>
-          <span class="bag-ok mt-auto pt-5 text-[0.9375rem]">Toplum için</span>
-        </a>
-      </li>
-      <li>
-        <a href="meslek-elemanlari.html" class="kart-bag flex h-full flex-col rounded-3xl p-6 md:p-7">
-          <span class="ikon-yuva">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5 12 5l9 4.5-9 4.5z"/><path d="M7 11.5V16c1.5 1.5 3.2 2 5 2s3.5-.5 5-2v-4.5"/><path d="M21 9.5V15"/></svg>
-          </span>
-          <span class="mt-5 block font-display text-[1.375rem] font-bold leading-tight text-orman">Meslek elemanıyım</span>
-          <span class="mt-2 block text-[0.9375rem] leading-relaxed text-derin/75">Eğitimler ve takvim, etik ilkeler, saha protokolleri ve müdahale edenin bakımı.</span>
-          <span class="bag-ok mt-auto pt-5 text-[0.9375rem]">Meslek elemanları için</span>
-        </a>
-      </li>
-      <li>
-        <a href="katil.html" class="kart-bag flex h-full flex-col rounded-3xl p-6 md:p-7">
-          <span class="ikon-yuva">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 7c3-4 6-4 9 0s6 4 9 0" opacity=".55"/><path d="M3 17c3-4 6-4 9 0s6 4 9 0" opacity=".55"/></svg>
-          </span>
-          <span class="mt-5 block font-display text-[1.375rem] font-bold leading-tight text-orman">Dayanışmaya katılmak istiyorum</span>
-          <span class="mt-2 block text-[0.9375rem] leading-relaxed text-derin/75">Gönüllü olun, kurum olarak iş birliği yapın ya da üye olarak derneğin yönünü belirleyin.</span>
-          <span class="bag-ok mt-auto pt-5 text-[0.9375rem]">Nasıl katılırım</span>
-        </a>
-      </li>
-      <li>
-        <a href="#acil" class="kart-bag flex h-full flex-col rounded-3xl p-6 md:p-7">
-          <span class="ikon-yuva">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.5 4.5-2 1.5a11 11 0 0 0 6 6l1.5-2 4.5 1.5V19a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>
-          </span>
-          <span class="mt-5 block font-display text-[1.375rem] font-bold leading-tight text-orman">Şu an acil bir durum var</span>
-          <span class="mt-2 block text-[0.9375rem] leading-relaxed text-derin/75">TAK-DER bir kriz hattı değildir. Hangi numarayı arayacağınızı gösterelim.</span>
-          <span class="bag-ok mt-auto pt-5 text-[0.9375rem]">Acil numaralar</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ BİZ KİMİZ ============ -->
-<section class="bolum">
-  <div class="kabuk grid gap-12 lg:grid-cols-12 lg:gap-16">
-    <div class="lg:col-span-7">
-      <p class="etiket">Biz kimiz</p>
-      <p class="mt-6 font-display text-[1.75rem] md:text-[2.5rem] font-semibold leading-[1.15] tracking-[-0.02em] text-orman">
-        Travma, afet ve krizlerde psikososyal destek alanında çalışan,
-        bilimsel ve etik temelli bir <span class="ilmek" style="--ilmek-renk: var(--color-filiz)">meslek derneğiyiz.</span>
-      </p>
-      <p class="mt-7 text-lg leading-relaxed text-derin/80 olcek">
-        Amacımız bireyleri, aileleri ve toplulukları güçlendirmek. Bunun için
-        kamu kurumlarının ve sivil toplum kuruluşlarının psikososyal
-        çalışmalarını destekliyor, araştırmayla mesleki kapasiteyi
-        geliştiriyoruz. Merkezimiz Lefkoşa'dadır.
-      </p>
-      <p class="mt-7"><a href="hakkimizda.html" class="bag-ok">Amacımız ve değerlerimiz</a></p>
+<!-- ============ 1.2 YAKLAŞAN ETKİNLİK ============
+     En yakın eğitim, çalıştay veya sempozyum; kayıt bağlantısıyla. Etkinlik duyurulduğunda
+     boş durum bloğunu silip aşağıdaki kart kalıbını açın (aynı etkinlik egitimler.html#takvim'e de eklenir).
+  <article class="kart grid gap-6 md:grid-cols-12 md:items-center">
+    <div class="md:col-span-8">
+      <p class="text-sm font-bold text-sis">00 Ay 2027 · Lefkoşa · <span class="text-fener">Sempozyum</span></p>
+      <h3 class="mt-3 text-2xl">Etkinliğin adı</h3>
+      <p class="mt-2.5 leading-relaxed text-derin/75">Kısa açıklama, hedef kitle.</p>
     </div>
-
-    <div class="lg:col-span-5">
-      <div class="rounded-3xl bg-kagit p-7 md:p-9">
-        <h2 class="text-xl md:text-2xl">Bize yol gösteren ilkeler</h2>
-        <p class="mt-2 text-[0.9375rem] text-sis">Tüzüğün 5. maddesinden</p>
-        <ul class="nokta-liste mt-6 grid gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-          <li>Güncel bilimsel bilgi</li>
-          <li>Mahremiyet</li>
-          <li>Zarar vermemek</li>
-          <li>Ayrımcılık yapmamak</li>
-          <li>İnsan hakları ve barış</li>
-          <li>Siyasi tarafsızlık</li>
-          <li class="sm:col-span-2 lg:col-span-1 xl:col-span-2 text-fener">Önce desteğe ihtiyaç duyanlar</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ NE YAPIYORUZ: tüzük md. 4'ten altı başlık ============ -->
-<section class="bolum">
-  <div class="kabuk">
-    <div class="md:flex md:items-end md:justify-between md:gap-10">
-      <div>
-        <p class="etiket">Ne yapıyoruz</p>
-        <h2 class="mt-4 text-[2.25rem] md:text-5xl max-w-[18ch]">Hazırlıktan toparlanmaya, her aşamada yanınızda</h2>
-      </div>
-      <a href="calisma-modelimiz.html" class="bag-ok mt-5 md:mt-0 shrink-0">Çalışma modelimiz</a>
-    </div>
-
-    <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      <a href="calisma-modelimiz.html#hazirlik" class="kart kart-bag p-7 lg:p-8">
-        <span class="ikon-yuva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 8 7.5 9.5 4.3-1.5 7.5-5 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <h3 class="mt-6 text-[1.375rem]">Hazırlık ve önleme</h3>
-        <p class="mt-2.5 text-[0.9375rem] leading-relaxed text-derin/75">Risk ve ihtiyaç değerlendirmesi, hazırlık ve koruyucu çalışmalar.</p>
-      </a>
-      <a href="calisma-modelimiz.html#psikososyal" class="kart kart-bag p-7 lg:p-8">
-        <span class="ikon-yuva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg></span>
-        <h3 class="mt-6 text-[1.375rem]">Psikososyal destek</h3>
-        <p class="mt-2.5 text-[0.9375rem] leading-relaxed text-derin/75">Planlı psikososyal destek çalışmaları; gerektiğinde afet bölgesinde.</p>
-      </a>
-      <a href="calisma-modelimiz.html#egitim" class="kart kart-bag p-7 lg:p-8">
-        <span class="ikon-yuva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5C6.5 4.3 9.3 4.3 12 6c2.7-1.7 5.5-1.7 8-.5v13c-2.5-1.2-5.3-1.2-8 .5-2.7-1.7-5.5-1.7-8-.5z"/><path d="M12 6v13"/></svg></span>
-        <h3 class="mt-6 text-[1.375rem]">Eğitim ve kapasite geliştirme</h3>
-        <p class="mt-2.5 text-[0.9375rem] leading-relaxed text-derin/75">Topluma ve mesleki alana yönelik eğitimler.</p>
-      </a>
-      <a href="calisma-modelimiz.html#calisanlar" class="kart kart-bag p-7 lg:p-8">
-        <span class="ikon-yuva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-7 4-12 14-14-1 9-5 14-11 14"/><path d="M5 19c3-4 6-7 9-9"/></svg></span>
-        <h3 class="mt-6 text-[1.375rem]">Çalışanların desteği</h3>
-        <p class="mt-2.5 text-[0.9375rem] leading-relaxed text-derin/75">Sahada çalışanlar ve gönüllüler için eğitim, süpervizyon ve öz bakım.</p>
-      </a>
-      <a href="calisma-modelimiz.html#arastirma" class="kart kart-bag p-7 lg:p-8">
-        <span class="ikon-yuva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/><path d="M8 11.5 10 9.5l1.5 1.5L13 9"/></svg></span>
-        <h3 class="mt-6 text-[1.375rem]">Araştırma ve yayınlar</h3>
-        <p class="mt-2.5 text-[0.9375rem] leading-relaxed text-derin/75">Araştırma, rapor, uygulama rehberi ve eğitim materyali.</p>
-      </a>
-      <a href="calisma-modelimiz.html#iletisim" class="kart kart-bag p-7 lg:p-8">
-        <span class="ikon-yuva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 4v-4A2.5 2.5 0 0 1 4 13.5z"/><path d="m9 10 2 2 4-4"/></svg></span>
-        <h3 class="mt-6 text-[1.375rem]">Etik iletişim ve farkındalık</h3>
-        <p class="mt-2.5 text-[0.9375rem] leading-relaxed text-derin/75">Doğru bilgilendirme, mahremiyet ve etik medya kullanımı.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ KRİZ ANINDA: dernek kriz hattı değil, bu açıkça söylenir ============ -->
-<section id="acil" class="bolum scroll-mt-28">
-  <div class="kabuk">
-    <div class="rounded-3xl bg-kagit p-7 md:p-12 grid gap-10 lg:grid-cols-12 lg:items-center">
-      <div class="lg:col-span-5">
-        <h2 class="text-[2rem] md:text-[2.5rem]">Şu an acil bir durum mu yaşıyorsunuz?</h2>
-        <p class="mt-4 text-lg leading-relaxed text-derin/80">
-          TAK-DER bir kriz hattı ya da acil müdahale birimi değildir.
-          Hayati tehlike varsa ya da kendinizin veya bir başkasının güvenliğinden
-          endişe ediyorsanız hemen acil hatları arayın veya en yakın
-          hastanenin acil servisine başvurun.
-        </p>
-        <p class="mt-6"><a href="iletisim.html#kriz" class="bag-ok">Kriz anında nereye başvurulur</a></p>
-      </div>
-      <ul class="lg:col-span-7 grid grid-cols-2 gap-3">
-        <li><a href="tel:112" class="kart-bag rounded-2xl p-5 md:p-6">
-          <span class="block font-display text-[2.75rem] md:text-6xl font-bold leading-none tracking-tight text-orman">112</span>
-          <span class="mt-2 block font-semibold text-derin">Acil / Ambulans</span>
-        </a></li>
-        <li><a href="tel:155" class="kart-bag rounded-2xl p-5 md:p-6">
-          <span class="block font-display text-[2.75rem] md:text-6xl font-bold leading-none tracking-tight text-orman">155</span>
-          <span class="mt-2 block font-semibold text-derin">Polis</span>
-        </a></li>
-        <li><a href="tel:101" class="kart-bag rounded-2xl p-5 md:p-6">
-          <span class="block font-display text-[2.75rem] md:text-6xl font-bold leading-none tracking-tight text-orman">101</span>
-          <span class="mt-2 block font-semibold text-derin">Sivil Savunma</span>
-        </a></li>
-        <li><a href="tel:177" class="kart-bag rounded-2xl p-5 md:p-6">
-          <span class="block font-display text-[2.75rem] md:text-6xl font-bold leading-none tracking-tight text-orman">177</span>
-          <span class="mt-2 block font-semibold text-derin">Orman Yangını</span>
-        </a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 1.3 SON DUYURULAR — YAKLAŞAN ETKİNLİKLER şimdilik yayından kaldırıldı. Geri açmak için bu yorum işaretlerini silin.
-<section class="bolum">
-  <div class="kabuk">
-    <div class="md:flex md:items-end md:justify-between md:gap-10">
-      <div>
-        <p class="etiket">Son duyurular</p>
-        <h2 class="mt-4 text-3xl md:text-4xl">Yaklaşan etkinlikler</h2>
-      </div>
-      <a href="haberler.html" class="bag-ok mt-4 md:mt-0 shrink-0">Haberler ve etkinlikler</a>
-    </div>
-    <ul class="mt-10 grid gap-4 md:grid-cols-2">
-      <li class="kart">
-        <p class="text-sm font-bold text-sis">Mart 2027 · <span class="text-fener">Sempozyum · Kamuya açık</span></p>
-        <h3 class="mt-3 text-2xl">Kıbrıs Psikososyal Çalışma Modeli</h3>
-        <p class="mt-2.5 leading-relaxed text-derin/75">İletişim, hukuk, eğitim ve sosyal hizmet gibi disiplinleri bir araya getirecek sempozyum. Tarih, yer, program ve kayıt bilgileri duyurulacak.</p>
-      </li>
-      <li class="kart">
-        <p class="text-sm font-bold text-sis">Ocak 2027 · Çalıştay · Üyelere yönelik</p>
-        <h3 class="mt-3 text-2xl">Psikososyal Çalışma Modeli çalıştayı</h3>
-        <p class="mt-2.5 leading-relaxed text-derin/75">Derneğin kriz yönetimi ve müdahale modelini üyelerimizle birlikte ele alacağımız iç çalışma. Ayrıntılar üyelere duyurulacak.</p>
-      </li>
-    </ul>
-  </div>
-</section>
+    <p class="md:col-span-4 md:text-right"><a href="KAYIT-BAGLANTISI" class="dugme dugme-fener">Kayıt ol</a></p>
+  </article>
 -->
+<section id="yaklasan-etkinlik" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <div class="md:flex md:items-end md:justify-between md:gap-10">
+      <div>
+        <p class="etiket">Yaklaşan etkinlik</p>
+        <h2 class="mt-4 text-3xl md:text-4xl">Eğitim, çalıştay ve sempozyumlar</h2>
+      </div>
+      <a href="egitimler.html#takvim" class="bag-ok mt-4 md:mt-0 shrink-0">Eğitim takvimi</a>
+    </div>
+    <div class="mt-8 rounded-3xl border border-dashed border-cizgi bg-kagit px-7 py-10 text-center">
+      <p class="text-[0.9375rem] leading-relaxed text-derin/75 max-w-lg mx-auto">Yaklaşan etkinlik, tarihi ve kayıt bağlantısı kesinleştiğinde burada duyurulacak.</p>
+    </div>
+  </div>
+</section>
 
-<!-- ============ KAYNAK MERKEZİ ============ -->
+<!-- ============ 1.3 SON HABERLER / DUYURULAR ============
+     haberler.html'e eklenen en yeni 2–3 duyuru buraya da kart olarak konur. -->
+<section id="haberler" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <div class="md:flex md:items-end md:justify-between md:gap-10">
+      <div>
+        <p class="etiket">Son haberler ve duyurular</p>
+        <h2 class="mt-4 text-3xl md:text-4xl">Dernekten haberler</h2>
+      </div>
+      <a href="haberler.html" class="bag-ok mt-4 md:mt-0 shrink-0">Tüm haberler</a>
+    </div>
+    <div class="mt-8 rounded-3xl border border-dashed border-cizgi bg-kagit px-7 py-10 text-center">
+      <p class="text-[0.9375rem] leading-relaxed text-derin/75 max-w-lg mx-auto">İlk duyurular burada ve sosyal medya hesaplarımızda yayımlanacak.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1.3 SON YAYINLAR ============ -->
 <section class="bolum">
   <div class="kabuk">
     <div class="md:flex md:items-end md:justify-between md:gap-10">
@@ -281,6 +132,26 @@
   </div>
 </section>
 
+<!-- ============ 1.4 GALERİ ============
+     Yalnızca TAK-DER'in kendi etkinliklerinden fotoğraflar; her etkinlik bir albüm.
+     Destek alanların yüzü onamsız kullanılmaz; çocuk fotoğrafı ve afet bölgesinden yıkım/yaralı görüntüsü kullanılmaz.
+     Albüm kartı kalıbı:
+  <a href="galeri/ALBUM.html" class="kart kart-bag flex flex-col p-0 overflow-hidden">
+    <img src="assets/img/galeri/ALBUM-kapak.jpg" alt="Etkinliğin kısa betimlemesi" class="aspect-[4/3] w-full object-cover" loading="lazy">
+    <span class="p-6"><span class="block text-sm font-bold text-sis">00 Ay 2027</span><span class="mt-2 block font-display text-lg text-orman">Etkinlik adı</span></span>
+  </a>
+-->
+<section id="galeri" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <p class="etiket">Galeri</p>
+    <h2 class="mt-4 text-3xl md:text-4xl">Etkinliklerimizden</h2>
+    <p class="mt-4 text-base text-sis olcek">Yalnızca TAK-DER’in kendi etkinliklerinden fotoğraflar; etkinliğe göre albümler.</p>
+    <div class="mt-8 rounded-3xl border border-dashed border-cizgi bg-kagit px-7 py-10 text-center">
+      <p class="text-[0.9375rem] leading-relaxed text-derin/75 max-w-lg mx-auto">İlk etkinliklerimizden sonra albümler burada yer alacak.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ============ KAPANIŞ ÇAĞRISI ============ -->
 <section class="bolum px-2 sm:px-3">
   <div class="kapak rounded-[1.75rem] md:rounded-[2.5rem]">
@@ -312,15 +183,11 @@
     <dl class="kunye mt-8">
       <div>
         <dt>Derneğin amacı, ilkeleri ve faaliyet alanları</dt>
-        <dd>Travma Afet Kriz Derneği Tüzüğü, md. 1, 3, 4 ve 5.</dd>
+        <dd>Travma Afet Kriz Derneği Tüzüğü, md. 1, 3 ve 5.</dd>
       </div>
       <div>
         <dt>Psikososyal destek çerçevesi</dt>
         <dd>Inter-Agency Standing Committee (2007). <em>IASC Guidelines on Mental Health and Psychosocial Support in Emergency Settings</em>. Cenevre: IASC. <a href="https://interagencystandingcommittee.org/iasc-task-force-mental-health-and-psychosocial-support-emergency-settings/iasc-guidelines-mental-health-and-psychosocial-support-emergency-settings-2007" class="bag">interagencystandingcommittee.org</a></dd>
-      </div>
-      <div>
-        <dt>Acil çağrı numaraları</dt>
-        <dd>KKTC Sivil Savunma Teşkilatı Başkanlığı — resmî acil çağrı numaraları. <a href="https://sivilsavunma.gov.ct.tr" class="bag">sivilsavunma.gov.ct.tr</a></dd>
       </div>
     </dl>
   </div>

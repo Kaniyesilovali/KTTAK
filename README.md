@@ -161,41 +161,35 @@ deneyimi, kütük no, yardım toplama izni, aidat tutarı) **yoktur**. Kaynak
 sayfalarındaki "sahada kullandığımız" gibi ifadeler "sahada kullanılmak üzere
 hazırlanan" biçimine çevrildi.
 
-### 2.5 Site haritası (Web Sitesi Taslağı, Kasım 2026) ve eksik bilgiler
+### 2.5 Site haritası (Web Sitesi Şablonu, Kasım 2026) ve eksik bilgiler
 
-Yapı, derneğin "Web Sitesi Taslağı"na göre kuruldu (WHO konu merkezli giriş,
-APA'nın halk / meslek elemanı ayrımı, IFRC kaynak kütüphanesi + eğitim takvimi,
-UNDRR risk döngüsü ve terminolojisi). Menü ve altbilgi bu tabloyu izler;
-`build/sayfalar.json` aynı sırayla tutulur ve `sitemap.xml` ondan üretilir.
+Yapı derneğin "Web Sitesi Şablonu"na göre kuruldu (UNDRR Sendai Çerçevesi ve
+terminolojisi, PreventionWeb sınıflandırması, APA konu sayfaları, IFRC kaynak
+kütüphanesi + eğitim takvimi, WHO konu merkezli giriş). Menü ve altbilgi bu
+tabloyu izler; `build/sayfalar.json` aynı sırayla tutulur ve `sitemap.xml` ondan üretilir.
 
 | # | Bölüm | Dosya (TR / EN) | Eksik olan |
 |---|---|---|---|
-| 0 | Sabit üst şerit | tüm sayfalar (`build/parcalar/baslik-*.html`) | Numaraların yeniden teyidi (bkz. 2.3) |
-| 1 | Ana sayfa · 1.2 güncel durum şeridi · 1.3 son duyurular | `index.html` | 1.2 ve 1.3 HTML yorumu olarak hazır bekliyor |
-| 2.1–2.2 | Kimiz · Vizyon ve ilkeler | `hakkimizda.html` / `about.html` | Onaylı "Biz Kimiz" metni |
-| 2.3 | Çalışma modelimiz | `calisma-modelimiz.html` / `working-model.html` | — (eski "Ne Yapıyoruz" içeriği) |
-| 2.4 | Alt gruplar ve yapı | `calisma-gruplari.html`, `kurumsal.html` | Grup sorumluları, kurucu üyeler, tüzük PDF |
-| 2.5 | Gönüllüler | `gonullu.html` / `volunteer.html` | Form servisi |
-| 2.6 | Şeffaflık: faaliyet raporu, finansman, özerklik beyanı | `seffaflik.html` / `transparency.html` | **Özerklik beyanının Temsil Organı onayı**, ilk faaliyet raporu |
-| 2.7 | Etik ve gizlilik | `etik.html` / `ethics.html` | Onay |
-| 3 | Çalışma alanlarımız (3.1–3.5) | `calisma-alanlarimiz.html` + `afetler`, `travma-ve-siddet`, `toplumsal-krizler`, `ozel-gruplar`, `kibris-risk-profili` (EN: `what-we-do`, `disasters`, …) | Uzman okuması; Kıbrıs'a özgü veriler (her tehlike için ayrı) |
-| 4 | Risk ve müdahale döngüsü (4.1–4.5) | `risk-dongusu.html` / `risk-cycle.html` | 4.1 için tehlike bazlı ayrıntılı analizler |
-| 5 | Toplum için (5.1–5.4) | `toplum-icin.html` / `for-the-public.html` | — |
-| 6 | Meslek elemanları için (6.1–6.4) | `meslek-elemanlari.html` / `for-professionals.html`, `egitimler.html#takvim` | Eğitim programı ve tarihleri |
-| 7 | Yayınlar ve kaynaklar (7.1 TAK-DER yayınları, 7.2 online kütüphane) | `kutuphane.html` / `library.html` | 7.1.1–7.1.3 ve 7.1.5 rafları boş; 7.2'de Türkçe belge yok |
-| 8 | Sözlük | `sozluk.html` / `glossary.html` | Terim listesinin ve tanımların onayı |
-| 9 | Medya: sorumlu habercilik, basın odası | `medya.html` / `media.html`, `haberler.html` | Basın bültenleri |
-| 10 | Katıl: gönüllü ol, kurumsal işbirliği (+ üyelik) | `katil.html` / `get-involved.html`, `uye-ol.html` | — |
-| 11 | Olay sayfası şablonu | `olay.html` / `incident.html` (noindex, sitemap dışı) | Kullanım: dosyadaki yorum |
-| 12 | İletişim | `iletisim.html` / `contact.html` | Telefon |
-| — | Alt bilgi: gizlilik, çerezler, erişilebilirlik, sorumluluk reddi, dil | `kvkk.html`, `erisilebilirlik.html` / `privacy.html`, `accessibility.html` | Hukukçu kontrolü (bkz. 2.2) |
+| — | Sabit üst şerit: Acil durumdaysanız · uyarı · dil · sağ üstte İletişim | tüm sayfalar (`build/parcalar/baslik-*.html`) → `acil.html` / `emergency.html` | Numaraların yeniden teyidi; itfaiye ve Sosyal Hizmetler numarası (bkz. 2.3) |
+| 1 | Ana sayfa: 1.1 tek cümle · 1.2 yaklaşan etkinlik · 1.3 son haberler ve yayınlar · 1.4 galeri | `index.html` | Etkinlik, haber ve albümler (kalıplar HTML yorumunda) |
+| 2.1 | Kimiz: vizyon, misyon, çalışma ilkeleri (md. 3, 5) | `hakkimizda.html` / `about.html` | Vizyon cümlesinin onayı |
+| 2.2 | Çalışma modelimiz: risk ve müdahale döngüsü (2.2.1–2.2.5), kitlelere göre İPY, Sendai | `calisma-modelimiz.html` / `working-model.html` | Gençler, ebeveynler, sağlık çalışanları için ayrı rehberler |
+| 2.3 | Yönetim, alt gruplar ve yapı | `kurumsal.html` / `governance.html` | Kurucu üyeler, grup sorumluları |
+| 2.4 | Şeffaflık, etik ve tüzük | `seffaflik.html` / `transparency.html` | Özerklik beyanı onayı, tüzük PDF, ilk faaliyet raporu |
+| 2.5 | Protokoller | `protokoller.html` / `protocols.html` | — |
+| 3 | Çalışma alanlarımız: 3.1 Travma · 3.2 Afetler · 3.3 Şiddet ve toplumsal çatışmalar · 3.4 Toplumsal ve ekonomik krizler · 3.5 İşbirlikleri | `calisma-alanlarimiz.html`, `travma`, `afetler`, `siddet`, `toplumsal-krizler`, `isbirlikleri` (EN: `what-we-do`, `trauma`, `disasters`, `violence`, `social-and-economic-crises`, `partnerships`) | Uzman okuması; imzalı işbirlikleri |
+| 4 | Eğitimler / Etkinlikler: 4.1 eğitimler · 4.2 takvim | `egitimler.html` / `training.html` | Program, içerik, hedef kitle, süre, tarihler |
+| 5 | Yayınlar ve kaynaklar: 5.1 TAK-DER yayınları (5.1.1–5.1.3) · 5.2 uluslararası kütüphane (konu/dil süzgeci) · 5.3 sözlük | `kutuphane.html`, `sozluk.html` / `library.html`, `glossary.html` | Etkinlik raporları, bilimsel yayınlar; Türkçe belgeler |
+| 6 | Katıl: 6.1 üye ol · 6.2 gönüllü ol | `katil.html`, `uye-ol.html`, `gonullu.html` | Form servisi; bağış (tescil + banka hesabından sonra) |
+| — | İletişim | `iletisim.html` / `contact.html` | Telefon, form servisi |
+| — | Alt bilgi: ad · Lefkoşa · e-posta; gizlilik, çerezler, erişilebilirlik, tüzük; sorumluluk reddi; sosyal medya; işbirliği logoları | `build/parcalar/altbilgi-*.html` | Logolar (kalıp HTML yorumunda) |
 
-**Taslak metinler.** 2.6, 2.7, 3, 4, 8, 9 ve erişilebilirlik sayfalarının
-gövdeleri yeni yazıldı ve başlarında `TASLAK METİN` yorumu var: Temsil
-Organı'nın belirlediği kişilerin onayından önce yayımlanmamalı. Yeni eklenen
-dış bağlantılar (apa.org, ifrc.org, preventionweb.net, gbvguidelines.org,
-dartcenter.org, who.int intihar rehberi, undrr.org/terminology) tarayıcıdan
-doğrulanmalı.
+Menüde olmayan destek sayfaları bağlam içinden bağlanır: `kibris-risk-profili`,
+`ozel-gruplar` (2.2.1), `medya`, `toplum-icin` (2.2.4), rehberler (5.1.3),
+`haberler` (1.3), `olay` (şablon, noindex).
+
+**Taslak metinler.** Başında `TASLAK` yorumu olan sayfalar Temsil Organı'nın
+belirlediği kişilerin onayından önce yayımlanmamalı.
 
 Taşınan adresler `yayin/.htaccess` içinde kalıcı (301) yönlendirilir:
 `kaynaklar.html` → `toplum-icin.html`, `en/resources.html` → `en/for-the-public.html`.

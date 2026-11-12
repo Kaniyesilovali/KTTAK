@@ -17,6 +17,17 @@ ErrorDocument 404 /404.html
   # Site haritası (Kasım 2026): taşınan sayfalar — kalıcı yönlendirme
   RewriteRule ^kaynaklar\.html$ /toplum-icin.html [R=301,L]
   RewriteRule ^en/resources\.html$ /en/for-the-public.html [R=301,L]
+  # Site haritası (Kasım 2026, ikinci sürüm): birleştirilen ve taşınan sayfalar
+  RewriteRule ^risk-dongusu\.html$ /calisma-modelimiz.html [R=301,L]
+  RewriteRule ^calisma-gruplari\.html$ /kurumsal.html#alt-gruplar [R=301,NE,L]
+  RewriteRule ^etik\.html$ /seffaflik.html#etik [R=301,NE,L]
+  RewriteRule ^meslek-elemanlari\.html$ /protokoller.html [R=301,L]
+  RewriteRule ^travma-ve-siddet\.html$ /travma.html [R=301,L]
+  RewriteRule ^en/risk-cycle\.html$ /en/working-model.html [R=301,L]
+  RewriteRule ^en/working-groups\.html$ /en/governance.html#working-groups [R=301,NE,L]
+  RewriteRule ^en/ethics\.html$ /en/transparency.html#ethics [R=301,NE,L]
+  RewriteRule ^en/for-professionals\.html$ /en/protocols.html [R=301,L]
+  RewriteRule ^en/trauma-and-violence\.html$ /en/trauma.html [R=301,L]
 </IfModule>
 
 # --- Sıkıştırma: sayfa daha hızlı açılır ---

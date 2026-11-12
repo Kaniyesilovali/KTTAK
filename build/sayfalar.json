@@ -8,73 +8,73 @@
  },
  {
   "dil": "tr",
+  "dosya": "acil.html",
+  "es": "emergency.html",
+  "baslik": "Acil Durumdaysanız — TAK-DER",
+  "aciklama": "KKTC acil numaraları: 112 Acil/Ambulans, 155 Polis, 101 Sivil Savunma, 177 Orman Yangını. TAK-DER bir kriz hattı veya acil servis değildir."
+ },
+ {
+  "dil": "tr",
   "dosya": "hakkimizda.html",
   "es": "about.html",
   "baslik": "Hakkımızda — TAK-DER",
-  "aciklama": "Travma Afet Kriz Derneği (TAK-DER) kimdir: psikososyal destek alanında bilimsel ve etik temelli bir meslek derneği. Amacımız ve değerlerimiz."
+  "aciklama": "Travma Afet Kriz Derneği (TAK-DER) kimdir: vizyonumuz, misyonumuz ve çalışma ilkelerimiz (tüzük md. 3 ve 5)."
  },
  {
   "dil": "tr",
   "dosya": "calisma-modelimiz.html",
   "es": "working-model.html",
-  "baslik": "Çalışma Modelimiz — TAK-DER",
-  "aciklama": "Hazırlık ve önleme, psikososyal destek, eğitim, çalışanların desteği, araştırma, savunuculuk, etik iletişim, iş birlikleri ve gönüllü ağı: tüzükte tanımlı faaliyet alanlarımız."
- },
- {
-  "dil": "tr",
-  "dosya": "calisma-gruplari.html",
-  "es": "working-groups.html",
-  "baslik": "Çalışma Grupları — TAK-DER",
-  "aciklama": "Araştırma ve eğitim, etik ve bilimsel danışma, psikososyal destek ve saha, toplumsal çalışmalar, iletişim, proje, fon oluşturma ve dış ilişkiler grupları."
+  "baslik": "Çalışma Modelimiz: Risk ve Müdahale Döngüsü — TAK-DER",
+  "aciklama": "Riski tanımlamak, önleme ve risk azaltma, hazırlık, olay anında psikolojik ilk yardım, iyileşme: Sendai Çerçevesi ile örtüşen beş aşama."
  },
  {
   "dil": "tr",
   "dosya": "kurumsal.html",
   "es": "governance.html",
-  "baslik": "Yönetim ve Tüzük — TAK-DER",
-  "aciklama": "Travma Afet Kriz Derneği'nin organları (Genel Kurul, Temsil Organı, Denetim Organı), künyesi ve tüzüğü."
- },
- {
-  "dil": "tr",
-  "dosya": "gonullu.html",
-  "es": "volunteer.html",
-  "baslik": "Gönüllü Ol — TAK-DER",
-  "aciklama": "Travma Afet Kriz Derneği'nde gönüllülük: koşullar, zorunlu eğitim ve başvuru formu."
+  "baslik": "Yönetim, Alt Gruplar ve Yapı — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği’nin künyesi, organları (Genel Kurul, Temsil Organı, Denetim Organı) ve çalışma grupları."
  },
  {
   "dil": "tr",
   "dosya": "seffaflik.html",
   "es": "transparency.html",
-  "baslik": "Şeffaflık — TAK-DER",
-  "aciklama": "Faaliyet raporları, finansman ve özerklik beyanı."
+  "baslik": "Şeffaflık, Etik ve Tüzük — TAK-DER",
+  "aciklama": "Finansman ve özerklik beyanı, faaliyet raporu, etik ilkeler, gizlilik ve dernek tüzüğü."
  },
  {
   "dil": "tr",
-  "dosya": "etik.html",
-  "es": "ethics.html",
-  "baslik": "Etik ve Gizlilik — TAK-DER",
-  "aciklama": "Zarar vermemek, onam, mahremiyet, gizlilik ve sınırları, yetkinlik, tarafsızlık: TAK-DER’in etik ilkeleri ve bildirim yolu."
+  "dosya": "protokoller.html",
+  "es": "protocols.html",
+  "baslik": "Protokoller — TAK-DER",
+  "aciklama": "İlk psikolojik yardım, çocuk dostu alan, ihtiyaç tespit formu, okul müfredatı ve ikincil travma: sahada kullanılmak üzere hazırlanan protokoller."
  },
  {
   "dil": "tr",
   "dosya": "calisma-alanlarimiz.html",
   "es": "what-we-do.html",
   "baslik": "Çalışma Alanlarımız — TAK-DER",
-  "aciklama": "Afetler ve çevresel krizler, travma ve şiddet, toplumsal ve ekonomik krizler, özel gruplar ve Kıbrıs risk profili."
+  "aciklama": "Travma, afetler, şiddet ve toplumsal çatışmalar, toplumsal ve ekonomik krizler, ulusal ve uluslararası işbirlikleri."
+ },
+ {
+  "dil": "tr",
+  "dosya": "travma.html",
+  "es": "trauma.html",
+  "baslik": "Travma — TAK-DER",
+  "aciklama": "Travmatik olaylardan sonra beklenen tepkiler, öncesinde, sırasında ve sonrasında ne yapılır, ne zaman ve nereden destek alınır."
  },
  {
   "dil": "tr",
   "dosya": "afetler.html",
   "es": "disasters.html",
-  "baslik": "Afetler ve Çevresel Krizler — TAK-DER",
-  "aciklama": "Afet nedir, afetten sonra beklenen ruhsal tepkiler, ne yapabilirsiniz ve ne zaman destek almalısınız."
+  "baslik": "Afetler — TAK-DER",
+  "aciklama": "Afet nedir, afetten sonra beklenen ruhsal tepkiler, öncesinde, sırasında ve sonrasında ne yapılır, ne zaman destek alınmalı."
  },
  {
   "dil": "tr",
-  "dosya": "travma-ve-siddet.html",
-  "es": "trauma-and-violence.html",
-  "baslik": "Travma ve Şiddet — TAK-DER",
-  "aciklama": "Travmatik olaylar ve şiddet sonrasında beklenen tepkiler, şiddete maruz kalan birine nasıl destek olunur, ne zaman yardım alınmalı."
+  "dosya": "siddet.html",
+  "es": "violence.html",
+  "baslik": "Şiddet ve Toplumsal Çatışmalar — TAK-DER",
+  "aciklama": "Aile içi ve toplumsal cinsiyete dayalı şiddet, istismar ve toplumsal gerilim: beklenen tepkiler, ne yapılır, nereye başvurulur."
  },
  {
   "dil": "tr",
@@ -85,10 +85,59 @@
  },
  {
   "dil": "tr",
-  "dosya": "ozel-gruplar.html",
-  "es": "specific-groups.html",
-  "baslik": "Özel Gruplar — TAK-DER",
-  "aciklama": "Çocuklar, yaşlılar, engelli bireyler, gebeler, göçmenler ve müdahale edenler için krizlerde farklı ihtiyaçlar."
+  "dosya": "isbirlikleri.html",
+  "es": "partnerships.html",
+  "baslik": "Ulusal ve Uluslararası İşbirlikleri — TAK-DER",
+  "aciklama": "Kamu kurumları, yerel yönetimler, üniversiteler, okullar, meslek örgütleri ve uluslararası ağlarla ortak çalışmalar."
+ },
+ {
+  "dil": "tr",
+  "dosya": "egitimler.html",
+  "es": "training.html",
+  "baslik": "Eğitimler ve Etkinlikler — TAK-DER",
+  "aciklama": "Sertifika eğitimleri, atölyeler ve eğitim takvimi: yaklaşan eğitim ve etkinlikler, kayıt bağlantılarıyla."
+ },
+ {
+  "dil": "tr",
+  "dosya": "kutuphane.html",
+  "es": "library.html",
+  "baslik": "Yayınlar ve Kaynaklar — TAK-DER",
+  "aciklama": "TAK-DER yayınları (etkinlik raporları, bilimsel yayınlar, broşür ve materyaller) ve konu ile dile göre süzülebilen uluslararası kaynak kütüphanesi."
+ },
+ {
+  "dil": "tr",
+  "dosya": "sozluk.html",
+  "es": "glossary.html",
+  "baslik": "Sözlük — TAK-DER",
+  "aciklama": "Travma, afet ve kriz terimlerinin Türkçe ve İngilizce tanımları: UNDRR terminolojisi ve IASC belgeleri temel alınarak."
+ },
+ {
+  "dil": "tr",
+  "dosya": "katil.html",
+  "es": "get-involved.html",
+  "baslik": "Katıl — TAK-DER",
+  "aciklama": "Üye ol ya da gönüllü ol: Travma Afet Kriz Derneği’nin dayanışma ağına katılın."
+ },
+ {
+  "dil": "tr",
+  "dosya": "uye-ol.html",
+  "es": "membership.html",
+  "baslik": "Üye Ol — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği'ne üyelik: koşullar, 30 günde karar verilen başvuru süreci ve aidat."
+ },
+ {
+  "dil": "tr",
+  "dosya": "gonullu.html",
+  "es": "volunteer.html",
+  "baslik": "Gönüllü Ol — TAK-DER",
+  "aciklama": "Travma Afet Kriz Derneği'nde gönüllülük: koşullar, zorunlu eğitim ve başvuru formu."
+ },
+ {
+  "dil": "tr",
+  "dosya": "iletisim.html",
+  "es": "contact.html",
+  "baslik": "İletişim — TAK-DER",
+  "aciklama": "TAK-DER'e e-posta, iletişim formu ve sosyal medya üzerinden ulaşın. Kriz anında nereye başvurulacağı."
  },
  {
   "dil": "tr",
@@ -99,10 +148,17 @@
  },
  {
   "dil": "tr",
-  "dosya": "risk-dongusu.html",
-  "es": "risk-cycle.html",
-  "baslik": "Risk ve Müdahale Döngüsü — TAK-DER",
-  "aciklama": "Riski anlamak, önleme, hazırlık, olay anında müdahale ve iyileşme: Sendai Çerçevesi ile eşleşen beş aşama."
+  "dosya": "ozel-gruplar.html",
+  "es": "specific-groups.html",
+  "baslik": "Özel Gruplar — TAK-DER",
+  "aciklama": "Çocuklar, yaşlılar, engelli bireyler, gebeler, göçmenler ve müdahale edenler için krizlerde farklı ihtiyaçlar."
+ },
+ {
+  "dil": "tr",
+  "dosya": "medya.html",
+  "es": "media.html",
+  "baslik": "Medya — TAK-DER",
+  "aciklama": "Afet ve kriz haberciliği için sorumlu habercilik rehberi; basın bültenleri, basın iletişimi ve logo."
  },
  {
   "dil": "tr",
@@ -110,6 +166,13 @@
   "es": "for-the-public.html",
   "baslik": "Toplum İçin — TAK-DER",
   "aciklama": "Olaydan önce, olay sırasında ve sonrasında aileler, öğretmenler, iş yerleri ve gençler için rehberler ve sık sorulan sorular."
+ },
+ {
+  "dil": "tr",
+  "dosya": "haberler.html",
+  "es": "news.html",
+  "baslik": "Haberler ve Etkinlikler — TAK-DER",
+  "aciklama": "TAK-DER duyuruları, eğitim takvimi ve etkinlik haberleri."
  },
  {
   "dil": "tr",
@@ -162,20 +225,6 @@
  },
  {
   "dil": "tr",
-  "dosya": "meslek-elemanlari.html",
-  "es": "for-professionals.html",
-  "baslik": "Meslek Elemanları İçin — TAK-DER",
-  "aciklama": "Eğitimler ve takvim, etik ilkeler, müdahale edenin bakımı ve ikincil travmatizasyon, saha protokolleri."
- },
- {
-  "dil": "tr",
-  "dosya": "egitimler.html",
-  "es": "training.html",
-  "baslik": "Eğitimler ve Atölyeler — TAK-DER",
-  "aciklama": "Afet ve kriz çalışanlarına yönelik sertifika eğitimleri ve atölyeler, topluma yönelik bilgilendirme eğitimleri."
- },
- {
-  "dil": "tr",
   "dosya": "ilk-psikolojik-yardim.html",
   "es": "psychological-first-aid.html",
   "baslik": "İlk Psikolojik Yardım — Saha El Kitabı — TAK-DER",
@@ -208,55 +257,6 @@
   "es": "secondary-trauma.html",
   "baslik": "Saha Çalışanları için İkincil Travma — TAK-DER",
   "aciklama": "İkincil travmatik stres, şefkat yorgunluğu, tükenmişlik ve ahlaki yaralanma ayrımı; vardiya sonrası çözülme protokolü ve kurumun sorumluluğu."
- },
- {
-  "dil": "tr",
-  "dosya": "kutuphane.html",
-  "es": "library.html",
-  "baslik": "Yayınlar ve Kaynaklar — TAK-DER",
-  "aciklama": "TAK-DER yayınları ve uluslararası yayınlar bir arada: psikososyal destek, çocuk koruma, insani standartlar, afet hazırlığı ve doğrulama alanında doğru kaynağa doğrudan bağlantı."
- },
- {
-  "dil": "tr",
-  "dosya": "sozluk.html",
-  "es": "glossary.html",
-  "baslik": "Sözlük — TAK-DER",
-  "aciklama": "Travma, afet ve kriz terimlerinin Türkçe ve İngilizce tanımları: UNDRR terminolojisi ve IASC belgeleri temel alınarak."
- },
- {
-  "dil": "tr",
-  "dosya": "medya.html",
-  "es": "media.html",
-  "baslik": "Medya — TAK-DER",
-  "aciklama": "Afet ve kriz haberciliği için sorumlu habercilik rehberi; basın bültenleri, basın iletişimi ve logo."
- },
- {
-  "dil": "tr",
-  "dosya": "haberler.html",
-  "es": "news.html",
-  "baslik": "Haberler ve Etkinlikler — TAK-DER",
-  "aciklama": "TAK-DER duyuruları, eğitim takvimi ve etkinlik haberleri."
- },
- {
-  "dil": "tr",
-  "dosya": "katil.html",
-  "es": "get-involved.html",
-  "baslik": "Katıl — TAK-DER",
-  "aciklama": "Gönüllü olun, kurumsal işbirliği yapın ya da üye olun."
- },
- {
-  "dil": "tr",
-  "dosya": "uye-ol.html",
-  "es": "membership.html",
-  "baslik": "Üye Ol — TAK-DER",
-  "aciklama": "Travma Afet Kriz Derneği'ne üyelik: koşullar, 30 günde karar verilen başvuru süreci ve aidat."
- },
- {
-  "dil": "tr",
-  "dosya": "iletisim.html",
-  "es": "contact.html",
-  "baslik": "İletişim — TAK-DER",
-  "aciklama": "TAK-DER'e e-posta, iletişim formu ve sosyal medya üzerinden ulaşın. Kriz anında nereye başvurulacağı."
  },
  {
   "dil": "tr",
@@ -296,73 +296,73 @@
  },
  {
   "dil": "en",
+  "dosya": "emergency.html",
+  "es": "acil.html",
+  "baslik": "If You Are in an Emergency — TAK-DER",
+  "aciklama": "Emergency numbers in North Cyprus: 112 Emergency/Ambulance, 155 Police, 101 Civil Defence, 177 Forest Fire. TAK-DER is not a crisis line or emergency service."
+ },
+ {
+  "dil": "en",
   "dosya": "about.html",
   "es": "hakkimizda.html",
   "baslik": "About us — TAK-DER",
-  "aciklama": "Who Travma Afet Kriz Derneği (TAK-DER) is: a science-based, ethical professional association for psychosocial support. Our aims and values."
+  "aciklama": "Who Travma Afet Kriz Derneği (TAK-DER) is: our vision, mission and working principles (statute art. 3 and 5)."
  },
  {
   "dil": "en",
   "dosya": "working-model.html",
   "es": "calisma-modelimiz.html",
-  "baslik": "Our Working Model — TAK-DER",
-  "aciklama": "Preparedness and prevention, psychosocial support, training, support for workers, research, advocacy, ethical communication, partnerships and the volunteer network: our statutory areas of activity."
- },
- {
-  "dil": "en",
-  "dosya": "working-groups.html",
-  "es": "calisma-gruplari.html",
-  "baslik": "Working groups — TAK-DER",
-  "aciklama": "Research and training, ethics and scientific advisory, psychosocial support and field, community work, communication, projects, fundraising and external relations groups."
+  "baslik": "Our Working Model: Risk and Response Cycle — TAK-DER",
+  "aciklama": "Identifying risk, prevention and risk reduction, preparedness, psychological first aid during an event, recovery: five stages aligned with the Sendai Framework."
  },
  {
   "dil": "en",
   "dosya": "governance.html",
   "es": "kurumsal.html",
-  "baslik": "Governance and statute — TAK-DER",
-  "aciklama": "TAK-DER's bodies (General Assembly, Representative Body, Audit Body), registration details and statute."
- },
- {
-  "dil": "en",
-  "dosya": "volunteer.html",
-  "es": "gonullu.html",
-  "baslik": "Volunteer — TAK-DER",
-  "aciklama": "Volunteering with TAK-DER: requirements, mandatory training and the application form."
+  "baslik": "Governance, Working Groups and Structure — TAK-DER",
+  "aciklama": "The legal identity, bodies (General Assembly, Representative Body, Audit Body) and working groups of Travma Afet Kriz Derneği."
  },
  {
   "dil": "en",
   "dosya": "transparency.html",
   "es": "seffaflik.html",
-  "baslik": "Transparency — TAK-DER",
-  "aciklama": "Activity reports, funding and statement of autonomy."
+  "baslik": "Transparency, Ethics and Statute — TAK-DER",
+  "aciklama": "Funding and statement of autonomy, activity report, ethical principles, privacy and the association’s statute."
  },
  {
   "dil": "en",
-  "dosya": "ethics.html",
-  "es": "etik.html",
-  "baslik": "Ethics and Confidentiality — TAK-DER",
-  "aciklama": "Do no harm, consent, privacy, confidentiality and its limits, competence, neutrality: TAK-DER’s ethical principles and how to report a concern."
+  "dosya": "protocols.html",
+  "es": "protokoller.html",
+  "baslik": "Protocols — TAK-DER",
+  "aciklama": "Psychological first aid, child-friendly space, needs assessment form, school curriculum and secondary trauma: protocols prepared for use in the field."
  },
  {
   "dil": "en",
   "dosya": "what-we-do.html",
   "es": "calisma-alanlarimiz.html",
   "baslik": "Our Areas of Work — TAK-DER",
-  "aciklama": "Disasters and environmental crises, trauma and violence, social and economic crises, specific groups and the Cyprus risk profile."
+  "aciklama": "Trauma, disasters, violence and social conflict, social and economic crises, national and international partnerships."
+ },
+ {
+  "dil": "en",
+  "dosya": "trauma.html",
+  "es": "travma.html",
+  "baslik": "Trauma — TAK-DER",
+  "aciklama": "Expected reactions after traumatic events, what to do before, during and after, and when and where to seek support."
  },
  {
   "dil": "en",
   "dosya": "disasters.html",
   "es": "afetler.html",
-  "baslik": "Disasters and Environmental Crises — TAK-DER",
-  "aciklama": "What a disaster is, expected psychological reactions afterwards, what you can do and when to seek support."
+  "baslik": "Disasters — TAK-DER",
+  "aciklama": "What a disaster is, expected psychological reactions, what to do before, during and after, and when to seek support."
  },
  {
   "dil": "en",
-  "dosya": "trauma-and-violence.html",
-  "es": "travma-ve-siddet.html",
-  "baslik": "Trauma and Violence — TAK-DER",
-  "aciklama": "Expected reactions after traumatic events and violence, how to support someone who has experienced violence, and when to seek help."
+  "dosya": "violence.html",
+  "es": "siddet.html",
+  "baslik": "Violence and Social Conflict — TAK-DER",
+  "aciklama": "Domestic and gender-based violence, abuse and social tension: expected reactions, what to do and where to turn."
  },
  {
   "dil": "en",
@@ -373,10 +373,59 @@
  },
  {
   "dil": "en",
-  "dosya": "specific-groups.html",
-  "es": "ozel-gruplar.html",
-  "baslik": "Specific Groups — TAK-DER",
-  "aciklama": "Different needs in crises for children, older people, people with disabilities, pregnant women, migrants and responders."
+  "dosya": "partnerships.html",
+  "es": "isbirlikleri.html",
+  "baslik": "National and International Partnerships — TAK-DER",
+  "aciklama": "Joint work with public bodies, local authorities, universities, schools, professional bodies and international networks."
+ },
+ {
+  "dil": "en",
+  "dosya": "training.html",
+  "es": "egitimler.html",
+  "baslik": "Training and Events — TAK-DER",
+  "aciklama": "Certificate programmes, workshops and the training calendar: upcoming training and events with registration links."
+ },
+ {
+  "dil": "en",
+  "dosya": "library.html",
+  "es": "kutuphane.html",
+  "baslik": "Publications and Resources — TAK-DER",
+  "aciklama": "TAK-DER publications (event reports, scientific publications, leaflets and materials) and an international resource library filterable by topic and language."
+ },
+ {
+  "dil": "en",
+  "dosya": "glossary.html",
+  "es": "sozluk.html",
+  "baslik": "Glossary — TAK-DER",
+  "aciklama": "Turkish and English definitions of trauma, disaster and crisis terms, based on UNDRR terminology and IASC documents."
+ },
+ {
+  "dil": "en",
+  "dosya": "get-involved.html",
+  "es": "katil.html",
+  "baslik": "Get Involved — TAK-DER",
+  "aciklama": "Become a member or volunteer: join the solidarity network of Travma Afet Kriz Derneği."
+ },
+ {
+  "dil": "en",
+  "dosya": "membership.html",
+  "es": "uye-ol.html",
+  "baslik": "Become a member — TAK-DER",
+  "aciklama": "Membership of Travma Afet Kriz Derneği: requirements, an application decided within 30 days, and dues."
+ },
+ {
+  "dil": "en",
+  "dosya": "volunteer.html",
+  "es": "gonullu.html",
+  "baslik": "Volunteer — TAK-DER",
+  "aciklama": "Volunteering with TAK-DER: requirements, mandatory training and the application form."
+ },
+ {
+  "dil": "en",
+  "dosya": "contact.html",
+  "es": "iletisim.html",
+  "baslik": "Contact — TAK-DER",
+  "aciklama": "Reach TAK-DER by email, contact form or social media, and where to turn in a crisis."
  },
  {
   "dil": "en",
@@ -387,10 +436,17 @@
  },
  {
   "dil": "en",
-  "dosya": "risk-cycle.html",
-  "es": "risk-dongusu.html",
-  "baslik": "Risk and Response Cycle — TAK-DER",
-  "aciklama": "Understanding risk, prevention, preparedness, response and recovery: five stages mapped to the Sendai Framework."
+  "dosya": "specific-groups.html",
+  "es": "ozel-gruplar.html",
+  "baslik": "Specific Groups — TAK-DER",
+  "aciklama": "Different needs in crises for children, older people, people with disabilities, pregnant women, migrants and responders."
+ },
+ {
+  "dil": "en",
+  "dosya": "media.html",
+  "es": "medya.html",
+  "baslik": "Media — TAK-DER",
+  "aciklama": "A responsible reporting guide for disaster and crisis journalism; press releases, press contact and logo."
  },
  {
   "dil": "en",
@@ -398,6 +454,13 @@
   "es": "toplum-icin.html",
   "baslik": "For the Public — TAK-DER",
   "aciklama": "Guides and FAQs for families, teachers, workplaces and young people — before, during and after an event."
+ },
+ {
+  "dil": "en",
+  "dosya": "news.html",
+  "es": "haberler.html",
+  "baslik": "News and events — TAK-DER",
+  "aciklama": "TAK-DER announcements, training calendar and event news."
  },
  {
   "dil": "en",
@@ -450,20 +513,6 @@
  },
  {
   "dil": "en",
-  "dosya": "for-professionals.html",
-  "es": "meslek-elemanlari.html",
-  "baslik": "For Professionals — TAK-DER",
-  "aciklama": "Training and calendar, ethical principles, caring for responders and secondary traumatisation, field protocols."
- },
- {
-  "dil": "en",
-  "dosya": "training.html",
-  "es": "egitimler.html",
-  "baslik": "Training and workshops — TAK-DER",
-  "aciklama": "Certificate programmes and workshops for disaster and crisis workers, and awareness training for the public."
- },
- {
-  "dil": "en",
   "dosya": "psychological-first-aid.html",
   "es": "ilk-psikolojik-yardim.html",
   "baslik": "Psychological first aid — field handbook — TAK-DER",
@@ -496,55 +545,6 @@
   "es": "ikincil-travma.html",
   "baslik": "Secondary trauma for field workers — TAK-DER",
   "aciklama": "Telling secondary traumatic stress, compassion fatigue, burnout and moral injury apart; a post-shift decompression protocol and what the organisation owes its people."
- },
- {
-  "dil": "en",
-  "dosya": "library.html",
-  "es": "kutuphane.html",
-  "baslik": "Publications and Resources — TAK-DER",
-  "aciklama": "TAK-DER publications and international publications in one place: direct links to the right sources on psychosocial support, child protection, humanitarian standards, preparedness and verification."
- },
- {
-  "dil": "en",
-  "dosya": "glossary.html",
-  "es": "sozluk.html",
-  "baslik": "Glossary — TAK-DER",
-  "aciklama": "Turkish and English definitions of trauma, disaster and crisis terms, based on UNDRR terminology and IASC documents."
- },
- {
-  "dil": "en",
-  "dosya": "media.html",
-  "es": "medya.html",
-  "baslik": "Media — TAK-DER",
-  "aciklama": "A responsible reporting guide for disaster and crisis journalism; press releases, press contact and logo."
- },
- {
-  "dil": "en",
-  "dosya": "news.html",
-  "es": "haberler.html",
-  "baslik": "News and events — TAK-DER",
-  "aciklama": "TAK-DER announcements, training calendar and event news."
- },
- {
-  "dil": "en",
-  "dosya": "get-involved.html",
-  "es": "katil.html",
-  "baslik": "Get Involved — TAK-DER",
-  "aciklama": "Volunteer, partner with us as an organisation, or become a member."
- },
- {
-  "dil": "en",
-  "dosya": "membership.html",
-  "es": "uye-ol.html",
-  "baslik": "Become a member — TAK-DER",
-  "aciklama": "Membership of Travma Afet Kriz Derneği: requirements, an application decided within 30 days, and dues."
- },
- {
-  "dil": "en",
-  "dosya": "contact.html",
-  "es": "iletisim.html",
-  "baslik": "Contact — TAK-DER",
-  "aciklama": "Reach TAK-DER by email, contact form or social media, and where to turn in a crisis."
  },
  {
   "dil": "en",

@@ -3,12 +3,10 @@
     <nav aria-label="Breadcrumb" class="text-sm font-semibold text-sis">
       <a href="index.html" class="hover:text-orman transition-colors">Home</a>
       <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
-      <a href="for-professionals.html" class="hover:text-orman transition-colors">For Professionals</a>
-      <span class="mx-2 text-cizgi" aria-hidden="true">/</span>
-      <span class="text-derin">Training &amp; Workshops</span>
+      <span class="text-derin">Training and Events</span>
     </nav>
     <div class="mt-6 grid gap-8 md:grid-cols-12 md:gap-12">
-      <h1 class="md:col-span-7 text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem]">Training and workshops</h1>
+      <h1 class="md:col-span-7 text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem]">Training and events</h1>
       <p class="md:col-span-5 self-end text-lg leading-relaxed text-derin/75">
         Knowledge grows when it is shared. We are preparing training programmes for professionals working in disaster and crisis, and for the public. Programmes and dates will be announced here as they are confirmed.
       </p>
@@ -16,21 +14,44 @@
   </div>
 </section>
 
-<section class="bolum">
-  <div class="kabuk grid gap-5 md:grid-cols-3">
+<nav class="bolum" aria-label="On this page">
+  <div class="kabuk grid gap-3 sm:grid-cols-2">
+    <a href="#training" class="kart kart-bag flex h-full flex-col p-6"><span class="text-sm font-bold text-fener">4.1</span><span class="mt-2 block font-display text-lg text-orman">Training</span></a>
+    <a href="#calendar" class="kart kart-bag flex h-full flex-col p-6"><span class="text-sm font-bold text-fener">4.2</span><span class="mt-2 block font-display text-lg text-orman">Training and events calendar</span></a>
+  </div>
+</nav>
+
+<section id="training" class="bolum scroll-mt-28">
+  <div class="kabuk">
+    <p class="etiket">4.1</p>
+    <h2 class="mt-4 text-3xl md:text-4xl">Training</h2>
+    <p class="mt-4 text-base text-sis olcek">Certificate programmes and workshops. The content, target audience and duration of each programme will be added here once it is confirmed.</p>
+  </div>
+  <!-- Training detail template (one card per programme):
+  <div class="kabuk mt-6"><article class="kart">
+    <p class="text-sm font-bold text-fener">Certificate programme</p>
+    <h3 class="mt-3 text-xl">Programme title</h3>
+    <dl class="kunye mt-4">
+      <div><dt>Content</dt><dd>…</dd></div>
+      <div><dt>Target audience</dt><dd>…</dd></div>
+      <div><dt>Duration</dt><dd>… hours / … days</dd></div>
+    </dl>
+  </article></div>
+  -->
+  <div class="kabuk mt-8 grid gap-5 md:grid-cols-3">
     <div class="kart">
       <p class="text-sm font-bold text-fener">For professionals</p>
-      <h2 class="mt-3 text-xl">Certificate programmes</h2>
+      <h3 class="mt-3 text-xl">Certificate programmes</h3>
       <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">Science-based, ethical certificate programmes on psychosocial support in trauma, disaster and crisis.</p>
     </div>
     <div class="kart">
       <p class="text-sm font-bold text-fener">For disaster and crisis workers</p>
-      <h2 class="mt-3 text-xl">Workshops</h2>
+      <h3 class="mt-3 text-xl">Workshops</h3>
       <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">Practical workshops for disaster and crisis workers from psychology, psychological counselling and guidance, and social work; supervision and self-care.</p>
     </div>
     <div class="kart">
       <p class="text-sm font-bold text-fener">For the public</p>
-      <h2 class="mt-3 text-xl">Awareness training</h2>
+      <h3 class="mt-3 text-xl">Awareness training</h3>
       <p class="mt-3 text-[0.9375rem] leading-relaxed text-derin/75">Sessions for schools, institutions and communities on preparedness, psychological first aid and accurate information.</p>
     </div>
   </div>
@@ -38,16 +59,24 @@
 
 <section id="calendar" class="bolum scroll-mt-28">
   <div class="kabuk">
-    <p class="etiket">Calendar</p>
-    <h2 class="mt-4 text-3xl md:text-4xl">Training calendar</h2>
+    <p class="etiket">4.2</p>
+    <h2 class="mt-4 text-3xl md:text-4xl">Training and events calendar</h2>
+    <p class="mt-4 text-base text-sis olcek">Upcoming training, workshops and symposia, with registration links.</p>
+    <!-- Calendar row template — remove the empty-state block and add inside <ul class="mt-8 grid gap-3">:
+    <li class="kart grid gap-2 md:grid-cols-12 md:items-baseline">
+      <p class="md:col-span-3 text-sm font-bold text-sis">00 Month 2027 · Lefkoşa</p>
+      <div class="md:col-span-6"><h3 class="text-lg">Event title</h3><p class="mt-1 text-[0.9375rem] text-derin/70">Type · audience · duration</p></div>
+      <p class="md:col-span-3 md:text-right"><a href="REGISTRATION-LINK" class="dugme dugme-fener !min-h-0 !py-2 !px-4 text-sm">Register</a></p>
+    </li>
+    The same event also goes in the "Upcoming event" section on the home page. -->
     <div class="mt-8 rounded-3xl border border-dashed border-cizgi bg-kagit px-7 py-12 md:px-12 md:py-16 text-center">
-      <p class="font-display text-xl md:text-2xl text-derin max-w-xl mx-auto">The training programme is in preparation.</p>
+      <p class="font-display text-xl md:text-2xl text-derin max-w-xl mx-auto">The training and events programme is in preparation.</p>
       <p class="mt-4 text-[0.9375rem] leading-relaxed text-derin/70 max-w-lg mx-auto">
         Programmes, dates and application details will be announced here and
         on our social media accounts.
       </p>
       <p class="mt-8 flex flex-wrap justify-center gap-3">
-        <a href="news.html" class="dugme dugme-birincil">News and events</a>
+        <a href="news.html" class="dugme dugme-birincil">News and announcements</a>
         <a href="contact.html" class="dugme dugme-ikincil">Write to us</a>
       </p>
     </div>
