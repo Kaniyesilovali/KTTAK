@@ -250,6 +250,25 @@
     to   { clip-path: inset(0 0 0 0); }
   }
 
+  /* ---- Kaydırınca beliren bölümler: <section data-animate> ----
+     Gizleme yalnızca site.js html'e .animasyon-hazir eklediğinde devreye girer;
+     JS yoksa, hareket azaltılmışsa ya da yazdırılırken içerik hep görünür.
+     Gecikme: data-animate-gecikme="150" (ms) ya da aynı anda girenlere otomatik sıra. */
+  @media (prefers-reduced-motion: no-preference) {
+    .animasyon-hazir [data-animate] {
+      opacity: 0;
+      transform: translateY(1.5rem);
+      transition-property: opacity, transform;
+      transition-duration: 700ms;
+      transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+      transition-delay: var(--animate-gecikme, 0ms);
+    }
+    .animasyon-hazir [data-animate].gorundu {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   /* ---- Düğmeler: hap biçimi, yeterince büyük dokunma alanı ---- */
   .dugme {
     display: inline-flex;
@@ -601,6 +620,9 @@
    ============================================================ */
 @media print {
   .yazdir-yok { display: none !important; }
+
+  /* Henüz kaydırılıp görünmemiş bölümler de kâğıda dökülsün */
+  [data-animate] { opacity: 1 !important; transform: none !important; }
 
   html { scroll-behavior: auto; }
 

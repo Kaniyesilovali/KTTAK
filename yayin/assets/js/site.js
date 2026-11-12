@@ -483,3 +483,36 @@
   };
   mq.addEventListener ? mq.addEventListener('change', dinle) : mq.addListener(dinle);
 })();
+
+/* --- Kaydırınca beliren bölümler: [data-animate] ---
+   Yüklenirken ekranda (ya da üstünde) olanlar hemen görünür sayılır; böylece
+   ilk boyamada hiçbir şey kaybolup yeniden belirmez. Aynı anda ekrana giren
+   bölümler sırayla (100 ms arayla) gelir; data-animate-gecikme="ms" bunu ezer. */
+(function () {
+  'use strict';
+  var ogeler = Array.prototype.slice.call(document.querySelectorAll('[data-animate]'));
+  if (!ogeler.length || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var yukseklik = window.innerHeight;
+  var bekleyen = ogeler.filter(function (el) {
+    if (el.getBoundingClientRect().top < yukseklik) { el.classList.add('gorundu'); return false; }
+    return true;
+  });
+  document.documentElement.classList.add('animasyon-hazir');
+
+  var gozcu = new IntersectionObserver(function (girdiler) {
+    girdiler
+      .filter(function (g) { return g.isIntersecting; })
+      .sort(function (a, b) { return a.boundingClientRect.top - b.boundingClientRect.top; })
+      .forEach(function (g, i) {
+        var el = g.target;
+        var ozel = el.getAttribute('data-animate-gecikme');
+        var gecikme = ozel !== null ? parseInt(ozel, 10) || 0 : Math.min(i * 100, 400);
+        el.style.setProperty('--animate-gecikme', gecikme + 'ms');
+        el.classList.add('gorundu');
+        gozcu.unobserve(el);
+      });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  bekleyen.forEach(function (el) { gozcu.observe(el); });
+})();
