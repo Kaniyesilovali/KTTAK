@@ -34,6 +34,20 @@ function kurulus(dil) {
   }, null, 2);
 }
 
+// Gövdedeki <details data-sss> öğelerinden FAQPage yapısal verisi üretir;
+// soru-cevap metni tek yerde (gövdede) durur.
+function sssVerisi(govde) {
+  const duz = (h) => h.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+  const sorular = [...govde.matchAll(/<details[^>]*\bdata-sss\b[^>]*>\s*<summary[^>]*>([\s\S]*?)<span[\s\S]*?<\/summary>([\s\S]*?)<\/details>/g)]
+    .map(([, soru, cevap]) => ({
+      '@type': 'Question',
+      name: duz(soru),
+      acceptedAnswer: { '@type': 'Answer', text: duz(cevap) },
+    }));
+  if (!sorular.length) return '';
+  return `\n<script type="application/ld+json">\n${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: sorular }, null, 2)}\n</script>`;
+}
+
 let yazilan = 0, korunan = [];
 
 for (const s of sayfalar) {
@@ -83,7 +97,7 @@ for (const s of sayfalar) {
 <link rel="stylesheet" href="${varlik}css/site.css">
 <script type="application/ld+json">
 ${kurulus(dil)}
-</script>
+</script>${sssVerisi(govde)}
 </head>
 <body>
 <a href="#icerik" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-orman focus:text-kagit focus:px-4 focus:py-2 focus:rounded">${atla}</a>

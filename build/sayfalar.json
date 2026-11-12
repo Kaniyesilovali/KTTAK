@@ -113,6 +113,13 @@
  },
  {
   "dil": "tr",
+  "dosya": "sss.html",
+  "es": "faq.html",
+  "baslik": "Sık Sorulan Sorular — TAK-DER",
+  "aciklama": "TAK-DER nedir, kriz hattı mı, nasıl üye ya da gönüllü olunur, hangi eğitimler var, olaydan sonra ne yapılır ve kişisel veriler nasıl korunur: en çok sorulan sorular."
+ },
+ {
+  "dil": "tr",
   "dosya": "katil.html",
   "es": "get-involved.html",
   "baslik": "Katıl — TAK-DER",
@@ -398,6 +405,13 @@
   "es": "sozluk.html",
   "baslik": "Glossary — TAK-DER",
   "aciklama": "Turkish and English definitions of trauma, disaster and crisis terms, based on UNDRR terminology and IASC documents."
+ },
+ {
+  "dil": "en",
+  "dosya": "faq.html",
+  "es": "sss.html",
+  "baslik": "Frequently Asked Questions — TAK-DER",
+  "aciklama": "What TAK-DER is, whether it is a crisis line, how to become a member or volunteer, what training is offered, what to do after an event and how personal data is protected."
  },
  {
   "dil": "en",

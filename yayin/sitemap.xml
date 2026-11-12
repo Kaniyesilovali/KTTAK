@@ -129,6 +129,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/glossary.html"/>
   </url>
   <url>
+    <loc>https://tak-der.org/sss.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/sss.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/faq.html"/>
+  </url>
+  <url>
     <loc>https://tak-der.org/katil.html</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -439,6 +447,14 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/sozluk.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/glossary.html"/>
+  </url>
+  <url>
+    <loc>https://tak-der.org/en/faq.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/sss.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/faq.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/get-involved.html</loc>
