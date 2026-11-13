@@ -23,18 +23,21 @@
 
 @theme {
   /* --- Renk: kimlik paleti --- */
-  --color-zemin:      #ffffff;  /* Beyaz — ana zemin */
-  --color-kagit:      #eef5f7;  /* açık mavi ton — kart/panel; koyu zeminde yazı */
-  --color-su:         #dcecf1;  /* biraz daha koyu mavi ton — vurgulu panel, ikon zemini */
-  --color-derin:      #0c2e44;  /* lacivert mürekkep — gövde metni, kapak zemini */
-  --color-gece:       #082435;  /* kapağın en koyu ucu */
+  /* 2026-11-12 NÖTR DÜZEN: zeminler yalnızca çok açık gri; renk yalnızca
+     öne çıkan metinde, simgede ve düğmede. Koyu zemin yok. */
+  --color-zemin:      #f2f4f6;  /* sayfa zemini — çok açık, hafif mavimsi gri */
+  --color-kagit:      #f8f9fa;  /* yüzey — kart, panel, sayfa başı */
+  --color-su:         #e9ecef;  /* gömülü yüzey — bilgi kutusu, ikon yuvası */
+  --color-derin:      #191d22;  /* nötr mürekkep — gövde metni ve başlıklar */
+  --color-gece:       #0e4a6e;  /* koyu mavinin basılı hali — birincil düğme hover */
+  --color-deniz-koyu: #357a69;  /* deniz yeşilinin metinde okunur koyusu */
   --color-orman:      #135e8b;  /* KOYU MAVİ — başlık, menü, birincil düğme (beyazda 7.0:1) */
   --color-orman-acik: #10778c;  /* PETROL MAVİSİ — bağlantı, odak, vurgu (beyazda 5.2:1) */
   --color-deniz:      #4c9785;  /* DENİZ YEŞİLİ — ikon ve süs; metin için kullanılmaz */
   --color-filiz:      #80b674;  /* AÇIK YEŞİL — yalnızca "Gönüllü ol" düğmesi zemini.
                                    Üzerindeki yazı her zaman derin (5.9:1); beyaz okunmaz. */
-  --color-sis:        #4f6a7a;  /* ikincil metin — beyazda 5.6:1, kâğıtta 5.2:1 */
-  --color-cizgi:      #d3e2e8;  /* ayraç / kenarlık */
+  --color-sis:        #56606b;  /* ikincil metin — nötr gri, zeminde 5.9:1 */
+  --color-cizgi:      #dde1e6;  /* ayraç / kenarlık */
   --color-kum:        #cfe4c6;  /* yeşil panel kenarı */
   --color-kum-acik:   #edf6e8;  /* yeşil panel — destek çağrıları */
   --color-fener:      #427636;  /* açık yeşilin metin tonu (AA, en düşük 4.9:1) */
@@ -55,6 +58,8 @@
 :root {
   /* Logonun geçişi. Yalnızca kapak alanlarında, kılcal çizgilerde ve örgüde. */
   --gradyan: linear-gradient(90deg, #135e8b 0%, #10778c 40%, #4c9785 70%, #80b674 100%);
+  /* Vurgu metni için biraz koyulaştırılmış geçiş (açık yeşil uç metinde okunmaz) */
+  --gradyan-metin: linear-gradient(95deg, #135e8b 0%, #10778c 38%, #4c9785 70%, #5f9a56 100%);
   /* İlmek: kelimenin altından geçip bir kez düğümlenen iplik */
   --ilmek-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M3 17 C 40 15, 70 10, 96 13 C 116 15, 116 25, 104 24 C 92 23, 98 8, 122 9 C 150 10, 175 14, 197 11' fill='none' stroke='black' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E");
 }
@@ -79,7 +84,7 @@
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-optical-sizing: auto;
-    color: var(--color-orman);
+    color: var(--color-derin);
     font-weight: 650;
     letter-spacing: -0.022em;
     line-height: 1.08;
@@ -290,14 +295,14 @@
     background-color: var(--color-orman);
     color: #fff;
   }
-  .dugme-birincil:hover { background-color: var(--color-derin); }
+  .dugme-birincil:hover { background-color: var(--color-gece); }
 
   .dugme-ikincil {
     background-color: transparent;
     color: var(--color-orman);
     border-color: color-mix(in srgb, var(--color-orman) 45%, transparent);
   }
-  .dugme-ikincil:hover { border-color: var(--color-orman); background-color: var(--color-kagit); }
+  .dugme-ikincil:hover { border-color: var(--color-orman); background-color: var(--color-su); }
 
   /* Açık yeşil yalnızca "Gönüllü ol / Destek ol" eylemlerinde */
   .dugme-fener {
@@ -306,12 +311,13 @@
   }
   .dugme-fener:hover { background-color: #94c489; }
 
+  /* Eskiden koyu kapak üzerindeki şeffaf düğmeydi; artık açık zeminde sade düğme */
   .dugme-hayalet {
     background-color: transparent;
-    color: #fff;
-    border-color: color-mix(in srgb, #fff 40%, transparent);
+    color: var(--color-derin);
+    border-color: var(--color-cizgi);
   }
-  .dugme-hayalet:hover { background-color: color-mix(in srgb, #fff 12%, transparent); border-color: #fff; }
+  .dugme-hayalet:hover { background-color: var(--color-su); }
 
   /* ============================================================
      ETKİLEŞİM DÜZENİ — sitedeki her kutu bu üç aileden birine girer.
@@ -332,19 +338,19 @@
 
   /* ---- 2. Bilgi kutusu ---- */
   .kart {
-    background-color: var(--color-kagit);
+    background-color: var(--color-su);
     border: 2px solid transparent;
     border-radius: var(--radius-yumusak);
     padding: 1.75rem;
   }
   /* Vurgulu bilgi kutusu (uyarı, önemli not): bir ton koyu mavi */
-  .not-kutu { background-color: var(--color-su); }
+  .not-kutu { background-color: color-mix(in srgb, var(--color-su) 70%, #d5dae0); }
 
   /* ---- 1. Tıklanabilir kart ---- */
   .kart-bag {
     position: relative;
     display: block;
-    background-color: #fff;
+    background-color: var(--color-kagit);
     border: 2px solid var(--color-cizgi);
     border-radius: var(--radius-yumusak);
     box-shadow: 0 1px 2px rgba(12, 46, 68, 0.05), 0 14px 30px -22px rgba(12, 46, 68, 0.5);
@@ -355,7 +361,7 @@
     border-color: var(--color-fener);
     box-shadow: 0 1px 2px rgba(12, 46, 68, 0.05), 0 18px 36px -22px rgba(66, 118, 54, 0.55);
   }
-  .kart-bag .ikon-yuva { background-color: var(--color-kagit); transition: background-color 180ms ease, color 180ms ease; }
+  .kart-bag .ikon-yuva { background-color: var(--color-su); transition: background-color 180ms ease, color 180ms ease; }
   .kart-bag:hover .ikon-yuva { background-color: #fff; color: var(--color-fener); }
   .kart-bag .bag-ok { text-decoration: none; transition: color 180ms ease; }
   .kart-bag:hover .bag-ok { color: var(--color-fener); }
@@ -371,7 +377,7 @@
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 999px;
-    background-color: var(--color-kagit);
+    background-color: var(--color-su);
     color: var(--color-orman-acik);
     font-weight: 700;
     line-height: 1;
@@ -395,7 +401,7 @@
     width: 3.25rem;
     height: 3.25rem;
     border-radius: 999px;
-    background-color: #fff;
+    background-color: var(--color-su);
     color: var(--color-orman-acik);
     flex: none;
   }
@@ -526,18 +532,15 @@
 @layer components {
   /* ---- Kapak alanı: lacivertten petrole, köşede yeşil bir aydınlık ----
      Yazı koyu tarafta durur; açık yeşil yalnızca sağ alt köşede. */
+  /* Eskiden lacivert kapaktı; nötr düzende açık gri yüzey. */
   .kapak {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    color: var(--color-kagit);
-    background-color: var(--color-derin);
-    background-image:
-      radial-gradient(70% 90% at 100% 100%, rgba(128, 182, 116, 0.38) 0%, rgba(76, 151, 133, 0) 60%),
-      radial-gradient(60% 80% at 0% 0%, rgba(19, 94, 139, 0.55) 0%, rgba(19, 94, 139, 0) 70%),
-      linear-gradient(135deg, #082435 0%, #0c2e44 35%, #135e8b 75%, #10778c 100%);
+    color: var(--color-derin);
+    background-color: var(--color-kagit);
+    border: 1px solid var(--color-cizgi);
   }
-  .kapak h1, .kapak h2, .kapak h3 { color: #fff; }
 
   /* ---- Gradyan kılcal çizgi ---- */
   .gradyan-cizgi { height: 3px; background-image: var(--gradyan); }
@@ -551,7 +554,7 @@
 @layer components {
   /* Bulunulan sayfanın menü bağlantısı */
   .nav-aktif { position: relative; }
-  .nav-aktif:not(.dugme) { color: var(--color-orman); background-color: var(--color-kagit); }
+  .nav-aktif:not(.dugme) { color: var(--color-derin); background-color: var(--color-su); }
 }
 
 @layer components {
@@ -607,10 +610,10 @@
   @media (min-width: 768px) { .kaynakca-panel { padding: 2.75rem 3rem; } }
   .kaynakca-panel h2 { font-size: 1.5rem; }
   .kaynakca-panel > p:not(.etiket) { font-size: 1rem; }
-  .kaynakca-panel .kunye { border-top-color: #fff; border-top-width: 2px; }
-  .kaynakca-panel .kunye > div { border-bottom-color: #fff; border-bottom-width: 2px; }
+  .kaynakca-panel .kunye { border-top-color: var(--color-cizgi); }
+  .kaynakca-panel .kunye > div { border-bottom-color: var(--color-cizgi); }
   .kaynakca-panel .kunye dd { font-size: 0.9375rem; line-height: 1.6; color: color-mix(in srgb, var(--color-derin) 85%, transparent); }
-  .kaynakca-panel .etiket::before { box-shadow: 0 0 0 3px #fff, 0 0 0 4px var(--color-kum); }
+
 }
 
 /* ============================================================
@@ -735,7 +738,7 @@
     transition: opacity 150ms ease, transform 150ms ease, visibility 0s linear 150ms;
   }
   .menu-panel > ul {
-    background-color: var(--color-zemin);
+    background-color: var(--color-kagit);
     border: 1px solid var(--color-cizgi);
     border-radius: 1.25rem;
     padding: 0.5rem;
@@ -765,4 +768,95 @@
   @media print {
     [data-sonsuz-gizli] { display: revert !important; }
   }
+}
+
+/* ============================================================
+   NÖTR DÜZEN — eski koyu alanların açık griye dönüşümü (2026-11-12)
+   Sayfalardaki bg-derin + text-kagit/text-white kutuları tek tek
+   değiştirilmedi; burada açık gri gömülü yüzeye çevrilir.
+   Katmansız yazıldı: Tailwind yardımcılarını ezer.
+   ============================================================ */
+.bg-derin { background-color: var(--color-su); color: var(--color-derin); }
+:is(.kapak, .bg-derin) :is(h1, h2, h3, h4) { color: var(--color-derin); }
+:is(.kapak, .bg-derin) :is(.text-white, .text-kagit) { color: var(--color-derin); }
+:is(.kapak, .bg-derin) :is([class*="text-kagit/"], [class*="text-white/"]) { color: var(--color-sis); }
+:is(.kapak, .bg-derin) .text-fener-acik, .etiket-acik { color: var(--color-orman); }
+:is(.kapak, .bg-derin) [class*="hover:text-fener-acik"]:hover { color: var(--color-orman); }
+:is(.kapak, .bg-derin) [class*="decoration-kagit"], :is(.kapak, .bg-derin) [class*="decoration-white"] { text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.etiket-acik::before { box-shadow: 0 0 0 3px var(--color-kum-acik), 0 0 0 4px var(--color-kum); }
+/* Durağan yeşil panel kullanılmaz: yeşil zemin yalnızca hover'da */
+.bg-kum-acik:not(:is(a, button, label)) { background-color: var(--color-su); border-color: transparent; }
+
+@layer components {
+  /* ---- Vurgu metni: logonun geçişiyle boyanan kelime ---- */
+  .parilti {
+    background-image: var(--gradyan-metin);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.08em;
+  }
+  @media print { .parilti { color: #000; -webkit-text-fill-color: #000; background: none; } }
+
+  /* ---- Ana sayfa kapağı: panel yok, büyük sıkı başlık ---- */
+  .ana-kapak { padding-block: clamp(3rem, 2rem + 6vw, 7.5rem) clamp(2.5rem, 1.5rem + 3vw, 4.5rem); }
+  .ana-kapak h1 {
+    font-size: clamp(2.9rem, 1.4rem + 6.6vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+  }
+  .ana-kapak h1 > span { display: block; }
+  @media (prefers-reduced-motion: no-preference) {
+    .ana-kapak h1 > span { animation: yuksel 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    .ana-kapak h1 > span + span { animation-delay: 120ms; }
+  }
+  @keyframes yuksel { from { transform: translateY(0.25em); opacity: 0.001; } to { transform: none; opacity: 1; } }
+
+  /* ---- Bento: gri katmanlardan ızgara ---- */
+  .bento { display: grid; gap: 0.75rem; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .bento > * { grid-column: span 6; min-width: 0; }
+  @media (min-width: 900px) {
+    .bento > .b2 { grid-column: span 2; }
+    .bento > .b3 { grid-column: span 3; }
+  }
+  .bento .kutu { background-color: var(--color-kagit); border-radius: 1.4rem; padding: clamp(1.4rem, 1rem + 1.4vw, 2rem); display: flex; flex-direction: column; gap: 0.75rem; }
+  .bento .kutu-gomulu { background-color: var(--color-su); }
+
+  /* Yol kartı: .kart-bag ailesinin üyesi; her yolun kendi tonu var */
+  .yol { display: flex; flex-direction: column; gap: 0.75rem; padding: clamp(1.4rem, 1rem + 1.4vw, 2rem); border-radius: 1.4rem; }
+  .yol .ikon-yuva { border-radius: 0.8rem; width: 2.85rem; height: 2.85rem; color: var(--ton, var(--color-orman)); }
+  .yol .ikon-yuva svg { width: 1.5rem; height: 1.5rem; }
+  .yol .yol-etiket { font-weight: 700; font-size: 0.9375rem; color: var(--ton, var(--color-orman)); transition: color 180ms ease; }
+  .yol .bag-ok { margin-top: auto; color: var(--ton, var(--color-orman)); }
+  .yol:hover .yol-etiket { color: var(--color-fener); }
+  .ton-mavi { --ton: var(--color-orman); }
+  .ton-petrol { --ton: var(--color-orman-acik); }
+  .ton-deniz { --ton: var(--color-deniz-koyu); }
+
+  /* Acil numaralar: büyük, mavi rakam, gri yüzey */
+  .numaralar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+  .numara { background-color: var(--color-kagit); border-radius: 0.9rem; padding: 0.75rem 0.9rem; display: flex; flex-direction: column; text-decoration: none; }
+  .numara b { font-family: var(--font-display); font-size: 1.75rem; line-height: 1; letter-spacing: -0.02em; color: var(--color-orman); font-variant-numeric: tabular-nums; }
+  .numara span { font-size: 0.875rem; color: var(--color-sis); }
+
+  /* Bölüm başlığının altında kısa geçiş çizgisi */
+  .baslik-cizgi::after { content: ""; display: block; width: 3.5rem; height: 4px; border-radius: 4px; background-image: var(--gradyan); margin-top: 0.9rem; }
+
+  /* ---- Yüzen hap menü ---- */
+  .ust-menu {
+    background-color: color-mix(in srgb, var(--color-kagit) 85%, transparent);
+    -webkit-backdrop-filter: blur(14px);
+            backdrop-filter: blur(14px);
+    border: 1px solid var(--color-cizgi);
+    border-radius: 1.9rem;
+    box-shadow: 0 10px 30px -24px rgba(25, 29, 34, 0.35);
+  }
+  .ust-logo { height: 4rem; width: auto; transition: height 220ms ease; }
+  @media (min-width: 768px) { .ust-logo { height: 5.25rem; } }
+  .kaydirildi .ust-logo { height: 4.25rem; }
+
+  /* ---- Altbilgi örgüsü (site.js, canvas[data-orgu-ip]) ----
+     Logo renginde iplikler soldan gevşek gelir, sağa doğru birbirine sarılır. */
+  .orgu-ip { display: block; width: 100%; height: clamp(6.5rem, 4rem + 6vw, 9.5rem); }
 }

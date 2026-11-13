@@ -516,3 +516,79 @@
   }, { rootMargin: '0px 0px -8% 0px' });
   bekleyen.forEach(function (el) { gozcu.observe(el); });
 })();
+
+/* --- Üst menü: aşağı kaydırınca logo bir boy küçülür --- */
+(function () {
+  'use strict';
+  var ust = document.querySelector('[data-ust]');
+  if (!ust) return;
+  var bekle = false;
+  function guncelle() { ust.classList.toggle('kaydirildi', window.scrollY > 80); bekle = false; }
+  window.addEventListener('scroll', function () { if (!bekle) { bekle = true; requestAnimationFrame(guncelle); } }, { passive: true });
+  guncelle();
+})();
+
+/* --- Altbilgi örgüsü: canvas[data-orgu-ip] ---
+   Logonun beş renginde iplik. Solda gevşek ve açık, sağa doğru birbirine
+   sarılıp sıkı bir örgü olur ("kimse yükünü tek başına taşımasın").
+   Düz çizgiye ya da nabız çizgisine hiç dönüşmez. İlk görüldüğünde soldan
+   sağa uzar, sonra yavaşça dalgalanır; ekran dışındayken durur.
+   Hareket azaltılmışsa tek kare olarak çizilir. */
+(function () {
+  'use strict';
+  var cv = document.querySelector('canvas[data-orgu-ip]');
+  if (!cv || !cv.getContext) return;
+  var cx = cv.getContext('2d');
+  var RENK = ['#135E8B', '#10778C', '#4C9785', '#80B674', '#10778C'];
+  var UZAMA = 1.6;
+  var azHareket = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+  var w = 0, h = 0, t = 0, ilk = UZAMA, gorunur = false, goruldu = false, son = 0, calisiyor = false;
+
+  function boyut() {
+    var d = Math.min(window.devicePixelRatio || 1, 2);
+    w = cv.clientWidth; h = cv.clientHeight;
+    cv.width = Math.round(w * d); cv.height = Math.round(h * d);
+    cx.setTransform(d, 0, 0, d, 0, 0);
+  }
+  function ciz() {
+    cx.clearRect(0, 0, w, h);
+    var orta = h * 0.55;
+    var u0 = Math.min(1, ilk / UZAMA);
+    var bitis = w * (0.08 + 0.92 * (1 - Math.pow(1 - u0, 3)));
+    for (var i = 0; i < RENK.length; i++) {
+      var faz = i * (Math.PI * 2 / RENK.length);
+      cx.beginPath();
+      for (var x = 0; x <= bitis; x += 4) {
+        var u = x / w;
+        var genlik = (1 - u) * h * 0.34 + h * 0.07;
+        var y = orta + Math.sin(u * 14 + faz + t * 0.9) * genlik * Math.cos(u * 2.2 + i * 0.6 + t * 0.35) * 0.9;
+        if (x === 0) cx.moveTo(x, y); else cx.lineTo(x, y);
+      }
+      cx.strokeStyle = RENK[i];
+      cx.globalAlpha = 0.75;
+      cx.lineWidth = 2.2 - i * 0.18;
+      cx.lineCap = 'round';
+      cx.stroke();
+    }
+    cx.globalAlpha = 1;
+  }
+  function kare(z) {
+    var dt = son ? Math.min((z - son) / 1000, 0.05) : 0;
+    son = z;
+    if (!gorunur || (azHareket && azHareket.matches)) { calisiyor = false; son = 0; return; }
+    t += dt; ilk += dt;
+    ciz();
+    requestAnimationFrame(kare);
+  }
+  function basla() { if (!calisiyor) { calisiyor = true; requestAnimationFrame(kare); } }
+
+  boyut(); ciz();
+  window.addEventListener('resize', function () { boyut(); ciz(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (g) {
+      gorunur = g[0].isIntersecting;
+      if (gorunur && !goruldu) { goruldu = true; if (!(azHareket && azHareket.matches)) ilk = 0; }
+      if (gorunur) basla();
+    }).observe(cv);
+  }
+})();
