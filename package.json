@@ -7,7 +7,7 @@
     "izle": "tailwindcss -i ./build/input.css -o ./yayin/assets/css/site.css --watch",
     "senkron": "node build/senkron.js",
     "iskele": "node build/iskele.js",
-    "yayina-hazirla": "npm run senkron && npm run css && node build/sitemap.js",
+    "yayina-hazirla": "npm run senkron && npm run css && node build/surum.js && node build/sitemap.js",
     "sunucu": "node build/sunucu.js",
     "paketle": "node build/paketle.js"
   },
