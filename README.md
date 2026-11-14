@@ -85,8 +85,8 @@ gerçek sunucuda devreye girer.
 ### 2.1 Alan adı, e-posta ve sosyal medya — tek dosya
 
 Brif gereği **resmî e-posta, iletişim bilgileri ve tescil olmadan site yayına
-alınmaz.** Şu an `tak-der.org` / `info@tak-der.org` GEÇİCİ değerlerdir ve
-sosyal medya bağlantıları `#`'dir. Hepsi tek dosyada: `build/ayarlar.json`
+alınmaz.** Resmî e-posta `info@tak-der.org` olarak kesinleşti; alan adı
+`tak-der.org` hâlâ GEÇİCİ değerdir. Hepsi tek dosyada: `build/ayarlar.json`
 
 ```json
 {
