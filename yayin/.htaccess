@@ -28,6 +28,9 @@ ErrorDocument 404 /404.html
   RewriteRule ^en/ethics\.html$ /en/transparency.html#ethics [R=301,NE,L]
   RewriteRule ^en/for-professionals\.html$ /en/protocols.html [R=301,L]
   RewriteRule ^en/trauma-and-violence\.html$ /en/trauma.html [R=301,L]
+  # Protokoller & İş Birlikleri (Kasım 2026): iş birlikleri sayfası protokollerle birleşti
+  RewriteRule ^isbirlikleri\.html$ /protokoller.html#isbirlikleri [R=301,NE,L]
+  RewriteRule ^en/partnerships\.html$ /en/protocols.html#partnerships [R=301,NE,L]
 </IfModule>
 
 # --- Sıkıştırma: sayfa daha hızlı açılır ---

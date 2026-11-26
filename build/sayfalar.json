@@ -45,15 +45,15 @@
   "dil": "tr",
   "dosya": "protokoller.html",
   "es": "protocols.html",
-  "baslik": "Protokoller — TAK-DER",
-  "aciklama": "İlk psikolojik yardım, çocuk dostu alan, ihtiyaç tespit formu, okul müfredatı ve ikincil travma: sahada kullanılmak üzere hazırlanan protokoller."
+  "baslik": "Protokoller & İş Birlikleri — TAK-DER",
+  "aciklama": "Sahada kullanılmak üzere hazırlanan protokoller ve kamu kurumları, üniversiteler, meslek örgütleri ve uluslararası ağlarla ulusal ve uluslararası iş birlikleri."
  },
  {
   "dil": "tr",
   "dosya": "calisma-alanlarimiz.html",
   "es": "what-we-do.html",
   "baslik": "Çalışma Alanlarımız — TAK-DER",
-  "aciklama": "Travma, afetler, şiddet ve toplumsal çatışmalar, toplumsal ve ekonomik krizler, ulusal ve uluslararası işbirlikleri."
+  "aciklama": "Travma, afetler, şiddet ve toplumsal çatışmalar, toplumsal ve ekonomik krizler."
  },
  {
   "dil": "tr",
@@ -82,13 +82,6 @@
   "es": "social-and-economic-crises.html",
   "baslik": "Toplumsal ve Ekonomik Krizler — TAK-DER",
   "aciklama": "Ekonomik sıkıntı, işsizlik, salgın ve toplumsal gerilim dönemlerinin ruhsal etkileri ve baş etme yolları."
- },
- {
-  "dil": "tr",
-  "dosya": "isbirlikleri.html",
-  "es": "partnerships.html",
-  "baslik": "Ulusal ve Uluslararası İşbirlikleri — TAK-DER",
-  "aciklama": "Kamu kurumları, yerel yönetimler, üniversiteler, okullar, meslek örgütleri ve uluslararası ağlarla ortak çalışmalar."
  },
  {
   "dil": "tr",
@@ -340,15 +333,15 @@
   "dil": "en",
   "dosya": "protocols.html",
   "es": "protokoller.html",
-  "baslik": "Protocols — TAK-DER",
-  "aciklama": "Psychological first aid, child-friendly space, needs assessment form, school curriculum and secondary trauma: protocols prepared for use in the field."
+  "baslik": "Protocols & Partnerships — TAK-DER",
+  "aciklama": "Protocols prepared for use in the field, and national and international partnerships with public bodies, universities, professional bodies and international networks."
  },
  {
   "dil": "en",
   "dosya": "what-we-do.html",
   "es": "calisma-alanlarimiz.html",
   "baslik": "Our Areas of Work — TAK-DER",
-  "aciklama": "Trauma, disasters, violence and social conflict, social and economic crises, national and international partnerships."
+  "aciklama": "Trauma, disasters, violence and social conflict, social and economic crises."
  },
  {
   "dil": "en",
@@ -377,13 +370,6 @@
   "es": "toplumsal-krizler.html",
   "baslik": "Social and Economic Crises — TAK-DER",
   "aciklama": "The psychological effects of financial hardship, unemployment, epidemics and social tension, and ways of coping."
- },
- {
-  "dil": "en",
-  "dosya": "partnerships.html",
-  "es": "isbirlikleri.html",
-  "baslik": "National and International Partnerships — TAK-DER",
-  "aciklama": "Joint work with public bodies, local authorities, universities, schools, professional bodies and international networks."
  },
  {
   "dil": "en",

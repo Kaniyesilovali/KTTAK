@@ -97,14 +97,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/social-and-economic-crises.html"/>
   </url>
   <url>
-    <loc>https://tak-der.org/isbirlikleri.html</loc>
-    <lastmod>2026-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/isbirlikleri.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/partnerships.html"/>
-  </url>
-  <url>
     <loc>https://tak-der.org/egitimler.html</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -415,14 +407,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/toplumsal-krizler.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/social-and-economic-crises.html"/>
-  </url>
-  <url>
-    <loc>https://tak-der.org/en/partnerships.html</loc>
-    <lastmod>2026-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tak-der.org/isbirlikleri.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tak-der.org/en/partnerships.html"/>
   </url>
   <url>
     <loc>https://tak-der.org/en/training.html</loc>
